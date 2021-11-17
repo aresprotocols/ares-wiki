@@ -1,2 +1,2 @@
-# ares_docs
-documentation
+# crust-wiki
+The source of truth for Crust
