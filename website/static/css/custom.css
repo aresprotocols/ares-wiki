@@ -1,6 +1,6 @@
 :root {
   --primaryColor: #128dff;
-  --secondaryColor: #172026;
+  --secondaryColor: #23CEFD;
   --snowColor: #efefef;
   --silverColor: #b7b8bb;
   --nickelColor: #6d7278;
@@ -393,9 +393,9 @@ body {
   .navigationSlider .slidingNav > ul > li a[href*="contributing"] {
     background: white;
     height: 100%;
-    border: solid 1px #1265ff;
+    border: solid 1px #128dff;
     border-radius: 20px;
-    color: #12a0ff;
+    color: #128dff;
     height: 35px;
     line-height: 35px;
     font-size: 14px;
@@ -1065,9 +1065,9 @@ footer .list-social-links a {
   transform: translateY(-1rem);
 }
 /* todo: last homeNavItem will disappeared after resizing window */
-.homeNavContainer {
+/* .homeNavContainer {
   background: url("/img/bg.png");
-}
+} */
 .klaro .cookie-modal .cm-app-input.required:checked + .cm-app-label .slider,
 .klaro .cookie-notice .cm-app-input.required:checked + .cm-app-label .slider {
   background-color: var(--primaryColor);

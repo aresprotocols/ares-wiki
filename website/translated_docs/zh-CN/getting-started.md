@@ -1,7 +1,7 @@
 ---
-id: crustOverview
+id: gettingStarted
 title: Ares Overview
-sidebar_label: Ares Overview
+sidebar_label: Crust Overview
 ---
 
 ## Ares 是什么
@@ -14,17 +14,6 @@ Ares 作为开源的去中心化跨链预言机服务协议，通过引入通证
 
 Ares 建立在 Polkadot 生态下。并且通过 Substrate 构建，作为与 Polkadot 生态的平行链链接，共享 Polkadot 的安全共识；其次，Ares 是一个可扩展的两层预言机网络，它是 Polkadot 的其他平行链，与主流区块链网络一起提供去中心化数据预言机服务。
 
-## 如何使用 Ares
-
-* **[加入Gladios测试网](gladios-cn.md)**
-  
-* **[Cumulus Ping 测试](cumulus%20ping_cn.md)**
-  
-* **[Mars跨链获取价格](mars_getprice.md)**
-  
-* **[喂价配置](gladios-cn.md)**
-
-* **[第一个版本预言机](first_oracle_impl_cn.md)**
 
 ## Ares 的适用场景
 

@@ -3,79 +3,138 @@ id: crustAccount
 title: Account
 sidebar_label: Account
 ---
+# 使用cumulus进化跨链ping pong测试
 
-## What is the Crust account?
 
-The Crust account is the carrier of the user’s assets in Crust Network. Users need to keep the Crust Network **mnemonic seeds** and backup files safe, in case of the user’s permanent loss of assets resulting from their loss of accounts. The methods of creating an account include [using Crust Wallet to create an account](#iusing-crust-wallet-to-create-an-accout) and [using Apps to create an account](#iiusing-apps-to-create-an-accout).
 
-The types of assets stored in the Crust account can be referred to [crust tokens](crust-tokens.md).
+## 编译启动中继链
 
-## I.Using Crust Wallet to create an account
+```bash
+#编译
+git clone -b release-v0.9.8 https://github.com/paritytech/polkadot
+cd polkadot
+cargo build --release
+#导出链配置文件
+./target/release/polkadot build-spec --chain=rococo-local --disable-default-bootnode --raw > rococo-local.json
+#运行两个节点
+./target/release/polkadot --name alice --chain rococo-local --alice -d ./data/alice --ws-external --rpc-external --rpc-cors all  --node-key 0000000000000000000000000000000000000000000000000000000000000001
 
-### Install Crust Wallet
+./target/release/polkadot --name bob --chain rococo-local --bob -d ./data/bob --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWEyoppNCUx8Yx66oV9fJnriXwCcXwDDUA2kj6vnc6iDEp
+```
 
-[Tutorial to install wallet](crustWallet.md),After the installation is complete, you can pin it for easy use.
 
-![pin](assets/wallet/pin.png)
 
-### Create an account
+## 下载cumlus代码
 
-Click the plug-in Crust Wallet, enter the wallet password, and click "Create".
+```BASH
+git clone -b polkadot-v0.9.8 https://github.com/paritytech/cumulus
+```
 
-![password](assets/wallet/password.png)
 
-**Be sure to back up the mnemonic phrase**, enter the account nickname and wallet password, and click "Next".
 
-![backup](assets/wallet/backupen.jpg)
+## 修改代码
 
-Confirm again that you have backed up the mnemonic. If there is no backup, you can click "Go Back" to return to the previous step for backup. If you have already backed up, you can click "Next" to enter the next step.
+文件 polkadot-parachains/rococo/src/lib.rs
 
-![backup1](assets/wallet/backup1.png)
+修改barrier
 
-![success](assets/wallet/success.png)
+pub type Barrier = (
 
-### Account backup
+​    TakeWeightCredit,
 
-Click Settings, enter the "Account Management" interface, click "Export Account" to export the backup file.
-![export](assets/wallet/export.png)
-![export1](assets/wallet/export1.png)
+​    AllowTopLevelPaidExecutionFrom<All<MultiLocation>>,
 
-**Please take care of your backup file**.The format is as follows "cT1K1QvCcR4xxxxxxVcS8AVxxxxLuSxNBiEt.json"
+​    AllowUnpaidExecutionFrom<ParentOrParentsUnitPlurality>,
 
-![export2](assets/wallet/export2.png)
+​    AllowUnpaidExecutionFrom<SpecParachain>,
 
-### Sync account to Apps
+​    // ^^^ Parent & its unit plurality gets free execution
 
-Click to open Crust Apps,And allow Crust Apps access to Crust Wallet.
+);
 
-![sysc](assets/wallet/sysc.png)
-![allow](assets/wallet/allow.png)
+添加match_type
 
-## II.Using Apps to create an account
+match_type! {
 
-### Create an account
+​    pub type SpecParachain: impl Contains<MultiLocation> = {
 
-Go to [Crust Apps](https://apps.crust.network), Click "Accounts" in the navigation bar at the top of the window, and click "Add account", as shown below.
+​        X2(Parent, Parachain(2000)) | X2(Parent, Parachain(2001))
 
-![](assets/account/3.1.1.png)
+​    };
 
-The **mnemonic seeds** value for this account. Ensure that you keep the **mnemonic seeds** in a safe place and check "I have saved my mnemonic seed safely"
+}
 
-![](assets/account/3.2.1.1.png)
 
-Enter your account name and password, and click "Next"
 
-![](assets/account/3.2.1.2.png)
+## 编译cumulus版本平行链
 
-### Account backup
-Click "Save", the account will be backed up on your device by default. Please take care of your backup file.The format is as follows "cT1K1QvCcR4xxxxxxVcS8AVxxxxLuSxNBiEt.json"
+```bash
+#编译
+cd cumulus
+cargo build 
+#导出genesis state和wasm文件
+./target/debug/polkadot-collator export-genesis-wasm > genesis-wasm
+./target/debug/polkadot-collator export-genesis-state --parachain-id 2000 > genesis-state-2000
+./target/debug/polkadot-collator export-genesis-state --parachain-id 2001 > genesis-state-2001
+#启动两条平行链
+RUST_LOG=runtime=debug ./target/debug/polkadot-collator -d ./data/alice --collator --alice --force-authoring --port 40557 --ws-port 9951 --parachain-id 2000 --ws-external --rpc-cors all --rpc-methods=unsafe -- --execution wasm --chain ../polkadot/rococo-local.json --port 40558 --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWEyoppNCUx8Yx66oV9fJnriXwCcXwDDUA2kj6vnc6iDEp
 
-![](assets/account/3.2.1.3.png)
+RUST_LOG=runtime=debug ./target/debug/polkadot-collator -d ./data/bob --collator --bob --force-authoring --port 40777 --ws-port 9971 --parachain-id 2001 --ws-external --rpc-cors all --rpc-methods=unsafe -- --execution wasm --chain ../polkadot/rococo-local.json --port 40778 --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWEyoppNCUx8Yx66oV9fJnriXwCcXwDDUA2kj6vnc6iDEp
+```
 
-## III.Others
 
-> The following wallet extensions support Edge, Google, Firrefox, Brave or other browsers
 
-[polkadot.js](https://polkadot.js.org/extension/)
-[Math Wallet](https://mathwallet.org/en-us/#extension)
+
+
+
+
+## 向中继链注册两条平行链
+
+https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9944#/sudo
+
+![image-20210901120051289](/Users/xjz/Library/Application Support/typora-user-images/image-20210901120051289.png)
+
+parasSudoWrapper->sudoScheduleParaInitialize
+
+
+
+https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9944#/parachains
+
+过段时间能看到平行链有2000 和 2001
+
+
+
+## 建立平行链hrmp通道
+
+https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9944#/sudo
+
+![image-20210901120515626](/Users/xjz/Library/Application Support/typora-user-images/image-20210901120515626.png)
+
+parasSudoWrapper->sudoEstablishHrmpChannel
+
+建立两次，参数：
+
+2000 2001 7 1000
+
+2001 2000 7 1000
+
+
+
+## 2001节点发送start消息
+
+https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9971#/sudo
+
+![image-20210901120847771](/Users/xjz/Library/Application Support/typora-user-images/image-20210901120847771.png)
+
+Spambot->start 参数
+
+2000 0x11
+
+
+
+## 查看事件发送结果
+
+https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9971#/explorer
+
+https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9951#/explorer 
 

@@ -1,7 +1,7 @@
 ---
-id: aresOverview
-title: Ares Overview
-sidebar_label: Ares Overview
+id: crustOverview
+title: Crust Overview
+sidebar_label: Crust Overview
 ---
 ## What is Ares
 
@@ -13,17 +13,7 @@ As an open-source decentralized cross-chain oracle service protocol, Ares builds
 
 Ares is built under the Polkadot ecology. And it is built through Substrate, as a parachain link to the Polkadot ecology, sharing Polkadot’s security consensus; secondly, Ares is a scalable two-layer oracle network, which is Polkadot’s other parachains and provide decentralized data oracle services with mainstream blockchain networks.
 
-## How to Use Ares
 
-* **[Join Gladios Testnet](gladios-cn.md)**
-  
-* **[Cumulus Ping test](cumulus%20ping_cn.md)**
-  
-* **[Mars Cross Chain GetPrice](mars_getprice.md)**
-  
-* **[Price Feed Configure](gladios-cn.md)**
-
-* **[Fist Version Oracle](first_oracle_impl_cn.md)**
 ## Best Scenarios of Ares
 
 Ares can be used in a wide range of scenarios, including:

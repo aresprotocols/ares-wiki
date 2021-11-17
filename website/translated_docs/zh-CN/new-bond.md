@@ -3,39 +3,103 @@ id: newBond
 title: New Bond
 sidebar_label: New Bond
 ---
+# 使用cumulus进化跨链 不同pallet测试
 
-Crust 账户是你链上的身份的体现，也是各类交易的主体。作为节点，你需要对应的账户来和节点进行绑定，从而获取区块奖励。Crust 账户作为标准的双账户模型 Controller/Stash，需要进行特定的账户绑定操作。在双账户模型中，通过绑定指定金额到Controller账户，隔离了风险，使得管理所有资产的Stash账户相对安全。
 
-通过操作 [Crust APPs](http://apps.crust.network/)，本节将说明如何创建账号和绑定账号关系。
 
-## 1 创建 Controller 与 Stash 账户
+## 编译启动中继链
 
-### 1.1 Controller
+```bash
+#编译
+git clone -b release-v0.9.9 https://github.com/paritytech/polkadot
+cd polkadot
+cargo build --release
+#导出链配置文件
+./target/release/polkadot build-spec --chain=rococo-local --disable-default-bootnode --raw > rococo-local.json
+#运行两个节点
+./target/release/polkadot --name alice --chain rococo-local --alice -d ./data/alice --ws-external --rpc-external --rpc-cors all  --node-key 0000000000000000000000000000000000000000000000000000000000000001
 
-首先我们将新建一个账户用于资产操作，创建账户的说明点击此[链接](crust-account.md)：
+./target/release/polkadot --name bob --chain rococo-local --bob -d ./data/bob --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWEyoppNCUx8Yx66oV9fJnriXwCcXwDDUA2kj6vnc6iDEp
+```
 
-我们将第一个账户命名为 CONTROLLER 用来提醒自己，这个账号将用做 Controller，用于操作资产。账户里面需要有一定数量的 CRU 用于支付各类交易的交易费。
 
-### 1.2 Stash
 
-重复[新建账户](crust-account.md)步骤，再次创建另一个账户：
+## 下载跨pallet测试代码
 
-我们将第二个新建的账号用做 Stash 账号。Stash 账号是用户的资产账号，用来管理用户的资产。账户里面需要有一定数量的 CRU 进行后续的各类交易和资产抵押等操作。
+```BASH
+git clone https://github.com/aresprotocols/mars.git
+git checkout bridge
+```
 
-## 2 建立 controller 和 stash 的绑定关系
 
-点击导航栏的“网络”下的“质押”。选中“账户操作”
-![](assets/newBond/stakingAccount.png)
- 
-点击右上角的 “存储账户”，并在弹出页面中选择 Stash 和 Controller 账户，填入需要抵押的金额（这里的金额代表许可 Controller 账户操作的金额），最后点击 “绑定”。
 
-![](assets/newBond/bond.png)
- 
-抵押操作涉及链上操作，因此需要解锁 Stash 账户并消耗一定手续费。
+## 编译
 
-![](assets/newBond/sendTx.png)
- 
-最后，抵押成功了，可以看到在“账户操作”页面里新增了一个抵押关系。
-![](assets/newBond/stakingSuccess.png)
- 
-到目前为止，您的账户配置已经完成。
+```bash
+#编译
+cd mars
+cargo build 
+#导出genesis state和wasm文件
+./target/debug/polkadot-collator export-genesis-wasm > genesis-wasm
+./target/debug/polkadot-collator export-genesis-state --parachain-id 2000 > genesis-state-2000
+./target/debug/polkadot-collator export-genesis-state --parachain-id 2001 > genesis-state-2001
+#启动两条平行链
+RUST_LOG=runtime=debug ./target/debug/polkadot-collator -d ./data/alice --collator --alice --force-authoring --port 40557 --ws-port 9951 --parachain-id 2000 --ws-external --rpc-cors all --rpc-methods=unsafe -- --execution wasm --chain ../polkadot/rococo-local.json --port 40558 --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWEyoppNCUx8Yx66oV9fJnriXwCcXwDDUA2kj6vnc6iDEp
+
+RUST_LOG=runtime=debug ./target/debug/polkadot-collator -d ./data/bob --collator --bob --force-authoring --port 40777 --ws-port 9971 --parachain-id 2001 --ws-external --rpc-cors all --rpc-methods=unsafe -- --execution wasm --chain ../polkadot/rococo-local.json --port 40778 --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWEyoppNCUx8Yx66oV9fJnriXwCcXwDDUA2kj6vnc6iDEp
+```
+
+
+
+
+
+
+
+## 向中继链注册两条平行链
+
+https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9944#/sudo
+
+![image-20210901120051289](/Users/xjz/Library/Application Support/typora-user-images/image-20210901120051289.png)
+
+parasSudoWrapper->sudoScheduleParaInitialize
+
+
+
+https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9944#/parachains
+
+过段时间能看到平行链有2000 和 2001
+
+
+
+## 建立平行链hrmp通道
+
+https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9944#/sudo
+
+![image-20210901120515626](/Users/xjz/Library/Application Support/typora-user-images/image-20210901120515626.png)
+
+parasSudoWrapper->sudoEstablishHrmpChannel
+
+建立两次，参数：
+
+2000 2001 7 1000
+
+2001 2000 7 1000
+
+
+
+## 2001节点发送getprice消息
+
+https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9971#/sudo
+
+GetPrice->Getprice 参数
+
+2000 btc
+
+
+
+## 查看事件发送结果
+
+https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9971#/explorer
+
+https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9951#/explorer 
+

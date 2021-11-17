@@ -3,15 +3,11 @@
   "localized-strings": {
     "next": "Next",
     "previous": "Previous",
-    "tagline": "Wiki for Crust Network",
+    "tagline": "Wiki for Ares Network",
     "docs": {
       "appsStorageIssue": {
         "title": "Apps Strorage Issue",
         "sidebar_label": "Apps Strorage Issue"
-      },
-      "crustOverview": {
-        "title": "Ares Overview",
-        "sidebar_label": "Ares Overview"
       },
       "bridge": {
         "title": "Bridge",
@@ -113,6 +109,10 @@
         "title": "Crust Grants",
         "sidebar_label": "Crust Grants"
       },
+      "crustOverview": {
+        "title": "Crust Overview",
+        "sidebar_label": "Crust Overview"
+      },
       "crustStorageExplorer": {
         "title": "Crust Storage Explorer",
         "sidebar_label": "Crust Storage Explorer"
@@ -143,7 +143,7 @@
       },
       "gettingStarted": {
         "title": "Ares Overview",
-        "sidebar_label": "Ares Overview"
+        "sidebar_label": "Crust Overview"
       },
       "glossary": {
         "title": "Glossary",
@@ -275,15 +275,13 @@
     },
     "links": {
       "Docs": "Docs",
-      "Maxwell": "Maxwell",
       "Contribute": "Contribute"
     },
     "categories": {
       "General": "General",
       "Learn": "Learn",
       "Build": "Build",
-      "Node": "Node",
-      "Storage": "Storage"
+      "Node": "Node"
     }
   },
   "pages-strings": {

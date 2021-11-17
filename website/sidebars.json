@@ -1,39 +1,14 @@
 {
   "docs": {
     "General": [
-      "aresOverview",
-      "crustGrants",
-      "ecosystemGrowth",
-      "claims",
-      "claimsLockedCRU",
-      "lockedCRUUnlock",
-      "bridge",
-      "crustWallet",
-      "glossary",
-      "cru18Guarantee",
-      "parameters",
-      "contributing"
+      "crustOverview"
     ],
     "Learn": [
       "crustAccount",
       "crustTokens",
       "newBond",
       "guarantor",
-      "validator",
-      "GPoS",
-      "sWorker",
-      {
-        "type": "subcategory",
-        "label": "sWorker",
-        "ids": [
-          "sWorkerOverview",
-          "sWorkerEntryNetwork",
-          "sWorkerWorkload"
-        ]
-      },
-      "DSM",
-      "storageMerchant",
-      "identity"
+      "validator"
     ],
     "Build": [
       "buildGettingStarted",
@@ -46,55 +21,10 @@
           "buildFileStoringWithGWDemo",
           "buildCrossChainSolution"
         ]
-      },
-      {
-        "type": "subcategory",
-        "label": "Integration Guide",
-        "ids": [
-          "buildIntegrationWebsiteHosting",
-          "buildIntegrationNFTDataStorage",
-          "buildIntegrationContentStorageDelivery"
-        ]
-      },
-      {
-        "type": "subcategory",
-        "label": "Node Guide",
-        "ids": [
-          "buildNode",
-          "buildSmanager"
-        ]
-      },
-      {
-        "type": "subcategory",
-        "label": "Toolkits",
-        "ids": [
-          "buildCrustGhAction",
-          "buildCrustNpmPackage",
-          "buildIPFSWeb3AuthGW",
-          "buildIPFSW3AuthPin"
-        ]
       }
     ],
     "Node": [
-      "nodeOverview",
-      "nodeHardwareSpec",
-      "ownerNode",
-      "memberNode",
-      "isolationNode",
-      "validatorGuidance",
-      "guarantorGuidance",
-      "sWorkerVersion",
-      "nodeBenefits",
-      "nodeQos",
-      "Q&AForMining"
-    ],
-    "Storage": [
-      "storageOverview",
-      "storageUserGuide",
-      "merchantGuidance",
-      "orderSettlement",
-      "marketBenefits",
-      "appsStorageIssue"
+      "nodeOverview"
     ]
   }
 }

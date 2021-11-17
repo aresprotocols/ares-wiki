@@ -1,7 +1,7 @@
 ---
 id: gettingStarted
 title: Ares Overview
-sidebar_label: Ares Overview
+sidebar_label: Crust Overview
 ---
 ## What is Ares
 
@@ -12,18 +12,6 @@ Ares is a decentralized hybrid oracle that fully realizes the on-chain and on-ch
 As an open-source decentralized cross-chain oracle service protocol, Ares builds a decentralized data transaction ecosystem by introducing a token model and community governance. Data demanders can safely and effectively obtain off-chain data and allow high-quality Data providers to profit through on-chain governance and data transactions.
 
 Ares is built under the Polkadot ecology. And it is built through Substrate, as a parachain link to the Polkadot ecology, sharing Polkadot’s security consensus; secondly, Ares is a scalable two-layer oracle network, which is Polkadot’s other parachains and provide decentralized data oracle services with mainstream blockchain networks.
-
-## How to Use Ares
-
-* **[Join Gladios Testnet](gladios-cn.md)**
-  
-* **[Cumulus Ping test](cumulus%20ping_cn.md)**
-  
-* **[Mars Cross Chain GetPrice](mars_getprice.md)**
-  
-* **[Price Feed Configure](gladios-cn.md)**
-
-* **[Fist Version Oracle](first_oracle_impl_cn.md)**
 
 ## Best Scenarios of Ares
 
@@ -89,6 +77,7 @@ The node operator, as a full node of the Ares network, verifies the data by comp
 #### Detailed design
 ![arch](https://github.com/aresprotocols/documentation/blob/master/assets/img/design.png?raw=true)
 
+
 Ares Protocol is based on Substrate 2.0 and is used as a parallel chain/parallel thread to connect to the Polkadot ecosystem. The specific process is as follows:
 
 Polkadot ecological parachain, through the integration of Ares oracle pallet, submit data requests;
@@ -116,6 +105,7 @@ Among all the aggregator miner nodes that provide data quotations, Ares Network 
 Randomly select aggregator nodes through VRF to provide external data on the chain.
 ![arch](https://github.com/aresprotocols/documentation/blob/master/assets/img/vrf.png?raw=true)
 
+
 After the calculation of VRF, Ares can select the aggregator, and finally determine that a certain aggregator produces blocks at the current height, and verifies the aggregator through zero-knowledge proof. This part will be broadcasted at the same time as the block is produced and the ordinary verification node will verify after receiving the block. If it is within the allowable deviation range, the verification will pass.
 
 #### Reputation committee governance
@@ -124,6 +114,8 @@ The BFT (Byzantine Fault-Tolerant) algorithm began to be studied in the 1980s to
 
 The advantages of PBFT are fast convergence speed, resource saving, and theoretical security circle (in theory, no more than 1/3 of malicious nodes are allowed to exist, that is, the total number of nodes is 3k + 1, and when there are more than 2k + 1 normal nodes, The algorithm works normally).
 ![arch](https://github.com/aresprotocols/documentation/blob/master/assets/img/bft.png?raw=true)
+
+
 
 Members of the council are selected from aggregators or token holders, and there is a mapping ratio between reputation value and token holdings. Ensure that members of the council will not be manipulated by currency holders. Every time an aggregator submits correct data, its reputation value will increase. A list of council members and a waiting queue will be maintained, and council members will be updated every month. The council can only approve or reject the fraud proof submitted by challengers. Since the challenge is to pay a certain amount of GAS fees, the council does not need to work under normal circumstances. It only needs to handle the dispute when the verifier submits the fraud proof, and can submit the fraud proof to the council. If the committee verifies that the fraud proof passes, it will reward challengers and punish aggregators, and its reputation will decline.
 

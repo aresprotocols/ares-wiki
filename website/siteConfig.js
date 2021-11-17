@@ -22,13 +22,13 @@ const users = [
 
 const siteConfig = {
   title: ' Ares Wiki', // Title for your website.
-  tagline: 'Wiki for Crust Network',
+  tagline: 'Wiki for Ares Network',
   url: 'https://wiki.crust.network', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   // Used for publishing and more
-  projectName: 'crust-wiki',
-  organizationName: 'crust network',
+  projectName: 'ares-wiki',
+  organizationName: 'Ares network',
   headerLinks: [
     {doc: 'crustOverview', label: 'Docs'},
     // {href: 'https://wiki-maxwell.crust.network', label: 'Maxwell'},
@@ -132,7 +132,7 @@ const siteConfig = {
 
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
-  repoUrl: 'https://github.com/aresprotocols',
+  // repoUrl: 'https://github.com/crustio',
 };
 
 module.exports = siteConfig;
