@@ -1,101 +1,93 @@
 ---
-id: crustTokens
-title: Crust Tokens
-sidebar_label: Crust Tokens
+id: aresRelated
+title: Ares Related
+sidebar_label: Ares Related
 ---
-## 报价功能
-报价功能
-1. 数据源
-   
-   * 搭建数据源提供服务器，并通过链外rpc或启动命令配置数据源访问IP地址。
-   * 数据源会缓存聚合多个交易所的价格数据。
-   * 可设置交易价格在计算平均数时的权重。
-   * 单次可请求多个交易所价格
-   
-2. 验证人提交价格
-   
-   * 启动验证人节点，并在启动命令中通`--warehouse=http://xxx.xxx.xxx`的参数提供报价的数据源地址。
-   * 启动后如果要修改request-base可以通过“curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method": "offchain_localStorageSet", "params":["PERSISTENT", "0x746172652d6f63773a3a70726963655f726571756573745f646f6d61696e", "IP地址的16进制码"]}'”的形式进行注入修改。
-   * 通过RPC的形式通过“author_insertKey”注入“ares”验证人私钥数据，该私钥需要与验证人“stash”保持一致。
-   * 区块链验证人节点出块时会检查当前出块人的AccountId 是否与当前注入的“ares”账户一致，如果不一致将不允许价格提交。
-   * 报价配置除了在创世配置中配置以外，还可以通过“request_propose”方式提交修改议案，由经技术委员会审批后进行链上升级。
-   * 价格提交后会先进入“报价池 AresPrice”中进行存储，当报价池达到设定的最大深度时，开始输出该价格池的平均值到“AresAvgPrice”存储中。
-   * 不同价格获取可以指定不同的获取频率，最快的频率是1表示每个区块提价都会获取该价格，该频率可以通过治理等方式在链上修改“RequestInterval”进行升级。
-   * 验证人提交价格会受到报价偏移量的检测，如果偏移超过阈值，将不会参与平均值计算，另外会被纳入到abnormal列表中。
 
-3. 验证人提交询问式报价价格
-   
-   * 验证人通过链下工作机检查是否有`询价请求`。
-   * 一旦发现询价请求，则迅速获取价格并提交。
-   * 当所有验证人均报价后则计算最终的均价并放到链上。
-   * 如果有个别验证人无法提交报价，那么超过延迟区块的最终限定值后，会判断是否大于提交报价的门槛，如果大于则提交报价。
-   * 如果因为验证人门槛数量不达标导致价格无法提交则会产生退费，退还问价人的费用。
+## 1. What is a blockchain oracle oracle (Oracle)?
 
+The mechanism by which information outside the blockchain is written into the blockchain. Or it can be understood as a bridge connecting the off-chain and on-chain worlds, feeding off-chain prices into the on-chain blockchain system. First of all, why does a decentralized blockchain need to be supplemented by information outside the blockchain? This is related to the development of the entire blockchain. In the Bitcoin era, everyone did not have a clear understanding of the blockchain concept, and there was no complicated application on it. In the era of Ethereum, due to the programmable EVM (Ethereum Virtual Machine), applications with simple functions began to appear on the chain. Ethereum enthusiasts encountered a problem when building complex applications: under the ETH ecosystem, They try to complete a certain transaction by constructing a contract. When other nodes in the distributed network verify the transaction, they will call this API interface, and subsequent calls may cause other nodes to get different results due to price changes or hacker attacks. This means that it may No node agrees on the actual state of the blockchain. Once uncertain data is reported to the blockchain, the data will be an immutable part of the history of the blockchain. Then the smart contract based on this data not only fails to perform its expected task, but may cause irreparable damage. Therefore, it is necessary to record off-chain information on the chain through a separate transaction. Secondly, a simple and straightforward solution you might think of is to use a reliable external source of information for processing. But we take a step back and think: Why do we want to construct a chain? Isn't an important reason decentralization? And "centralization" is the problem. "centralization" means a single point of risk, and experience tells us that it is very difficult to maintain the long-term reliability and accuracy of centralized information sources. In order to obtain fair data, a multi-party submission mechanism is introduced, which is the origin of the blockchain oracle.
 
-4. 链上交易方法
-   
-   * 价格存储池深度治理方法 pool_depth_propose 参数： depth: u32 （报价数据最大容量）
-   * 报价Token请求信息修改与添加的治理方法 request_propose 参数 price_key: Vec<u8> （请求标识）, request_url: Vec<u8> （解析标识）, parse_version: u32, （解析版本目前可用为2）fraction_num: FractionLength （精度u32）, request_interval: RequestInterval) （请求间隔u32）
-   * 报价请求信息删除的治理方法 revoke_request_propose 参数 price_key: Vec<u8> （请求标识）
-   * 价格上链的方法 submit_price_unsigned_with_signed_payload 需要提供验证人的签名数据。
-   
-5. 技术委员会
-   
-   * 新增报价 Token，通过 request_propose 提交草案。
-   * 修改删除价格精度、解析标识，通过 request_propose、 revoke_request_propose 提交草案。
-   * 修改价格池深度，通过 pool_depth_propose 提交草案。
-   * 修改价格更新频率，通过 request_propose 提交同名请求Token数据实现。
-   * 修改区间价格允许的最大偏移量值，通过 allowable_offset_propose 提交草案。
-   * 更新价格偏差比例
-   
-6. 议会
-   
-   * **审核用户提交的挑战提案**
-     * 验证者币价数据
-     * 正确的价格数据
-     * 用户支持的挑战费用
-   * **审核完成**
-     * 通过则惩罚验证人（扣除挑战费用的7倍），奖励挑战用户（奖励挑战费用的5倍）另外2份分别支付给议会和国库
-     * 关注则惩罚用户，扣除用户费用给议会
+## 2. What are the types of oracles?
+What are the advantages of Ares? Oracles have no hosts, and can be divided into parasitic oracles and independent blockchain network oracles. The oracles on Ethereum are all parasitic oracles, while the oracles built on Cosmos or Polkadot have independent blockchain networks. A parasitic oracle refers to an oracle that is parasitic in the host blockchain network. It does not need to run nodes, and the development speed is very fast, but it is easily affected by the host network itself. It is particularly obvious that the current high GAS fee of the Ethereum network, presumably many projects do not want to obtain the asset price on the chain when the GAS fee is high, which seriously hinders the development of DeFi and oracles. At the same time, when the amount of business on the host is large, such as the black swan event that occurred in 312 last year, a large number of transactions were not packaged by miners and could not be processed, resulting in a 6-hour ETH/USD price failure in Chainlink. The independent blockchain network oracle refers to the oracle network built independently based on the development tools provided by Polkadot or Cosmos, called Substrate and Cosmos SDK, respectively. Its development speed is slower, and it needs to establish its own nodes, but its network is more stable and less vulnerable to attacks due to independent development, data response speed is faster, and the required handling fee is lower. The oracle machine can also be classified from the consensus algorithm, which is divided into: POA (Proof of authority), DPOS (Delegated Proof Of Stake), and POS (Proof Of Stake). Among them, the number of nodes and the degree of decentralization: POA <DPOS <POSPOA is generally composed of several institutions. Only members of the alliance can change the data in the blockchain, and the frequency of institutional updates is relatively low. DPOS is a delegated proof of stake, which allows some currency holders to entrust a node operator to obtain block rewards. The implementation method is based on the Byzantine consensus of BFT. Due to the Byzantine fault tolerance and the need for dense network communication, DPOS's block generation node There is a certain upper limit, which can be seen from the network nodes of EOS and Cosmos. Typical oracle projects are: BandPOS exercises power according to the proportion of equity. It is a relatively complex blockchain network and requires a large number of node operators. Node operators determine the right to produce blocks through random selection algorithms. It does not require Byzantine fault tolerance and a large amount of communication data. Because there can be a large number of nodes, this makes the network More fair and decentralized. Typical oracle projects include: Ares popular oracles in the market today, Chainlink in the Ethereum ecosystem, Nest, and Band in the Cosmos ecosystem. The following is a list of specific function points and function comparisons used in Ares Protocol: Ares advantage and openness Ares introduces the RPOS mechanism (Reputation POS), allowing ordinary users to become an aggregator node of the Ares network as long as they pledge a certain amount of $ARES. 
 
-7. 链上存储
+In order to ensure the widespread and distributed characteristics of the data source. At the same time, the increase in reputation value can obtain more block weights, and the security of the node network can be ensured through a set of POS processes. Fairness The Ares network randomly selects aggregator nodes to provide data through VRF, which effectively guarantees the fairness and decentralization of nodes. Any node may be randomly selected as the data provider. The Ares network accumulates the reputation value for each node, and the reputation value can be used as an important reference indicator for applying for members of the governance committee. Ares Network’s first compensation solution. When data demanders use the Ares network to verify the data provided by the multi-layer security mechanism and suffer business losses, they can initiate a proposal to the Ares Treasury to apply for certain compensation. After the proposal is approved by the governance committee, the compensation will be allocated to the data demander. This adds another service guarantee to data demanders. Security Synthetix, bZx protocol and other oracles have experienced quotation errors, and many have allowed trading robots to arbitrage more than $1 billion in an hour. Ensuring the safety and reliability of data is of utmost importance. Ares uses the following methods to ensure data security. Aggregating multiple data sources is conducive to removing abnormal data and weighted average other data. When the aggregation chain submits the price to the chain, it will perform on-chain aggregation to prevent individual aggregators from doing evil, so as to ensure the true validity of the data. After the selected aggregator node provides data, any node can initiate a challenge by paying a certain GAS fee, questioning the authenticity of the data, and the arbitration committee will deal with the challenger's queries in a timely manner. Successful initiating a challenge will receive a reward, otherwise, it will accept a penalty to lose the GAS fee. Fully ensure that the data provided by the node is true and effective. Real-time Ares ensures that the data demander can quickly receive feedback results in real time after initiating a request by verifying and sharing the security consensus of the Polkadot network on the data chain. In order to avoid Chainlink's 6-hour ETH/USD price failure.
 
-  * AresPrice 存储报价信息
-  * AresAvgPrice 存储平均价格
-  * PricePoolDepth 存储价格池深度
-  * PricesRequests 存储请求Token
-  * RequestBaseOnchain 存储链上请求的 BaseKey 主要用于测试。
-  * PriceAllowableOffset 存储在某个区间中，价格上链允许的偏移量。
-  * AresAbnormalPrice 用于存储偏移值过大的报价数据池。
-  * JumpBlockNumber 用来存储某个价格具体的跳块值的数据存储，主要作用是在 Arua 共识下防止同一验证人连续对某一价格报价。
-  * LastPriceAuthor 用于记录某一价格最后更新的提交人，配合 JumpBlockNumber 完成跳块操作。
-  * OcwControlSetting 让OCW的一些常规控制参数可以通过链上治理进行修改。
-  * PriceAllowableOffset 价格允许的最大偏移百分比 0~100 取值
-  * PurchasedAvgPrice 问价后生成的平均值数据。
-  * PurchasedDefaultSetting 存储问价相关默认设置数据的存储结构，通过链上治理可以在线进行更新配置。
-  * PurchasedOrderPool 用来存储已经提交问价报价订单的存储结构。
-  * PurchasedPricePool 存储问价报价信息的存储结构。
-  * PurchasedRequestPool 保存问价的请求池。
-  
+## 3. Why did Ares choose Polkadot?
+Ares has seen a series of problems such as high gas fees, vulnerability to attacks, and price feed failures in the Ethereum oracle. I want to provide the market with a new generation of cross-chain oracle service agreements in the form of an independent blockchain network oracle.
 
-6. 事件
-  
-    * NewPrice 报价更新
-    * RevokePriceRequest 删除币价 Token
-    * AddPriceRequest 新增币价 Token
-    * UpdatePriceRequest 币价Token 更新
-    * PricePoolDepthUpdate 报价池深度更新
-    * PriceAllowableOffsetUpdate 报价允许偏移量更新
+● Technical adaptability
+At this time, choosing whether to develop on Polkadot or Cosmos has become the main point of consideration for the entire founding team. In the end, the team chose the Polkadot Polkadot development tool Substrate, which is more powerful and easier to develop.
 
-    * PurchasedRequestWorkHasEnded 询价请求工作已经结束，一般来讲此时验证人节点提交报价过晚会产生此事件。 
-    * NewPurchasedPrice 新的询问式报价更新。
-    * NewPurchasedRequest 产生的新的询问式报价请求，需要关注这里面的第一个 Vec<u8> 这是 purchased_id 用于后期查询平均报价使用。
-    * PurchasedAvgPrice 询问式平均价格更新，一旦该事件发生意味着该 purchased_id 对应的询问式报价工作结束。
-    * UpdatePurchasedDefaultSetting 询问式报价统一配置数据更新。
-    * UpdateOcwControlSetting OCW工作机统一参数配置更新。
-    * InsufficientCountOfValidators 询问式价格最终验证判定为，验证人数量不足，造成平均价格无法正常提交。
+Substrate supports any language that can be compiled into WASM (Web Assembly), giving developers more flexibility. It not only supports the WASM virtual machine, but is also compatible with the EVM (Ethereum Virtual Machine) contract engine, which is currently available online.
+
+Based on the construction of the Substrate framework, the Ares project will complete a series of technical implementations: "①Bound miners and bidders deeply to effectively solve the MEV problem of miners; ②Using Polkadot's latest Offchain Worker can efficiently and securely submit off-chain prices On the chain; ③For the miners’ quotations, Babe’s random lottery will be used to submit the prices to the chain to ensure that the nodes cannot falsify; ④The challengers and reputation committees are introduced to punish malicious quotations through on-chain governance. Miners."
+
+● Ecological prosperity
+What is Polkadot
+Polkadot is one of the most popular public chain projects in the world this year. Its founder, Gavin Wood, was the co-founder of Ethereum and the author of the Ethereum Yellow Paper. In addition to the strong strength of the core founder Lin Jiawen, the other team members have also been in the industry for many years and have rich development experience.
+
+Polkadot was created by the Web3 Foundation in 2016 and aims to link different blockchains through a blockchain network to achieve cross-chain interoperability and become the next-generation blockchain network infrastructure. Through Polkadot, different blockchains can be linked to each other to achieve cross-chain interaction.
+
+How is Polkadot's current development?
+Some teams are already building effective solutions for a range of applications for Polkadot, including finance, gaming, digital identity, the Internet of Things, supply chain management, social networking, and cloud technology. The Web3 Foundation is the organization responsible for managing the development of Polkadot. It provides funding for many of these teams to fund projects at all levels of the Web3 technology stack, from the underlying infrastructure to ecosystem components such as wallets, parachains, bridges, and tools. .
+
+As more and more teams realize the benefits and efficiency of deploying projects on Polkadot, the Polkadot ecosystem has grown stronger. Compared with previous blockchain networks, Polkadot's unique design provides more innovation and flexible iterations for the project. According to PolkaProject's real-time statistics, there are currently about 500 projects that have joined the Polka Ecosystem. With the support of such a prosperous ecosystem, Ares’ oracle market has a large enough prospect.
+
+4. Ares technical framework
+
+How does Ares build a decentralized, real-time, safe and accurate decentralized cross-chain oracle? Participants 1. Aggregator The aggregator obtains external request data through the scanner, and sends the request to the processor to process all oracle requests. The aggregator is randomly selected through the VRF algorithm. It calls the processor to aggregate data from multiple data sources and submits it to the block, and broadcasts it to the Ares network through the block propagation protocol. 2. Challenger The challenger verifies the integrity and validity of the data submitted by the aggregator, and submits fraudulent aggregator transactions and correct data to the Reputation Committee for rewards. 3. The Reputation Committee ensures the security of the regional network by motivating challengers and punishing malicious aggregators. The reputation committee is fully self-governed by the community, running for the reputation committee through token mortgage and reputation weighting. The internal arbitration of the reputation committee requires voting through fraudulent security protocols and only runs when a dispute occurs on the chain. 4. Data consumers Data consumers can be objects that need to obtain external data in smart contracts, parachains, and DAPPs. They can provide a variety of credible and valid data for DEFI, market forecasts and gambling. Because Ares's on-chain data has a certain data challenge period, data consumers should obtain on-chain data in accordance with certain security regulations. 5. Node operator As a full node of the Ares network, the node operator verifies the data by comparing it with the data stored locally to ensure the security of the Ares network and provide oracle remote invocation services. The Polkadot ecological parachain is designed in detail, and the data request is submitted by integrating the Ares oracle tray; the scanner obtains the external request data and submits it to the aggregator; the Ares Chain randomly selects an aggregator through the VRF algorithm; the aggregator calls the processor to aggregate from multiple The data of the data source is submitted to the Ares blockchain; the verification node will verify the data of the aggregator and the challenge; the reputation committee will verify and arbitrate the data submitted by the challenger. If you get something, just like it
+
+## 5. Ares token economy
+Total supply: 1 billion
+Initial circulation: 57 million
+
+Proportion of Ares tokens (from high to low)
+Mining 20%: used for pledge mining and liquidity mining. Any third party can access the Ares network by mortgage a small amount of ARES tokens as a node, provide oracle services, and enjoy mining rewards. The total amount of initial tokens in the mining pool accounts for 20%. Every year, 10% of the remaining mining pools are mined and allocated to nodes. Mining rewards are decreasing year by year, but mining has never been completed.
+
+Parachain auction 20%: rewards and leases for slot auctions. At present, Kusama's slot auction has launched the Mars Parachain network and successfully deployed the crowd loan module. The reward rules will be announced soon.
+
+20% of team members: locked for 3 months, unlocked every month, and released for a total of two years or more.
+
+Ares Ecological Fund 10%: Set up Ink Ecological Funds, Ares Ecological Marathon, etc., and cooperate with more projects to make Ares Ecological stronger.
+
+Private placement round 9.5%: The private placement price is $0.006. 20% is not locked, and will be released at 30%, 30%, and 20% every 3 months. 7.30, 10.30, and 1.30 are all unlocking dates.
+
+5.44% of the listed liquidity: will provide support for the listing of the exchange and the provision of liquidity.
+
+Project consultant 5%: locked for 3 months, unlocked every month, for a total of two years or more.
+
+Community building 5%: used for community activities and construction, rewarding community ambassadors and core contributors.
+
+3.4% of the public offering round: IDO/ICO price is $0.03, unlocked at one time.
+
+Community round 1.66%: 20% is not locked, and will be released at 30%, 30%, and 20% every 3 months. 7.30, 10.30, and 1.30 are all unlocking dates.
+
+## 6. Project progress and future route
+Project completed process
+
+● Release of White Paper 1.0
+● Core protocol design
+● WEB3 Foundation Grant Application
+● Prototype development based on pallet and offchain work
+● Release of Technical Yellow Book
+● Improve the cross-chain interaction of oracle users
+● Realize random selection of aggregators and on-chain aggregation
+● Improve the challenger and arbitration council model
+● Troy pledge mining has exceeded 60% of the circulation
+● Ink contract calls the asset quotation module to get the price
+● Access to Recoco test and conduct Kusama slot auction
 
 
-7. 错误
-   
-    * UnknownAresPriceVersionNum 未知的价格解析版本，目前只支持版本2，也就是并集报价解析。
+Project future development route
+
+● Community Volunteer Program
+● Improve economic model design
+● Online test network
+● Access to ecological partner testing
+● Mainnet launches Ethereum network
+● Carry out multi-channel service cooperation
+● Formal cooperation with enterprises
+● The main network is on the Polkadot network
+● Eco-marathon developer activities
+

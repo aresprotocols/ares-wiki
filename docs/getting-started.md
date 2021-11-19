@@ -1,7 +1,7 @@
 ---
 id: gettingStarted
 title: Ares Overview
-sidebar_label: Crust Overview
+sidebar_label: Ares Overview
 ---
 ## What is Ares
 

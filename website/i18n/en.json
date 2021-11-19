@@ -14,8 +14,8 @@
         "sidebar_label": "Bridge"
       },
       "buildCrossChainSolution": {
-        "title": "Crust's cross-chain dStorage solution",
-        "sidebar_label": "Crust's cross-chain dStorage solution"
+        "title": "KSM card slot auction support rules and steps",
+        "sidebar_label": "KSM card slot auction support rules and steps"
       },
       "buildCrustGhAction": {
         "title": "Crust Pinner Github Action",
@@ -29,17 +29,16 @@
         "title": "Crust SDK",
         "sidebar_label": "Crust SDK"
       },
-      "buildFileStoringDemo": {
-        "title": "File Storing Code with IPFS Sample",
-        "sidebar_label": "File Storing Code with IPFS Sample"
+      "build-file-storing-demo": {
+        "title": "build-file-storing-demo"
       },
       "buildFileStoringWithGWDemo": {
-        "title": "File Storing with IPFS Gateway Code Sample",
-        "sidebar_label": "File Storing with IPFS Gateway Code Sample"
+        "title": "Pledge mining incentives and operation steps",
+        "sidebar_label": "Pledge mining incentives and operation steps"
       },
       "buildGettingStarted": {
-        "title": "Builder's Portal",
-        "sidebar_label": "Builder's Portal"
+        "title": "Portal",
+        "sidebar_label": "Portal"
       },
       "buildHelloCrust": {
         "title": "Hello Crust",
@@ -74,8 +73,8 @@
         "sidebar_label": "Crust Node"
       },
       "buildRockyGuidance": {
-        "title": "Crust Rocky Network",
-        "sidebar_label": "Crust Rocky Network"
+        "title": "Ares gladios 1.01 测试网节点手册",
+        "sidebar_label": "Ares gladios 1.01 测试网节点手册"
       },
       "buildSmanager": {
         "title": "Crust Storage Manager",
@@ -97,9 +96,9 @@
         "title": "Use CRU18 Guarantee",
         "sidebar_label": "Use CRU18 Guarantee"
       },
-      "crustAccount": {
-        "title": "Account",
-        "sidebar_label": "Account"
+      "aresBasic": {
+        "title": "Ares Basic",
+        "sidebar_label": "Ares Basic"
       },
       "crustConsensus": {
         "title": "Crust Consensus",
@@ -109,17 +108,17 @@
         "title": "Crust Grants",
         "sidebar_label": "Crust Grants"
       },
-      "crustOverview": {
-        "title": "Crust Overview",
-        "sidebar_label": "Crust Overview"
+      "aresOverview": {
+        "title": "Ares Overview",
+        "sidebar_label": "Ares Overview"
       },
       "crustStorageExplorer": {
         "title": "Crust Storage Explorer",
         "sidebar_label": "Crust Storage Explorer"
       },
-      "crustTokens": {
-        "title": "Crust Tokens",
-        "sidebar_label": "Crust Tokens"
+      "aresRelated": {
+        "title": "Ares Related",
+        "sidebar_label": "Ares Related"
       },
       "crustWallet": {
         "title": "Crust Wallet",
@@ -143,7 +142,7 @@
       },
       "gettingStarted": {
         "title": "Ares Overview",
-        "sidebar_label": "Crust Overview"
+        "sidebar_label": "Ares Overview"
       },
       "glossary": {
         "title": "Glossary",
@@ -157,9 +156,9 @@
         "title": "Guarantor Guidance",
         "sidebar_label": "Guarantor Guidance"
       },
-      "guarantor": {
-        "title": "Guarantor",
-        "sidebar_label": "Guarantor"
+      "plan": {
+        "title": "Plan",
+        "sidebar_label": "Plan"
       },
       "identity": {
         "title": "Identity",
@@ -188,9 +187,9 @@
         "title": "Merchant Guidance",
         "sidebar_label": "Merchant Guidance"
       },
-      "newBond": {
-        "title": "New Bond",
-        "sidebar_label": "New Bond"
+      "faq": {
+        "title": "FAQ",
+        "sidebar_label": "FAQ"
       },
       "nodeBenefits": {
         "title": "Node Benefits",
@@ -199,10 +198,6 @@
       "nodeHardwareSpec": {
         "title": "Node Hardware Spec",
         "sidebar_label": "Node Hardware Spec"
-      },
-      "nodeOverview": {
-        "title": "Node Overview",
-        "sidebar_label": "Node Overview"
       },
       "nodeQos": {
         "title": "Configure QoS",
@@ -264,9 +259,9 @@
         "title": "TEE Technology",
         "sidebar_label": "TEE Technology"
       },
-      "validator": {
-        "title": "Validator",
-        "sidebar_label": "Validator"
+      "apis": {
+        "title": "JSON-RPC APIS",
+        "sidebar_label": "JSON-RPC APIS"
       },
       "validatorGuidance": {
         "title": "Validator Guidance",

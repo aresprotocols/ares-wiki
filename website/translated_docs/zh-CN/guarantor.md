@@ -1,40 +1,40 @@
 ---
-id: guarantor
-title: Guarantor
-sidebar_label: Guarantor
+id: plan
+title: 计划
+sidebar_label: 计划
 ---
-### What stage has ares reached? What are the plans for 2021?
+### ares 到了哪个阶段？ 2021年有什么计划？
 
-At present, ares is preparing to launch the first phase version of gladios test network. Meanwhile, Ares pledge mining on Ethereum is also under intense testing.
-Next, we will have more Oracle functions online:
+目前，ares正在准备推出gladios测试网的第一阶段版本。同时，以太坊上的Ares质押挖矿也在紧张测试中。
+接下来，我们将有更多的Oracle功能上线：
 
-* Distributed data source weight adjustment
-* Node random select based on VRF
-* Aggregation of multi node prices in a chain
-* Challenger's on Chain Verification
-* Ink contract ecology
+* 分布式数据源权重调整
+* 基于VRF的节点随机选择
+* 链中多节点价格的聚合
+* 挑战者的链验证
+* 墨合约生态
 
-At the same time, we will also focus on brand promotion and operation, and will achieve strategic cooperation with more ecological projects.
+同时，我们也将专注于品牌推广和运营，与更多生态项目达成战略合作。
 
 
-**The planning of Ares in 2021 is mainly divided into several aspects**
+**战神2021年的规划主要分为几个方面**
 
-1. The launch of the next version of gladios test network is related to the promotion of product function research and development. It can make the defi project get more secure and reliable price service.
+1. 下一版gladios测试网的上线，与产品功能研发的推进有关。可以让defi项目获得更加安全可靠的价格服务。
 
-2. Community development, building ares community ambassadors and technical ambassadors, so that more  partners who want to know ares can participate in the Ares family. If you have your own unique views on publicity and technology, you are welcome to keep in touch with us at any time.
+2.社区发展，打造ares社区大使和技术大使，让更多想了解ares的小伙伴加入到Ares大家庭中。如果您对宣传和技术有自己独特的见解，欢迎您随时与我们联系。
 
-3. At present, we also actively cooperate with ecological projects closely. For example, crust, bandot and other projects.
+3、目前我们也积极与生态项目紧密合作。比如外壳、bandot等项目。
 
-4. Ares will set up the ink ecological fund. Welcome to use the ink contract to build the defi application. You can get all kinds of data on the chain for free. If you are interested, you can apply for our grant.
+4、Ares将设立墨水生态基金。欢迎使用墨迹合约搭建defi应用。您可以免费获取链上的各种数据。如果您有兴趣，可以申请我们的资助。
 
-5. In Polkadot's slot auction, Ares pays close attention to this dynamic, has built PC1 test, and is doing Rococo docking.
+5、在Polkadot的slot拍卖中，Ares密切关注这个动态，已经搭建了PC1测试，正在做Rococo对接。
 
-6. The Ares ecological marathon welcomes individuals or technical teams who use the Ares Oracle service to participate in the ecological construction, and will provide rich funds to reward participants.
+6、Ares生态马拉松欢迎使用Ares Oracle服务的个人或技术团队参与生态建设，并将提供丰厚的资金奖励参与者。
 
-### **Project Name: Ares Protocol / Ares**
+### **项目名称：战神协议/战神**
 
-* Test network: `Gladios`
+* 测试网络：`Gladios`
 
-* Main network: `Thrace`
+* 主网：`色雷斯`
 
-* Pledge pool:  `Trojan`
+* 质押池：`Trojan`

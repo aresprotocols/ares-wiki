@@ -1,7 +1,7 @@
 ---
-id: crustOverview
-title: Crust Overview
-sidebar_label: Crust Overview
+id: aresOverview
+title: Ares Overview
+sidebar_label: Ares Overview
 ---
 
 ## Ares 是什么

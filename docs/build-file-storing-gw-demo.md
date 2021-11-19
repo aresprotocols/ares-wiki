@@ -1,181 +1,101 @@
 ---
 id: buildFileStoringWithGWDemo
-title: File Storing with IPFS Gateway Code Sample
-sidebar_label: File Storing with IPFS Gateway Code Sample
+title: Pledge mining incentives and operation steps
+sidebar_label: Pledge mining incentives and operation steps
 ---
 
-This doc contains a code sample to demonstrate how to upload a file to [IPFS W3Auth Gateway](build-ipfs-w3auth-gateway.md), and place a storage order to get the file stored in Crust Network through [IPFS W3Auth Pinning Service](build-ipfs-w3auth-pinning-service.md). After that, the file can be retrieved via standard IPFS interface and gateway from anywhere. This scenario is simple but generic. It can be widely applied in DApp  hosting, NFT file storing, content/media delivery, cloud storage, etc.
 
-The code sample is open source on GitHub repo: https://github.com/crustio/crust-demo/tree/main/store-file-with-gateway
 
-## Overview
 
-### 1. Storage process
+**Latest regular products**
 
-Using IPFS Gateway and IPFS remote pinning service, developers can follow below process to upload, store and distribute files：
+![image.png](https://upload-images.jianshu.io/upload_images/528413-4a566d3c621632df.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-1. Upload the file to IPFS gateway, and get the file `CID` (a unique identifier generated based on the content of each file)
-2. Use `CID` to call IPFS standard pinning service.
-3. Obtain and monitor pinning status
 
-### 2. Dependencies
+At present, we have been in a volatile market, in order to avoid the loss of income caused by the fluctuation of the market. At the same time, it is also to give back to the loyal irons who are optimistic about the Ares project for a long time. After a series of discussions, the team decided to launch a regular product with a higher annualized rate of return.
 
-The code sample mainly depends on the following libraries:
+With immediate effect, we are launching the following regular pledge mining products: The regular is currently divided into 3 levels, namely 60 days, 120 days and 180 days. The annualized rate of return for 60 days is 35%; the annualized rate of return for 120 days is 40%; the annualized rate of return for 180 days is 45%
 
-- [@crustio/type-definitions](https://github.com/crustio/crust.js) Custom data type, used to adapt to Crust network
-- [@polkadot/api](https://github.com/polkadot-js/api) The polkadot api library provides a Promise-style interface for performing related operations on the Crust chain
-- [ipfs-http-client](https://github.com/ipfs/js-ipfs/tree/master/packages/ipfs-http-client) ipfs http client library, contains all the ipfs apis
+Precautions
 
-## Let's Rock 🤟🏻
+* After purchasing a regular product, the principal cannot be redeemed within the specified time, but the reward can be collected at any time.
 
-### 0. Build web3 authentication header with Crust
+* To purchase regular products, if you want to purchase regular products during the pledged mining time, you need to extend the overall period. Redemption days = completion days before additional purchase + regular days (60/120/180)
 
-> This demo only takes Crust(substrate-based chains) as an example, more web3 auth ways can be checked [here](https://wiki.crust.network/docs/en/buildIPFSWeb3AuthGW#usage).
+For example, Xiao Ming uses 100 $ARES to pledge mining for 60 days on a regular basis. After 30 days, he decides to spend another 100 $ARES to purchase a 60-day pledge for mining. In this way, 200 $ARES will take 90 days to redeem. The income at this time is approximately: 100*35%÷12+200*35%÷6
 
-```javascript
-const { Keyring } = require('@polkadot/keyring');
+* After the regular product expires, it can be redeemed. If it is not redeemed in time, the system will give the corresponding income according to the cycle you choose.
 
-const seeds = process.argv[2];
+For example, Xiaoli chooses to use 100 $ARES to order 120 days of products, and her annualized rate of return is 40%, and she will not redeem it until 150 days. So Xiaoli's income at this time is about: 100*40%÷12*5
 
-// 2. Construct auth header
-const keyring = new Keyring();
-const pair = keyring.addFromUri(seeds);
-const sig = pair.sign(pair.address);
-const sigHex = '0x' + Buffer.from(sig).toString('hex');
+We sincerely invite you to choose the appropriate cycle according to your own needs and participate in our regular pledge mining activities!
 
-const authHeader = Buffer.from(`sub-${pair.address}:${sigHex}`).toString('base64');
-```
+**Current Products**
 
-### 1. Upload files to IPFS Gateway
+ARES pledge mining has been carried out for 2 phases, and the pledge amount continues to rise. You can see everyone's enthusiasm for participation. The pledge amount stably accounts for about 60% of the circulation, and the pledge rate has reached the level of the Polkadot pledge rate.
 
-```javascript
-const { create, globSource } = require('ipfs-http-client');
+The only address for pledge mining: [https://trojan.aresprotocol.io](https://trojan.aresprotocol.io/)
 
-// IPFS Web3 Authed Gateway address
-const ipfsGateway = 'https://crustwebsites.net';
+**Steps**
 
-// 3. Create ipfs http client
-const ipfs = create({
-    url: ipfsGateway + '/api/v0',
-    headers: {
-        authorization: 'Basic ' + authHeader
-    }
-});
+This guide will introduce you to the concept and interface of ARES pledge mining. Once you are familiar with these concepts and processes, you will be more confident in using pledge mining.
 
-const { cid } = await ipfs.add(globSource(path, { recursive: true }));
+* Note: Pledge mining requires the use of Metamask wallet to sign transactions. If you don’t know how to set up Metamask, you can study some articles for more information.
 
-if (cid) {
-    console.log(cid.toV0().toString());
-} else {
-    throw new Error('IPFS add failed, please try again.');
-}
-```
+**1\. Log in to your Metamask**
 
-> You can get full list of `ipfsGateway` address [here](https://github.com/crustio/crust-apps/blob/master/packages/apps-config/src/ipfs-gateway-endpoints/index.ts).
+![image.png](https://upload-images.jianshu.io/upload_images/528413-1811295e7b82efc9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-### 2. Pin file through IPFS Pinning Service
 
-```javascript
-const got = require('got');
+**2. Add Ares tokens to Metamask**
 
-const ipfsPinningService = 'https://pin.crustcode.com/psa'; // IPFS Web3 Authed Pinning Service address
+Enter the following link to log in to Etherscan and add ARES to Metamask
 
-// 4. Pin to crust with IPFS standard W3Authed pinning service
-const {body} = await got.post(
-    ipfsPinningService + '/pins',
-    {
-        headers: {
-            authorization: 'Bearer ' + authHeader
-        },
-        json: {
-            cid: cid.toV0().toString(),
-            name: 'crust-demo'
-        }
-    }
-);
-```
+[https://etherscan.io/token/0x358aa737e033f34df7c54306960a38d09aabd523](https://etherscan.io/token/0x358aa737e033f34df7c54306960a38d09aabd523)
 
-> You can get the full list of `ipfsPinningService` [here](https://github.com/crustio/crust-apps/blob/master/packages/apps-config/src/ipfs-pinner/index.ts).
+![image.png](https://upload-images.jianshu.io/upload_images/528413-0044c6a4b788d663.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-Will return `body` like
 
-```json
-{
-   "requestId":"c7fc3e00-b303-4a24-8485-71ee7b3ffb78-1631776602227",
-   "status":"pinning",
-   "created":"2021-09-16T06:55:12+00:00",
-   "pin":{
-      "cid":"QmYboQmwDrNK6waGjm2VvH7eMGZbo1LUi5X5iMtzetzsnK",
-      "name":"crust-demo",
-      "meta":null,
-      "origins":[
-         
-      ]
-   },
-   "delegates":[
-      
-   ],
-   "info":{
-      
-   }
-}
-```
+**3\. Connect your wallet**
 
-### 3. Query on-chain pinning status from IPFS Pinning Service
+Open the pledge mining link: [https://trojan.aresprotocol.io/](https://trojan.aresprotocol.io/)
 
-```javascript
-if (body) {
-    const rid = JSON.parse(body)['requestId'];
-    console.log(body, rid);
-    // 5. Query pinning status through pinning service
-    while (true) {
-        const {body: pinningStat} = await got(
-            ipfsPinningService + `/pins/${rid}`,
-            {
-                headers: {
-                    authorization: 'Bearer ' + authHeader
-                }
-            }
-        );
-        console.log(pinningStat); // After success, you can query the cid on Crust
+![image.png](https://upload-images.jianshu.io/upload_images/528413-111b999030bba46c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-        await timeout(1000);
-    }
-} else {
-    console.log(body);
-    throw new Error('Crust pin failed, please try again.');
-}
-```
+**4\. Main process**
 
-After pinned success, the demo will return
+**4.1 Stake Mining**
 
-```json
-{
-   "requestId":"c7fc3e00-b303-4a24-8485-71ee7b3ffb78-1631776602227",
-   "status":"pinned",
-   "created":"2021-09-16T06:55:12+00:00",
-   "pin":{
-      "cid":"QmYboQmwDrNK6waGjm2VvH7eMGZbo1LUi5X5iMtzetzsnK",
-      "name":"crust-demo",
-      "meta":null,
-      "origins":[
-         
-      ]
-   },
-   "delegates":[
-      
-   ],
-   "info":{
-      
-   }
-}
-```
+**4.1.1 Approval Process**
 
-## Resources
+If your address is connecting to Trojan for the first time, you need to go through the approval process.
 
-- [Code Demo](https://github.com/crustio/crust-demo)
-- [IPFS Http Client](https://github.com/crustio/crust-demo/tree/main/store-file-with-gateway)
-- [IPFS Gateway](https://docs.ipfs.io/concepts/ipfs-gateway/)
-- [IPFS Pinning Service](https://docs.ipfs.io/how-to/work-with-pinning-services/)
-- [IPFS W3Auth Gateway Full List](https://github.com/crustio/crust-apps/blob/master/packages/apps-config/src/ipfs-gateway-endpoints/index.ts)
-- [IPFS W3Auth Pinning Service Full List](https://github.com/crustio/crust-apps/blob/master/packages/apps-config/src/ipfs-pinner/index.ts)
+![image.png](https://upload-images.jianshu.io/upload_images/528413-58de931243c930f3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+**4.1.2 Pledge mining**
+
+When the approval process status is successful. You can click the "Stake Tokens" button, and then enter the amount you want to staking for staking mining. Once the transaction is successfully completed, the total amount will be displayed under Currently Staked, and the profit will be calculated in seconds.
+
+![image.png](https://upload-images.jianshu.io/upload_images/528413-dd8fae0c126006af.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+Friendly reminder: Due to the problem of the Ethereum network, please pay attention to the gas fee you have to pay. If you encounter a long approval process, it may be a network problem, please refresh your page to check the status. Or consider increasing gas fee to increase speed
+
+**4.2 Cancel Mortgage**
+
+Click "**Unstake Tokens" to withdraw your Ares coins. First enter the amount you want to withdraw, and then click "Unstake".
+
+![image.png](https://upload-images.jianshu.io/upload_images/528413-531fbb7bc6663d24.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+**4.3 Withdrawal rewards**
+
+Click "Claim Rewards" and check the Gas fee. When it is confirmed that it is correct
+
+Click the "Confirm" button to withdraw the reward
+
+![image.png](https://upload-images.jianshu.io/upload_images/528413-6a76eaf782ca5abe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+**4.4 Withdraw rewards and cancel pledges**
+
+You can exit the pledge mining activity through this function.

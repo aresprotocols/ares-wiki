@@ -30,7 +30,7 @@ const siteConfig = {
   projectName: 'ares-wiki',
   organizationName: 'Ares network',
   headerLinks: [
-    {doc: 'crustOverview', label: 'Docs'},
+    {doc: 'aresOverview', label: 'Docs'},
     // {href: 'https://wiki-maxwell.crust.network', label: 'Maxwell'},
     // {blog: true, label: 'Blog'},
     {search: true},
@@ -88,7 +88,7 @@ const siteConfig = {
 
   editUrl: "https://github.com/crustio/crust-wiki/edit/mainnet/docs/",
 
-  translationRecruitingLink: "https://crowdin.com/project/Crust-Wiki",
+  // translationRecruitingLink: "https://crowdin.com/project/Crust-Wiki",
 
   docsSideNavCollapsible: true,
 

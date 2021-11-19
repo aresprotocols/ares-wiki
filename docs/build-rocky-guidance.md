@@ -1,9 +1,8 @@
 ---
 id: buildRockyGuidance
-title: Crust Rocky Network
-sidebar_label: Crust Rocky Network
+title: Ares gladios 1.01 测试网节点手册
+sidebar_label: Ares gladios 1.01 测试网节点手册
 ---
-Ares gladios 1.01 测试网节点手册
 
 
 概要
@@ -11,12 +10,13 @@ Ares gladios 1.01 测试网节点手册
 
 硬件环境
 
-Ares 节点硬件环境参数	
-硬盘	100GB及以上
-CPU	4~8核心
-内存	4~8G
-带宽	3M及以上，要求稳定
-操作系统	Ubuntu18.04（及以上）
+|Ares 节点硬件环境参数|    |
+|:----|:----|
+|硬盘|100GB及以上|
+|CPU|4~8核心|
+|内存|4~8G|
+|带宽|3M及以上，要求稳定|
+|操作系统|Ubuntu18.04（及以上）|
 
 云服务器
 配置满足以上硬件条件的云服务器。市面上有很多，可以自己搜寻攻略。以下为其中一种，仅供参考，不做推荐。

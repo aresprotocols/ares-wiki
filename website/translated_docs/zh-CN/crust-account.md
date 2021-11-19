@@ -1,82 +1,52 @@
 ---
-id: crustAccount
-title: Account
-sidebar_label: Account
+id: aresBasic
+title: Ares Basic
+sidebar_label: Ares Basic
 ---
-## 什么是Crust账户
+## 致Ares社区萌新
+致Ares社区萌新Hello，你来啦！欢迎加入
 
-Crust账户承载了用户在Crust网络中的资产。用户需要妥善保管Crust网络助记词和备份文件，因为一旦发生账户遗失，用户将永久遗失账户中的资产。创建账户的方法包括[使用Crust Wallet创建账户](#一、使用crust-wallet创建账户)和[使用Apps创建账户](#二、使用apps创建账户)。
+Ares社区👏。接下来将带你进入「波卡生态第一个去中心化跨链预言机服务协议—— Ares Protocol 」的世界。
 
-Crust账户中存储的资产种类可以参考[crust tokens](crust-tokens.md)。
-
-## 一、使用Crust Wallet创建账户
-
-### 安装Crust Wallet
-
-[钱包安装教程](crustWallet.md)，安装完成之后可以将钱包固定，方便使用。
-
-![pin](assets/wallet/pin.png)
-
-### 创建账户
-
-点击浏览器右上角Crust Wallet插件钱包，输入钱包密码，点击"Create"。
-
-![password](assets/wallet/password.png)
-
-**务必备份好助记词**，输入账户昵称和钱包密码，点击"Next"。
-
-![backup](assets/wallet/backup.png)
-
-再次确认你已经备份好助记词，如果没有备份可点击"Go Back"返回上一步进行备份，如果已经备份可点击"Next"进入下一步。
-
-![backup1](assets/wallet/backup1.png)
-
-下图表示账户创建成功
-
-![success](assets/wallet/success.png)
-
-### 备份Crust账户
-
-点击设置，进入到"Account Management"界面，点击"Export Accout"导出备份文件。
-![export](assets/wallet/export.png)
-![export1](assets/wallet/export1.png)
-
-**请切记保管好备份文件**，格式如下"cT1K1QvCcR4xxxxxxVcS8AVxxxxLuSxNBiEt.json"
-
-![export2](assets/wallet/export2.png)
-
-### 将账户同步到Apps
-
-点击打开Crust Apps,并赋予Crust Apps对Crust Wallet的访问权限。
-
-![sysc](assets/wallet/sysc.png)
-![allow](assets/wallet/allow.png)
+Ares是波卡生态首个做预言机的项目，是首个实现数据链上验证的预言机，同时也是首创为数据使用者因使用预言机数据遭受业务损失时进行补偿的项目。Ares能做什么🚀对于去中心化金融DeFi来说，Ares提供高精度、实时、安全可靠的链外数据。对于我们每个人来说，Ares更像是一个去中心化的大数据软件，将为我们提供更加优质实时的数据服务。它解决物联网终端身份确认与数据确权的问题，为我们重构供应链、食品安全、溯源及智能家居等生活中的方方面面。同时还能利用人群的智慧来预测总统选举、体育博彩等一系列活动结果。对于目前大火的区块链游戏和NFTs，Ares也将提供链上可验证随机数，为其赋能更多玩法。
 
 
-## 二、使用Apps创建账户
+关于$Ares，如何获得？
 
-### 创建账户
+交易所：Gate、MEXC抹茶、Hotbit、BKEX、BitMart、Uniswap
 
-进入[Crust Apps](https://apps.crust.network/)，在顶部导航栏中点击 “账户” 下的 “账户”。然后点击“添加账户“。
+总量：10亿流通量：153,700,575
 
-![](assets/account/1.png) 
+初始价：0.006U
 
-**务必备份好助记词**，勾选“I hava saved my mnemonic seed safely”，点击“下一步”
+ETH合约地址：0x358AA737e033F34df7c54306960a38d09AaBd523$Ares 
 
-![](assets/account/2.png)
+BSC合约地址：0xf9752A6E8A5E5f5e6EB3aB4e7d8492460fb319f0
 
-输入账号名称以及密码，点击“下一步”
 
-![](assets/account/3.png)
+如何赚$Ares
 
-### 备份Crust账户
+社群活动不定时发放Airdrop、现金红包、周边礼品等（如Ares一周年空投活动）定期质押挖矿APY 30%-45%社区志愿者、社区大使、技术大使卡槽拍卖质押获得奖励
 
-点击“保存”备份账户信息，**请切记保管好备份文件**，格式如下“cT1K1QvCcR4xxxxxxVcS8AVxxxxLuSxNBiEt.json”
 
-![](assets/account/3.1.3.png)
+Ares预言机平台海外账号，请及时关注
 
-## 三、其他
-> 如下钱包插件支持Edge，Google，Firefox，Brave等浏览器
+Website : https://Aresprotocol.io/
 
-[polkadot.js钱包插件](https://polkadot.js.org/extension/)
-[麦子钱包插件](https://mathwallet.org/zh-cn/#extension) 
+Staking : https://trojan.Aresprotocol.io/
+
+Email : info@Aresprotocol.io
+
+Telegram : https://t.me/Aresprotocol
+
+Twitter : https://twitter.com/AresProtocolLab
+
+Medium : https://Aresprotocollab.medium.com
+
+Discord : https://discord.gg/EsaFRr7xmc
+
+Github : https://github.com/Aresprotocols
+
+Reddit : https://www.reddit.com/r/AresProtocolLabs/
+
+Facebook : https://www.facebook.com/groups/Aresprotocollabs

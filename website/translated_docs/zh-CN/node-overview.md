@@ -1,41 +1,35 @@
 ---
-id: nodeOverview
-title: Node Overview
-sidebar_label: Node Overview
+id: faq
+title: 常见问题
+sidebar_label: 常见问题
 ---
 
-在本文中，我们将从介绍如何组织和搭建节点，让你成功加入 Crust 网络，并从网络中获得相应的收益。本教程需要一定的 Linux 基础，请一定按照教程步骤，不要跳过任何一步。如有疑惑请添加Crust官方微信：crust_cola。
 
-## 1 组织多节点（推荐）
-### 1.1 Group
 
-一个Group（组）是由一个组织者Owner和至少一个Member组成的链上逻辑组织，Member通过加入某个Group将有效存储累加到Owner之上，增加Owner的质押上限。
+F：我记得Chainlink也集成支持Polkadot网络的，Ares相比Chainlink 有哪些优势呢？ 
+Q：Ares有三大特色 Babe和Offchain的随机报价，Rollup的链上验证，支持ink的DeFi生态。
 
-在你拥有多台设备的情况下，将多个设备组成一个Group是合理的选择。这样一方面可以增加出块的竞争力，另一方面，Group所有者可以在Group中定制最优的接单策略，有效地平衡资源和效率问题。
+F：为什么说Ares是受波卡官方认证的？ 
+Q：Ares是波卡Web3 Open Grant资助的团队，很多预言机的项目没有Grant，波卡中只有两个预言机项目拿到了。
 
-### 1.2 Group的优势
+F：目前哪些交易所已上线$Ares？
+Q：Ares目前已上线Gate、MEXC抹茶、Hotbit、BKEX、BitMart、Uniswap等交易所。
 
-* 强大竞争力：由于Group突破了单个设备的限制，不同的Member通过加入某个Group将有效存储会叠加到Owner的上，增加Owner的担保上限以及出块竞争力。
-* 易于管理：通过将担保上限集中Owner账户，可以减少很多不必要的操作。同时也有助于吸引担保者到统一账户进行投资。
-* 存储优化：Crust程序默认会有一套对Group接受有意义文件的默认策略，这将帮助优化空间和效率。除此之外，Crust开放了接单策略源码，有能力的Owner可以为自身的Group制定策略。
-* 引导外部节点的加入：由于Group是一个开放的组织，Owner可以引导外部离散的节点加入自己的Group成为一个member，强强联合。
-### 1.3 拓扑结构
+F：目前Ares有哪些技术成就？
+Q：获得Web3 OpenGrant且已交付；特洛伊质押挖矿已超过流通量的60%；Ink合约调用资产报价模块获取价格。若有收获，就点个赞吧
 
-在Group形态下，你的机器将被分为两类，分别是Owner节点和Member节点，采用1:N的拓扑结构，即一个Owner节点可以对应N个Member节点：
 
-* Owner节点：负责运行链模块并参与出块，我们强烈推荐出块节点使用固定的公网 IP，否则会因为出块不稳定等情况带来损失。如有需要，该类节点也可以配置在云计算机中。
-* Member节点：负责运行链模块（不参与出块）以及存储模块, 这类节点需要拥有SGX的环境，同时该类节点负责存储用户文件，涉及到大量的网络传输，网络带宽要足够。
+常见问题 ⏰持续更新中～～有疑问可以随时找我们的社区小助手或在官方微信群留言
+F：我记得Chainlink也集成支持Polkadot网络的，Ares相比Chainlink 有哪些优势呢？ 
+Q：Ares有三大特色 Babe和Offchain的随机报价，Rollup的链上验证，支持ink的DeFi生态。
 
-详细配置要求和推荐，请参考官方硬件spec
+F：为什么说Ares是受波卡官方认证的？ 
+Q：Ares是波卡Web3 Open Grant资助的团队，很多预言机的项目没有Grant，波卡中只有两个预言机项目拿到了。
 
-### 1.4 构建Owner节点
+F：目前哪些交易所已上线$Ares？
+Q：Ares目前已上线Gate、MEXC抹茶、Hotbit、BKEX、BitMart、Uniswap等交易所。
 
-参考这个[链接](ownerNode.md)
+F：目前Ares有哪些技术成就？
+Q：获得Web3 OpenGrant且已交付；特洛伊质押挖矿已超过流通量的60%；Ink合约调用资产报价模块获取价格。若有收获，就点个赞吧
 
-### 1.5 构建Member节点
 
-参考这个[链接](memberNode.md)
-
-## 2 部署单节点
-
-单节点也叫Isolation节点，即仅用一台设备来完成出块，存储，文件传输的功能。可以简单地理解为Owner与一个Member的结合。从部署角度来说单节点比较容易搭建，但由于单台设备的存储上限是有限的（500TB），在出块的竞争中没有优势，参考这个[链接](isolationNode.md)构建Isolation节点。

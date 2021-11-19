@@ -42,7 +42,7 @@ class HomeNav extends React.Component {
         return (
             <NavContainer>
                 <NavItem
-                    href={this.props.docUrl("crustOverview.html")}
+                    href={this.props.docUrl("aresOverview.html")}
                     title="General"
                     content="A Completely Decentralized Oracle Platform"
                     aosDelay="0"
@@ -54,7 +54,7 @@ class HomeNav extends React.Component {
                     aosDelay="300"
                 />
                 <NavItem
-                    href={this.props.docUrl("nodeOverview.html")}
+                    href={this.props.docUrl("faq.html")}
                     title="Node"
                     content="Information and guides on how to deploy a node and run the network."
                     aosDelay="600"

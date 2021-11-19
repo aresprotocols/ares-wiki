@@ -41,7 +41,7 @@ class HomeNav extends React.Component {
         return (
             <NavContainer>
                 <NavItem
-                    href={this.props.docUrl("crustOverview.html")}
+                    href={this.props.docUrl("aresOverview.html")}
                     title="概览"
                     content="一个完全去中心化预言机平台"
                     aosDelay="0"
@@ -53,7 +53,7 @@ class HomeNav extends React.Component {
                     aosDelay="300"
                 />
                 <NavItem
-                    href={this.props.docUrl("nodeOverview.html")}
+                    href={this.props.docUrl("faq.html")}
                     title="节点"
                     content="参与并维护Ares协议"
                     aosDelay="600"
@@ -110,13 +110,7 @@ class HomeFooter extends React.Component {
                     <a href={this.props.docUrl("contributing")}>
                         <button className="btn btn-lg btn-primary btn-bg-primary mr-3">Contribute</button>
                     </a>
-                    <a
-                        href={this.props.siteConfig.translationRecruitingLink}
-                        target="_blank"
-                        rel="noreferrer noopener"
-                    >
-                        <button className="btn btn-lg btn-primary btn-bg-primary">Help Translate</button>
-                    </a>
+                    
                 </Col>
             </Col>
         );

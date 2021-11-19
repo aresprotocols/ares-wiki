@@ -35,7 +35,7 @@ class Footer extends React.Component {
             <a href={this.docUrl('gettingStarted.html')}>
               Getting Started
             </a>
-            <a href={this.docUrl('claims.html')}>
+            {/* <a href={this.docUrl('claims.html')}>
               CRU Claims
             </a>
             <a href={this.docUrl('buildIntegrationWebsiteHosting.html')}>
@@ -43,7 +43,7 @@ class Footer extends React.Component {
             </a>
             <a href={this.docUrl('buildIntegrationNFTDataStorage.html')}>
               NFT Data Storage with Crust
-            </a>
+            </a> */}
           </div>
           <div>
             <h5>Community</h5>
@@ -56,19 +56,19 @@ class Footer extends React.Component {
             {/*</a>*/}
             {/*<a href="https://discordapp.com/">Project Chat</a>*/}
             <a
-              href="https://discord.gg/D97GGQndmx"
+              href="https://discord.com/invite/cqduK4ZNaY"
               target="_blank"
               rel="noreferrer noopener">
               Discord
             </a>
             <a
-              href="https://twitter.com/CrustNetwork"
+              href="https://twitter.com/AresProtocolLab"
               target="_blank"
               rel="noreferrer noopener">
               Twitter
             </a>
             <a
-                href="https://t.me/CrustNetwork"
+                href="https://t.me/AresProtocolLab"
                 target="_blank"
                 rel="noreferrer noopener">
               Telegram
@@ -77,13 +77,13 @@ class Footer extends React.Component {
           <div>
             <h5>More</h5>
             <a
-                href="https://crust.network/cooperation"
+                href="https://www.aresprotocol.io/"
                 target="_blank"
                 rel="noreferrer noopener">
               Cooperation
             </a>
             {/*<a href={`${this.props.config.baseUrl}blog`}>Blog</a>*/}
-            <a href="https://github.com/crustio">GitHub</a>
+            <a href="https://github.com/aresprotocols">GitHub</a>
             {/*<a*/}
             {/*  className="github-button"*/}
             {/*  href={this.props.config.repoUrl}*/}

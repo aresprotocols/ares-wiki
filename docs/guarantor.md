@@ -1,7 +1,7 @@
 ---
-id: guarantor
-title: Guarantor
-sidebar_label: Guarantor
+id: plan
+title: Plan
+sidebar_label: Plan
 ---
 ### What stage has ares reached? What are the plans for 2021?
 

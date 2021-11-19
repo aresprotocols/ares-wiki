@@ -18,8 +18,8 @@
         "sidebar_label": "Hello Crust"
       },
       "buildRockyGuidance": {
-        "title": "Crust Rocky Network",
-        "sidebar_label": "Crust Rocky Network"
+        "title": "Ares gladios 1.01 测试网节点手册",
+        "sidebar_label": "Ares gladios 1.01 测试网节点手册"
       },
       "buildIntegrationContentStorageDelivery": {
         "title": "内容存储与分发",
@@ -85,13 +85,13 @@
         "title": "CRU18 担保",
         "sidebar_label": "CRU18 担保"
       }, 	
-      "crustAccount": {
-        "title": "账户",
-        "sidebar_label": "账户"
+      "aresBasic": {
+        "title": "科普",
+        "sidebar_label": "科普"
       },
-      "crustTokens": {
-        "title": "Crust 通证",
-        "sidebar_label": "Crust 通证"
+      "aresRelated": {
+        "title": "Ares 相关",
+        "sidebar_label": "Ares 相关"
       },
       "crustBuilderGuide": {
         "title": "Crust 开发者文档",
@@ -157,9 +157,9 @@
         "title": "担保人指南",
         "sidebar_label": "担保人指南"
       },
-      "guarantor": {
-        "title": "担保人",
-        "sidebar_label": "担保人"
+      "plan": {
+        "title": "计划",
+        "sidebar_label": "计划"
       },
       "identity": {
         "title": "链上身份",
@@ -177,17 +177,31 @@
         "title": "Member 节点",
         "sidebar_label": "Member 节点"
       },
-      "newBond": {
-        "title": "新增绑定",
-        "sidebar_label": "新增绑定"
+      "faq": {
+        "title": "常见问题",
+        "sidebar_label": "常见问题"
+      },
+
+      "buildCrossChainSolution": {
+        "title": "KSM卡槽竞拍支持规则及步骤",
+        "sidebar_label": "KSM卡槽竞拍支持规则及步骤"
+      },
+
+      "buildFileStoringWithGWDemo": {
+        "title": "质押挖矿激励及操作步骤",
+        "sidebar_label": "质押挖矿激励及操作步骤"
       },
       "nodeHardwareSpec": {
         "title": "节点硬件指南",
         "sidebar_label": "节点硬件指南"
       },
-      "nodeOverview": {
-        "title": "节点概要",
-        "sidebar_label": "节点概要"
+      "faq1": {
+        "title": "常见问题",
+        "sidebar_label": "常见问题"
+      },
+      "buildGettingStarted": {
+        "title": "Ares 入门",
+        "sidebar_label": "Ares 入门"
       },
       "nodeQos": {
         "title": "配置 QoS",
@@ -205,9 +219,9 @@
         "title": "参数表",
         "sidebar_label": "参数表"
       },
-      "crustOverview": {
-        "title": "Crust 概述",
-        "sidebar_label": "Crust 概述"
+      "aresOverview": {
+        "title": "Ares 概述",
+        "sidebar_label": "Ares 概述"
       },
       "Q&AForMining": {
         "title": "Q&A",
@@ -253,9 +267,9 @@
         "title": "验证人指南",
         "sidebar_label": "验证人指南"
       },
-      "validator": {
-        "title": "验证人",
-        "sidebar_label": "验证人"
+      "apis": {
+        "title": "JSON-RPC 接口",
+        "sidebar_label": "JSON-RPC 接口"
       }
     },
     "links": {

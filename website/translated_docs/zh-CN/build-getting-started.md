@@ -1,35 +1,79 @@
 ---
 id: buildGettingStarted
-title: Builder's Portal
-sidebar_label: Builder's Portal
+title: Ares 入门
+sidebar_label: Ares 入门
 ---
 
-Welcome to the builders section of the Crust Wiki!
+Gladios 预言机网络
 
-Here you will be able to find the most up-to-date information on the status of the development tools in the Crust ecosystem. We will keep adding new tools, frameworks and documents as we progress. If you are working on something that should be included please reach out to us on [Discord](https://discord.gg/D97GGQndmx).
+搭建验证人节点
 
-This section of the wiki is divided into the following parts:
+安装代码编译工具
 
-## Basics
+安装 Rust
+# Install
+curl https://sh.rustup.rs -sSf | sh
+# Configure
+source ~/.cargo/env
+配置 Rust 工具链默认为最新的稳定版本，添加 nightly 和 nightly wasm 编译目标。
+rustup default stable
+rustup update
+rustup update nightly
+rustup target add wasm32-unknown-unknown --toolchain nightly
+安装依赖项 (举例 Ubuntu 18.04) 其他操作系统的安装，可以参考 Substrate开发者文档
+sudo apt update
+sudo apt install make clang pkg-config libssl-dev build-essential
+获取节点可执行文件
 
-- [Crust API](https://apps.crust.network/docs/) - The Crust API documentation.
-- [Crust Rocky](build-rocky-guidance.md) - An open and free test network.
-- [Crust JS-SDK](https://github.com/crustio/crust.js) - The javascript SDK access to Crust.
-- [File Storing Demo](build-file-storing-demo.md) - An E2E full code sample of storing file.
+获取 Gladios 项目源码并编译。
+git clone git@github.com:aresprotocols/ares.git ares-chain
+cd ares-chain
+cargo build --release
+编译后会获得可执行文件 ares-chain/target/release/gladios-node
+启动数据节点
 
-## Integration Guide
+启动数据节点并连接到网络。
+# 仍然在刚才编译的目录中执行，如下命令。
+./target/release/gladios-node \
+  --base-path /tmp/gladios-data \
+  --name ARES_DATA_NODE \
+  --chain ./chain-data-ares-aura.json \
+  --port 30334 \
+  --ws-port 9946 \ 
+  --rpc-port 9934 \
+  --ws-external \
+  --rpc-external \
+  --rpc-cors=all \
+  --rpc-methods=Unsafe \
+  --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0' \
+  --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWEyoppNCUx8Yx66oV9fJnriXwCcXwDDUA2kj6vnc6iDEp
+启动验证人节点
 
-- [DApp Hosting](build-integration-website-hosting.md) - Hosting DApp or website frontend on IPFS and Crust.
-- [NFTs](build-integration-nft-data.md) - Store NFT files using IPFS and Crust.
-- [File Storage](build-integration-content-storage-delivery.md) - Decentralized file storage and delivery solution.
+启动验证人节点并连接到网络。（Aura共识）
+# 仍然在刚才编译的目录中执行，如下命令。
+./target/release/gladios-node purge-chain --base-path /tmp/aura/two --chain gladios -y
+./target/release/gladios-node \
+  --base-path /tmp/gladios-data \
+  --name ARES_VALIDATOR_NODE \
+  --chain ./chain-data-ares-aura.json \
+  --port 30335 \
+  --ws-port 9947 \
+  --rpc-port 9935 \
+  --ws-external \
+  --rpc-external \
+  --rpc-cors=all \
+  --rpc-methods=Unsafe \
+  --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0' \
+  --warehouse http://141.164.58.241:5566 \
+  --ares-keys ./your_ares_key_file.curl \
+  --validator \
+  --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWEyoppNCUx8Yx66oV9fJnriXwCcXwDDUA2kj6vnc6iDEp
+--warehouse 参数，用来指定对应验证人的报价服务器请求地址及端口。
+--ares-keys 参数，用来指定 ares 以及其他可能需要启动的私钥信息，比如 aura 或者 gran。
+# ares-keys 指定的文件举例，注意该文件不能包括注释，按换行符进行分割，多数情况下 ares 钥匙对应与出块人保持一致。
+ares:finger treat seven sign army beauty album zebra fiction office planet tragic
+aura:finger treat seven sign army beauty album zebra fiction office planet tragic
+gran:ensure usage check coast suspect warrior extend young frequent track can cloud
+节点查看
 
-## Node Guide
-
-- [Crust Node](build-node.md) - Node operation program interacts with Chain, sWorker, API, IPFS and sManager, it can be customized to ease your node operation work.
-- [Storage Manager](build-smanager.md) - Storage manager interacts with Crust, IPFS and sWorker, it can be customized to apply different strategies to deal with storage orders and files.
-
-## Toolkits
-
-- [Crust Github Action](https://github.com/crustio/ipfs-crust-action): For Github workflow users pining their DApp or Websites with Crust.
-- [Crust Pin Node Package](https://github.com/crustio/crust.js/tree/mainnet/packages/crust-pin): Crust pin service allows nodejs users store file on Crust
-- [IPFS Web3 Auth Gateway](build-ipfs-web3-auth-gateway.md): IPFS W3Auth is a lightweight Web3-based authentication service basedon IPFS gateway and reverse proxy
+访问：https://telemetry.polkadot.io/#list/0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3

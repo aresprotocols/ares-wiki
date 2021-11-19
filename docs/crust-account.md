@@ -1,140 +1,54 @@
 ---
-id: crustAccount
-title: Account
-sidebar_label: Account
+id: aresBasic
+title: Ares Basic
+sidebar_label: Ares Basic
 ---
-# 使用cumulus进化跨链ping pong测试
 
 
+Hello to the Ares community, you are here! Welcome
 
-## 编译启动中继链
+Ares community👏. Next, it will take you to the world of "Ares Protocol, the first decentralized cross-chain oracle service protocol in the Polkadot Ecology".
 
-```bash
-#编译
-git clone -b release-v0.9.8 https://github.com/paritytech/polkadot
-cd polkadot
-cargo build --release
-#导出链配置文件
-./target/release/polkadot build-spec --chain=rococo-local --disable-default-bootnode --raw > rococo-local.json
-#运行两个节点
-./target/release/polkadot --name alice --chain rococo-local --alice -d ./data/alice --ws-external --rpc-external --rpc-cors all  --node-key 0000000000000000000000000000000000000000000000000000000000000001
+Ares is the first oracle project in the Polkadot Ecosystem. It is the first oracle to achieve verification on the data chain. It is also the first project to compensate data users for business losses due to the use of oracle data. What can Ares do? For decentralized financial DeFi, Ares provides high-precision, real-time, safe and reliable off-chain data. For each of us, Ares is more like a decentralized big data software, which will provide us with more high-quality real-time data services. It solves the problem of identity confirmation and data confirmation of IoT terminals, and reconstructs all aspects of life in our life such as supply chain, food safety, traceability, and smart home. At the same time, it can also use the wisdom of the crowd to predict the outcome of a series of activities such as presidential elections and sports betting. For the current popular blockchain games and NFTs, Ares will also provide verifiable random numbers on the chain to empower them with more ways to play.
 
-./target/release/polkadot --name bob --chain rococo-local --bob -d ./data/bob --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWEyoppNCUx8Yx66oV9fJnriXwCcXwDDUA2kj6vnc6iDEp
-```
 
+About $Ares, how to get it? 
 
+Exchange: Gate, MEXC Matcha, Hotbit, BKEX, BitMart, Uniswap 
 
-## 下载cumlus代码
+Total: 1 billion 
 
-```BASH
-git clone -b polkadot-v0.9.8 https://github.com/paritytech/cumulus
-```
+Circulation: 153,700,575 
 
+Initial price: 0.006U$Ares 
 
+ETH contract address: 0x358AA737e033F34df7c54306960a38d09AaBd523
+$Ares BSC contract address: 0xf9752A6E8A5E5f5e6EB3aB4e7d8492460fb319f0
 
-## 修改代码
 
-文件 polkadot-parachains/rococo/src/lib.rs
+How to earn $Ares
 
-修改barrier
+Community activities will issue Airdrops, cash red envelopes, and peripheral gifts from time to time (such as Ares's first anniversary airdrop event). Regularly pledge 30%-45% for mining APY. Community volunteers, community ambassadors, and technical ambassadors will be rewarded by auctioning card slots.
 
-pub type Barrier = (
 
-​    TakeWeightCredit,
+Ares oracle platform overseas account, please pay attention to it in time
 
-​    AllowTopLevelPaidExecutionFrom<All<MultiLocation>>,
+Website: https://Aresprotocol.io/
 
-​    AllowUnpaidExecutionFrom<ParentOrParentsUnitPlurality>,
+Staking: https://trojan.Aresprotocol.io/
 
-​    AllowUnpaidExecutionFrom<SpecParachain>,
+Email: info@Aresprotocol.io
 
-​    // ^^^ Parent & its unit plurality gets free execution
+Telegram: https://t.me/Aresprotocol
 
-);
+Twitter: https://twitter.com/AresProtocolLab
 
-添加match_type
+Medium: https://Aresprotocollab.medium.com
 
-match_type! {
+Discord: https://discord.gg/EsaFRr7xmc
 
-​    pub type SpecParachain: impl Contains<MultiLocation> = {
+Github: https://github.com/Aresprotocols
 
-​        X2(Parent, Parachain(2000)) | X2(Parent, Parachain(2001))
+Reddit: https://www.reddit.com/r/AresProtocolLabs/
 
-​    };
-
-}
-
-
-
-## 编译cumulus版本平行链
-
-```bash
-#编译
-cd cumulus
-cargo build 
-#导出genesis state和wasm文件
-./target/debug/polkadot-collator export-genesis-wasm > genesis-wasm
-./target/debug/polkadot-collator export-genesis-state --parachain-id 2000 > genesis-state-2000
-./target/debug/polkadot-collator export-genesis-state --parachain-id 2001 > genesis-state-2001
-#启动两条平行链
-RUST_LOG=runtime=debug ./target/debug/polkadot-collator -d ./data/alice --collator --alice --force-authoring --port 40557 --ws-port 9951 --parachain-id 2000 --ws-external --rpc-cors all --rpc-methods=unsafe -- --execution wasm --chain ../polkadot/rococo-local.json --port 40558 --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWEyoppNCUx8Yx66oV9fJnriXwCcXwDDUA2kj6vnc6iDEp
-
-RUST_LOG=runtime=debug ./target/debug/polkadot-collator -d ./data/bob --collator --bob --force-authoring --port 40777 --ws-port 9971 --parachain-id 2001 --ws-external --rpc-cors all --rpc-methods=unsafe -- --execution wasm --chain ../polkadot/rococo-local.json --port 40778 --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWEyoppNCUx8Yx66oV9fJnriXwCcXwDDUA2kj6vnc6iDEp
-```
-
-
-
-
-
-
-
-## 向中继链注册两条平行链
-
-https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9944#/sudo
-
-![image-20210901120051289](/Users/xjz/Library/Application Support/typora-user-images/image-20210901120051289.png)
-
-parasSudoWrapper->sudoScheduleParaInitialize
-
-
-
-https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9944#/parachains
-
-过段时间能看到平行链有2000 和 2001
-
-
-
-## 建立平行链hrmp通道
-
-https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9944#/sudo
-
-![image-20210901120515626](/Users/xjz/Library/Application Support/typora-user-images/image-20210901120515626.png)
-
-parasSudoWrapper->sudoEstablishHrmpChannel
-
-建立两次，参数：
-
-2000 2001 7 1000
-
-2001 2000 7 1000
-
-
-
-## 2001节点发送start消息
-
-https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9971#/sudo
-
-![image-20210901120847771](/Users/xjz/Library/Application Support/typora-user-images/image-20210901120847771.png)
-
-Spambot->start 参数
-
-2000 0x11
-
-
-
-## 查看事件发送结果
-
-https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9971#/explorer
-
-https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9951#/explorer 
-
+Facebook: https://www.facebook.com/groups/Aresprotocollabs
