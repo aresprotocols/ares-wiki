@@ -4,34 +4,56 @@ title: KSM卡槽竞拍支持规则及步骤
 sidebar_label: KSM卡槽竞拍支持规则及步骤
 ---
 
-## Introduction
+### 为什么需要进行插槽竞拍？
 
-KSM card slot auction support rules and procedures Why do I need to conduct slot auctions?
+波卡网络的基础设施包括：
 
-The infrastructure of the Polkadot network includes: Relay Chain: the main communication hub between the parachain and the Polkadot "backbone". Parachains: Independent blockchains that run on top of the relay chain and are bound and reserved through auctions. Transfer bridge: modules and contracts connected to other blockchains, such as Bitcoin and Ethereum. Parallel threads: For developers who just want to try Polkadot, this is a lighter alternative, and the "pay as you go" model is offered to them. If the Polkadot main chain (relay chain) is regarded as a power strip, the different electrical appliances on the power strip are parallel chains. These electrical appliances can be refrigerators, TVs, and so on. Polkadot's main chain is a relay chain based on Substrate; Polkadot's parachain can have many types, such as Bitcoin, Ethereum, TRON, and so on. Due to the limitation of network resources, it is not possible to access the parachain without restriction. Polkadot has designed 100 slots for the parachain to use, and the way of obtaining it is auction. Only by acquiring a slot can you stably access the Polkadot network and enjoy the security of the main network. The essence of the slot is the right to use the Polkadot network. The slot is issued for 6 months, and one auction can get the right to use it for up to 2 years. Each chain can design its own structure according to needs, and at the same time can enjoy the same security of Polkadot's main network. Many parachains have been designed as smart contract platforms to attract project parties who do not want to bid on their own parachains to build applications on their own chains, thus forming their own small ecology within the Polkadot ecology. At this level, the importance of slots is even more prominent. Because the slot may allow the parachain to form its own ecology and realize its own network effect.
+● 中继链（Relay Chain）：平行链和波卡 “骨干”之间的主要通信枢纽。
 
-The steps of a slot auction
+● 平行链（parachains）：独立的区块链，运行在中继链的顶端，通过拍卖的方式进行绑定和保留。
 
-1. Launch the Rococo v1 testnet and wait for it to run stably;
+● 转接桥：连接到其他区块链的模块和合约，比如比特币和以太坊。
 
-2. The public welfare parachain of Kusama Xianxing Network is launched;
+● 平行线程：对于那些只想尝试波卡的开发者来说，这是一个较轻的替代方案， “现收现付 “的模式提供给他们。
 
-3. Open Kusama's first online slot auction;
+如果把波卡主链（中继链）看做一个插排，那么插排上不同的电器便是平行链，这些电器可以是冰箱、电视等等。
+波卡的主链是一条基于Substrate创建的中继链；波卡的平行链可以有很多类型，可以是比特币、以太坊、波场等等。
 
-4. Launch Kusama Pioneer Network Parachain; "Currently, the first 5 ksm slots have been auctioned and are in the state of access testing."
+由于网络资源的有限性，不能无限制地接入平行链，波卡设计了 100 个插槽给平行链使用，获得方式为竞拍。只有获取了插槽才能稳定接入波卡网络，享受主网安全性。插槽的本质是波卡网络的使用权，插槽每期 6 个月，一次竞拍最多获得 2 年的使用权。
 
-5. Complete the audit work and launch the public welfare parachain of the Polkadot mainnet;
-
-6. Open the slot auction on the Polkadot mainnet;
-
-7. Launch the Polkadot mainnet parachain.
+每条链都可以根据需要设计自己的结构，同时可以享受波卡主网同等的安全性。不少平行链都设计成了智能合约平台，吸引不想自己竞拍平行链的项目方来自己的链上搭建应用，从而在波卡大生态内形成自己的小生态。在这个层面上，插槽的重要性更加凸显了。因为插槽有可能让平行链形成自己的生态，实现自己的网络效应。
 
 
-The Kusama mentioned above is Polkadot's pioneering network, which has an independent organization and community, and is an independent blockchain with real value. Kusama is Polkadot's pioneering network, and all new functions and features appearing on Polkadot will be launched on Kusama first, and the same is true for slot auctions. Because the slot auction will be conducted on Kusama first, it is expected that Kusama's secondary market will perform well under the blessing.
+插槽拍卖的步骤
+
+1、上线 Rococo v1 测试网并等待其稳定运行；
+
+2、上线 Kusama 先行网的公益平行链； 
+
+3、开启 Kusama 先行网上的插槽竞拍； 
+
+4、上线 Kusama 先行网平行链；「目前前5个ksm插槽竞拍完成，处于接入测试状态」
+
+5、完成审计工作，上线 Polkadot 主网的公益平行链； 
+
+6、开启 Polkadot 主网上的插槽竞拍；
+
+7、上线 Polkadot 主网平行链。
+
+上面提到的 Kusama 是波卡的先行网络，其具有独立的组织及社区，是一个具有真实价值的的独立区块链。Kusama 作为波卡的先行网络，波卡网络上出现的新功能、新特性，都将会在 Kusama 上先行上线，插槽拍卖同样如此。正因为插槽拍卖会先在 Kusama 上进行，预期加持之下 Kusama 二级市场的表现一直不错。
 
 
-What is a Parachain Slot Auction?
-Parachain slot auctions, a more accurate statement should be parachain slot lease auctions. Parachain slots are actually only rented but not sold. Each lease period of the parachain slots on Polkadot is 6 months. Four lease periods can be bid for at auction, which means that only one or more projects can be sold. The lease period, the parachain slot lease period on KSM will be shorter. Parachain slot auctions use candlestick auctions. Candle auction originated from ship auctions in the 16th century. After the auction started, the executor of the auction lit a fixed-length candle. At the moment the candle was extinguished, whoever made the highest bid won the auction item. Parachain slot auctions will simulate this process on the blockchain. It is divided into two stages: a security period and a random period. During the security period, the auction will proceed freely and will not end. The random number will drop the hammer at any time. At the moment the hammer falls, whoever pledges a large number of DOT/KSM can rent this slot. When the project party is bidding, due to cost considerations, it is impossible to buy DOT/KSM on the secondary market and pledge it to itself, but will introduce related incentive mechanisms, such as Token rewards for the project, to incentivize others Users pledge DOT/KSM to themselves. After the user pledges to the project party, these pledged DOT/KSM are locked. If the project party takes the parachain slot, it will be unlocked after the slot lease period expires. If the project party does not take the slot, auction Unlock and release after the end. It is important to note that the pledged DOT/KSM is still in the hands of the user, but liquidity is lost. The project party cannot privately misappropriate the user's pledged DOT/KSM. This is similar to EOS node voting. After users pledge EOS, they can exercise their voting rights and vote for supporting nodes. The pledged EOS just loses its liquidity, but it is still in the hands of users. In addition to the parallel chain slot, the Polkadot system also introduced parallel threads. In simple terms, parallel threads can be understood as "shared parachains", supporting multiple projects to share certain parachain slots in units of blocks. Therefore, the parallel thread is specially designed by Polkadot for those projects that cannot afford the slot auction fees, or the business model does not require long-term slot leases.
+什么是平行链插槽拍卖？
+
+平行链插槽拍卖，更为准确的说法应该是平行链插槽租赁拍卖。平行链插槽，实际上只租不卖，波卡上的平行链插槽每个租赁期为 6 个月，拍卖时可竞标四个租赁期，也就是说项目方可拍下一个或者多个租赁期，KSM 上的平行链插槽租赁期时长会更短一些。
+
+平行链插槽拍卖采用的是蜡烛式拍卖。蜡烛式拍卖最早起源于十六世纪的船舶拍卖，拍卖开始后，拍卖活动的执行人点燃一支固定长度的蜡烛，在蜡烛熄灭的那一刻，谁的出价最高，谁获得拍卖品。平行链插槽拍卖将在区块链上模拟这一过程，分为安全期和随机期两个阶段，在安全期内，拍卖自由进行，不会结束，只有进入随机期后，才会根据链上随机数随时落锤。落锤的那一刻，谁质押的 DOT/KSM 数量多，谁就能租到这个插槽。
+
+项目方在竞拍时，出于成本考虑，不可能全部都由自己去二级市场上购买 DOT/KSM 然后质押给自己，而是会出台相关的激励机制，比如给予项目的 Token 奖励，来激励其他用户质押 DOT/KSM 给自己。用户质押给项目方后，这些质押的 DOT/KSM 就被锁住了，如果项目方拍下了平行链插槽，需要等到插槽租赁期过后才能解锁，如果项目方没有拍下插槽，拍卖结束后解锁释放。
+
+需要特别说明的是，质押的 DOT/KSM 还是掌握在用户手里，只是丧失了流动性，项目方并不能私自挪用用户质押的 DOT/KSM。这一点类似于 EOS 节点投票，用户将 EOS 质押后就可以行使投票权，给支持的节点投票，质押的 EOS 只是丧失了流动性，其实还是掌握在用户手中。
+
+除了平行链插槽外，波卡系统还推出了平行线程。简单来说，平行线程可以理解为“共享型平行链”，支持多个项目以区块为单位共用一些特定的平行链插槽。因此，平行线程是波卡专门为那些无力承担插槽拍卖费用，或是业务模型无需长期租赁插槽的项目设计的。
 
 
-Ares detailed bidding rules and steps (to be announced)
+Ares详细竞拍规则及步骤（即将公布）

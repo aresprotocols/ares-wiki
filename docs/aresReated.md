@@ -67,27 +67,45 @@ Community round 1.66%: 20% is not locked, and will be released at 30%, 30%, and 
 Project completed process
 
 ● Release of White Paper 1.0
+
 ● Core protocol design
+
 ● WEB3 Foundation Grant Application
+
 ● Prototype development based on pallet and offchain work
+
 ● Release of Technical Yellow Book
+
 ● Improve the cross-chain interaction of oracle users
+
 ● Realize random selection of aggregators and on-chain aggregation
+
 ● Improve the challenger and arbitration council model
+
 ● Troy pledge mining has exceeded 60% of the circulation
+
 ● Ink contract calls the asset quotation module to get the price
+
 ● Access to Recoco test and conduct Kusama slot auction
 
 
 Project future development route
 
 ● Community Volunteer Program
+
 ● Improve economic model design
+
 ● Online test network
+
 ● Access to ecological partner testing
+
 ● Mainnet launches Ethereum network
+
 ● Carry out multi-channel service cooperation
+
 ● Formal cooperation with enterprises
+
 ● The main network is on the Polkadot network
+
 ● Eco-marathon developer activities
 

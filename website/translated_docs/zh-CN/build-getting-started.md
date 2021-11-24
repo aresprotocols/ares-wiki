@@ -13,16 +13,21 @@ Gladios 预言机网络
 安装 Rust
 # Install
 curl https://sh.rustup.rs -sSf | sh
+
 # Configure
 source ~/.cargo/env
 配置 Rust 工具链默认为最新的稳定版本，添加 nightly 和 nightly wasm 编译目标。
+```
 rustup default stable
 rustup update
 rustup update nightly
 rustup target add wasm32-unknown-unknown --toolchain nightly
+```
 安装依赖项 (举例 Ubuntu 18.04) 其他操作系统的安装，可以参考 Substrate开发者文档
+```
 sudo apt update
 sudo apt install make clang pkg-config libssl-dev build-essential
+```
 获取节点可执行文件
 
 获取 Gladios 项目源码并编译。

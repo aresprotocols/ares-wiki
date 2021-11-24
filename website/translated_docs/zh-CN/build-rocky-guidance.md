@@ -22,41 +22,41 @@ sidebar_label:  Ares gladios 1.01 测试网节点手册
 
 配置满足以上硬件条件的云服务器。市面上有很多，可以自己搜寻攻略。以下为其中一种，仅供参考，不做推荐。
 
-第一步
+***第一步***
 
-![image](https://upload-images.jianshu.io/upload_images/528413-47600f65641b0e1c.3jzfN3xZxAsyfMm08v9ZeWQvqWBREsID7Zt8jFiHwVM?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/图1.png?raw=true) 
 
 打开 [https://my.vultr.com/deploy/</u>](https://my.vultr.com/deploy/) ，注册进入首页。左侧点击“Products”栏目，选择“Cloud Computer”服务。
 
 第二步
 
-![image](https://upload-images.jianshu.io/upload_images/528413-5e2993983b4ab23b.3jzfN3xZxAsyfMm08v9ZeWQvqWBREsID7Zt8jFiHwVM?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/2.png?raw=true) 
 
 选择“Ubuntu 18.04 x64”版本，选择满足上述硬件条件的云服务器。点击“Deploy Now”进行付款。
 
 第三步
 
-![image](https://upload-images.jianshu.io/upload_images/528413-e4091381e3f5ee47.3jzfN3xZxAsyfMm08v9ZeWQvqWBREsID7Zt8jFiHwVM?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/3.png?raw=true) 
 
 付款完成后，左侧点击“Products”栏目，选择对应的账号。点击“Overview”，获取IP、用户名及密码，保存好它们用于后期登录。
 
 第四步
 
-![image](https://upload-images.jianshu.io/upload_images/528413-326ad8f733dcd922.3jzfN3xZxAsyfMm08v9ZeWQvqWBREsID7Zt8jFiHwVM?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/4.png?raw=true) 
 
-![image](https://upload-images.jianshu.io/upload_images/528413-f88f078c58a4107c.3jzfN3xZxAsyfMm08v9ZeWQvqWBREsID7Zt8jFiHwVM?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/5.png?raw=true) 
 
 下载程序 [<u>http://www.hostbuf.com/downloads/finalshell_install.pkg</u>](http://www.hostbuf.com/downloads/finalshell_install.pkg)，右击“打开”进行程序安装。选择安装位置，点击“安装”即可完成。
 
 第五步
 
-![image](https://upload-images.jianshu.io/upload_images/528413-9111a81b9eb221d7.3jzfN3xZxAsyfMm08v9ZeWQvqWBREsID7Zt8jFiHwVM?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/6.png?raw=true) 
 
 打开下载好的程序“FinalShell”，如上图，点击文件符号，选择“SSH连接（Linux）”
 
 第六步
 
-![image](https://upload-images.jianshu.io/upload_images/528413-b032117533b5a8d3.3jzfN3xZxAsyfMm08v9ZeWQvqWBREsID7Zt8jFiHwVM?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/8.png?raw=true) 
 
 输入自定义名称，之前保存的IP账号、用户名及密码，点击“确定”。云服务器就连接成功啦！
 
@@ -70,7 +70,7 @@ sidebar_label:  Ares gladios 1.01 测试网节点手册
 
 尽量选择最新的版本下载，如下例子是 v211028 版本
 
-![image](https://upload-images.jianshu.io/upload_images/528413-f694a26c62e0068c.3jzfN3xZxAsyfMm08v9ZeWQvqWBREsID7Zt8jFiHwVM?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/9.png?raw=true) 
 
 可执行的 gladios-node 二进制文件：
 
@@ -78,7 +78,7 @@ wget -c [<u>https://github.com/aresprotocols/ares/releases/download/v1.0.5/glad
 
 添加执行权限
 
-**chmod +777  **[**<u>gladios-node</u>**](https://user_cancel/)
+**chmod +777** [**<u>gladios-node</u>**](https://user_cancel/)
 
 执行节点
 
@@ -160,31 +160,31 @@ docker rm ares_gladios
 
 **Accounts**
 
-**如何打开如下的界面，访问 **[<u>https://js.aresprotocol.io/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io#/explorer/</u>](https://js.aresprotocol.io/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io#/explorer)
+**如何打开如下的界面，访问** [<u>https://js.aresprotocol.io/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io#/explorer/</u>](https://js.aresprotocol.io/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io#/explorer)
 
 创建账户
 
 第一步
 
-![image](https://upload-images.jianshu.io/upload_images/528413-43be76a821b34c05.3jzfN3xZxAsyfMm08v9ZeWQvqWBREsID7Zt8jFiHwVM?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/11.png?raw=true) 
 
 进入 Ares APPS, 点击窗口顶部导航栏中的“账户”，点击“添加账户”，如上图。
 
 第二步
 
-![image](https://upload-images.jianshu.io/upload_images/528413-ad02325a5465899f.3jzfN3xZxAsyfMm08v9ZeWQvqWBREsID7Zt8jFiHwVM?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/12.png?raw=true) 
 
 此帐户的**助记种子**值。确保您将**助记词种子保存**在安全的地方并勾选“我已安全保存我的助记词种子”
 
 第三步
 
-![image](https://upload-images.jianshu.io/upload_images/528413-72a012d9b2d0a682.3jzfN3xZxAsyfMm08v9ZeWQvqWBREsID7Zt8jFiHwVM?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/14.png?raw=true) 
 
 输入您的帐户名和密码，然后单击“下一步”
 
 第四步
 
-![image](https://upload-images.jianshu.io/upload_images/528413-a2c77c93f365ea96.3jzfN3xZxAsyfMm08v9ZeWQvqWBREsID7Zt8jFiHwVM?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/15.png?raw=true) 
 
 单击“保存”，该帐户将默认备份到您的设备上。请保管好您的备份文件。
 
@@ -192,25 +192,25 @@ docker rm ares_gladios
 
 第一步
 
-![image](https://upload-images.jianshu.io/upload_images/528413-62d16781e6206aab.3jzfN3xZxAsyfMm08v9ZeWQvqWBREsID7Zt8jFiHwVM?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/16.png?raw=true) 
 
 生成账户，点击“发送”，如上图。
 
 第二步
 
-![image](https://upload-images.jianshu.io/upload_images/528413-96e173674a2336ad.3jzfN3xZxAsyfMm08v9ZeWQvqWBREsID7Zt8jFiHwVM?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/18.png?raw=true) 
 
 输入站内转账地址以及数量，点击“进行交易”，如上图
 
 第三步
 
-![image](https://upload-images.jianshu.io/upload_images/528413-5faa42af57eed098.3jzfN3xZxAsyfMm08v9ZeWQvqWBREsID7Zt8jFiHwVM?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/19.png?raw=true) 
 
 保存本次交易的“调用哈希”，点击“签名及提交”，进行下一步
 
 第四步
 
-![image](https://upload-images.jianshu.io/upload_images/528413-e80656e9676aef94.3jzfN3xZxAsyfMm08v9ZeWQvqWBREsID7Zt8jFiHwVM?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/21.png?raw=true) 
 
 输入您账户的密码，点击“交易签名”，本次转账就完成了。快通知您的交易用户，及时查收吧！
 
@@ -222,15 +222,15 @@ docker rm ares_gladios
 
 第一步：
 
-![image](https://upload-images.jianshu.io/upload_images/528413-dcb3f5f984362052.3jzfN3xZxAsyfMm08v9ZeWQvqWBREsID7Zt8jFiHwVM?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240?raw=true) 
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/23.png?raw=true) 
 
-![image](https://upload-images.jianshu.io/upload_images/528413-d5bd8ed17857f73c.3jzfN3xZxAsyfMm08v9ZeWQvqWBREsID7Zt8jFiHwVM?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240?raw=true) 
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/24.png?raw=true) 
 
 如上图：进入Staking页面，点击 “Account actions” 后点击Stash按钮
 
 第二步：
 
-![image](https://upload-images.jianshu.io/upload_images/528413-426b519cc18b6d6d.3jzfN3xZxAsyfMm08v9ZeWQvqWBREsID7Zt8jFiHwVM?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240?raw=true) 
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/25.png?raw=true) 
 
 选择需要质押的账户(stash account)以及对应的控制账户(controller account)。stash跟controller可以是同一个账户，但是实际操作中强烈不建议这样做。根据需求填入需要质押的金额(value bonded)，质押金额从质押的账户(stash account)上扣除。
 
@@ -267,9 +267,9 @@ ares-keys可用author.rotateKeys代替
 1.  生成 Aura key： 需要指定 sr25519 格式。
 2.  生成 GRANDPA key：需要制定 ed25519 格式。
 
-![image](https://upload-images.jianshu.io/upload_images/528413-b78ea1ff5ea7343c.3jzfN3xZxAsyfMm08v9ZeWQvqWBREsID7Zt8jFiHwVM?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240?raw=true) 
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/26.png?raw=true) 
 
-![image](https://upload-images.jianshu.io/upload_images/528413-80baa3143777b26e.3jzfN3xZxAsyfMm08v9ZeWQvqWBREsID7Zt8jFiHwVM?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240?raw=true) 
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/27.png?raw=true) 
 
 进入RPC Calls页面，调用方法author.rotateKeys，点击按钮Submit RPC Call，然后服务端返回公钥(publicKey)；复制该公钥在第二步需要用到。
 
@@ -281,17 +281,17 @@ curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method":
 
 第二步：
 
-![image](https://upload-images.jianshu.io/upload_images/528413-4d03ae7e5995d441.3jzfN3xZxAsyfMm08v9ZeWQvqWBREsID7Zt8jFiHwVM?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240?raw=true) 
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/28.png?raw=true) 
 
-![image](https://upload-images.jianshu.io/upload_images/528413-e1489ff1f875d3d9.3jzfN3xZxAsyfMm08v9ZeWQvqWBREsID7Zt8jFiHwVM?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240?raw=true) 
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/29.png?raw=true) 
 
 进入Staking页面并点击Account actions这个标签页；选中你需要操作的账户，点击Change session keys，在弹出页面的输入框中粘贴第一步拿到的公钥，并点击Set Session Key按钮确认提交。
 
 第三步
 
-![image](https://upload-images.jianshu.io/upload_images/528413-86c5c1c455e18640.3jzfN3xZxAsyfMm08v9ZeWQvqWBREsID7Zt8jFiHwVM?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240?raw=true) 
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/30.png?raw=true) 
 
-![image](https://upload-images.jianshu.io/upload_images/528413-788f4471650b8eba.3jzfN3xZxAsyfMm08v9ZeWQvqWBREsID7Zt8jFiHwVM?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240?raw=true) 
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/31.png?raw=true) 
 
 进入Staking页面并点击Account actions这个标签页；选中你需要操作的账户，点击Validate，在弹出页面设置出块奖励的佣金比例(reward commission percentage)以及是否允许提名(allow new nominations)。
 
@@ -311,14 +311,14 @@ curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method":
 
 第一步：进入 Developer --> Extrinsics 页面
 
-![image](https://upload-images.jianshu.io/upload_images/528413-4f97df8b7266d5df.3jzfN3xZxAsyfMm08v9ZeWQvqWBREsID7Zt8jFiHwVM?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/32.png?raw=true) 
 
-![arch](https://github.com/aresprotocols/documentation/blob/master/assets/img/arch.png?raw=true)
+![arch](https://github.com/aresprotocols/documentation/blob/master/assets/img/33.png?raw=true)
 
 
 第二步：选中模块estimates 方法：newEstimates
 
-![image](https://upload-images.jianshu.io/upload_images/528413-7681142272c0516c.3jzfN3xZxAsyfMm08v9ZeWQvqWBREsID7Zt8jFiHwVM?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/34.png?raw=true) 
 
 根据的需求创建价格价格预测：
 
@@ -337,7 +337,7 @@ curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method":
 
 第一步： 进入页面 Developer --> Chain state 页面; 并选中模块estimates，方法 allEstimates.
 
-![image](https://upload-images.jianshu.io/upload_images/528413-2bf23a094a4a29ce.3jzfN3xZxAsyfMm08v9ZeWQvqWBREsID7Zt8jFiHwVM?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240?raw=true) 
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/图片2.png?raw=true) 
 
 输入参数：
 
@@ -348,7 +348,7 @@ curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method":
 
 第二步：进入 Developer --> Extrinsics 页面; 并选中模块estimates，方法 participateEstimates.
 
-![image](https://upload-images.jianshu.io/upload_images/528413-3429b84ee7c50857.3jzfN3xZxAsyfMm08v9ZeWQvqWBREsID7Zt8jFiHwVM?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240?raw=true) 
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/图片3.png?raw=true) 
 
 填写需要参与的价格竞猜参数：
 
@@ -366,7 +366,7 @@ curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method":
 *   Bytes: 交易对的名称：btc-usdt
 *   Option<u64>: 价格竞猜的ID，可以不填(不填会显示历史所有的中奖名单)
 
-![image](https://upload-images.jianshu.io/upload_images/528413-343ecb07faf0ea72.3jzfN3xZxAsyfMm08v9ZeWQvqWBREsID7Zt8jFiHwVM?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240?raw=true) 
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/图片4.png?raw=true) 
 
 **启动 Ares 预言机服务**
 

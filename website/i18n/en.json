@@ -9,6 +9,10 @@
         "title": "Apps Strorage Issue",
         "sidebar_label": "Apps Strorage Issue"
       },
+      "aresRelated": {
+        "title": "Ares Related",
+        "sidebar_label": "Ares Related"
+      },
       "bridge": {
         "title": "Bridge",
         "sidebar_label": "Bridge"
@@ -73,8 +77,8 @@
         "sidebar_label": "Crust Node"
       },
       "buildRockyGuidance": {
-        "title": "Ares gladios 1.01 测试网节点手册",
-        "sidebar_label": "Ares gladios 1.01 测试网节点手册"
+        "title": "Ares gladios 1.01 testnet mannual",
+        "sidebar_label": "Ares gladios 1.01 testnet mannual"
       },
       "buildSmanager": {
         "title": "Crust Storage Manager",
@@ -115,10 +119,6 @@
       "crustStorageExplorer": {
         "title": "Crust Storage Explorer",
         "sidebar_label": "Crust Storage Explorer"
-      },
-      "aresRelated": {
-        "title": "Ares Related",
-        "sidebar_label": "Ares Related"
       },
       "crustWallet": {
         "title": "Crust Wallet",
