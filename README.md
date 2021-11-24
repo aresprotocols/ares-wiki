@@ -1,2 +1,2 @@
-# crust-wiki
-The source of truth for Crust
+# ARES-wiki
+The source of truth for ARES
