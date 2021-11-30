@@ -1,7 +1,7 @@
 ---
 id: marketBenefits
-title: Storage Market Benefits
-sidebar_label: Storage Market Benefits
+title: Trojan staking
+sidebar_label: Trojan staking
 ---
 
 Users can receive storage order discounts and reductions for order settlement fees by locking in CRU tokens as storage market collateral.

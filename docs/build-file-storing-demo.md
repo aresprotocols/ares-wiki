@@ -1,5 +1,5 @@
 ---
 id: buildFileStoringDemo
-title: File Storing Code with IPFS Sample
-sidebar_label: File Storing Code with IPFS Sample
+title: 硬件环境
+sidebar_label: 硬件环境
 ---

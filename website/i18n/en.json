@@ -10,16 +10,16 @@
         "sidebar_label": "Apps Strorage Issue"
       },
       "aresRelated": {
-        "title": "Ares Related",
-        "sidebar_label": "Ares Related"
+        "title": "Liquidity mining",
+        "sidebar_label": "Liquidity mining"
       },
       "bridge": {
         "title": "Bridge",
         "sidebar_label": "Bridge"
       },
       "buildCrossChainSolution": {
-        "title": "KSM card slot auction support rules and steps",
-        "sidebar_label": "KSM card slot auction support rules and steps"
+        "title": "运行节点程序",
+        "sidebar_label": "运行节点程序"
       },
       "buildCrustGhAction": {
         "title": "Crust Pinner Github Action",
@@ -37,12 +37,12 @@
         "title": "build-file-storing-demo"
       },
       "buildFileStoringWithGWDemo": {
-        "title": "Pledge mining incentives and operation steps",
-        "sidebar_label": "Pledge mining incentives and operation steps"
+        "title": "程序安装",
+        "sidebar_label": "程序安装"
       },
       "buildGettingStarted": {
-        "title": "Portal",
-        "sidebar_label": "Portal"
+        "title": "跨链获取价格",
+        "sidebar_label": "跨链获取价格"
       },
       "buildHelloCrust": {
         "title": "Hello Crust",
@@ -73,12 +73,12 @@
         "sidebar_label": "IPFS W3Auth Gateway"
       },
       "buildNode": {
-        "title": "Crust Node",
-        "sidebar_label": "Crust Node"
+        "title": "Hardware environment",
+        "sidebar_label": "Hardware environment"
       },
       "buildRockyGuidance": {
-        "title": "Ares gladios 1.01 testnet mannual",
-        "sidebar_label": "Ares gladios 1.01 testnet mannual"
+        "title": "搭建验证人节点",
+        "sidebar_label": "搭建验证人节点"
       },
       "buildSmanager": {
         "title": "Crust Storage Manager",
@@ -176,20 +176,20 @@
         "title": "manage-files-in-JS-APPS"
       },
       "marketBenefits": {
-        "title": "Storage Market Benefits",
-        "sidebar_label": "Storage Market Benefits"
+        "title": "Trojan staking",
+        "sidebar_label": "Trojan staking"
       },
       "memberNode": {
-        "title": "Member Node",
-        "sidebar_label": "Member Node"
+        "title": "iliad staking",
+        "sidebar_label": "iliad staking"
       },
       "merchantGuidance": {
-        "title": "Merchant Guidance",
-        "sidebar_label": "Merchant Guidance"
+        "title": "Asset cross-chain bridge",
+        "sidebar_label": "Asset cross-chain bridge"
       },
       "faq": {
-        "title": "FAQ",
-        "sidebar_label": "FAQ"
+        "title": "启动预言机服务",
+        "sidebar_label": "启动预言机服务"
       },
       "nodeBenefits": {
         "title": "Node Benefits",
@@ -224,12 +224,12 @@
         "sidebar_label": "Q&A"
       },
       "setOnChainIdentity": {
-        "title": "Set OnChain Identity",
-        "sidebar_label": "Set OnChain Identity"
+        "title": "Kusama",
+        "sidebar_label": "Kusama"
       },
       "storageMerchant": {
-        "title": "Storage Merchant",
-        "sidebar_label": "Storage Merchant"
+        "title": "Dot",
+        "sidebar_label": "Dot"
       },
       "storageOverview": {
         "title": "Overview",
@@ -240,20 +240,20 @@
         "sidebar_label": "User Guidance"
       },
       "sWorkerEntryNetwork": {
-        "title": "Entry Network",
-        "sidebar_label": "Entry Network"
+        "title": "Technical framework",
+        "sidebar_label": "Technical framework"
       },
       "sWorkerOverview": {
-        "title": "Overview",
-        "sidebar_label": "Overview"
+        "title": "Introduction",
+        "sidebar_label": "Introduction"
       },
       "sWorkerVersion": {
-        "title": "sWorker Version",
-        "sidebar_label": "sWorker Version"
+        "title": "Ares term",
+        "sidebar_label": "Ares term"
       },
       "sWorkerWorkload": {
-        "title": "Workload",
-        "sidebar_label": "Workload"
+        "title": "Data market",
+        "sidebar_label": "Data market"
       },
       "teeTechnology": {
         "title": "TEE Technology",

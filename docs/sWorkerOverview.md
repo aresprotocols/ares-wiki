@@ -1,7 +1,7 @@
 ---
 id: sWorkerOverview
-title: Overview
-sidebar_label: Overview
+title: Introduction
+sidebar_label: Introduction
 ---
 
 ## What is sWorker

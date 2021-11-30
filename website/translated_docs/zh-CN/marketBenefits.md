@@ -1,67 +1,99 @@
 ---
 id: marketBenefits
-title: Storage Market Benefits
-sidebar_label: Storage Market Benefits
+title: trojan质押
+sidebar_label: trojan质押
 ---
 
-用户可以通过锁定CRU通证作为存储市场保障金来获得存储订单折扣优惠和订单清算手续费减免优惠。
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/image1.png?raw=true)
 
-作为[存储商户](merchantGuidance.md)，保障金是领取存储订单奖励的必要条件。保障金可以获得同等金额的存储市场收益累积上限，待领取的存储订单奖励累计到上限后将不会再增加，需要存储商户及时领取。
 
-## 权益1：存储用户的订单折扣
 
-存储用户可以在存储市场权益模块中通过[锁定CRU通证作为保障金](#1-增加保障金)来获得最大10%的存储订单折扣优惠，折扣比例的计算公式为：
+目前我们一直处于震荡行情中，为避免行情的波动给大家带来的收益损失。同时也是为了回馈，对于Ares项目长期看好的忠实铁杆们。团队经过一系列的讨论，决定推出年化收益率更高的定期产品。
 
-* 折扣比例=min（10%，用户保障金/存储市场总保障金）
+即日起，我们推出以下几款定期的质押挖矿产品：定期目前分为3档，分别在60天、120天及180天。60天的年化收益率为35%；120天的年化收益率为40%；180天的年化收益率为45%
 
-如下图示例，Stash账号锁定的保障金为0.1（此时全网总保障金为0.11，此用户占全网保障金锁定量的大部分），此时根据公式得出该用户获得的存储订单折扣为10%。可在[Crust Apps](https://apps.crust.network) -> "账户" -> “权益” -> “存储市场”查看到：
+注意事项
 
-![discount](assets/merchant/discount.png)
+*   购买定期产品后，规定时间内不能赎回本金，但是奖励可以随时领取。
 
->注意：折扣优惠不对小费生效
+*   购买定期产品，在质押挖矿时间内，若要加购定期产品，则需要延长整体期限。赎回天数=加购前完成天数+定期天数（60/120/180）
 
-## 权益2：订单清算手续费减免
+如：小明使用100 $ARES定期60天质押挖矿，30天后他决定再花100 $ARES，加购60天质押挖矿。这样操作的话，200 $ARES需要90天后才能赎回。此时收益约为：100*35%÷12+200*35%÷6
 
-用户可以在存储市场权益模块中通过[锁定CRU通证作为保障金](#1-增加保障金)来获得订单清算手续费减免优惠，Crust网络将会在每个Era的区块奖励中预留0.2%作为清算手续费减免池，用户通过锁定保障金可以在减免池中得到一定的配额。用户在发起清算时产生的手续费，将优先从减免池配额中扣除。用户的减免配额计算公式为：
+*   定期产品到期后，即可赎回，若没有及时赎回，系统将按你选择的周期给到对应的收益。
 
-* 用户减免配额 = （用户保障金/存储市场总保障金）* 减免池CRU总额
+如：小丽选择用100 $ARES订购120天产品，其年化收益率为40%，她到150天才赎回。那么小丽此时收益约为：100*40%÷12*5
 
-如下图示例，Stash账号锁定的保障金为0.1（此时全网总保障金为0.11，此用户占全网保障金锁定量的大部分），但由于全网“清算手续费减免池”金额为0。因此用户当前Era清算减免额度为0：
+诚挚地邀请您根据自身需求，选择合适的周期，参与我们定期质押挖矿活动！
 
-![freeSettle](assets/merchant/freeSettle.png)
+**活期产品**
 
->注意：清算手续费减免池每个Era将被重置，未消耗的减免池额度将不会被累计.
+ARES 质押挖矿已进行了 2 期，质押量持续攀升，可以看到大家参与的热情。质押量稳定占到了流通量的 60%左右，质押率已达到了波卡质押率的水平。
 
-## 权益3：存储商户领取存储订单奖励
+质押挖矿唯一地址 : [https://trojan.aresprotocol.io](https://trojan.aresprotocol.io/)
 
-在[订单清算](orderSettlement.md)后，属于存储商户的订单奖励不会直接进入商户余额，而是处于一种待领取的状态。**待领取的奖励总额有一个上限，这个上限跟[锁定的保障金](#1-增加保障金)总额相等。**
+**操作步骤**
 
-举个例子：如果商户锁定了0.1个CRU的担保金，那么这个商户在不断提供存储市场服务的过程中将会不断累积存储订单奖励。直到总待领取奖励达到0.1CRU后，新的订单奖励将被丢弃。如下图示例
+本指南将向您介绍 ARES 质押挖矿概念和界面。一旦您熟悉了这些概念和流程，您将更有信心使用质押挖矿。
 
-![recivable](assets/merchant/recivable.png)
+*   注意：质押挖矿要求使用 Metamask 钱包签名交易。如果您不知道如何设置 Metamask，则可以研究一些文章以获取更多信息。
 
-为了避免存储订单奖励被丢弃，商户有两个选择：
-    1. **领取奖励带商户的余额**，此时待领取奖励变为0，可以重新积累；
-    2. **[锁定更多保障金](#1-增加保障金)**，这样可以增大待领取奖励金的累计值。
+**1\. 登录您的 Metamask**
 
-## 存储市场权益模块操作说明
+![image.png](https://github.com/aresprotocols/documentation/blob/master/assets/img/image2.png?raw=true)
 
-### 1. 增加保障金
 
-进入 [Crust Apps](https://apps.crust.network) -> "账户" -> “权益” -> “存储市场”。找到GroupOwner的Stash账号，点击“增加保障金”按钮，在弹出框中输入要增加的保障金金额。
+**2.将 Ares 代币添加到 Metamask**
 
-![addCollateral](assets/merchant/addCollateral.png)
+输入如下链接登录 Etherscan，将 ARES 添加到 Metamask 里面
 
-![inputAddAmount](assets/merchant/inputAddAmount.png)
+[https://etherscan.io/token/0x358aa737e033f34df7c54306960a38d09aabd523](https://etherscan.io/token/0x358aa737e033f34df7c54306960a38d09aabd523)
 
-成功增加保障金后，我们可以看到用户的“最大可领取收益”也相应增加了。
+![image.png](https://github.com/aresprotocols/documentation/blob/master/assets/img/image3.png?raw=true)
 
-![addedCollateral](assets/merchant/addedCollateral.png)
 
-### 2 减少保障金
+**3\. 连接你的钱包**
 
-同样的，存储商户可以减少锁定的保障金，只需要点击“减少保障金”按钮，在弹出框中输入要减少的保障金金额即可。
+打开质押挖矿链接 :[https://trojan.aresprotocol.io/](https://trojan.aresprotocol.io/)
 
-![cutCollateral](assets/merchant/cutCollateral.png)
+![image.png](https://github.com/aresprotocols/documentation/blob/master/assets/img/image4.png?raw=true)
 
->注意：领取的奖励将会进入账户余额，但会被锁定28天，28天后才能进行转账。
+**4\. 主流程**
+
+**4.1 质押挖矿**
+
+**4.1.1 批准流程**
+
+如果你的地址是第一次连接到 Trojan，需要走一下 批准流程。
+
+![image.png](https://github.com/aresprotocols/documentation/blob/master/assets/img/image5.png?raw=true)
+
+
+**4.1.2 质押挖矿**
+
+当批准流程状态成功以后。你可以点击 "Stake Tokens" 按钮，然后输入你要质押的数量进行质押挖矿。一旦交易成功完成，在 Currently Staked 下会显示金额总数，按秒计算收益。
+
+![image.png](https://github.com/aresprotocols/documentation/blob/master/assets/img/image6.png?raw=true)
+
+
+友情提示 : 由于以太坊的网络的问题，请注意你所要付的 Gas fee. 如果你遇到了批准流程很长的情况，有可能是网络等问题，请刷新你的页面查看状态。或者考虑增加 Gas fee 来提高速度
+
+**4.2 取消抵押**
+
+点击 "**Unstake Tokens"(**取消抵押), 提取你的 Ares 币。 先输入你想提取的金额，然后点击 "Unstake"。
+
+![image.png](https://github.com/aresprotocols/documentation/blob/master/assets/img/image7.png?raw=true)
+
+
+**4.3 提取奖励**
+
+点击 "Claim Rewards"（提取奖励） 并且检查 Gas 费用 , 确认无误的时候
+
+点击 “Confirm" 按钮 来提取奖励
+
+![image.png](https://github.com/aresprotocols/documentation/blob/master/assets/img/image8.png?raw=true)
+
+
+**4.4 提取奖励且取消质押**
+
+你可以通过这个功能退出质押挖矿的活动。

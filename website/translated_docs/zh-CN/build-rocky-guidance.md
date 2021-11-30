@@ -1,7 +1,7 @@
 ---
 id: buildRockyGuidance
-title:  Ares gladios 1.01 测试网节点手册
-sidebar_label:  Ares gladios 1.01 测试网节点手册
+title:  搭建验证人节点
+sidebar_label:  搭建验证人节点
 ---
 
 
@@ -73,22 +73,26 @@ sidebar_label:  Ares gladios 1.01 测试网节点手册
 ![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/9.png?raw=true) 
 
 可执行的 gladios-node 二进制文件：
-
+```
 wget -c [<u>https://github.com/aresprotocols/ares/releases/download/v1.0.5/gladios-node</u>](https://github.com/aresprotocols/ares/releases/download/v1.0.5/gladios-node)
+```
 
 添加执行权限
-
-**chmod +777** [**<u>gladios-node</u>**](https://user_cancel/)
+```
+chmod +777 [**<u>gladios-node</u>**](https://user_cancel/)
+```
 
 执行节点
-
+```
 ./gladios-node --base-path /tmp/aura/one --name Ares_OCW5 --chain gladios --port 30334 --ws-port 9945 --rpc-port 9933 --ws-external --rpc-external --rpc-cors=all --rpc-methods=Unsafe --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0' --bootnodes /ip4/158.247.224.166/tcp/30333/p2p/12D3KooWEyoppNCUx8Yx66oV9fJnriXwCcXwDDUA2kj6vnc6iDEp
+```
 
 **方法二：源码编译**
-
+```
 安装Rust
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
 
 安装依赖库
 
@@ -109,6 +113,8 @@ rustup install nightly-2021-06-09
 rustup target add wasm32-unknown-unknown --toolchain nightly-2021-06-09
 
 cargo +nightly-2021-06-09 build --release
+```
+
 
 方法三：Docker运行节点程序
 
@@ -116,43 +122,55 @@ cargo +nightly-2021-06-09 build --release
 
 *   Ubuntu：
 
-[<u>https://docs.docker.com/engine/install/ubuntu/</u>](https://docs.docker.com/engine/install/ubuntu/)
+https://docs.docker.com/engine/install/ubuntu/
 
 *   CentOs
 
-[<u>https://docs.docker.com/engine/install/centos/</u>](https://docs.docker.com/engine/install/centos/)
+https://docs.docker.com/engine/install/centos
 
 *   RedHat
 
-[<u>https://docs.docker.com/engine/install/rhel/</u>](https://docs.docker.com/engine/install/rhel/)
+https://docs.docker.com/engine/install/rhel/
 
 *   Mac
 
-[<u>https://docs.docker.com/desktop/mac/install/</u>](https://docs.docker.com/desktop/mac/install/)
+https://docs.docker.com/desktop/mac/install/
 
 *   Windows
 
-[<u>https://docs.docker.com/desktop/windows/install/</u>](https://docs.docker.com/desktop/windows/install/)
+https://docs.docker.com/desktop/windows/install/
 
 1.  打开命令行工具，运行命令执行节点程序
 
+```
 docker run -d --name ares_gladios aresprotocollab/ares_gladios:beta gladios-node --name your-name --chain gladios --ws-external --rpc-external --rpc-cors=all --rpc-methods=Unsafe --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0'
 
+```
 以上命令中：aresprotocollab/ares_gladios:beta 可以换成不同的版本如：
 
 aresprotocollab/ares_gladios:alpha；更加多版本请查看：
 
-[<u>https://hub.docker.com/r/aresprotocollab/ares_gladios/tags</u>](https://hub.docker.com/r/aresprotocollab/ares_gladios/tags)
+https://hub.docker.com/r/aresprotocollab/ares_gladios/tags
 
 1.  查看程序运行日志：
 
+
+```
 docker logs -f ares_gladio -n 1000
+
+```
 
 1.  停止并删除节点程序
 
+
+
+```
 docker stop ares_gladios
 
 docker rm ares_gladios
+
+```
+
 
 **操作步骤**
 
@@ -160,9 +178,11 @@ docker rm ares_gladios
 
 **Accounts**
 
-**如何打开如下的界面，访问** [<u>https://js.aresprotocol.io/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io#/explorer/</u>](https://js.aresprotocol.io/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io#/explorer)
+**如何打开如下的界面，访问** 
 
-创建账户
+[<u>https://js.aresprotocol.io/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io#/explorer/</u>](https://js.aresprotocol.io/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io#/explorer)
+
+### 创建账户
 
 第一步
 
@@ -246,7 +266,9 @@ docker rm ares_gladios
 
 运行节点：
 
+```
 ./target/release/gladios-node --base-path /tmp/aura/one --name ocw_one --port 30333 --ws-port 9945 --rpc-port 9933 --ws-external --rpc-external --rpc-cors=all --rpc-methods=Unsafe --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0' --warehouse https://api.aresprotocol.io/ --bootnodes /ip4/158.247.224.166/tcp/30333/p2p/12D3KooWEyoppNCUx8Yx66oV9fJnriXwCcXwDDUA2kj6vnc6iDEp --validator
+```
 
 参数：（必选） --warehouse 用来指定 ares 报价服务器的IP地址。
 
@@ -376,6 +398,7 @@ curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method":
 
 2、通过 --ares-keys 启动 gladios-node 节点（需要事先配置好 ares-keys 文件）。
 
+
 ./target/release/gladios-node \
 
 --base-path /tmp/aura/two \
@@ -407,6 +430,8 @@ curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method":
 --validator \
 
 --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWEyoppNCUx8Yx66oV9fJnriXwCcXwDDUA2kj6vnc6iDEp
+
+
 
 如果不使用 ares-keys 加载私钥，可以通过RPC author_insertKey 的方式插入私钥，参考：https://docs.substrate.io/tutorials/v3/private-network/#generate-your-own-keys
 

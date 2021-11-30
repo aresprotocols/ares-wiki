@@ -1,7 +1,7 @@
 ---
 id: buildGettingStarted
-title: Portal
-sidebar_label: Portal
+title: 跨链获取价格
+sidebar_label: 跨链获取价格
 ---
 
 

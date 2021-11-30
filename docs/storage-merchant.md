@@ -1,7 +1,7 @@
 ---
 id: storageMerchant
-title: Storage Merchant
-sidebar_label: Storage Merchant
+title: Dot
+sidebar_label: Dot
 ---
 
 Storage merchants are nodes in the Crust network that provide storage space. Storage merchants need to run sWorker modules for consensus on workload,  hard disks, and network services, to support storage certification, storage services, and retrieval services.

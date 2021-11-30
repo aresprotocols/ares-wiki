@@ -1,7 +1,7 @@
 ---
 id: sWorkerEntryNetwork
-title: Entry Network
-sidebar_label: Entry Network
+title: Technical framework
+sidebar_label: Technical framework
 ---
 Netry network is the pre-step of joining in Crust storage network. This chapter will introduce the details and related concepts about entry network.
 

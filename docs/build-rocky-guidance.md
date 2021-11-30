@@ -1,7 +1,7 @@
 ---
 id: buildRockyGuidance
-title: Ares gladios 1.01 testnet mannual
-sidebar_label: Ares gladios 1.01 testnet mannual
+title: 搭建验证人节点
+sidebar_label: 搭建验证人节点
 ---
 
 

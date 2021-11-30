@@ -1,21 +1,29 @@
 ---
 id: faq
-title: FAQ
-sidebar_label: FAQ
+title: 启动预言机服务
+sidebar_label: 启动预言机服务
 ---
-Frequently Asked Questions 
+1、启动价格获取节点。
 
-⏰Continuous update~~ If you have any questions, please feel free to contact our community assistant or leave a message in the official WeChat group
+2、通过 --ares-keys 启动 gladios-node 节点（需要事先配置好 ares-keys 文件）。
+
+```javascript
+./target/release/gladios-node \  
+--base-path /tmp/aura/two \  
+--name ocw_two \  
+--chain ./chain-data-ares-aura.json \  
+--port 30334 \  
+--ws-port 9946 \  
+--rpc-port 9934 \  
+--ws-external \  
+--rpc-external \  
+--rpc-cors=all \  
+--rpc-methods=Unsafe \  
+--telemetry-url 'wss://telemetry.polkadot.io/submit/ 0' \  --warehouse http://YOURIP:PORT \  
+--ares-keys ./ares_key_file_02.curl \  
+--validator \  
+--bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWEyoppNCUx8Yx66oV9fJnriXwCcXwDDUA2kj6vnc6iDEp
+```
 
 
-F: I remember that Chainlink also integrates support for the Polkadot network. What are the advantages of Ares compared to Chainlink?
-Q: Ares has three characteristics: Random quotations from Babe and Offchain, on-chain verification by Rollup, and DeFi ecology for ink.
-
-F: Why is Ares certified by Polkadot?
-Q: Ares is a team funded by Polkadot's Web3 Open Grant. Many oracle projects do not have grants. Only two oracle projects in Polkadot have been awarded.
-
-F: Which exchanges have currently listed $Ares?
-Q: Ares is currently listed on exchanges such as Gate, MEXC Matcha, Hotbit, BKEX, BitMart, and Uniswap.
-
-F: What are the current technical achievements of Ares?
-Q: Web3 OpenGrant is obtained and delivered; Troy pledge mining has exceeded 60% of the circulation; Ink contract calls the asset quotation module to obtain the price. If you get something, just like it
+如果不使用 ares-keys 加载私钥，可以通过RPC author_insertKey 的方式插入私钥，参考：https://docs.substrate.io/tutorials/v3/private-network/#generate-your-own-keys

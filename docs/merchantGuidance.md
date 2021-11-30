@@ -1,7 +1,7 @@
 ---
 id: merchantGuidance
-title: Merchant Guidance
-sidebar_label: Merchant Guidance
+title: Asset cross-chain bridge
+sidebar_label: Asset cross-chain bridge
 ---
 
 [Group Owners](ownerNode.md) can register as merchants, who will receive two additional benefits:

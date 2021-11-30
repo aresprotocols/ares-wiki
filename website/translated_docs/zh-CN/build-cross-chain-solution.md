@@ -1,59 +1,159 @@
 ---
 id: buildCrossChainSolution
-title: KSM卡槽竞拍支持规则及步骤
-sidebar_label: KSM卡槽竞拍支持规则及步骤
+title: 运行节点程序
+sidebar_label: 运行节点程序
 ---
+**操作步骤**
 
-### 为什么需要进行插槽竞拍？
+**创建Ares账户**
 
-波卡网络的基础设施包括：
+**Accounts**
 
-● 中继链（Relay Chain）：平行链和波卡 “骨干”之间的主要通信枢纽。
+**如何打开如下的界面，访问** 
 
-● 平行链（parachains）：独立的区块链，运行在中继链的顶端，通过拍卖的方式进行绑定和保留。
+[<u>https://js.aresprotocol.io/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io#/explorer/</u>](https://js.aresprotocol.io/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io#/explorer)
 
-● 转接桥：连接到其他区块链的模块和合约，比如比特币和以太坊。
+### 创建账户
 
-● 平行线程：对于那些只想尝试波卡的开发者来说，这是一个较轻的替代方案， “现收现付 “的模式提供给他们。
+第一步
 
-如果把波卡主链（中继链）看做一个插排，那么插排上不同的电器便是平行链，这些电器可以是冰箱、电视等等。
-波卡的主链是一条基于Substrate创建的中继链；波卡的平行链可以有很多类型，可以是比特币、以太坊、波场等等。
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/11.png?raw=true) 
 
-由于网络资源的有限性，不能无限制地接入平行链，波卡设计了 100 个插槽给平行链使用，获得方式为竞拍。只有获取了插槽才能稳定接入波卡网络，享受主网安全性。插槽的本质是波卡网络的使用权，插槽每期 6 个月，一次竞拍最多获得 2 年的使用权。
+进入 Ares APPS, 点击窗口顶部导航栏中的“账户”，点击“添加账户”，如上图。
 
-每条链都可以根据需要设计自己的结构，同时可以享受波卡主网同等的安全性。不少平行链都设计成了智能合约平台，吸引不想自己竞拍平行链的项目方来自己的链上搭建应用，从而在波卡大生态内形成自己的小生态。在这个层面上，插槽的重要性更加凸显了。因为插槽有可能让平行链形成自己的生态，实现自己的网络效应。
+第二步
 
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/12.png?raw=true) 
 
-插槽拍卖的步骤
+此帐户的**助记种子**值。确保您将**助记词种子保存**在安全的地方并勾选“我已安全保存我的助记词种子”
 
-1、上线 Rococo v1 测试网并等待其稳定运行；
+第三步
 
-2、上线 Kusama 先行网的公益平行链； 
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/14.png?raw=true) 
 
-3、开启 Kusama 先行网上的插槽竞拍； 
+输入您的帐户名和密码，然后单击“下一步”
 
-4、上线 Kusama 先行网平行链；「目前前5个ksm插槽竞拍完成，处于接入测试状态」
+第四步
 
-5、完成审计工作，上线 Polkadot 主网的公益平行链； 
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/15.png?raw=true) 
 
-6、开启 Polkadot 主网上的插槽竞拍；
+单击“保存”，该帐户将默认备份到您的设备上。请保管好您的备份文件。
 
-7、上线 Polkadot 主网平行链。
+转账
 
-上面提到的 Kusama 是波卡的先行网络，其具有独立的组织及社区，是一个具有真实价值的的独立区块链。Kusama 作为波卡的先行网络，波卡网络上出现的新功能、新特性，都将会在 Kusama 上先行上线，插槽拍卖同样如此。正因为插槽拍卖会先在 Kusama 上进行，预期加持之下 Kusama 二级市场的表现一直不错。
+第一步
 
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/16.png?raw=true) 
 
-什么是平行链插槽拍卖？
+生成账户，点击“发送”，如上图。
 
-平行链插槽拍卖，更为准确的说法应该是平行链插槽租赁拍卖。平行链插槽，实际上只租不卖，波卡上的平行链插槽每个租赁期为 6 个月，拍卖时可竞标四个租赁期，也就是说项目方可拍下一个或者多个租赁期，KSM 上的平行链插槽租赁期时长会更短一些。
+第二步
 
-平行链插槽拍卖采用的是蜡烛式拍卖。蜡烛式拍卖最早起源于十六世纪的船舶拍卖，拍卖开始后，拍卖活动的执行人点燃一支固定长度的蜡烛，在蜡烛熄灭的那一刻，谁的出价最高，谁获得拍卖品。平行链插槽拍卖将在区块链上模拟这一过程，分为安全期和随机期两个阶段，在安全期内，拍卖自由进行，不会结束，只有进入随机期后，才会根据链上随机数随时落锤。落锤的那一刻，谁质押的 DOT/KSM 数量多，谁就能租到这个插槽。
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/18.png?raw=true) 
 
-项目方在竞拍时，出于成本考虑，不可能全部都由自己去二级市场上购买 DOT/KSM 然后质押给自己，而是会出台相关的激励机制，比如给予项目的 Token 奖励，来激励其他用户质押 DOT/KSM 给自己。用户质押给项目方后，这些质押的 DOT/KSM 就被锁住了，如果项目方拍下了平行链插槽，需要等到插槽租赁期过后才能解锁，如果项目方没有拍下插槽，拍卖结束后解锁释放。
+输入站内转账地址以及数量，点击“进行交易”，如上图
 
-需要特别说明的是，质押的 DOT/KSM 还是掌握在用户手里，只是丧失了流动性，项目方并不能私自挪用用户质押的 DOT/KSM。这一点类似于 EOS 节点投票，用户将 EOS 质押后就可以行使投票权，给支持的节点投票，质押的 EOS 只是丧失了流动性，其实还是掌握在用户手中。
+第三步
 
-除了平行链插槽外，波卡系统还推出了平行线程。简单来说，平行线程可以理解为“共享型平行链”，支持多个项目以区块为单位共用一些特定的平行链插槽。因此，平行线程是波卡专门为那些无力承担插槽拍卖费用，或是业务模型无需长期租赁插槽的项目设计的。
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/19.png?raw=true) 
 
+保存本次交易的“调用哈希”，点击“签名及提交”，进行下一步
 
-Ares详细竞拍规则及步骤（即将公布）
+第四步
+
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/21.png?raw=true) 
+
+输入您账户的密码，点击“交易签名”，本次转账就完成了。快通知您的交易用户，及时查收吧！
+
+运行验证人节点
+
+**Staking**
+
+1.  质押
+
+第一步：
+
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/23.png?raw=true) 
+
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/24.png?raw=true) 
+
+如上图：进入Staking页面，点击 “Account actions” 后点击Stash按钮
+
+第二步：
+
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/25.png?raw=true) 
+
+选择需要质押的账户(stash account)以及对应的控制账户(controller account)。stash跟controller可以是同一个账户，但是实际操作中强烈不建议这样做。根据需求填入需要质押的金额(value bonded)，质押金额从质押的账户(stash account)上扣除。
+
+*   stash账户可以想象成你的冷钱包，资金的操作都是由stash账户来控制。
+*   controller账户，其它非资金操作都由controller来做(如：设置sessionKeys、设置佣金、参与投票、解除质押等)
+*   质押金额，不要把所有可用余额都用来质押，需留部分来做交易的手续费
+
+填写完以上信息后，点击Bond按钮完成质押操作。
+
+1.  出块(成为验证人)
+
+第一步：
+
+运行节点：
+
+```
+./target/release/gladios-node --base-path /tmp/aura/one --name ocw_one --port 30333 --ws-port 9945 --rpc-port 9933 --ws-external --rpc-external --rpc-cors=all --rpc-methods=Unsafe --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0' --warehouse https://api.aresprotocol.io/ --bootnodes /ip4/158.247.224.166/tcp/30333/p2p/12D3KooWEyoppNCUx8Yx66oV9fJnriXwCcXwDDUA2kj6vnc6iDEp --validator
+```
+
+参数：（必选） --warehouse 用来指定 ares 报价服务器的IP地址。
+
+参数：（可选）--ares-keys 用来通过一个私钥文件加载对应的 key-strore。
+
+--ares-keys 文件格式内部格式：
+
+aura:(Mnemonic phrase)//1//aura
+
+gran:(Mnemonic phrase)//1//grandpa
+
+参数：（必选）--validator 用来表示启动一个验证人节点。
+
+参数：（必选）--bootnodes 用来连接启动节点。
+
+ares-keys可用author.rotateKeys代替
+
+1.  生成 Aura key： 需要指定 sr25519 格式。
+2.  生成 GRANDPA key：需要制定 ed25519 格式。
+
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/26.png?raw=true) 
+
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/27.png?raw=true) 
+
+进入RPC Calls页面，调用方法author.rotateKeys，点击按钮Submit RPC Call，然后服务端返回公钥(publicKey)；复制该公钥在第二步需要用到。
+
+注意⚠️：以上的操作(第一步)请在**自己部署的节点或者信任的节点**进行。因为生成的公钥所对应的私钥(privateKey)会存储到该节点keystore下。
+
+CLI[<u>​</u>](https://wiki.polkadot.network/docs/maintain-guides-how-to-validate-polkadot#option-2-cli)
+
+curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method": "author_rotateKeys", "params":[]}' http://localhost:9933
+
+第二步：
+
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/28.png?raw=true) 
+
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/29.png?raw=true) 
+
+进入Staking页面并点击Account actions这个标签页；选中你需要操作的账户，点击Change session keys，在弹出页面的输入框中粘贴第一步拿到的公钥，并点击Set Session Key按钮确认提交。
+
+第三步
+
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/30.png?raw=true) 
+
+![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/31.png?raw=true) 
+
+进入Staking页面并点击Account actions这个标签页；选中你需要操作的账户，点击Validate，在弹出页面设置出块奖励的佣金比例(reward commission percentage)以及是否允许提名(allow new nominations)。
+
+*   佣金比例(reward commission percentage)
+
+设置出块奖励佣金百分比；例如10%，那么出块奖励中的10%是自己所得，剩余部分是按比例分配给到提名人。佣金设置建议不要过高，合适的佣金才能让更多人提名，从而在竞争中胜出成为验证人(出块节点)
+
+*   是否允许提名(allow new nominations)
+
+默认是允许提名。如果不允许提名，就只能单靠自己质押的金额与别人一起竞争。
+
+完成以上操作后，如果从竞选中胜出就可以参与出块了。

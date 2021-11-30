@@ -1,7 +1,7 @@
 ---
 id: memberNode
-title: Member Node
-sidebar_label: Member Node
+title: iliad staking
+sidebar_label: iliad staking
 ---
 
 ## 1. Overview

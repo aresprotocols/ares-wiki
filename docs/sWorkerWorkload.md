@@ -1,7 +1,7 @@
 ---
 id: sWorkerWorkload
-title: Workload
-sidebar_label: Workload
+title: Data market
+sidebar_label: Data market
 ---
 The workload of sWorker consists of two parts:SRD and meaningful file. This chapter will introduce the process of generation, validation of these two parts.
 

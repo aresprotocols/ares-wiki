@@ -1,7 +1,7 @@
 ---
 id: aresRelated
-title: Ares Related
-sidebar_label: Ares Related
+title: Liquidity mining
+sidebar_label: Liquidity mining
 ---
 
 ## 1. What is a blockchain oracle oracle (Oracle)?

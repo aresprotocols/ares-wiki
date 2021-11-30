@@ -1,85 +1,49 @@
 ---
 id: merchantGuidance
-title: Merchant Guidance
-sidebar_label: Merchant Guidance
+title: 资产跨链桥
+sidebar_label: 资产跨链桥
 ---
+### 资产跨链桥
 
-[Group Owner](ownerNode.md)可以注册成为商户。成为商户之后，将会获得额外两部分收益：
+Trojan资产跨链桥功能目前已全面开放，可将ETH链上的ARES轻松地转到BSC链上。
 
-1. 存储用户数据带来质押上限的提升；
-2. 存储市场的订单奖励；
+注意事项:
 
-> 本文中提到的存储市场奖励仅限订单奖励，不涉及存储用户文件后带来的质押上限的提升。想要了解质押上限提升规则请阅读[经济白皮书](https://crust-data.oss-cn-shanghai.aliyuncs.com/crust-home/whitepapers/ecowhitepaper_en.pdf)
+**1,目前只支持ARES资产从ETH链上转移至BSC链，暂不支持从BSC链转回至ETH链。**
 
-本文将提供以下指引：如何成为商户、如何配置接单策略、如何锁定保障金并获得存储市场收益，这些指引将帮助新的存储商户在Crust网络中平稳运营。
+**2,该Ares跨链桥在Trojan界面进行，获取到BSC链上的ARES后，请切换至iliad界面进行质押挖矿。**
 
-## 1. 成为新商户
+**3,该流程需要花费10 ARES（跨链桥费）及一定量的ETH，请保持钱包内有充足的资产。**
 
-设置一个保障金是Group Owner成为商户的基本条件，同时也是商户领取存储市场收益的前置条件。
+**4,目前资产跨链桥有一定的延迟，请耐心等待。如长时间没有反应，可以联系社群管理员帮助解决。**
 
-Group Owner进入 [Crust Apps](https://apps.crust.network) -> “账户” -> “权益” -> “存储市场”页面，找到您Group Owner的Stash账户。点击Stash账户右边的“增加保障金”，输入对应数额保障金。如下图：
+**ARES ETH合约地址：0x358AA737e033F34df7c54306960a38d09AaBd523**  
 
-![initialCollateral](assets/merchant/initialCollateral.png)
+**ARES BSC合约地址: 0xf9752A6E8A5E5f5e6EB3aB4e7d8492460fb319f0**
 
-在账户锁定了保障金后，进入 [Crust Apps](https://apps.crust.network) -> “存储市场” -> “存储商户” -> “我的商户” 页面，可以看到自己的商户初始信息。其中，“收益”一项代表了目前尚未领取的订单奖励（对订单发起[清算](orderSettlement.md)后，对应的订单奖励将会计入这一项），“最大可领取收益”代表最高可以累计的未领取收益。
+### 操作步骤
 
-![merchantPage](assets/merchant/merchantPage.png)
+1.连接你的钱包
 
-保障金的金额决定了商户可以积累多少待领取存储市场收益，商户待领取收益和保障金的关系将在[获得存储市场奖励](#3-获得存储市场奖励)中介绍。
+打开质押界面：http://trojan.aresprotocol.io/ 
 
-## 2. 配置存储订单获取策略
+![](assets/build/30.png)
 
-sManager 负责处理Crust网络中的订单文件。节点运维人员可以通过定制sManager来定制商户的接单策略。了解更多请查看[sManager 代码仓库](https://github.com/crustio/crust-smanager#readme)
+2.点击“Ares桥”打开从ETH链到BSC链的ARES资产跨链桥。
+![](assets/build/31.png)
 
-## 3. 获得存储市场奖励
+3.填写资产金额在资产跨链桥功能界面，系统将自动识别您的钱包的ARES余额。填写您想要迁移至BSC链上的金额。确认“BSC链上将会收到的ARES金额”、“跨链桥费用”及您的BSC地址是否准确。如果准确无误，请点击“确认”。
 
-存储市场奖励，来自于存储订单。用户为存储订单支付费用的20%将会被最先完成存储封装（“封装”一词可查阅[术语表](glossary.md)）的四个节点获得。但存储市场奖励不会直接进入到存储商户的账户余额中。为了获得存储市场奖励，存储商户需要：
+![](assets/build/32.png)
 
-1. 锁定保障金；
-2. 清算存储订单；
-3. 领取存储市场奖励；
+4.确认交易
 
-### 3.1 保障金锁定
+查看Gas费用，点击“确认”。
+![](assets/build/33.png)
 
-在[订单清算](orderSettlement.md)后，属于存储商户的订单奖励不会直接进入商户余额，而是处于一种待领取的状态。**待领取的奖励总额有一个上限，这个上限跟锁定的保障金总额相等。**
+5.完成交易
 
-> 举个例子：如果商户锁定了10个CRU的担保金，那么这个商户在不断提供存储市场服务的过程中将会不断累积存储订单奖励。直到总待领取奖励达到10CRU后，新的订单奖励将被丢弃。为了避免存储订单奖励被丢弃，商户有两个选择：
+您的请求已经成功，请耐心等待资产到账吧。可以打开ARES BscScan，进行交易查询：https://bscscan.com/address/0xf9752A6E8A5E5f5e6EB3aB4e7d8492460fb319f0
+![](assets/build/34.png)
 
-    1. 领取奖励带商户的余额，将待领取奖励清零；
-    2. 锁定更多保障金，这样可以增大待领取奖励金的累计值。
-
-以下是几个保障金相关的操作：
-
-#### 3.1.1 增加保障金
-
-进入 [Crust Apps](https://apps.crust.network) -> "账户" -> “权益” -> “存储市场”。找到GroupOwner的Stash账号，点击“增加保障金”按钮，在弹出框中输入要增加的保障金金额。
-
-![addCollateral](assets/merchant/addCollateral.png)
-
-![inputAddAmount](assets/merchant/inputAddAmount.png)
-
-成功增加保障金后，我们可以看到用户的“最大可领取收益”也相应增加了。
-
-![addedCollateral](assets/merchant/addedCollateral.png)
-
-#### 3.1.1 减少保障金
-
-同样的，存储商户可以减少锁定的保障金，只需要点击“减少保障金”按钮，在弹出框中输入要减少的保障金金额即可。
-
-![cutCollateral](assets/merchant/cutCollateral.png)
-
-### 3.2 订单奖励清算
-
-清算是商户获得存储订单奖励的前置步骤，清算后对应的订单奖励会被累计到对应商户的待领取奖励中。清算条件和清算步骤可以参考[清算指南](orderSettlement.md)。
-
-Crust网络设置了存储市场权益机制，商户的清算交易手续费也可以通过锁定保障金来减免，参考[存储市场权益指南](marketBenefits.md)了解更多。
-
-### 3.3 存储市场奖励领取
-
-如果存储商户通过前面的指引，锁定了足够的保障金并且完成了订单清算，获得了待领取奖励，那么商户可以按以下步骤领取这些奖励。
-
-进入 [Crust Apps](https://apps.crust.network) -> "存储市场" -> “存储商户” 页.您的Merchant账号对应的“收益”一栏的值，代表您存储市场的收益，清算的订单奖励也会被加入到您的“收益”中。点击“领取收益”即可提取存储市场收益。
-
-![getReward](assets/merchant/getReward.png)
-
->注意：领取的奖励将会进入账户余额，但会被锁定28天，28天后才能进行转账。
+当您的资产成功地从ETH链上转移至BSC链上，恭喜您可以愉快地在iliad界面进行质押挖矿了。

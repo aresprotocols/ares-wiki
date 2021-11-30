@@ -1,7 +1,7 @@
 ---
 id: sWorkerVersion
-title: sWorker Version
-sidebar_label: sWorker Version
+title: Ares term
+sidebar_label: Ares term
 ---
 
 

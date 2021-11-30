@@ -1,22 +1,74 @@
 {
   "docs": {
     "General": [
-      "aresOverview"
+      "aresOverview",
+      "aresWhitepaper",
+      {
+        "type": "subcategory",
+        "label": "Whitepaper",
+        "ids": [
+          "sWorkerOverview",
+          "sWorkerEntryNetwork",
+          "sWorkerWorkload",
+          "teeTechnology"
+        ]
+      },
+      "sWorkerVersion"
     ],
     "Learn": [
-      "aresBasic",
+      "marketBenefits",
+      {
+        "type": "subcategory",
+        "label": "质押挖矿",
+        "ids": [
+          "marketBenefits",
+          "memberNode",
+          "merchantGuidance"
+        ]
+      },
       "aresRelated",
-      "plan",
-      "apis"
+      "aresWhitepaper",
+      {
+        "type": "subcategory",
+        "label": "Gladios测试网",
+        "ids": [
+          "storageOverview",
+          "storageUserGuide"
+        ]
+      },
+      "aresWhitepaper",
+      {
+        "type": "subcategory",
+        "label": "插槽竞拍",
+        "ids": [
+          "setOnChainIdentity",
+          "storageMerchant"
+        ]
+      }
+      
     ],
     "Build": [
-      "buildGettingStarted",
-      "buildRockyGuidance",
-      "buildFileStoringDemo",
-      "buildFileStoringWithGWDemo",
-      "buildCrossChainSolution"
+     
+      {
+        "type": "subcategory",
+        "label": "Basic",
+        "ids": [
+          "buildGettingStarted"
+        ]
+      },
+      "aresGladios",
+      {
+        "type": "subcategory",
+        "label": "Gladios Guide",
+        "ids": [
+          "buildRockyGuidance"
+        ]
+      }
     ],
     "Node": [
+      "buildNode",
+      "buildFileStoringWithGWDemo",
+      "buildCrossChainSolution",
       "faq"
     ]
   }

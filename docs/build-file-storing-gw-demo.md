@@ -1,7 +1,7 @@
 ---
 id: buildFileStoringWithGWDemo
-title: Pledge mining incentives and operation steps
-sidebar_label: Pledge mining incentives and operation steps
+title: 程序安装
+sidebar_label: 程序安装
 ---
 
 

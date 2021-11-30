@@ -1,27 +1,32 @@
 ---
 id: storageOverview
-title: Overview
-sidebar_label: Overview
+title: 账户
+sidebar_label: 账户
 ---
 
-Crust 网络构建了一个任何人都可以使用的[去中心化存储市场](DSM.md)，简称DSM。存储用户和存储商户可以在去中心化存储市场中各取所需。
+### 账户
 
-## 存储用户
+打开如下的界面，访问 https://js.aresprotocol.io/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io#/explorer/
 
-存储用户是指有存储需求的用户，存储用户可以通过去中心化存储市场发起存储订单，并需要为此支付一定的费用。费用会根据网络中的存储资源，链上状态资源以及吞吐量资源进行动态调节，用户也可以增加小费以加快存储订单的响应速度。查看[存储用户指南](storageUserGuide.md)，获得更多详细信息。
+第一步
 
-存储用户还可以通过锁定CRU通证作为存储市场保障金来获得**存储订单折扣优惠**，查看[存储市场权益](marketBenefits.md)获得更多详细信息。
+![](assets/build/44.png)
 
-## 存储商户
 
-[Group Owner](ownerNode.md)节点可以代表Group注册成为存储商户，并需要缴纳一定的保障金。存储商户通过去中心化存储市场接收存储用户订单，由组内的Member节点完成文件存储，并提供检索服务。
-商户成功存储文件后可以获得以下收益：
+进入 Ares APPS, 点击窗口顶部导航栏中的“账户”，点击“添加账户”，如上图。
 
-* 从去中心化存储市场中获得相应的存储收益；
-* 通过存储文件获得有效数据量，有效数据量会比SRD贡献更多的存储算力，能有效提升节点的质押上限，帮助节点获得更高的质押奖励。*存储算力具体计算规则可查看[经济白皮书](https://crust-data.oss-cn-shanghai.aliyuncs.com/crust-home/whitepapers/ecowhitepaper.pdf)。*
 
-查看[存储商户指南](merchantGuidance.md)，获得更多详细信息。
+第二步
+![](assets/build/45.png)
 
-## 开发者
+此帐户的助记种子值。确保您将助记词种子保存在安全的地方并勾选“我已安全保存我的助记词种子”
 
-Crust网络为开发者准备了相应的技术工具，开发者可以基于去中心化存储市场，构建出适合各种业务场景的应用。[查看如何构建](build-getting-started.md)。
+第三步
+![](assets/build/46.png)
+
+输入您的帐户名和密码，然后单击“下一步”
+
+第四步
+![](assets/build/47.png)
+
+单击“保存”，该帐户将默认备份到您的设备上。请保管好您的备份文件。

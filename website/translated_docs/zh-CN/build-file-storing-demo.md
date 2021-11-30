@@ -1,6 +1,6 @@
 ---
 id: buildFileStoringDemo
-title: File Storing Code Sample
-sidebar_label: File Storing Code Sample
+title: 硬件环境
+sidebar_label: 硬件环境
 ---
 

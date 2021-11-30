@@ -1,7 +1,7 @@
 ---
 id: setOnChainIdentity
-title: Set OnChain Identity
-sidebar_label: Set OnChain Identity
+title: Kusama
+sidebar_label: Kusama
 ---
 
 You will get a name displayed in some specific places by set your on-chain identity.
