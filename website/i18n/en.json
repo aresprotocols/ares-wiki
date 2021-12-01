@@ -274,6 +274,7 @@
     },
     "categories": {
       "General": "General",
+      "Whitepaper": "Whitepaper",
       "Learn": "Learn",
       "Build": "Build",
       "Node": "Node"

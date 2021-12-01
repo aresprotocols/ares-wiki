@@ -2,19 +2,15 @@
   "docs": {
     "General": [
       "aresOverview",
-      "aresWhitepaper",
-      {
-        "type": "subcategory",
-        "label": "Whitepaper",
-        "ids": [
-          "sWorkerOverview",
-          "sWorkerEntryNetwork",
-          "sWorkerWorkload",
-          "teeTechnology"
-        ]
-      },
       "sWorkerVersion"
     ],
+    "Whitepaper": [
+      "sWorkerOverview",
+      "sWorkerEntryNetwork",
+      "sWorkerWorkload",
+      "teeTechnology"
+    ],
+
     "Learn": [
       "marketBenefits",
       {

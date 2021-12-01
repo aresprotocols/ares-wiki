@@ -18,7 +18,7 @@ Ares有着一个庞大的链上链下协议栈以及相关工具集。您可以�
 
 ## 文档
 
-Ares协议需要大量的文档来精确的描述。如果您觉得Crust wiki有可优化或者更新的内容，您可以在以下Repo进行修改。
+Ares协议需要大量的文档来精确的描述。如果您觉得Ares wiki有可优化或者更新的内容，您可以在以下Repo进行修改。
 
 * [ares-wiki](https://github.com/aresprotocols/documentation)
 
