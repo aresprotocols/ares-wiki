@@ -15,7 +15,7 @@
       "marketBenefits",
       {
         "type": "subcategory",
-        "label": "质押挖矿",
+        "label": "Trojan Stake Mining",
         "ids": [
           "marketBenefits",
           "memberNode",
@@ -26,7 +26,7 @@
       "aresWhitepaper",
       {
         "type": "subcategory",
-        "label": "Gladios测试网",
+        "label": "Gladios",
         "ids": [
           "storageOverview",
           "storageUserGuide"
@@ -35,7 +35,7 @@
       "aresWhitepaper",
       {
         "type": "subcategory",
-        "label": "插槽竞拍",
+        "label": "Slot auction",
         "ids": [
           "setOnChainIdentity",
           "storageMerchant"

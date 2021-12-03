@@ -4,8 +4,7 @@ title: trojan质押
 sidebar_label: trojan质押
 ---
 
-![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/image1.png?raw=true)
-
+![](assets/build/9.png)
 
 
 目前我们一直处于震荡行情中，为避免行情的波动给大家带来的收益损失。同时也是为了回馈，对于Ares项目长期看好的忠实铁杆们。团队经过一系列的讨论，决定推出年化收益率更高的定期产品。
@@ -39,8 +38,7 @@ ARES 质押挖矿已进行了 2 期，质押量持续攀升，可以看到大家
 *   注意：质押挖矿要求使用 Metamask 钱包签名交易。如果您不知道如何设置 Metamask，则可以研究一些文章以获取更多信息。
 
 **1\. 登录您的 Metamask**
-
-![image.png](https://github.com/aresprotocols/documentation/blob/master/assets/img/image2.png?raw=true)
+![](assets/build/10.png)
 
 
 **2.将 Ares 代币添加到 Metamask**
@@ -48,15 +46,14 @@ ARES 质押挖矿已进行了 2 期，质押量持续攀升，可以看到大家
 输入如下链接登录 Etherscan，将 ARES 添加到 Metamask 里面
 
 [https://etherscan.io/token/0x358aa737e033f34df7c54306960a38d09aabd523](https://etherscan.io/token/0x358aa737e033f34df7c54306960a38d09aabd523)
-
+![](assets/build/11.png)
 ![image.png](https://github.com/aresprotocols/documentation/blob/master/assets/img/image3.png?raw=true)
 
 
 **3\. 连接你的钱包**
 
 打开质押挖矿链接 :[https://trojan.aresprotocol.io/](https://trojan.aresprotocol.io/)
-
-![image.png](https://github.com/aresprotocols/documentation/blob/master/assets/img/image4.png?raw=true)
+![](assets/build/12.png)
 
 **4\. 主流程**
 
@@ -65,15 +62,13 @@ ARES 质押挖矿已进行了 2 期，质押量持续攀升，可以看到大家
 **4.1.1 批准流程**
 
 如果你的地址是第一次连接到 Trojan，需要走一下 批准流程。
-
-![image.png](https://github.com/aresprotocols/documentation/blob/master/assets/img/image5.png?raw=true)
+![](assets/build/13.png)
 
 
 **4.1.2 质押挖矿**
 
 当批准流程状态成功以后。你可以点击 "Stake Tokens" 按钮，然后输入你要质押的数量进行质押挖矿。一旦交易成功完成，在 Currently Staked 下会显示金额总数，按秒计算收益。
-
-![image.png](https://github.com/aresprotocols/documentation/blob/master/assets/img/image6.png?raw=true)
+![](assets/build/14.png)
 
 
 友情提示 : 由于以太坊的网络的问题，请注意你所要付的 Gas fee. 如果你遇到了批准流程很长的情况，有可能是网络等问题，请刷新你的页面查看状态。或者考虑增加 Gas fee 来提高速度
@@ -81,8 +76,7 @@ ARES 质押挖矿已进行了 2 期，质押量持续攀升，可以看到大家
 **4.2 取消抵押**
 
 点击 "**Unstake Tokens"(**取消抵押), 提取你的 Ares 币。 先输入你想提取的金额，然后点击 "Unstake"。
-
-![image.png](https://github.com/aresprotocols/documentation/blob/master/assets/img/image7.png?raw=true)
+![](assets/build/15.png)
 
 
 **4.3 提取奖励**
@@ -90,8 +84,7 @@ ARES 质押挖矿已进行了 2 期，质押量持续攀升，可以看到大家
 点击 "Claim Rewards"（提取奖励） 并且检查 Gas 费用 , 确认无误的时候
 
 点击 “Confirm" 按钮 来提取奖励
-
-![image.png](https://github.com/aresprotocols/documentation/blob/master/assets/img/image8.png?raw=true)
+![](assets/build/16.png)
 
 
 **4.4 提取奖励且取消质押**

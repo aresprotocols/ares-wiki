@@ -18,8 +18,8 @@
         "sidebar_label": "Bridge"
       },
       "buildCrossChainSolution": {
-        "title": "运行节点程序",
-        "sidebar_label": "运行节点程序"
+        "title": "Run Validator Node",
+        "sidebar_label": "Run Validator Node"
       },
       "buildCrustGhAction": {
         "title": "Crust Pinner Github Action",
@@ -37,12 +37,12 @@
         "title": "build-file-storing-demo"
       },
       "buildFileStoringWithGWDemo": {
-        "title": "程序安装",
-        "sidebar_label": "程序安装"
+        "title": "Program Installation",
+        "sidebar_label": "Program Installation"
       },
       "buildGettingStarted": {
-        "title": "跨链获取价格",
-        "sidebar_label": "跨链获取价格"
+        "title": "Obtain Price Through Cross-Chain",
+        "sidebar_label": "Obtain Price Through Cross-Chain"
       },
       "buildHelloCrust": {
         "title": "Hello Crust",
@@ -77,8 +77,8 @@
         "sidebar_label": "Hardware environment"
       },
       "buildRockyGuidance": {
-        "title": "搭建验证人节点",
-        "sidebar_label": "搭建验证人节点"
+        "title": "Set Up the Verifier Node",
+        "sidebar_label": "Set Up the Verifier Node"
       },
       "buildSmanager": {
         "title": "Crust Storage Manager",
@@ -188,8 +188,8 @@
         "sidebar_label": "Asset cross-chain bridge"
       },
       "faq": {
-        "title": "启动预言机服务",
-        "sidebar_label": "启动预言机服务"
+        "title": "Start the Oracle Service",
+        "sidebar_label": "Start the Oracle Service"
       },
       "nodeBenefits": {
         "title": "Node Benefits",
@@ -232,12 +232,12 @@
         "sidebar_label": "Dot"
       },
       "storageOverview": {
-        "title": "Overview",
-        "sidebar_label": "Overview"
+        "title": "Account",
+        "sidebar_label": "Account"
       },
       "storageUserGuide": {
-        "title": "User Guidance",
-        "sidebar_label": "User Guidance"
+        "title": "Transfer",
+        "sidebar_label": "Transfer"
       },
       "sWorkerEntryNetwork": {
         "title": "Technical framework",
@@ -256,8 +256,8 @@
         "sidebar_label": "Data market"
       },
       "teeTechnology": {
-        "title": "TEE Technology",
-        "sidebar_label": "TEE Technology"
+        "title": "Economic Model",
+        "sidebar_label": "Economic Model"
       },
       "apis": {
         "title": "JSON-RPC APIS",

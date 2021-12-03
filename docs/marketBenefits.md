@@ -4,65 +4,104 @@ title: Trojan staking
 sidebar_label: Trojan staking
 ---
 
-Users can receive storage order discounts and reductions for order settlement fees by locking in CRU tokens as storage market collateral.
+## General Outlook
+Since May 13th this year, Ares Trojan Staking mining was officially deployed in the Ethereum main network and now we are welcoming the third phase of Staking mining, thank you all for your active participation!
+![](assets/build/9.png)
 
-For [storage merchants](merchantGuidance.md) to receive storage order rewards, the collateral is a necessity, with which merchants can get rewards equal to the collateral. This being said, the collateral represents the upper limit of the merchants’ to-be-collected storage order rewards, which will not increase any more when the limit is hit and merchants will need to collect them timely.
+Ares mining has been carried out for third periods, and the Staking volume continues to rise. We can see the enthusiasm of everyone involved. The current Staking amount plus the reward is 45,970,000. All along, we hope to give more rewards to our Aresians. Stake mining reward adjusted from the starting 625000 to a million of the third round. The annualized yield held steadily at 26 %.
 
-## **Benefit 1: Storage order discounts**
+With the release of the 2nd Seed Wheel Institutional Token, Ares has launched Regular-term mining products in order to better give-back to the community, Ares enthusiasts can pledge their tokens to regular-term contracts for more mining rewards.
 
-Users can get a maximum 10% discount on storage orders by [locking in CRU tokens as collateral](#1-add-collateral) in the Storage Market Benefits module. The discount rate can be calculated as: 
 
-* Discount rate = min (10%, the user’s collateral / total storage market collateral).
+### Why Choose Regular Products?
+Currently, we have been in a volatile market, in order to avoid the fluctuations of market to bring about the loss of income, At the same time, it’s also to give back to the loyal fans who are optimistic about the Ares project for a long time. After a series of discussions, the team decided to launch regular-term products with higher annualized returns.
 
-  As shown in the example below,  a collateral of 0.1 CRU is locked in the Stash account (the total collateral of the whole network is 0.11, and the user's collateral takes up a big part of the collateral locked in the network). According to the above formula, the storage order discount rate obtained by the user is 10%, which can be known from [Crust Apps](https://apps.crust.network) -> "Account" -> "Benefits" -> "Storage Market".
+From now on we will launch the following regular Staking mining products: regular-term mining products are divided into three grades, which are 60 days, 120 days and 180 days respectively. The APY of 60 days is 35%; The APY of 120 days is 40%; The APY of 180 days is 45%.
 
-  ![discount](assets/merchant/discount.png)
+### Please Recognize the Contract Address:
 
->Note: The discount offer is not applicable for tips.
+60 days: 0xa99d9fA06Dd1827fD39aB2d6E0d8eb1DaE9C4B93
 
-## **Benefit 2: Reductions for order settlement fees**
+120 days: 0x4C4f6d9FAe70236888C4D613199Ea4419ada23E8
 
-Users can get reductions for order settlement fees by [locking in CRU tokens as collateral](#1-add-collateral) in the Storage Market Benefits module. The Crust Network will reserve 0.2% of each Era’s block rewards which will be used for the reduction pool of settlement fees, and users can get a certain reduction limit in the reduction pool by locking in collateral. The order settlement fees will first be deducted from the reduction pool. Users’ order settlement fee reduction limit can be calculated as:
+180 days: 0xb31d8EBa3f5e2D758b54544E4446b39F9cb769ea
 
-* A user's reduction limit for order settlement fees = (the user's collateral / total storage market collateral) * total CRUs of the reduction pool
+### What Should We Pay Attention to When Participating in Regular Stake Mining?
+ After purchasing regular products, the principal cannot be redeemed within the specified time, but the reward can be received anytime.
 
-  As shown in the example below,  a collateral of 0.1 CRU is locked in the Stash account (the total collateral of the whole network is 0.11, and the user's collateral takes up a big part of the collateral locked in the network). Since the balance of the "reduction pool of settlement fees" is 0, the current user's reduction limit for order settlement fees is 0.
+For the purchase of regular products, if you want to purchase additional regular products during the Staking mining time, you need to extend the overall period. Redemption days= completion days before additional purchase + regular days (60/20/180).
 
-  ![freeSettle](assets/merchant/freeSettle.png)
+For example, David used $100 Ares to regular mine for 60 days. After 30 days, he decided to spend another $100 Ares and purchase an additional 60 days to mine. In this way, 200$ Ares will take 90 days to redeem. At this point, the income is about 100*35%/12+200*35%/6
 
->Note: The reduction pool for settlement fees will be reset each Era and unspent pool limits will not be accumulated.
+Regular-term products can be redeemed after expiration. If they are not redeemed in time, the system will give the corresponding income according to the cycle you chose.
+For example, David chooses to order 120 days products with $100 Ares with an annualized yield of 40%, and he redeems it in 150 days. Then David’s income at this point is about 100*40%/12*5.
 
-## Benefit 3: Storage merchants receive storage order rewards
 
-After the [order settlement](orderSettlement.md), order rewards belonging to storage merchants will not go directly to the merchants' balance, but are in a to-be-collected state. **There is a upper limit to the total amount of rewards to be collected, and this limit is equal to the total amount of [locked collateral](#1-add-collateral).**
+**Current Products**
 
-As shown in the example below: If a merchant locks in a collateral of 0.1 CRU, his storage order rewards will keep growing as he continues to provide storage market services. New order rewards will be discarded until his total to-be-collected rewards reach 0.1 CRU.
+Ares stake volume stably made up for 60% of the whole circulation, which has been reached Polkadot's staking level.
 
-![recivable](assets/merchant/recivable.png)
+Trojan Stake Mining Adress : [https://trojan.aresprotocol.io](https://trojan.aresprotocol.io/)
 
-To avoid storage order rewards being discarded, merchants will have two options:
+**Operating Steps**
 
-       1. take the rewards, when the to-be-collected rewards will be cleared and can be re-accumulated;
-       2. [lock in more collateral](#1-add-collateral), which can increase the receivable value of the to-be-collected rewards.
+This tutorial presents you with the staking conception and interface of the Ares Trojan Stake Mining. Once you get familiar with the operation process, you will be more confident in your vision of profit-making.
 
-## **Instructions on Storage Market Benefits**
+**Notice: Stake mining requires authorized trade of Metamask. If you are not aware of how to set up the Metamask, then you could make some research to acknowledge relevant skills.**
 
-### 1. **Add collateral**
+**1\. Login in your Metamask and switch the network to Ethereum Mainnet**
 
-Go to [Crust Apps](https://apps.crust.network) -> Accounts -> Benefits -> Storage Market. Select the Group Owner's Stash account, click on the "Add collateral" button and fill in the amount of to-be-added collateral in the dialog box.
+![](assets/build/10.png)
 
-![addCollateral](assets/merchant/addCollateral.png)
 
-![inputAddAmount](assets/merchant/inputAddAmount.png)
+**2.Add Ares token into matamask**
 
-After the collateral is successfully added, it will show that the user's "maximum receivable income" has also increased.
+Put in below address to log in Etherscan，add ARES into Metamask 
 
-![addedCollateral](assets/merchant/addedCollateral.png)
+[https://etherscan.io/token/0x358aa737e033f34df7c54306960a38d09aabd523](https://etherscan.io/token/0x358aa737e033f34df7c54306960a38d09aabd523)
 
-### 2. **Cut collateral**
+![](assets/build/11.png)
 
-Similarly, storage merchants can reduce the amount of the locked collateral by clicking on the "Cut collateral" button and fill in the amount of collateral to be reduced in the pop-up box.
 
-![cutCollateral](assets/merchant/cutCollateral.png)
+**3\. Connect your wallet**
 
->Note: The collected rewards will go to the account balance, but will first be locked for 28 days before any transfer can be made.
+Open stake mining page:[https://trojan.aresprotocol.io/](https://trojan.aresprotocol.io/)
+
+![](assets/build/12.png)
+
+**4\.  Main steps**
+
+**4.1 Stake Mining**
+
+**4.1.1 Process of approval**
+
+If this is the first time to connect in Trojan，you need to fulfil the below process
+
+![](assets/build/13.png)
+
+
+**4.1.2 Stake Mining**
+
+While the approval was successfully made, you could click"Stake Tokens", and you could put in the amount to stake tokens. Once the trade was made, in a Currently Staked forum, it is shown your staked amount, and profit will be accumulated in each sec.
+
+![](assets/build/14.png)
+
+
+Notice: due to the ethereum mainnet, please be aware of your Gas fee amount. If the approval process is too long then try to check your network connection, or consider adding a certain amount of Gas fee to speed up.
+
+**4.2 Unstake**
+
+Click "Unstake Tokens", to claim your Ares tokens。 Put in your unstake amount，and click "Unstake"。
+
+![](assets/build/15.png)
+
+
+**4.3 Claiming Rewards**
+
+Click "Claim Rewards" and check Gas fee, after you confirmed, click“Confirm" to claim rewards.
+![](assets/build/16.png)
+
+
+**4.4 Claim rewards and Unstake**
+
+You could use this function to terminate staking.

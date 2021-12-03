@@ -1,11 +1,11 @@
 ---
 id: faq
-title: 启动预言机服务
-sidebar_label: 启动预言机服务
+title: Start the Oracle Service
+sidebar_label: Start the Oracle Service
 ---
-1、启动价格获取节点。
+1、 Start price acquisition node.
 
-2、通过 --ares-keys 启动 gladios-node 节点（需要事先配置好 ares-keys 文件）。
+2、Start gladios-node node via --ares-keys (Need to configure ares-keys file in advance).
 
 ```javascript
 ./target/release/gladios-node \  
@@ -26,4 +26,4 @@ sidebar_label: 启动预言机服务
 ```
 
 
-如果不使用 ares-keys 加载私钥，可以通过RPC author_insertKey 的方式插入私钥，参考：https://docs.substrate.io/tutorials/v3/private-network/#generate-your-own-keys
+If loading private key not using ares-keys, you may insert private key using RPC author_insertKey, refer to : https://docs.substrate.io/tutorials/v3/private-network/#generate-your-own-keys
