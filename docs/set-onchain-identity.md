@@ -13,6 +13,7 @@ Mars is a canary network built by Ares Protocol on Kusama. It will conduct some 
 After a successful auction of the Kusama slot, Ares Protocol will provide Kusama with native oracle support, support the Ink contract ecology, and bring better oracle services to Defi developers.
 
 **Mars token $AMAS**
+
 Mars token ($AMAS) will be used for contract call tests for some asset prices, in the meantime, it will be used for community governance and other functions.
 
 The initial issuance of $AMAS reaches 1 billion in total. 50% will be used for slot auction, no private round investment and team holding, committed to becoming a community governed token. Any community user who stakes a certain amount of $AMAS can become an aggregator node in the Mars network.
