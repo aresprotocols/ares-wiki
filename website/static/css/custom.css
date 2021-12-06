@@ -521,6 +521,9 @@ body {
 }
 
 @media (min-width: 768px) {
+  .homeNavItem {
+    margin-bottom: 3rem;
+  }
 }
 
 @media (min-width: 992px) {
