@@ -39,7 +39,7 @@ const siteConfig = {
   ],
 
   /* path to images for header/footer */
-  headerIcon: "img/logo_ares_wiki.svg",
+  headerIcon: "img/logo_ares_wiki.png",
   favicon: 'img/favicon.ico',
 
   /* Colors for website */
@@ -93,7 +93,7 @@ const siteConfig = {
   docsSideNavCollapsible: true,
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-  copyright: `Copyright © ${new Date().getFullYear()} Ares Protocol`,
+  copyright: `Copyright © ${new Date().getFullYear()} The Ares Protocol All rights reserved`,
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.

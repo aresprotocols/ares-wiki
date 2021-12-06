@@ -18,13 +18,14 @@ class HomeNav extends React.Component {
         const NavContainer = (props) => (
             <section className="homeNavContainer">
                 <Container className="h-100">
-                    <Row className="h-100 d-flex align-items-center">{props.children}</Row>
+                    <p className="homeNavContainerTitle">Learn all about the Ares Protocol</p>
+                    <Row className="h-100 d-flex align-items-center justify-content-around">{props.children}</Row>
                 </Container>
             </section>
         );
 
         const NavItem = (props) => (
-            <Col xs={12} md={12} lg={4} className="homeNavItem rounded-lg">
+            <Col xs={12} md={12} lg={3} className="homeNavItem rounded-lg">
                 <a
                     href={props.href}
                     className="h-100 d-flex align-items-center"
@@ -32,12 +33,14 @@ class HomeNav extends React.Component {
                     data-aos-delay={props.aosDelay}
                 >
                     <div className="mx-auto">
-                        <h2 className="display-4 mt-0 text-dark font-weight-bold text-center">{props.title}</h2>
-                        <p className="small text-secondary px-4">{props.content}</p>
+                        <img className="navItemIcon" src={props.icon} alt="" width={168} height={224}/>
+                        <p className="navItemTitle mt-0 text-dark font-weight-bold text-center">{props.title}</p>
+                        <p className="small text-secondary px-4 pb-5">{props.content}</p>
                     </div>
                 </a>
             </Col>
         );
+
 
         return (
             <NavContainer>
@@ -46,18 +49,21 @@ class HomeNav extends React.Component {
                     title="General"
                     content="A Completely Decentralized Oracle Platform"
                     aosDelay="0"
+                    icon="/img/general-icon.png"
                 />
                 <NavItem
                     href={this.props.docUrl("buildGettingStarted.html")}
                     title="Build"
                     content="Build your decentralized application on Ares Protocol."
                     aosDelay="300"
+                    icon="/img/build-icon.png"
                 />
                 <NavItem
                     href={this.props.docUrl("faq.html")}
                     title="Node"
                     content="Information and guides on how to deploy a node and run the network."
                     aosDelay="600"
+                    icon="/img/node-icon.png"
                 />
             </NavContainer>
         );

@@ -5,25 +5,13 @@
     "previous": "Previous",
     "tagline": "Wiki for Ares Network",
     "docs": {
-      "appsStorageIssue": {
-        "title": "Apps Strorage Issue",
-        "sidebar_label": "Apps Strorage Issue"
-      },
       "aresRelated": {
         "title": "Liquidity mining",
         "sidebar_label": "Liquidity mining"
       },
-      "bridge": {
-        "title": "Bridge",
-        "sidebar_label": "Bridge"
-      },
       "buildCrossChainSolution": {
         "title": "Run Validator Node",
         "sidebar_label": "Run Validator Node"
-      },
-      "buildCrustGhAction": {
-        "title": "Crust Pinner Github Action",
-        "sidebar_label": "Crust Pinner Github Action"
       },
       "buildCrustNpmPackage": {
         "title": "Crust Pinner NPM Package",
