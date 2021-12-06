@@ -23,7 +23,7 @@ At the same time, we will also focus on brand promotion and operation, and will 
 
 2. Community development, building ares community ambassadors and technical ambassadors, so that more  partners who want to know ares can participate in the Ares family. If you have your own unique views on publicity and technology, you are welcome to keep in touch with us at any time.
 
-3. At present, we also actively cooperate with ecological projects closely. For example, crust, bandot and other projects.
+3. At present, we also actively cooperate with ecological projects closely. For example, Ares, bandot and other projects.
 
 4. Ares will set up the ink ecological fund. Welcome to use the ink contract to build the defi application. You can get all kinds of data on the chain for free. If you are interested, you can apply for our grant.
 

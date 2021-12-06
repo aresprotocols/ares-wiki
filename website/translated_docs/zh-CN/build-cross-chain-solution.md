@@ -1,9 +1,23 @@
 ---
 id: buildCrossChainSolution
-title: 运行节点程序
-sidebar_label: 运行节点程序
+title: 验证&&运行节点程序
+sidebar_label: 验证&&运行节点程序
 ---
-**操作步骤**
+
+
+### 验证部署状态
+**登录Polkadot Telemetry**
+
+https://telemetry.polkadot.io/#/0x1ff9888c17c1e30395e0abc7071f5e607d231528375dce789c95fe67850a3ef7
+
+![](assets/build/95.png)
+
+如果您的名字显示在此页面上，那么恭喜您，您已成功在测试网络上部署节点——gladios。 接下来，让我们共同为项目的发展而努力，实现共同繁荣。
+登录 polkadot.js 查看更多区块更新
+
+https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io/#/explorer
+
+
 
 **创建Ares账户**
 
@@ -65,7 +79,7 @@ sidebar_label: 运行节点程序
 
 输入您账户的密码，点击“交易签名”，本次转账就完成了。快通知您的交易用户，及时查收吧！
 
-运行验证人节点
+###运行验证人节点
 
 **Staking**
 

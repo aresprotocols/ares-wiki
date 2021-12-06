@@ -1,19 +1,19 @@
 {
-  "name": "crust-wiki",
+  "name": "ares-wiki",
   "version": "1.0.0",
-  "description": "The source of truth for Crust",
+  "description": "The source of truth for ares",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/crustio/crust-wiki.git"
+    "url": "git+https://github.com/aresprotocols/ares_docs/issues"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/crustio/crust-wiki/issues"
+    "url": "https://github.com/aresprotocols/ares_docs/issues"
   },
-  "homepage": "https://github.com/crustio/crust-wiki#readme"
+  "homepage": "https://github.com/aresprotocols/ares_docs#readme"
 }

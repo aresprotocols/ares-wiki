@@ -1,7 +1,7 @@
 ---
 id: buildSmanager
-title: Crust Storage Manager
-sidebar_label: Crust Storage Manager
+title: Ares Storage Manager
+sidebar_label: Ares Storage Manager
 ---
 # 使用cumulus进化跨链ping pong测试
 

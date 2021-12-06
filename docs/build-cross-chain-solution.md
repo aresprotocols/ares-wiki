@@ -1,11 +1,11 @@
 ---
 id: buildCrossChainSolution
-title: Run Validator Node
-sidebar_label: Run Validator Node
+title: Verifying && Run Validator Node
+sidebar_label: Verifying && Run Validator Node
 ---
 
 ### Verifying Deployment Status
-##Log in Polkadot Telemetry
+**Log in Polkadot Telemetry**
 
 https://telemetry.polkadot.io/#/0x1ff9888c17c1e30395e0abc7071f5e607d231528375dce789c95fe67850a3ef7
 
