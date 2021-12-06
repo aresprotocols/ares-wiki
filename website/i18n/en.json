@@ -5,33 +5,13 @@
     "previous": "Previous",
     "tagline": "Wiki for Ares Network",
     "docs": {
-      "appsStorageIssue": {
-        "title": "Apps Strorage Issue",
-        "sidebar_label": "Apps Strorage Issue"
-      },
       "aresRelated": {
         "title": "Liquidity mining",
         "sidebar_label": "Liquidity mining"
       },
-      "bridge": {
-        "title": "Bridge",
-        "sidebar_label": "Bridge"
-      },
       "buildCrossChainSolution": {
-        "title": "Run Validator Node",
-        "sidebar_label": "Run Validator Node"
-      },
-      "buildCrustGhAction": {
-        "title": "Crust Pinner Github Action",
-        "sidebar_label": "Crust Pinner Github Action"
-      },
-      "buildCrustNpmPackage": {
-        "title": "Crust Pinner NPM Package",
-        "sidebar_label": "Crust Pinner NPM Package"
-      },
-      "buildCrustKits": {
-        "title": "Crust SDK",
-        "sidebar_label": "Crust SDK"
+        "title": "Verifying && Run Validator Node",
+        "sidebar_label": "Verifying && Run Validator Node"
       },
       "build-file-storing-demo": {
         "title": "build-file-storing-demo"
@@ -44,34 +24,6 @@
         "title": "Obtain Price Through Cross-Chain",
         "sidebar_label": "Obtain Price Through Cross-Chain"
       },
-      "buildHelloCrust": {
-        "title": "Hello Crust",
-        "sidebar_label": "Hello Crust"
-      },
-      "buildIntegrationContentStorageDelivery": {
-        "title": "File Storage",
-        "sidebar_label": "File Storage"
-      },
-      "buildIntegrationNFTDataStorage": {
-        "title": "NFTs",
-        "sidebar_label": "NFTs"
-      },
-      "buildIntegrationOverview": {
-        "title": "Overview",
-        "sidebar_label": "Overview"
-      },
-      "buildIntegrationWebsiteHosting": {
-        "title": "DApp Hosting",
-        "sidebar_label": "DApp Hosting"
-      },
-      "buildIPFSW3AuthPin": {
-        "title": "IPFS W3Auth Pinning Service",
-        "sidebar_label": "IPFS W3Auth Pinning Service"
-      },
-      "buildIPFSWeb3AuthGW": {
-        "title": "IPFS W3Auth Gateway",
-        "sidebar_label": "IPFS W3Auth Gateway"
-      },
       "buildNode": {
         "title": "Hardware environment",
         "sidebar_label": "Hardware environment"
@@ -80,100 +32,25 @@
         "title": "Set Up the Verifier Node",
         "sidebar_label": "Set Up the Verifier Node"
       },
-      "buildSmanager": {
-        "title": "Crust Storage Manager",
-        "sidebar_label": "Crust Storage Manager"
-      },
-      "claimsLockedCRU": {
-        "title": "LockedCRU Claims",
-        "sidebar_label": "LockedCRU Claims"
-      },
-      "claims": {
-        "title": "CRU Claims",
-        "sidebar_label": "CRU Claims"
-      },
       "contributing": {
         "title": "Contributing",
         "sidebar_label": "Contributing"
-      },
-      "cru18Guarantee": {
-        "title": "Use CRU18 Guarantee",
-        "sidebar_label": "Use CRU18 Guarantee"
       },
       "aresBasic": {
         "title": "Ares Basic",
         "sidebar_label": "Ares Basic"
       },
-      "crustConsensus": {
-        "title": "Crust Consensus",
-        "sidebar_label": "Crust Consensus"
-      },
-      "crustGrants": {
-        "title": "Crust Grants",
-        "sidebar_label": "Crust Grants"
-      },
       "aresOverview": {
         "title": "Ares Overview",
         "sidebar_label": "Ares Overview"
-      },
-      "crustStorageExplorer": {
-        "title": "Crust Storage Explorer",
-        "sidebar_label": "Crust Storage Explorer"
-      },
-      "crustWallet": {
-        "title": "Crust Wallet",
-        "sidebar_label": "Crust Wallet"
-      },
-      "democracyGuide": {
-        "title": "Democracy Guide",
-        "sidebar_label": "Democracy Guide"
-      },
-      "DSM": {
-        "title": "DSM",
-        "sidebar_label": "DSM"
-      },
-      "ecosystemGrowth": {
-        "title": "Crust Ecosystem Growth",
-        "sidebar_label": "Crust Ecosystem Growth"
-      },
-      "frequentlyAskedQuestions": {
-        "title": "Editing How to submit bugs & feedbacks",
-        "sidebar_label": "Editing How to submit bugs & feedbacks"
       },
       "gettingStarted": {
         "title": "Ares Overview",
         "sidebar_label": "Ares Overview"
       },
-      "glossary": {
-        "title": "Glossary",
-        "sidebar_label": "Glossary"
-      },
-      "GPoS": {
-        "title": "GPoS",
-        "sidebar_label": "GPoS"
-      },
-      "guarantorGuidance": {
-        "title": "Guarantor Guidance",
-        "sidebar_label": "Guarantor Guidance"
-      },
       "plan": {
         "title": "Plan",
         "sidebar_label": "Plan"
-      },
-      "identity": {
-        "title": "Identity",
-        "sidebar_label": "Identity"
-      },
-      "isolationNode": {
-        "title": "Isolation Node",
-        "sidebar_label": "Isolation Node"
-      },
-      "lockedCRUUnlock": {
-        "title": "LockedCRU Unlock",
-        "sidebar_label": "LockedCRU Unlock"
-      },
-      "manage-files-in-JS-APPS": {
-        "title": "manage-files-in-JS-APPS"
       },
       "marketBenefits": {
         "title": "Trojan staking",
@@ -190,38 +67,6 @@
       "faq": {
         "title": "Start the Oracle Service",
         "sidebar_label": "Start the Oracle Service"
-      },
-      "nodeBenefits": {
-        "title": "Node Benefits",
-        "sidebar_label": "Node Benefits"
-      },
-      "nodeHardwareSpec": {
-        "title": "Node Hardware Spec",
-        "sidebar_label": "Node Hardware Spec"
-      },
-      "nodeQos": {
-        "title": "Configure QoS",
-        "sidebar_label": "Configure QoS"
-      },
-      "orderSettlement": {
-        "title": "Order Settlement",
-        "sidebar_label": "Order Settlement"
-      },
-      "ownerNode": {
-        "title": "Owner Node",
-        "sidebar_label": "Owner Node"
-      },
-      "parameters": {
-        "title": "Parameters",
-        "sidebar_label": "Parameters"
-      },
-      "Q&AForMining": {
-        "title": "Q&A",
-        "sidebar_label": "Q&A"
-      },
-      "Q&AForStorage": {
-        "title": "Q&A",
-        "sidebar_label": "Q&A"
       },
       "setOnChainIdentity": {
         "title": "Kusama",
@@ -262,10 +107,6 @@
       "apis": {
         "title": "JSON-RPC APIS",
         "sidebar_label": "JSON-RPC APIS"
-      },
-      "validatorGuidance": {
-        "title": "Validator Guidance",
-        "sidebar_label": "Validator Guidance"
       }
     },
     "links": {

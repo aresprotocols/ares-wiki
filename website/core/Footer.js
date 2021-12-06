@@ -36,13 +36,7 @@ class Footer extends React.Component {
               Getting Started
             </a>
             {/* <a href={this.docUrl('claims.html')}>
-              CRU Claims
-            </a>
-            <a href={this.docUrl('buildIntegrationWebsiteHosting.html')}>
-              Website Hosting with Crust
-            </a>
-            <a href={this.docUrl('buildIntegrationNFTDataStorage.html')}>
-              NFT Data Storage with Crust
+              
             </a> */}
           </div>
           <div>
@@ -88,7 +82,7 @@ class Footer extends React.Component {
             {/*  className="github-button"*/}
             {/*  href={this.props.config.repoUrl}*/}
             {/*  data-icon="octicon-star"*/}
-            {/*  data-count-href="/crust"*/}
+            {/*  }
             {/*  data-show-count="true"*/}
             {/*  data-count-aria-label="# stargazers on GitHub"*/}
             {/*  aria-label="Star this project on GitHub">*/}
