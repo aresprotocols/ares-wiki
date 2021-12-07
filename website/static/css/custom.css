@@ -514,9 +514,21 @@ body {
 
 
 .navItemIcon {
-  margin-top: 49px;
+  margin-top: 44px;
   width: 168px;
   height: 176px;
+}
+
+.navItemIcon1 {
+  margin-top: 35px;
+  margin-bottom: -25px;
+  height: 213px;
+}
+
+.navItemIcon2 {
+  margin-top: 60px;
+  height: 190px;
+  margin-bottom: -10px;
 }
 
 .homeNavItem p {
