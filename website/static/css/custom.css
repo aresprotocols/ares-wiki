@@ -52,7 +52,7 @@ body {
    ========================================================================== */
 
 .fixedHeaderContainer {
-  background: white;
+  background: #1295F0;
 }
 
 .fixedHeaderContainer .headerWrapper {
@@ -108,7 +108,7 @@ body {
 
 @media only screen and (min-width: 1024px) {
   .navigationSlider .slidingNav ul li > a {
-    color: var(--silverColor);
+    color: var(--snowColor);
   }
 
   .navigationSlider .slidingNav ul li > a:visited {
@@ -117,7 +117,7 @@ body {
 
   .navigationSlider .slidingNav ul li > a:hover,
   .navigationSlider .slidingNav ul li > a:focus {
-    color: var(--secondaryColor);
+    color: white;
   }
 
   .navigationSlider .slidingNav ul li.siteNavGroupActive > a {
@@ -145,7 +145,7 @@ body {
 }
 
 .navSearchWrapper.reactNavSearchWrapper:hover::before {
-  border: 3px solid var(--secondaryColor);
+  border: 3px solid #FFF;
 }
 
 .navSearchWrapper.reactNavSearchWrapper::after {
@@ -154,12 +154,13 @@ body {
 }
 
 .navSearchWrapper.reactNavSearchWrapper:hover::after {
-  background: var(--secondaryColor);
+  /*background: var(--secondaryColor);*/
+  background: #FFF;
 }
 
 .reactNavSearchWrapper input#search_input_react {
-  color: var(--secondaryColor);
-  background: white;
+  color: var(--silverColor);
+  background: #1295F0;
   border: solid 1px var(--snowColor);
   font-family: var(--sansFontFamily);
   height: 35px;
@@ -169,7 +170,7 @@ body {
 }
 
 .reactNavSearchWrapper input#search_input_react::placeholder {
-  color: var(--silverColor);
+  color: white;
 }
 
 .reactNavSearchWrapper input#search_input_react:hover::placeholder {
@@ -178,9 +179,9 @@ body {
 
 .reactNavSearchWrapper input#search_input_react:focus,
 .reactNavSearchWrapper input#search_input_react:active {
-  color: var(--secondaryColor);
+  color: var(--snowColor);
   border: solid 1px var(--snowColor);
-  background: var(--snowColor);
+  background: #1295F0;
 }
 
 /*
