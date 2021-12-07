@@ -76,15 +76,11 @@
         "title": "Dot",
         "sidebar_label": "Dot"
       },
-      "storageOverview": {
+      "accountOverview": {
         "title": "Account",
         "sidebar_label": "Account"
       },
-      "storageUserGuide": {
-        "title": "Transfer",
-        "sidebar_label": "Transfer"
-      },
-      "sWorkerEntryNetwork": {
+      "technicalFramework": {
         "title": "Technical framework",
         "sidebar_label": "Technical framework"
       },
@@ -93,8 +89,8 @@
         "sidebar_label": "Introduction"
       },
       "sWorkerVersion": {
-        "title": "Ares Glossary",
-        "sidebar_label": "Ares Glossary"
+        "title": "Ares term",
+        "sidebar_label": "Ares term"
       },
       "sWorkerWorkload": {
         "title": "Data market",
@@ -103,6 +99,10 @@
       "teeTechnology": {
         "title": "Economic Model",
         "sidebar_label": "Economic Model"
+      },
+      "userTransaferGuide": {
+        "title": "Transfer",
+        "sidebar_label": "Transfer"
       },
       "apis": {
         "title": "JSON-RPC APIS",

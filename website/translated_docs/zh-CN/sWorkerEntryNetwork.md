@@ -1,5 +1,5 @@
 ---
-id: sWorkerEntryNetwork
+id: technicalFramework
 title: 技术框架
 sidebar_label: 技术框架
 ---
