@@ -13,10 +13,7 @@
         "title": "资产跨链桥",
         "sidebar_label": "资产跨链桥"
       },
-      "buildHelloCrust": {
-        "title": "Hello Ares",
-        "sidebar_label": "Hello Ares"
-      },
+     
       "buildRockyGuidance": {
         "title": "搭建验证人节点",
         "sidebar_label": "搭建验证人节点"
@@ -41,14 +38,8 @@
         "title": "IPFS SDKs",
         "sidebar_label": "IPFS SDKs"
       },
-      "buildCrustKits": {
-        "title": "Ares SDK",
-        "sidebar_label": "Ares SDK"
-      },
-      "buildCrustJs": {
-        "title": "Ares.js",
-        "sidebar_label": "Ares.js"
-      },
+      
+      
       "buildNode": {
         "title": "硬件环境",
         "sidebar_label": "硬件环境"
@@ -69,10 +60,7 @@
         "title": "CRU 认领",
         "sidebar_label": "CRU 认领"
       },
-      "crustWallet": {
-        "title": "Ares 钱包",
-        "sidebar_label": "Ares 钱包"
-      },
+      
       "contributing": {
         "title": "贡献",
         "sidebar_label": "贡献"
@@ -93,22 +81,8 @@
         "title": "流动性挖矿",
         "sidebar_label": "流动性挖矿"
       },
-      "crustBuilderGuide": {
-        "title": "Ares 开发者文档",
-        "sidebar_label": "Ares 开发者文档"
-      },
-      "crustConsensus": {
-        "title": "Ares 共识算法",
-        "sidebar_label": "Ares 共识算法"
-      },
-      "crustStorageExplorer": {
-        "title": "Ares 存储浏览器",
-        "sidebar_label": "Ares 存储浏览器"
-      },
-      "crustIntegrationGuide": {
-        "title": "Ares 集成指南",
-        "sidebar_label": "Ares 集成指南"
-      },
+      
+      
       "DSM": {
         "title": "去中心化存储市场",
         "sidebar_label": "去中心化存储市场"
@@ -129,10 +103,7 @@
         "title": "Ares 术语",
         "sidebar_label": "Ares 术语"
       },
-      "crustGrants": {
-        "title": "Ares Grants",
-        "sidebar_label": "Ares Grants"
-      },
+      
       "GPoS": {
         "title": "GPoS",
         "sidebar_label": "GPoS"
