@@ -33,9 +33,9 @@ class HomeNav extends React.Component {
                     data-aos-delay={props.aosDelay}
                 >
                     <div className="mx-auto">
-                        <img className="navItemIcon" src={props.icon} alt="" width={168} height={224}/>
+                        <img className="navItemIcon" src={props.icon} alt="" />
                         <p className="navItemTitle mt-0 text-dark font-weight-bold text-center">{props.title}</p>
-                        <p className="small text-secondary px-4 pb-5">{props.content}</p>
+                        <p className="text-secondary px-4 pb-5">{props.content}</p>
                     </div>
                 </a>
             </Col>
@@ -47,7 +47,7 @@ class HomeNav extends React.Component {
                 <NavItem
                     href={this.props.docUrl("aresOverview.html")}
                     title="General"
-                    content="A Completely Decentralized Oracle Platform"
+                    content="A completely decentralized oracle platform"
                     aosDelay="0"
                     icon="/img/general-icon.png"
                 />
