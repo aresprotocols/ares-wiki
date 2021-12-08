@@ -523,7 +523,7 @@ body {
 .navItemIcon1 {
   margin-top: 35px;
   margin-bottom: -25px;
-  height: 213px;
+  height: 198px;
 }
 
 .navItemIcon2 {
@@ -546,7 +546,8 @@ body {
 
 @media (max-width: 667px) {
   .homeNavItem {
-    height: 47vh;
+    height: 35vh;
+    min-height: 360px;
     max-height: 500px;
     border-radius: 3rem !important;
     /*margin-top: -3rem;*/
@@ -585,6 +586,7 @@ body {
     -webkit-transition: all 0.15s ease-in-out;
     transition: all 0.15s ease-in-out;
     height: 43vh;
+    min-height: 370px;
     max-height: 430px;
     border-radius: 3rem !important;
     margin-top: -3rem;
