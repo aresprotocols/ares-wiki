@@ -1,5 +1,5 @@
 ---
-id: sWorkerEntryNetwork
+id: technicalFramework
 title: Technical framework
 sidebar_label: Technical framework
 ---

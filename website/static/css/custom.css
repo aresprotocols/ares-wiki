@@ -52,7 +52,7 @@ body {
    ========================================================================== */
 
 .fixedHeaderContainer {
-  background: white;
+  background: #1295F0;
 }
 
 .fixedHeaderContainer .headerWrapper {
@@ -108,7 +108,7 @@ body {
 
 @media only screen and (min-width: 1024px) {
   .navigationSlider .slidingNav ul li > a {
-    color: var(--silverColor);
+    color: var(--snowColor);
   }
 
   .navigationSlider .slidingNav ul li > a:visited {
@@ -117,7 +117,7 @@ body {
 
   .navigationSlider .slidingNav ul li > a:hover,
   .navigationSlider .slidingNav ul li > a:focus {
-    color: var(--secondaryColor);
+    color: white;
   }
 
   .navigationSlider .slidingNav ul li.siteNavGroupActive > a {
@@ -138,28 +138,29 @@ body {
    ========================================================================== */
 
 .navSearchWrapper.reactNavSearchWrapper::before {
-  border: 3px solid var(--silverColor);
+  border: 3px solid white;
   transition: border 0.2s ease-in-out;
   width: 13px;
   height: 13px;
 }
 
 .navSearchWrapper.reactNavSearchWrapper:hover::before {
-  border: 3px solid var(--secondaryColor);
+  border: 3px solid #FFF;
 }
 
 .navSearchWrapper.reactNavSearchWrapper::after {
-  background: var(--silverColor);
+  background: white;
   transition: background 0.2s ease-in-out;
 }
 
 .navSearchWrapper.reactNavSearchWrapper:hover::after {
-  background: var(--secondaryColor);
+  /*background: var(--secondaryColor);*/
+  background: #FFF;
 }
 
 .reactNavSearchWrapper input#search_input_react {
-  color: var(--secondaryColor);
-  background: white;
+  color: var(--silverColor);
+  background: #1295F0;
   border: solid 1px var(--snowColor);
   font-family: var(--sansFontFamily);
   height: 35px;
@@ -169,7 +170,7 @@ body {
 }
 
 .reactNavSearchWrapper input#search_input_react::placeholder {
-  color: var(--silverColor);
+  color: white;
 }
 
 .reactNavSearchWrapper input#search_input_react:hover::placeholder {
@@ -178,9 +179,9 @@ body {
 
 .reactNavSearchWrapper input#search_input_react:focus,
 .reactNavSearchWrapper input#search_input_react:active {
-  color: var(--secondaryColor);
+  color: var(--snowColor);
   border: solid 1px var(--snowColor);
-  background: var(--snowColor);
+  background: #1295F0;
 }
 
 /*
@@ -495,27 +496,40 @@ body {
    ========================================================================== */
 
 .homeNavContainer {
-  padding: 3rem;
+  padding: 2rem 2rem 1rem;
 }
 
 .homeNavContainerRow {
   padding-top: -30px !important;
 }
 
+
 .homeNavItem {
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
   padding: 3rem 0;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   border-radius: 3rem !important;
   background: #E7EBFF;
 }
 
 
 .navItemIcon {
-  margin-top: 49px;
+  margin-top: 44px;
   width: 168px;
   height: 176px;
+}
+
+.navItemIcon1 {
+  margin-top: 35px;
+  margin-bottom: -25px;
+  height: 213px;
+}
+
+.navItemIcon2 {
+  margin-top: 60px;
+  height: 190px;
+  margin-bottom: -10px;
 }
 
 .homeNavItem p {
@@ -530,10 +544,19 @@ body {
   }
 }
 
+@media (min-width: 375px) {
+  .homeNavItem {
+    height: 47vh;
+    max-height: 500px;
+    border-radius: 3rem !important;
+    /*margin-top: -3rem;*/
+  }
+}
+
 @media (min-width: 992px) {
   .homeNavContainer {
-    height: 70vh;
-    min-height: 600px;
+    height: 50vh;
+    min-height: 500px;
     max-height: 700px;
     display: flex;
     justify-content: center;

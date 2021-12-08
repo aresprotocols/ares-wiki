@@ -1,5 +1,5 @@
 ---
-id: storageOverview
+id: accountOverview
 title: Account
 sidebar_label: Account
 ---

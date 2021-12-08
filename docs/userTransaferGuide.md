@@ -1,5 +1,5 @@
 ---
-id: storageUserGuide
+id: userTransaferGuide
 title: Transfer
 sidebar_label: Transfer
 ---

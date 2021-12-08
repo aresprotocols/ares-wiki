@@ -13,7 +13,7 @@
         "title": "资产跨链桥",
         "sidebar_label": "资产跨链桥"
       },
-     
+
       "buildRockyGuidance": {
         "title": "搭建验证人节点",
         "sidebar_label": "搭建验证人节点"
@@ -38,8 +38,8 @@
         "title": "IPFS SDKs",
         "sidebar_label": "IPFS SDKs"
       },
-      
-      
+
+
       "buildNode": {
         "title": "硬件环境",
         "sidebar_label": "硬件环境"
@@ -60,7 +60,7 @@
         "title": "CRU 认领",
         "sidebar_label": "CRU 认领"
       },
-      
+
       "contributing": {
         "title": "贡献",
         "sidebar_label": "贡献"
@@ -72,7 +72,7 @@
       "cru18Guarantee": {
         "title": "CRU18 担保",
         "sidebar_label": "CRU18 担保"
-      }, 	
+      },
       "aresBasic": {
         "title": "科普",
         "sidebar_label": "科普"
@@ -81,8 +81,8 @@
         "title": "流动性挖矿",
         "sidebar_label": "流动性挖矿"
       },
-      
-      
+
+
       "DSM": {
         "title": "去中心化存储市场",
         "sidebar_label": "去中心化存储市场"
@@ -103,7 +103,7 @@
         "title": "Ares 术语",
         "sidebar_label": "Ares 术语"
       },
-      
+
       "GPoS": {
         "title": "GPoS",
         "sidebar_label": "GPoS"
@@ -112,7 +112,7 @@
         "title": "介绍",
         "sidebar_label": "介绍"
       },
-      "sWorkerEntryNetwork": {
+      "technicalFramework": {
         "title": "技术框架",
         "sidebar_label": "技术框架"
       },
@@ -170,7 +170,7 @@
         "title": "节点硬件指南",
         "sidebar_label": "节点硬件指南"
       },
-    
+
       "buildGettingStarted": {
         "title": "跨链获取价格",
         "sidebar_label": "跨链获取价格"
@@ -211,7 +211,7 @@
         "title": "Kusama",
         "sidebar_label": "Kusama"
       },
-      "storageOverview": {
+      "accountOverview": {
         "title": "账户",
         "sidebar_label": "账户"
       },
@@ -223,7 +223,7 @@
         "title": "资产跨链桥",
         "sidebar_label": "资产跨链桥"
       },
-      "storageUserGuide": {
+      "userTransaferGuide": {
         "title": "转账",
         "sidebar_label": "转账"
       },
@@ -235,7 +235,7 @@
         "title": "存储订单清算指南",
         "sidebar_label": "存储订单清算指南"
       },
-    
+
       "validatorGuidance": {
         "title": "验证人指南",
         "sidebar_label": "验证人指南"
@@ -255,7 +255,7 @@
       "Learn": "学习",
       "Build": "构建",
       "Node": "节点"
-      
+
     }
   },
   "pages-strings": {
