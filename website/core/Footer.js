@@ -35,7 +35,7 @@ class Footer extends React.Component {
             <p className="text-white">Ares is an on-chain-verified oracle platform that provides secure and reliable data services for the Polkadot DeFi ecosystem.</p>
             <a
               href="mailto:info@aresprotocol.io">
-              <img src="./img/Email.png" alt="Email" width={18} height={11}/> &nbsp;
+              <img src="/img/Email.png" alt="Email" width={18} height={11}/> &nbsp;
               info@aresprotocol.io
             </a>
           </div>
@@ -78,7 +78,7 @@ class Footer extends React.Component {
                   rel="noreferrer noopener"
                   className="media-item"
               >
-                <img src="./img/telegram.png" alt="" width={24} height={22}/>
+                <img src="/img/telegram.png" alt="" width={24} height={22}/>
               </a>
               <a
                   href="https://twitter.com/AresProtocolLab"
@@ -90,43 +90,43 @@ class Footer extends React.Component {
                   href="https://www.facebook.com/aresprotocollab"
                   target="_blank"
                   rel="noreferrer noopener">
-                <img src="./img/facebook.png" alt="" width={24} height={22}/>
+                <img src="/img/facebook.png" alt="" width={24} height={22}/>
               </a>
               <a
                   href="https://discord.com/invite/cqduK4ZNaY"
                   target="_blank"
                   rel="noreferrer noopener">
-                <img src="./img/discord.png" alt="" width={24} height={22}/>
+                <img src="/img/discord.png" alt="" width={24} height={22}/>
               </a>
               <a
                   href="https://www.reddit.com/r/AresProtocolLabs/"
                   target="_blank"
                   rel="noreferrer noopener">
-                <img src="./img/reddit.png" alt="" width={24} height={22}/>
+                <img src="/img/reddit.png" alt="" width={24} height={22}/>
               </a>
               <a
                   href="https://aresprotocollab.medium.com/"
                   target="_blank"
                   rel="noreferrer noopener">
-                <img src="./img/medium.png" alt="" width={24} height={22}/>
+                <img src="/img/medium.png" alt="" width={24} height={22}/>
               </a>
               <a
                   href="https://github.com/aresprotocols"
                   target="_blank"
                   rel="noreferrer noopener">
-                <img src="./img/github.png" alt="" width={24} height={22}/>
+                <img src="/img/github.png" alt="" width={24} height={22}/>
               </a>
               <a
                   href="https://www.instagram.com/aresprotocollab/"
                   target="_blank"
                   rel="noreferrer noopener">
-                <img src="./img/instagram.png" alt="" width={24} height={22}/>
+                <img src="/img/instagram.png" alt="" width={24} height={22}/>
               </a>
               <a
                   href="https://www.youtube.com/channel/UCgwY4NwkoP8Hx1Fqmp_rJUw"
                   target="_blank"
                   rel="noreferrer noopener">
-                <img src="./img/youtube.png" alt="" width={24} height={22}/>
+                <img src="/img/youtube.png" alt="" width={24} height={22}/>
               </a>
             </div>
           </div>
