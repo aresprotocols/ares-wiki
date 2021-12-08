@@ -1,7 +1,7 @@
 ---
 id: sWorkerVersion
-title: Ares term
-sidebar_label: Ares term
+title: Ares Glossary
+sidebar_label: Ares Glossary
 ---
 ##  Network and Token
 

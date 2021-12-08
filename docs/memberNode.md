@@ -23,15 +23,15 @@ http://iliad.aresprotocol.io/
 5.All processes above require BNB gas fee; while you are operating, you shall guarantee a certain amount of transaction fee.
 
 #### Stake Mining Scheme(Regular Mode)
-1,It has three staking terms; they are 60days, 120days, 180days, APY is 35%, 40%, and 45%, respectively.
+1.It has three staking terms; they are 60days, 120days, 180days, APY is 35%, 40%, and 45%, respectively.
 
-2,Staking rewards are available for withdrawal at any time; staked tokens are available for withdrawal after the ending of the regular term.
+2.Staking rewards are available for withdrawal at any time; staked tokens are available for withdrawal after the ending of the regular term.
 
-3,Same as 3 of the current mode.
+3.Same as 3 of the current mode.
 
-4,Same as 4 of the current mode.
+4.Same as 4 of the current mode.
 
-5,Same as 5 of the current mode.
+5.Same as 5 of the current mode.
 
 
 
@@ -114,6 +114,7 @@ Airdrop tokens already distributed on your BSC wallet address.
 You could trade on PancakeSwap.
 
 PancakeSwap transaction address：
+
 https://pancakeswap.finance/swap?inputCurrency=0xf9752a6e8a5e5f5e6eb3ab4e7d8492460fb319f0
 
 You could swap the ARES on the ETH to the official address to exchange. Please refer to Question 4. for details.
@@ -121,8 +122,10 @@ You could swap the ARES on the ETH to the official address to exchange. Please r
 4. Can I transfer the ARES on ETH to BSC?
 
 It needs a cross-chain bridge. So far, the cross-chain bridge hasn’t been launched; you might swap to the official address to exchange.
+
 ETH official address: 0xbcAf727812A103a7350554B814Afa940B9f8b87D
 
 5. What is the volume of ARES on ETH and BSC?
+
 ARES’ volume is 1 billion.
 Currently, the APY of current staking on BSC has reached 1270.00% maximum; We sincerely welcome you to make profit from staking.
