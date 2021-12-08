@@ -32,7 +32,7 @@ class Footer extends React.Component {
           {/*</a>*/}
           <div className="footerAbout">
             <h5>About Us</h5>
-            <p className="text-white">Ares is an on-chain-verified oracle protocol that provides secure and reliable data services for the Polkadot DeFi ecosystem.</p>
+            <p className="text-white">Ares is an on-chain-verified oracle platform that provides secure and reliable data services for the Polkadot DeFi ecosystem.</p>
             <a
               href="mailto:info@aresprotocol.io">
               <img src="./img/Email.png" alt="Email" width={18} height={11}/> &nbsp;

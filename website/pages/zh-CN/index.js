@@ -33,7 +33,7 @@ class HomeNav extends React.Component {
                     data-aos-delay={props.aosDelay}
                 >
                     <div className="mx-auto">
-                        <img className="navItemIcon" src={props.icon} alt=""/>
+                        <img className={`navItemIcon ${props.styleName}`} src={props.icon} alt=""/>
                         <p className="navItemTitle mt-0 text-dark font-weight-bold text-center">{props.title}</p>
                         <p className="text-secondary px-4 pb-5">{props.content}</p>
                     </div>
@@ -56,6 +56,7 @@ class HomeNav extends React.Component {
                     content="在Ares协议上构建你的去中心化应用"
                     aosDelay="300"
                     icon="/img/build-icon.png"
+                    styleName = "navItemIcon1"
                 />
                 <NavItem
                     href={this.props.docUrl("faq.html")}
@@ -63,6 +64,7 @@ class HomeNav extends React.Component {
                     content="参与并维护Ares协议"
                     aosDelay="600"
                     icon="/img/node-icon.png"
+                    styleName = "navItemIcon2"
                 />
             </NavContainer>
         );

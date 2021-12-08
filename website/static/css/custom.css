@@ -138,7 +138,7 @@ body {
    ========================================================================== */
 
 .navSearchWrapper.reactNavSearchWrapper::before {
-  border: 3px solid var(--silverColor);
+  border: 3px solid white;
   transition: border 0.2s ease-in-out;
   width: 13px;
   height: 13px;
@@ -149,7 +149,7 @@ body {
 }
 
 .navSearchWrapper.reactNavSearchWrapper::after {
-  background: var(--silverColor);
+  background: white;
   transition: background 0.2s ease-in-out;
 }
 
@@ -496,18 +496,19 @@ body {
    ========================================================================== */
 
 .homeNavContainer {
-  padding: 3rem;
+  padding: 2rem 2rem 1rem;
 }
 
 .homeNavContainerRow {
   padding-top: -30px !important;
 }
 
+
 .homeNavItem {
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
   padding: 3rem 0;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   border-radius: 3rem !important;
   background: #E7EBFF;
 }
@@ -543,10 +544,19 @@ body {
   }
 }
 
+@media (min-width: 375px) {
+  .homeNavItem {
+    height: 47vh;
+    max-height: 500px;
+    border-radius: 3rem !important;
+    /*margin-top: -3rem;*/
+  }
+}
+
 @media (min-width: 992px) {
   .homeNavContainer {
-    height: 70vh;
-    min-height: 600px;
+    height: 50vh;
+    min-height: 500px;
     max-height: 700px;
     display: flex;
     justify-content: center;
