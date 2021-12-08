@@ -5,6 +5,14 @@
     "previous": "Previous",
     "tagline": "Wiki for Ares Network",
     "docs": {
+      "aresBasic": {
+        "title": "Ares Basic",
+        "sidebar_label": "Ares Basic"
+      },
+      "aresOverview": {
+        "title": "Ares Overview",
+        "sidebar_label": "Ares Overview"
+      },
       "aresRelated": {
         "title": "Liquidity mining",
         "sidebar_label": "Liquidity mining"
@@ -35,14 +43,6 @@
       "contributing": {
         "title": "Contributing",
         "sidebar_label": "Contributing"
-      },
-      "aresBasic": {
-        "title": "Ares Basic",
-        "sidebar_label": "Ares Basic"
-      },
-      "aresOverview": {
-        "title": "Ares Overview",
-        "sidebar_label": "Ares Overview"
       },
       "gettingStarted": {
         "title": "Ares Overview",
@@ -76,15 +76,11 @@
         "title": "Dot",
         "sidebar_label": "Dot"
       },
-      "storageOverview": {
+      "accountOverview": {
         "title": "Account",
         "sidebar_label": "Account"
       },
-      "storageUserGuide": {
-        "title": "Transfer",
-        "sidebar_label": "Transfer"
-      },
-      "sWorkerEntryNetwork": {
+      "technicalFramework": {
         "title": "Technical framework",
         "sidebar_label": "Technical framework"
       },
@@ -103,6 +99,10 @@
       "teeTechnology": {
         "title": "Economic Model",
         "sidebar_label": "Economic Model"
+      },
+      "userTransaferGuide": {
+        "title": "Transfer",
+        "sidebar_label": "Transfer"
       },
       "apis": {
         "title": "JSON-RPC APIS",

@@ -6,7 +6,7 @@
     ],
     "Whitepaper": [
       "sWorkerOverview",
-      "sWorkerEntryNetwork",
+      "technicalFramework",
       "sWorkerWorkload",
       "teeTechnology"
     ],
@@ -28,8 +28,8 @@
         "type": "subcategory",
         "label": "Gladios",
         "ids": [
-          "storageOverview",
-          "storageUserGuide"
+          "accountOverview",
+          "userTransaferGuide"
         ]
       },
       "aresWhitepaper",
@@ -41,10 +41,10 @@
           "storageMerchant"
         ]
       }
-      
+
     ],
     "Build": [
-     
+
       {
         "type": "subcategory",
         "label": "Basic",
