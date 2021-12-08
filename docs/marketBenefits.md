@@ -6,7 +6,7 @@ sidebar_label: Trojan staking
 
 ## General Outlook
 Since May 13th this year, Ares Trojan Staking mining was officially deployed in the Ethereum main network and now we are welcoming the third phase of Staking mining, thank you all for your active participation!
-![](assets/build/9.png)
+![](assets/build/96.png)
 
 Ares mining has been carried out for third periods, and the Staking volume continues to rise. We can see the enthusiasm of everyone involved. The current Staking amount plus the reward is 45,970,000. All along, we hope to give more rewards to our Aresians. Stake mining reward adjusted from the starting 625000 to a million of the third round. The annualized yield held steadily at 26 %.
 

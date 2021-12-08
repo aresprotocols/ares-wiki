@@ -12,15 +12,15 @@ http://iliad.aresprotocol.io/
 
 #### Stake Mining Scheme(Current Mode)
 
-1,The reward ratio declines linearly as the amount of Staking increases. For example: when the amount of staking reaches 10,000, APY is 7,604%; When the amount of staking reaches 100,000, APY is 760%; When the amount of staking reaches 1 million, the APY is 76%.
+1.The reward ratio declines linearly as the amount of Staking increases. For example: when the amount of staking reaches 10,000, APY is 7,604%; When the amount of staking reaches 100,000, APY is 760%; When the amount of staking reaches 1 million, the APY is 76%.
 
-2,Staked tokens and rewards are available to withdraw at any time.
+2.Staked tokens and rewards are available to withdraw at any time.
 
-3,Staking has two steps, first, send Approve to allow the transaction and click Staking to launch operation.
+3.Staking has two steps, first, send Approve to allow the transaction and click Staking to launch operation.
 
-4,Withdrawal includes Unstake Tokens, Claim Rewards, Claim and Unstake; they all need on-chain transactions.
+4.Withdrawal includes Unstake Tokens, Claim Rewards, Claim and Unstake; they all need on-chain transactions.
 
-5,All processes above require BNB gas fee; while you are operating, you shall guarantee a certain amount of transaction fee.
+5.All processes above require BNB gas fee; while you are operating, you shall guarantee a certain amount of transaction fee.
 
 #### Stake Mining Scheme(Regular Mode)
 1,It has three staking terms; they are 60days, 120days, 180days, APY is 35%, 40%, and 45%, respectively.
@@ -110,12 +110,13 @@ No, it should be a wallet address; so far, Exchanges only supports ARES on Ether
 
 3. Well, how I can get the ARES for staking on Iliad?
 
-• Airdrop tokens already distributed on your BSC wallet address.
-• You could trade on PancakeSwap.
+Airdrop tokens already distributed on your BSC wallet address.
+You could trade on PancakeSwap.
 
 PancakeSwap transaction address：
 https://pancakeswap.finance/swap?inputCurrency=0xf9752a6e8a5e5f5e6eb3ab4e7d8492460fb319f0
-• You could swap the ARES on the ETH to the official address to exchange. Please refer to Question 4. for details.
+
+You could swap the ARES on the ETH to the official address to exchange. Please refer to Question 4. for details.
 
 4. Can I transfer the ARES on ETH to BSC?
 
