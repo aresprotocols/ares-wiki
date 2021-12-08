@@ -14,7 +14,7 @@
         "sidebar_label": "资产跨链桥"
       },
 
-      "buildRockyGuidance": {
+      "setUptheVerifierNode": {
         "title": "搭建验证人节点",
         "sidebar_label": "搭建验证人节点"
       },
@@ -77,7 +77,7 @@
         "title": "科普",
         "sidebar_label": "科普"
       },
-      "aresRelated": {
+      "liquidity": {
         "title": "流动性挖矿",
         "sidebar_label": "流动性挖矿"
       },
@@ -108,7 +108,7 @@
         "title": "GPoS",
         "sidebar_label": "GPoS"
       },
-      "sWorkerOverview": {
+      "introduction": {
         "title": "介绍",
         "sidebar_label": "介绍"
       },
@@ -116,15 +116,15 @@
         "title": "技术框架",
         "sidebar_label": "技术框架"
       },
-      "teeTechnology": {
-        "title": "经济规模",
-        "sidebar_label": "经济规模"
+      "economicModel": {
+        "title": "经济模型",
+        "sidebar_label": "经济模型"
       },
-      "sWorkerWorkload": {
+      "datamarket": {
         "title": "数据市场",
         "sidebar_label": "数据市场"
       },
-      "sWorkerVersion": {
+      "aresGlossary": {
         "title": "Ares术语",
         "sidebar_label": "Ares术语"
       },
@@ -144,25 +144,25 @@
         "title": "Isolation 节点",
         "sidebar_label": "Isolation 节点"
       },
-      "marketBenefits": {
+      "trojanstaking": {
         "title": "trojan质押",
         "sidebar_label": "trojan质押"
       },
-      "memberNode": {
+      "Iliadstaking": {
         "title": "iliad 质押",
         "sidebar_label": "iliad 质押"
       },
-      "faq": {
+      "StarttheOracleService": {
         "title": "启动预言机服务",
         "sidebar_label": "启动预言机服务"
       },
 
-      "buildCrossChainSolution": {
-        "title": "验证&&运行节点程序",
-        "sidebar_label": "验证&&运行节点程序"
+      "verifyingRunValidatorNode": {
+        "title": "验证&运行节点程序",
+        "sidebar_label": "验证&运行节点程序"
       },
 
-      "buildFileStoringWithGWDemo": {
+      "programInstallation": {
         "title": "程序安装",
         "sidebar_label": "程序安装"
       },
@@ -207,23 +207,23 @@
         "title": "Q&A",
         "sidebar_label": "Q&A"
       },
-      "setOnChainIdentity": {
+      "Kusama": {
         "title": "Kusama",
         "sidebar_label": "Kusama"
       },
-      "accountOverview": {
+      "account": {
         "title": "账户",
         "sidebar_label": "账户"
       },
-      "storageMerchant": {
+      "Dot": {
         "title": "Dot",
         "sidebar_label": "Dot"
       },
-      "merchantGuidance": {
+      "crosschainbridge": {
         "title": "资产跨链桥",
         "sidebar_label": "资产跨链桥"
       },
-      "userTransaferGuide": {
+      "transafer": {
         "title": "转账",
         "sidebar_label": "转账"
       },

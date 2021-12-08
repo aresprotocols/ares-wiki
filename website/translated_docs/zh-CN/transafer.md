@@ -1,5 +1,5 @@
 ---
-id: userTransaferGuide
+id: transafer
 title: 转账
 sidebar_label: 转账
 ---

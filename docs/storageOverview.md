@@ -1,5 +1,5 @@
 ---
-id: accountOverview
+id: account
 title: Account
 sidebar_label: Account
 ---

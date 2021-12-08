@@ -1,5 +1,5 @@
 ---
-id: sWorkerWorkload
+id: datamarket
 title: Data market
 sidebar_label: Data market
 ---

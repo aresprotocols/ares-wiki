@@ -1,5 +1,5 @@
 ---
-id: buildRockyGuidance
+id: setUptheVerifierNode
 title: Set Up the Verifier Node
 sidebar_label: Set Up the Verifier Node
 ---

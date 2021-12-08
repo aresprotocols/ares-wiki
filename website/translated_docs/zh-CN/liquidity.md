@@ -1,5 +1,5 @@
 ---
-id: aresRelated
+id: liquidity
 title: 流动性挖矿
 sidebar_label: 流动性挖矿
 ---

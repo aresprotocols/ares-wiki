@@ -1,7 +1,7 @@
 ---
-id: buildCrossChainSolution
-title: Verifying && Run Validator Node
-sidebar_label: Verifying && Run Validator Node
+id: verifyingRunValidatorNode
+title: Verifying & Run Validator Node
+sidebar_label: Verifying & Run Validator Node
 ---
 
 ### Verifying Deployment Status

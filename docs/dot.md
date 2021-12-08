@@ -1,5 +1,5 @@
 ---
-id: storageMerchant
+id: Dot
 title: Dot
 sidebar_label: Dot
 ---

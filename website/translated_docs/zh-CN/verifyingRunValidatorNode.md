@@ -1,7 +1,7 @@
 ---
-id: buildCrossChainSolution
-title: 验证&&运行节点程序
-sidebar_label: 验证&&运行节点程序
+id: verifyingRunValidatorNode
+title: 验证&运行节点程序
+sidebar_label: 验证&运行节点程序
 ---
 
 

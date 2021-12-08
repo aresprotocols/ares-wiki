@@ -1,50 +1,52 @@
 ---
-id: buildFileStoringWithGWDemo
-title: Program Installation
-sidebar_label: Program Installation
+id: programInstallation
+title: 程序安装
+sidebar_label: 程序安装
 ---
 
-**Method A: download the executor**
+**程序安装**
 
-1.  Download the binary executor of the node：
+**方法一：下载节点执行程序**
 
-download link：[<u>https://github.com/aresprotocols/ares/releases/tag/v1.0.5</u>](https://github.com/aresprotocols/ares/releases/tag/v1.0.5)
+1.  下载节点的二进制执行程序：
 
-Try to choose the latest version to download, the following example is the v211028 version
+下载地址：[<u>https://github.com/aresprotocols/ares/releases/tag/v1.0.5</u>](https://github.com/aresprotocols/ares/releases/tag/v1.0.5)
+
+尽量选择最新的版本下载，如下例子是 v211028 版本
 
 ![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/9.png?raw=true) 
 
-Executable gladios-node binary file:
+可执行的 gladios-node 二进制文件：
 ```
 wget -c [<u>https://github.com/aresprotocols/ares/releases/download/v1.0.5/gladios-node</u>](https://github.com/aresprotocols/ares/releases/download/v1.0.5/gladios-node)
 ```
 
-Add execute permission
+添加执行权限
 ```
 chmod +777 [**<u>gladios-node</u>**](https://user_cancel/)
 ```
 
-Execution node
+执行节点
 ```
 ./gladios-node --base-path /tmp/aura/one --name Ares_OCW5 --chain gladios --port 30334 --ws-port 9945 --rpc-port 9933 --ws-external --rpc-external --rpc-cors=all --rpc-methods=Unsafe --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0' --bootnodes /ip4/158.247.224.166/tcp/30333/p2p/12D3KooWEyoppNCUx8Yx66oV9fJnriXwCcXwDDUA2kj6vnc6iDEp
 ```
 
-**Method two: source code compilation**
+**方法二：源码编译**
 ```
-Install Rust
+安装Rust
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 
-Install dependent libraries
+安装依赖库
 
 sudo apt install make clang pkg-config libssl-dev build-essential
 
-Download the Ares code
+下载Ares代码
 
 git clone [https://github.com/aresprotocols/ares.git</u>](https://github.com/aresprotocols/ares.git)
 
-Compile the source code
+编译源码
 
 cargo build --release
 
@@ -58,9 +60,9 @@ cargo +nightly-2021-06-09 build --release
 ```
 
 
-Method 3: Docker runs the node program
+方法三：Docker运行节点程序
 
-1.  Install docker
+1.  安装docker
 
 *   Ubuntu：
 
@@ -82,19 +84,19 @@ https://docs.docker.com/desktop/mac/install/
 
 https://docs.docker.com/desktop/windows/install/
 
-1.  Open the command line tool, run the command to execute the node program
+1.  打开命令行工具，运行命令执行节点程序
 
 ```
 docker run -d --name ares_gladios aresprotocollab/ares_gladios:beta gladios-node --name your-name --chain gladios --ws-external --rpc-external --rpc-cors=all --rpc-methods=Unsafe --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0'
 
 ```
-In the above command：aresprotocollab/ares_gladios:beta It can be changed to a different version such as：
+以上命令中：aresprotocollab/ares_gladios:beta 可以换成不同的版本如：
 
-aresprotocollab/ares_gladios:alpha；More versions please check：
+aresprotocollab/ares_gladios:alpha；更加多版本请查看：
 
 https://hub.docker.com/r/aresprotocollab/ares_gladios/tags
 
-1. View the program running log:
+1.  查看程序运行日志：
 
 
 ```
@@ -102,7 +104,7 @@ docker logs -f ares_gladio -n 1000
 
 ```
 
-1.  Stop and delete the node program:
+1.  停止并删除节点程序
 
 
 

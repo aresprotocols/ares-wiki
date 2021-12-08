@@ -13,20 +13,12 @@
         "title": "Ares Overview",
         "sidebar_label": "Ares Overview"
       },
-      "aresRelated": {
-        "title": "Liquidity mining",
-        "sidebar_label": "Liquidity mining"
-      },
-      "buildCrossChainSolution": {
-        "title": "Verifying && Run Validator Node",
-        "sidebar_label": "Verifying && Run Validator Node"
+      "aresGlossary": {
+        "title": "Ares Glossary",
+        "sidebar_label": "Ares Glossary"
       },
       "build-file-storing-demo": {
         "title": "build-file-storing-demo"
-      },
-      "buildFileStoringWithGWDemo": {
-        "title": "Program Installation",
-        "sidebar_label": "Program Installation"
       },
       "buildGettingStarted": {
         "title": "Obtain Price Through Cross-Chain",
@@ -36,13 +28,25 @@
         "title": "Hardware environment",
         "sidebar_label": "Hardware environment"
       },
-      "buildRockyGuidance": {
-        "title": "Set Up the Verifier Node",
-        "sidebar_label": "Set Up the Verifier Node"
-      },
       "contributing": {
         "title": "Contributing",
         "sidebar_label": "Contributing"
+      },
+      "crosschainbridge": {
+        "title": "Asset cross-chain bridge",
+        "sidebar_label": "Asset cross-chain bridge"
+      },
+      "datamarket": {
+        "title": "Data market",
+        "sidebar_label": "Data market"
+      },
+      "Dot": {
+        "title": "Dot",
+        "sidebar_label": "Dot"
+      },
+      "economicModel": {
+        "title": "Economic Model",
+        "sidebar_label": "Economic Model"
       },
       "gettingStarted": {
         "title": "Ares Overview",
@@ -52,31 +56,35 @@
         "title": "Plan",
         "sidebar_label": "Plan"
       },
-      "marketBenefits": {
-        "title": "Trojan staking",
-        "sidebar_label": "Trojan staking"
+      "Iliadstaking": {
+        "title": "Iliad staking",
+        "sidebar_label": "Iliad staking"
       },
-      "memberNode": {
-        "title": "iliad staking",
-        "sidebar_label": "iliad staking"
+      "introduction": {
+        "title": "Introduction",
+        "sidebar_label": "Introduction"
       },
-      "merchantGuidance": {
-        "title": "Asset cross-chain bridge",
-        "sidebar_label": "Asset cross-chain bridge"
-      },
-      "faq": {
-        "title": "Start the Oracle Service",
-        "sidebar_label": "Start the Oracle Service"
-      },
-      "setOnChainIdentity": {
+      "Kusama": {
         "title": "Kusama",
         "sidebar_label": "Kusama"
       },
-      "storageMerchant": {
-        "title": "Dot",
-        "sidebar_label": "Dot"
+      "liquidity": {
+        "title": "Liquidity mining",
+        "sidebar_label": "Liquidity mining"
       },
-      "accountOverview": {
+      "programInstallation": {
+        "title": "Program Installation",
+        "sidebar_label": "Program Installation"
+      },
+      "setUptheVerifierNode": {
+        "title": "Set Up the Verifier Node",
+        "sidebar_label": "Set Up the Verifier Node"
+      },
+      "StarttheOracleService": {
+        "title": "Start the Oracle Service",
+        "sidebar_label": "Start the Oracle Service"
+      },
+      "account": {
         "title": "Account",
         "sidebar_label": "Account"
       },
@@ -84,29 +92,21 @@
         "title": "Technical framework",
         "sidebar_label": "Technical framework"
       },
-      "sWorkerOverview": {
-        "title": "Introduction",
-        "sidebar_label": "Introduction"
-      },
-      "sWorkerVersion": {
-        "title": "Ares Glossary",
-        "sidebar_label": "Ares Glossary"
-      },
-      "sWorkerWorkload": {
-        "title": "Data market",
-        "sidebar_label": "Data market"
-      },
-      "teeTechnology": {
-        "title": "Economic Model",
-        "sidebar_label": "Economic Model"
-      },
-      "userTransaferGuide": {
+      "transafer": {
         "title": "Transfer",
         "sidebar_label": "Transfer"
+      },
+      "trojanstaking": {
+        "title": "Trojan staking",
+        "sidebar_label": "Trojan staking"
       },
       "apis": {
         "title": "JSON-RPC APIS",
         "sidebar_label": "JSON-RPC APIS"
+      },
+      "verifyingRunValidatorNode": {
+        "title": "Verifying & Run Validator Node",
+        "sidebar_label": "Verifying & Run Validator Node"
       }
     },
     "links": {
