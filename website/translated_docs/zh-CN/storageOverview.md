@@ -1,5 +1,5 @@
 ---
-id: accountOverview
+id: account
 title: 账户
 sidebar_label: 账户
 ---

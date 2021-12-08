@@ -1,5 +1,5 @@
 ---
-id: merchantGuidance
+id: crosschainbridge
 title: 资产跨链桥
 sidebar_label: 资产跨链桥
 ---

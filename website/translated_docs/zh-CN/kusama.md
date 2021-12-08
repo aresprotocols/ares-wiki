@@ -1,5 +1,5 @@
 ---
-id: setOnChainIdentity
+id: Kusama
 title: Kusama
 sidebar_label: Kusama
 ---

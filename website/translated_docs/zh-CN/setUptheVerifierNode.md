@@ -1,5 +1,5 @@
 ---
-id: buildRockyGuidance
+id: setUptheVerifierNode
 title:  搭建验证人节点
 sidebar_label:  搭建验证人节点
 ---

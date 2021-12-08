@@ -1,7 +1,7 @@
 ---
-id: memberNode
-title: iliad staking
-sidebar_label: iliad staking
+id: Iliadstaking
+title: Iliad staking
+sidebar_label: Iliad staking
 ---
 
 ## Iliad Stake Mining 

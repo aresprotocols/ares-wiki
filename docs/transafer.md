@@ -1,5 +1,5 @@
 ---
-id: userTransaferGuide
+id: transafer
 title: Transfer
 sidebar_label: Transfer
 ---

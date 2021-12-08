@@ -1,5 +1,5 @@
 ---
-id: teeTechnology
+id: economicModel
 title: Economic Model
 sidebar_label: Economic Model
 ---

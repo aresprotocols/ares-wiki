@@ -1,7 +1,7 @@
 ---
-id: teeTechnology
-title: 经济规模
-sidebar_label: 经济规模
+id: economicModel
+title: 经济模型
+sidebar_label: 经济模型
 ---
 
 ### 经济模型

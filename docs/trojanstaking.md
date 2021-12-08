@@ -1,5 +1,5 @@
 ---
-id: marketBenefits
+id: trojanstaking
 title: Trojan staking
 sidebar_label: Trojan staking
 ---

@@ -1,5 +1,5 @@
 ---
-id: aresRelated
+id: liquidity
 title: Liquidity mining
 sidebar_label: Liquidity mining
 ---

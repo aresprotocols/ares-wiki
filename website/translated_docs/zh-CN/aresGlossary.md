@@ -1,5 +1,5 @@
 ---
-id: sWorkerVersion
+id: aresGlossary
 title: Ares术语
 sidebar_label: Ares术语
 ---

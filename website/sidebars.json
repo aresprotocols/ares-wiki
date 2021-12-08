@@ -2,13 +2,13 @@
   "docs": {
     "General": [
       "aresOverview",
-      "sWorkerVersion"
+      "aresGlossary"
     ],
     "Whitepaper": [
-      "sWorkerOverview",
+      "introduction",
       "technicalFramework",
-      "sWorkerWorkload",
-      "teeTechnology"
+      "datamarket",
+      "economicModel"
     ],
 
     "Learn": [
@@ -17,19 +17,19 @@
         "type": "subcategory",
         "label": "Stake Mining",
         "ids": [
-          "marketBenefits",
-          "memberNode",
-          "merchantGuidance"
+          "trojanstaking",
+          "Iliadstaking",
+          "crosschainbridge"
         ]
       },
-      "aresRelated",
+      "liquidity",
       "aresWhitepaper",
       {
         "type": "subcategory",
         "label": "Gladios",
         "ids": [
-          "accountOverview",
-          "userTransaferGuide"
+          "account",
+          "transafer"
         ]
       },
       "aresWhitepaper",
@@ -37,8 +37,8 @@
         "type": "subcategory",
         "label": "Slot auction",
         "ids": [
-          "setOnChainIdentity",
-          "storageMerchant"
+          "Kusama",
+          "Dot"
         ]
       }
 
@@ -57,15 +57,15 @@
         "type": "subcategory",
         "label": "Gladios Guide",
         "ids": [
-          "buildRockyGuidance"
+          "setUptheVerifierNode"
         ]
       }
     ],
     "Node": [
       "buildNode",
-      "buildFileStoringWithGWDemo",
-      "buildCrossChainSolution",
-      "faq"
+      "programInstallation",
+      "verifyingRunValidatorNode",
+      "StarttheOracleService"
     ]
   }
 }

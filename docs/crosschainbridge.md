@@ -1,5 +1,5 @@
 ---
-id: merchantGuidance
+id: crosschainbridge
 title: Asset cross-chain bridge
 sidebar_label: Asset cross-chain bridge
 ---

@@ -1,5 +1,5 @@
 ---
-id: faq
+id: StarttheOracleService
 title: 启动预言机服务
 sidebar_label: 启动预言机服务
 ---

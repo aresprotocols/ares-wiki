@@ -1,5 +1,5 @@
 ---
-id: sWorkerVersion
+id: aresGlossary
 title: Ares Glossary
 sidebar_label: Ares Glossary
 ---

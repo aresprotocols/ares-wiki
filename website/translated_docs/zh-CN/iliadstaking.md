@@ -1,7 +1,7 @@
 ---
-id: memberNode
-title: iliad质押
-sidebar_label: iliad质押
+id: Iliadstaking
+title: Iliad质押
+sidebar_label: Iliad质押
 ---
 
 ## iliad质押
