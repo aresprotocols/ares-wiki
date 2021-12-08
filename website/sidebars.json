@@ -15,7 +15,7 @@
       "marketBenefits",
       {
         "type": "subcategory",
-        "label": "Trojan Stake Mining",
+        "label": "Stake Mining",
         "ids": [
           "marketBenefits",
           "memberNode",

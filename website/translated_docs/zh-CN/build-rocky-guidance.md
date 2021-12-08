@@ -65,7 +65,7 @@ After compiling, you will get an executable file ares-chain/target/release/gladi
 --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWEyoppNCUx8Yx66oV9fJnriXwCcXwDDUA2kj6vnc6iDEp
 - Warehouse parameter: supports the server request address and port number of the authenticator.
 - The ares-keys parameter specifies ARES and other energy information that may need to be started, such as Aura Gran.
-# ares-keys Specifies an example of a file. Note that the file cannot include comments and is split by newline, in most cases ares 钥匙对应与出块人保持一致。
+**ares-keys Specifies an example of a file. Note that the file cannot include comments and is split by newline, in most cases ares the key correspondence is consistent with the block producer.**
 ares:finger treat seven sign army beauty album zebra fiction office planet tragic
 aura:finger treat seven sign army beauty album zebra fiction office planet tragic
 gran:ensure usage check coast suspect warrior extend young frequent track can cloud
