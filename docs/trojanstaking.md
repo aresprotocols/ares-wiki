@@ -31,7 +31,7 @@ From now on we will launch the following regular Staking mining products: regula
 
 For the purchase of regular products, if you want to purchase additional regular products during the Staking mining time, you need to extend the overall period. Redemption days= completion days before additional purchase + regular days (60/20/180).
 
-For example, David used $100 Ares to regular mine for 60 days. After 30 days, he decided to spend another $100 Ares and purchase an additional 60 days to mine. In this way, 200$ Ares will take 90 days to redeem. At this point, the income is about 100*35%/12+200*35%/6
+For example, David used 100 Ares to regular mine for 60 days. After 30 days, he decided to spend another 100 Ares and purchase an additional 60 days to mine. In this way, 200 Ares will take 90 days to redeem. At this point, the income is about 100*35%/12+200 * 35%/6
 
 Regular-term products can be redeemed after expiration. If they are not redeemed in time, the system will give the corresponding income according to the cycle you chose.
 For example, David chooses to order 120 days products with $100 Ares with an annualized yield of 40%, and he redeems it in 150 days. Then David’s income at this point is about 100*40%/12*5.

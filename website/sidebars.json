@@ -18,7 +18,7 @@
         "label": "Stake Mining",
         "ids": [
           "trojanstaking",
-          "Iliadstaking",
+          "iliadstaking",
           "crosschainbridge"
         ]
       },
@@ -28,8 +28,8 @@
         "type": "subcategory",
         "label": "Gladios",
         "ids": [
-          "account",
-          "transafer"
+          "accountOverview",
+          "userTransaferGuide"
         ]
       },
       "aresWhitepaper",

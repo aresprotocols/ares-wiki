@@ -19,7 +19,7 @@ Mars token ($AMAS) will be used for contract call tests for some asset prices, i
 The initial issuance of $AMAS reaches 1 billion in total. 50% will be used for slot auction, no private round investment and team holding, committed to becoming a community governed token. Any community user who stakes a certain amount of $AMAS can become an aggregator node in the Mars network.
 
 **$AMAS token distribution**
-![](assets/build/51.png)
+![](assets/build/104.png)
 
 
 ### Crowd-loan operating process
@@ -74,11 +74,11 @@ Mars is currently running a Crowdloan campaign at polkadot.js.org. The serial nu
 
 The current rules are:
 
-1. Support 1 $KSM for 1000 $AMAS;
+1. Support 1 KSM for 1000 AMAS;
 
-2. When the total amount of KSM staking by Mars crowd-loan exceeds 50,000, users will receive $1200 AMAS for each $1 KSM they support, i.e., the fixed ratio is adjusted to KSM: AMAS = 1:1200.
+2. When the total amount of KSM staking by Mars crowd-loan exceeds 50,000, users will receive 1200 AMAS for each $1 KSM they support, i.e., the fixed ratio is adjusted to KSM: AMAS = 1:1200.
 
-Up to 300,000,000 $AMAS will be distributed to KSM contributors. After the successful auction, the rewards will be distributed linearly until the ending of crowd-loan. In the future, $AMAS might be listed in the exchanges according to its popularity or converted into $ARES in a certain proportion. Mars will become a canary network with economic value.
+Up to 300,000,000 AMAS will be distributed to KSM contributors. After the successful auction, the rewards will be distributed linearly until the ending of crowd-loan. In the future, AMAS might be listed in the exchanges according to its popularity or converted into ARES in a certain proportion. Mars will become a canary network with economic value.
 
 
 

@@ -1,7 +1,7 @@
 ---
 id: verifyingRunValidatorNode
-title: Verifying & Run Validator Node
-sidebar_label: Verifying & Run Validator Node
+title: Verify & Run Validator Nodes
+sidebar_label: Verify & Run Validator Nodes
 ---
 
 ### Verifying Deployment Status
