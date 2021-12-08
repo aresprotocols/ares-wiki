@@ -3,7 +3,7 @@ id: buildNode
 title: Hardware environment
 sidebar_label: Hardware environment
 ---
-**硬件环境**
+
 |Ares nodes hardware environment parameters|    |
 |:----|:----|
 |Hard Disk Drive|≥100GB|

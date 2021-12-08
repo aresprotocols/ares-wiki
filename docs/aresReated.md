@@ -51,5 +51,5 @@ Participants have the opportunity to earn additional income from time limited bo
 ![](assets/build/41.png)
 6.How to check the record of liquidity mining and profit? Click “My Liquidity”
 ![](assets/build/42.png)
-7.搜Search ARES, you will be able to live check your current profit.
+7.Search ARES, you will be able to live check your current profit.
 ![](assets/build/43.png)
