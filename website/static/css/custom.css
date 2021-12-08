@@ -544,12 +544,31 @@ body {
   }
 }
 
-@media (min-width: 375px) {
+@media (max-width: 667px) {
   .homeNavItem {
     height: 47vh;
     max-height: 500px;
     border-radius: 3rem !important;
     /*margin-top: -3rem;*/
+  }
+
+  .sitemap {
+    text-align: center;
+  }
+
+  .sitemap div {
+    width: 100%;
+    row-gap: 0;
+  }
+
+  .footerAbout {
+    width: 100% !important;
+  }
+
+  .social-media {
+    column-gap: 25px !important;
+    justify-content: space-around;
+    padding: 0 45px;
   }
 }
 
@@ -600,6 +619,10 @@ body {
     font-size: 3.5rem;
     font-weight: 400;
     line-height: 1.2;
+  }
+
+  .footerAbout {
+    width: 280px !important;
   }
 
   .sitemap {
@@ -890,7 +913,7 @@ body {
 
 .footerAbout {
   flex: auto !important;
-  width: 280px !important;
+  min-width: 280px !important;
 }
 
 /*
