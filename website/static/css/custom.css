@@ -532,6 +532,10 @@ body {
   margin-bottom: -10px;
 }
 
+.navItem[href="/docs/en/liquidity"] {
+  color: #393939 !important;
+}
+
 .homeNavItem p {
   max-width: 300px;
   margin-bottom: 10px !important;

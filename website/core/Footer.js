@@ -8,6 +8,169 @@
 const React = require('react');
 
 class Footer extends React.Component {
+
+  constructor(props)
+  {
+    super(props);
+    const enFooterNavItemList = {
+      aboutUs: {
+        title: 'About Us',
+        desc: "Ares is an on-chain-verified oracle platform that provides secure and reliable data services for the Polkadot DeFi ecosystem."
+      },
+      quickLinks: {
+        title: 'Quick links',
+        items: [
+          {
+            title: "Website",
+            link: "https://www.aresprotocol.io/"
+          },
+          {
+            title: "Blog",
+            link: "https://aresprotocollab.medium.com/"
+          },
+          {
+            title: "Tokenomics",
+            link: "http://aresprotocollab.medium.com/ares-protocol-tokenomics-detail-3fcdd19e1bf0"
+          },
+          {
+            title: "Buy Token",
+            link: "https://www.gateio.pro/cn/trade/ARES_USDT"
+          },
+          {
+            title: "Farms",
+            link: "https://trojan.aresprotocol.io/"
+          },
+        ]
+      },
+      developers: {
+        title: 'Developers',
+        items: [
+          {
+            title: "Documentation",
+            link: "https://docs.aresprotocol.io/#/"
+          },
+          {
+            title: "Github",
+            link: "https://github.com/aresprotocols"
+          },
+          {
+            title: "Blockchain Explorer",
+            link: "http://etherscan.io/token/0x358aa737e033f34df7c54306960a38d09aabd523"
+          },
+        ]
+      },
+      media: {
+        title: 'Social Media',
+        items: [
+          {
+            href: "https://t.me/AresProtocolLab",
+            imgPath: "/img/telegram.png",
+            className: "media-item"
+          },
+          {
+            href: "https://twitter.com/AresProtocolLab",
+            imgPath: "/img/twitter.png",
+            className: ""
+          },
+          {
+            href: "https://www.facebook.com/aresprotocollab",
+            imgPath: "/img/facebook.png",
+            className: ""
+          },
+          {
+            href: "https://discord.com/invite/cqduK4ZNaY",
+            imgPath: "/img/discord.png",
+            className: ""
+          },
+          {
+            href: "https://www.reddit.com/r/AresProtocolLabs/",
+            imgPath: "/img/reddit.png",
+            className: ""
+          },
+          {
+            href: "https://aresprotocollab.medium.com/",
+            imgPath: "/img/medium.png",
+            className: ""
+          },
+          {
+            href: "https://github.com/aresprotocols",
+            imgPath: "/img/github.png",
+            className: ""
+          },
+          {
+            href: "https://www.instagram.com/aresprotocollab/",
+            imgPath: "/img/instagram.png",
+            className: ""
+          },
+          {
+            href: "https://www.youtube.com/channel/UCgwY4NwkoP8Hx1Fqmp_rJUw",
+            imgPath: "/img/youtube.png",
+            className: ""
+          },
+        ]
+      }
+    }
+
+
+    const zhFooterNavItemList = {
+      aboutUs: {
+        title: '关于我们',
+        desc: "首个链上验证的去中心化跨链预言机服务协议，为万链互联和数字经济提供安全可信的数据服务。"
+      },
+      quickLinks: {
+        title: '快速链接',
+        items: [
+          {
+            title: "网站",
+            link: "https://www.aresprotocol.io/"
+          },
+          {
+            title: "博客",
+            link: "https://aresprotocollab.medium.com/"
+          },
+          {
+            title: "代币经济学",
+            link: "http://aresprotocollab.medium.com/ares-protocol-tokenomics-detail-3fcdd19e1bf0"
+          },
+          {
+            title: "购买代币",
+            link: "https://www.gateio.pro/cn/trade/ARES_USDT"
+          },
+          {
+            title: "挖矿",
+            link: "https://trojan.aresprotocol.io/"
+          },
+        ]
+      },
+      developers: {
+        title: '开发者',
+        items: [
+          {
+            title: "文档",
+            link: "https://docs.aresprotocol.io/#/"
+          },
+          {
+            title: "Github",
+            link: "https://github.com/aresprotocols"
+          },
+          {
+            title: "区块浏览器",
+            link: "http://etherscan.io/token/0x358aa737e033f34df7c54306960a38d09aabd523"
+          },
+        ]
+      },
+      media: {
+        title: '社会媒体',
+        items: enFooterNavItemList.media.items
+      }
+    }
+
+    this.state = {
+      navList: this.props.language === "en" ? enFooterNavItemList : zhFooterNavItemList,
+      copyright: this.props.language === "en" ? this.props.config.copyright : this.props.config.zhCopyright
+    };
+  }
+
   docUrl(doc) {
     const { config: siteConfig, language = "" } = this.props;
     const { baseUrl, docsUrl } = siteConfig;
@@ -17,177 +180,71 @@ class Footer extends React.Component {
   }
 
   render() {
+    const {navList, copyright} = this.state;
     return (
       <footer className="nav-footer" id="footer">
         <section className="sitemap">
-          {/*<a href={this.props.config.baseUrl} className="nav-home">*/}
-          {/*  {this.props.config.footerIcon && (*/}
-          {/*    <img*/}
-          {/*      src={this.props.config.baseUrl + this.props.config.footerIcon}*/}
-          {/*      alt={this.props.config.title}*/}
-          {/*      width="66"*/}
-          {/*      height="58"*/}
-          {/*    />*/}
-          {/*  )}*/}
-          {/*</a>*/}
-          <div className="footerAbout">
-            <h5>About Us</h5>
-            <p className="text-white">Ares is an on-chain-verified oracle platform that provides secure and reliable data services for the Polkadot DeFi ecosystem.</p>
-            <a
-              href="mailto:info@aresprotocol.io">
-              <img src="/img/Email.png" alt="Email" width={18} height={11}/> &nbsp;
-              info@aresprotocol.io
-            </a>
-          </div>
-          <div>
-            <h5>Quick Links</h5>
-            <a href="https://www.aresprotocol.io/">
-              Website
-            </a>
-            <a href="https://aresprotocollab.medium.com/">
-              Blog
-            </a>
-            <a href="http://aresprotocollab.medium.com/ares-protocol-tokenomics-detail-3fcdd19e1bf0">
-              Tokenomics
-            </a>
-            <a href="https://www.gateio.pro/cn/trade/ARES_USDT">
-              Buy Token
-            </a>
-            <a href="https://trojan.aresprotocol.io/">
-              Farms
-            </a>
-          </div>
-          <div>
-            <h5>Developers</h5>
-            <a href="https://docs.aresprotocol.io/#/">
-              Documentation
-            </a>
-            <a href="https://github.com/aresprotocols">
-              Github
-            </a>
-            <a href="http://etherscan.io/token/0x358aa737e033f34df7c54306960a38d09aabd523">
-              Blockchain Explorer
-            </a>
-          </div>
-          <div>
-            <h5>Social Media</h5>
-            <div className="social-media">
-              <a
-                  href="https://t.me/AresProtocolLab"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  className="media-item"
-              >
-                <img src="/img/telegram.png" alt="" width={24} height={22}/>
-              </a>
-              <a
-                  href="https://twitter.com/AresProtocolLab"
-                  target="_blank"
-                  rel="noreferrer noopener">
-                <img src="/img/twitter.png" alt="" width={24} height={22}/>
-              </a>
-              <a
-                  href="https://www.facebook.com/aresprotocollab"
-                  target="_blank"
-                  rel="noreferrer noopener">
-                <img src="/img/facebook.png" alt="" width={24} height={22}/>
-              </a>
-              <a
-                  href="https://discord.com/invite/cqduK4ZNaY"
-                  target="_blank"
-                  rel="noreferrer noopener">
-                <img src="/img/discord.png" alt="" width={24} height={22}/>
-              </a>
-              <a
-                  href="https://www.reddit.com/r/AresProtocolLabs/"
-                  target="_blank"
-                  rel="noreferrer noopener">
-                <img src="/img/reddit.png" alt="" width={24} height={22}/>
-              </a>
-              <a
-                  href="https://aresprotocollab.medium.com/"
-                  target="_blank"
-                  rel="noreferrer noopener">
-                <img src="/img/medium.png" alt="" width={24} height={22}/>
-              </a>
-              <a
-                  href="https://github.com/aresprotocols"
-                  target="_blank"
-                  rel="noreferrer noopener">
-                <img src="/img/github.png" alt="" width={24} height={22}/>
-              </a>
-              <a
-                  href="https://www.instagram.com/aresprotocollab/"
-                  target="_blank"
-                  rel="noreferrer noopener">
-                <img src="/img/instagram.png" alt="" width={24} height={22}/>
-              </a>
-              <a
-                  href="https://www.youtube.com/channel/UCgwY4NwkoP8Hx1Fqmp_rJUw"
-                  target="_blank"
-                  rel="noreferrer noopener">
-                <img src="/img/youtube.png" alt="" width={24} height={22}/>
+          {
+            <div className="footerAbout">
+              <h5>{navList.aboutUs.title}</h5>
+              <p className="text-white">{navList.aboutUs.desc}</p>
+              <a href="mailto:info@aresprotocol.io">
+                <img src="/img/Email.png" alt="Email" width={18} height={11}/> &nbsp;
+                info@aresprotocol.io
               </a>
             </div>
-          </div>
-          {/*<div>*/}
-            {/*<h5>More</h5>*/}
-            {/*<a*/}
-            {/*    href="https://www.aresprotocol.io/"*/}
-            {/*    target="_blank"*/}
-            {/*    rel="noreferrer noopener">*/}
-            {/*  Cooperation*/}
-            {/*</a>*/}
-            {/*/!*<a href={`${this.props.config.baseUrl}blog`}>Blog</a>*!/*/}
-            {/*<a href="https://github.com/aresprotocols">GitHub</a>*/}
-            {/*<a*/}
-            {/*  className="github-button"*/}
-            {/*  href={this.props.config.repoUrl}*/}
-            {/*  data-icon="octicon-star"*/}
-            {/*  }
-            {/*  data-show-count="true"*/}
-            {/*  data-count-aria-label="# stargazers on GitHub"*/}
-            {/*  aria-label="Star this project on GitHub">*/}
-            {/*  Star*/}
-            {/*</a>*/}
-            {/*{this.props.config.twitterUsername && (*/}
-            {/*  <div className="social">*/}
-            {/*    <a*/}
-            {/*      href={`https://twitter.com/${this.props.config.twitterUsername}`}*/}
-            {/*      className="twitter-follow-button">*/}
-            {/*      Follow @{this.props.config.twitterUsername}*/}
-            {/*    </a>*/}
-            {/*  </div>*/}
-            {/*)}*/}
-            {/*{this.props.config.facebookAppId && (*/}
-            {/*  <div className="social">*/}
-            {/*    <div*/}
-            {/*      className="fb-like"*/}
-            {/*      data-href={this.props.config.url}*/}
-            {/*      data-colorscheme="dark"*/}
-            {/*      data-layout="standard"*/}
-            {/*      data-share="true"*/}
-            {/*      data-width="225"*/}
-            {/*      data-show-faces="false"*/}
-            {/*    />*/}
-            {/*  </div>*/}
-            {/*)}*/}
-          {/*</div>*/}
+          }
+          {
+            <div>
+              <h5>{navList.quickLinks.title}</h5>
+              {
+                navList.quickLinks.items.map(item => {
+                  return (
+                    <a href={item.link} target="_blank">
+                      {item.title}
+                    </a>
+                  )
+                })
+              }
+            </div>
+          }
+          {
+            <div>
+              <h5>{navList.developers.title}</h5>
+              {
+                navList.developers.items.map(item => {
+                  return (
+                      <a href={item.link} target="_blank">
+                        {item.title}
+                      </a>
+                  )
+                })
+              }
+            </div>
+          }
+          {
+            <div>
+              <h5>{navList.media.title}</h5>
+              <div className="social-media">
+                {
+                  navList.media.items.map(item => {
+                    return(
+                        <a
+                            href={item.href}
+                            target="_blank"
+                            rel="noreferrer noopener"
+                            className={item.className}
+                        >
+                          <img src={item.imgPath} alt="" width={24} height={22}/>
+                        </a>
+                    )
+                  })
+                }
+              </div>
+            </div>
+          }
         </section>
-
-        {/*<a*/}
-        {/*  href="https://opensource.facebook.com/"*/}
-        {/*  target="_blank"*/}
-        {/*  rel="noreferrer noopener"*/}
-        {/*  className="fbOpenSource">*/}
-        {/*  <img*/}
-        {/*    src={`${this.props.config.baseUrl}img/oss_logo.png`}*/}
-        {/*    alt="Facebook Open Source"*/}
-        {/*    width="170"*/}
-        {/*    height="45"*/}
-        {/*  />*/}
-        {/*</a>*/}
-        <section className="copyright">{this.props.config.copyright}</section>
+        <section className="copyright">{copyright}</section>
       </footer>
     );
   }

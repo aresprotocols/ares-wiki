@@ -90,6 +90,7 @@ const siteConfig = {
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
   copyright: `Copyright © ${new Date().getFullYear()} The Ares Protocol All rights reserved`,
+  zhCopyright: `Copyright © ${new Date().getFullYear()} Ares Protocol 保留所有权利.`,
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
