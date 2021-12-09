@@ -35,6 +35,7 @@ You only need to pledge a small amount of ARES to become an aggregator node of t
 2. After the selected aggregator node provides data, any node can initiate a challenge by paying a certain amount of GAS, questioning the authenticity of the data, and the arbitration committee will deal with the challenger's queries in a timely manner. It effectively avoids the possibility of nodes doing evil, and also avoids the possibility of challenger nodes doing evil, and the on-chain aggregation function of the ARES network adds another layer of protection to the data source.
 
 **Real-time**
+
 ARES ensures the data requester can quickly receive feedback results in real time after initiating a request by verifying and sharing the security consensus of the Polkadot network on the data chain.
 
 **About $Ares**

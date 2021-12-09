@@ -34,22 +34,3 @@ sidebar_label: 硬件环境
 
 付款完成后，左侧点击“Products”栏目，选择对应的账号。点击“Overview”，获取IP、用户名及密码，保存好它们用于后期登录。
 
-第四步
-
-![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/4.png?raw=true) 
-
-![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/5.png?raw=true) 
-
-下载程序 [<u>http://www.hostbuf.com/downloads/finalshell_install.pkg</u>](http://www.hostbuf.com/downloads/finalshell_install.pkg)，右击“打开”进行程序安装。选择安装位置，点击“安装”即可完成。
-
-第五步
-
-![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/6.png?raw=true) 
-
-打开下载好的程序“FinalShell”，如上图，点击文件符号，选择“SSH连接（Linux）”
-
-第六步
-
-![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/8.png?raw=true) 
-
-输入自定义名称，之前保存的IP账号、用户名及密码，点击“确定”。云服务器就连接成功啦！

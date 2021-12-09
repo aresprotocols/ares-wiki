@@ -10,7 +10,7 @@ sidebar_label: 程序安装
 
 1.  下载节点的二进制执行程序：
 
-下载地址：[<u>https://github.com/aresprotocols/ares/releases/tag/v1.0.5</u>](https://github.com/aresprotocols/ares/releases/tag/v1.0.5)
+下载地址：[<u>https://github.com/aresprotocols/ares/releases/tag/v1.0.7</u>](https://github.com/aresprotocols/ares/releases/tag/v1.0.7)
 
 尽量选择最新的版本下载，如下例子是 v211028 版本
 
@@ -18,17 +18,21 @@ sidebar_label: 程序安装
 
 可执行的 gladios-node 二进制文件：
 ```
-wget -c [<u>https://github.com/aresprotocols/ares/releases/download/v1.0.5/gladios-node</u>](https://github.com/aresprotocols/ares/releases/download/v1.0.5/gladios-node)
+wget -c https://github.com/aresprotocols/ares/releases/download/v1.0.7/gladios-node-linux-amd64-1.0.7-379058b
+
 ```
 
 添加执行权限
 ```
-chmod +777 [**<u>gladios-node</u>**](https://user_cancel/)
+chmod +777  gladios-node-linux-amd64-1.0.7-379058b
+
 ```
 
 执行节点
 ```
-./gladios-node --base-path /tmp/aura/one --name Ares_OCW5 --chain gladios --port 30334 --ws-port 9945 --rpc-port 9933 --ws-external --rpc-external --rpc-cors=all --rpc-methods=Unsafe --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0' --bootnodes /ip4/158.247.224.166/tcp/30333/p2p/12D3KooWEyoppNCUx8Yx66oV9fJnriXwCcXwDDUA2kj6vnc6iDEp
+./gladios-node-linux-amd64-1.0.7-379058b --base-path data   --name Ares_Emily0626_0xA86ed7899330DF48316E2A2842D5aD13F031Ab11   --chain gladios --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0'
+
+
 ```
 
 **方法二：源码编译**

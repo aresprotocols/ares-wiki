@@ -8,57 +8,47 @@ sidebar_label: Program Installation
 
 1.  Download the binary executor of the node：
 
-download link：[<u>https://github.com/aresprotocols/ares/releases/tag/v1.0.5</u>](https://github.com/aresprotocols/ares/releases/tag/v1.0.5)
+download link：[<u>https://github.com/aresprotocols/ares/releases/tag/v1.0.7</u>](https://github.com/aresprotocols/ares/releases/tag/v1.0.7)
 
-Try to choose the latest version to download, the following example is the v211028 version
+**First Step:**
 
-![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/9.png?raw=true) 
+![](assets/build/114.png)
 
-Executable gladios-node binary file:
+As the above photo showed, executable gladios-node binary coded files:
 ```
-wget -c [<u>https://github.com/aresprotocols/ares/releases/download/v1.0.5/gladios-node</u>](https://github.com/aresprotocols/ares/releases/download/v1.0.5/gladios-node)
+wget -c https://github.com/aresprotocols/ares/releases/download/v1.0.7/gladios-node-linux-amd64-1.0.7-379058b
+)
 ```
+**Second Step:**
+![](assets/build/115.png)
 
-Add execute permission
+As shown above, add executor permission
+
 ```
-chmod +777 [**<u>gladios-node</u>**](https://user_cancel/)
-```
-
-Execution node
-```
-./gladios-node --base-path /tmp/aura/one --name Ares_OCW5 --chain gladios --port 30334 --ws-port 9945 --rpc-port 9933 --ws-external --rpc-external --rpc-cors=all --rpc-methods=Unsafe --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0' --bootnodes /ip4/158.247.224.166/tcp/30333/p2p/12D3KooWEyoppNCUx8Yx66oV9fJnriXwCcXwDDUA2kj6vnc6iDEp
-```
-
-**Method two: source code compilation**
-```
-Install Rust
-
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-
-
-Install dependent libraries
-
-sudo apt install make clang pkg-config libssl-dev build-essential
-
-Download the Ares code
-
-git clone [https://github.com/aresprotocols/ares.git</u>](https://github.com/aresprotocols/ares.git)
-
-Compile the source code
-
-cargo build --release
-
-Note if you run into compile errors, you may have to switch to a less recent nightly. This can be done by running:
-
-rustup install nightly-2021-06-09
-
-rustup target add wasm32-unknown-unknown --toolchain nightly-2021-06-09
-
-cargo +nightly-2021-06-09 build --release
+chmod +777  gladios-node-linux-amd64-1.0.7-379058b
 ```
 
+**Third Step**
+![](assets/build/116.png)
+As shown above, execute node
 
-Method 3: Docker runs the node program
+```
+./gladios-node-linux-amd64-1.0.7-379058b --base-path data   --name Ares_Emily0626_0xA86ed7899330DF48316E2A2842D5aD13F031Ab11   --chain gladios --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0'
+```
+
+Please fill out in form of (Ares_username in telegram node miner group_bsc address).
+
+for example:
+Ares_Emily0626（username in telegram node miner group) _ 0xA86ed7899330DF48316E2A2842D5aD13F031Ab11（bsc address）;
+Please ensure information are valid to enable evaluation and distribution of rewards.
+
+![](assets/build/117.png)
+
+When the server displays in the above screen, the deployment is successful. Don’t forget to log into Polkadot Telemetry to check the node running status.
+
+
+
+**Method B：**
 
 1.  Install docker
 
@@ -111,4 +101,33 @@ docker stop ares_gladios
 
 docker rm ares_gladios
 
+```
+
+
+**Method C: source code compilation**
+```
+Install Rust
+
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+
+Install dependent libraries
+
+sudo apt install make clang pkg-config libssl-dev build-essential
+
+Download the Ares code
+
+git clone [https://github.com/aresprotocols/ares.git</u>](https://github.com/aresprotocols/ares.git)
+
+Compile the source code
+
+cargo build --release
+
+Note if you run into compile errors, you may have to switch to a less recent nightly. This can be done by running:
+
+rustup install nightly-2021-06-09
+
+rustup target add wasm32-unknown-unknown --toolchain nightly-2021-06-09
+
+cargo +nightly-2021-06-09 build --release
 ```

@@ -34,23 +34,4 @@ Select “Ubuntu 18.04 x64” version, and then select the cloud service which m
 
 After the payment was completed, click the “products” section on the left, select the according to account. Click “Overview”, to acquire IP, username and passport and save them safely to guarantee future log in.
 
-***the fourth step***
 
-![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/4.png?raw=true) 
-
-![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/5.png?raw=true) 
-
-Download program [<u>http://www.hostbuf.com/downloads/finalshell_install.pkg</u>](http://www.hostbuf.com/downloads/finalshell_install.pkg)，
-Right-click "Open" to install the program. Select the installation location and click "Install" to complete.
-
-***the fifth step***
-
-![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/6.png?raw=true) 
-
-Open the downloaded program "FinalShell", as shown above, click on the file symbol, and select "SSH connection (Linux)"
-
-***Sixth step***
-
-![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/8.png?raw=true) 
-
-Enter the custom name, the previously saved IP account, user name and password, and click "OK". The cloud server is successfully connected!

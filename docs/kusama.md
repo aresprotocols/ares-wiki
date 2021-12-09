@@ -24,33 +24,34 @@ The initial issuance of $AMAS reaches 1 billion in total. 50% will be used for s
 
 ### Crowd-loan operating process
 
-**Step one**
+**Step 1**
 
 Click here to enter the slot auction page
 
 https://polkadot.js.org/apps/#/explorer
 
 
-**Step two**
-	Click【account】and then click 【add account】remember keywords, get KSM account. Transfer information of exchanges and wallets into this ksm account.
+**Step 2**
 
-![](assets/build/52.png)
+Click【account】and then click 【add account】remember keywords, get KSM account. Transfer information of exchanges and wallets into this ksm account.
 
-![](assets/build/53.png)
+![](assets/build/105.png)
 
-![](assets/build/54.png)
+![](assets/build/106.png)
 
-![](assets/build/55.png)
+![](assets/build/107.png)
 
-![](assets/build/56.png)
+![](assets/build/108.png)
 
-**Step three**
+![](assets/build/109.png)
+
+**Step 3**
 
 Select【main net】 ，select【parachains】 from the drop-down list ，and click【Crowdloan】.
 
-![](assets/build/57.png)
+![](assets/build/111.png)
 
-![](assets/build/58.png)
+![](assets/build/112.png)
 
 **Step 4**
 
@@ -87,7 +88,7 @@ Up to 300,000,000 AMAS will be distributed to KSM contributors. After the succes
 #### Crowdloan Airdrop Receiving Procedure
 
 **Step1**
-![](assets/build/61.png)
+![](assets/build/105.png)
 
 Enter the Mars official page:：https://aresprotocol.io/mars，Click 【Crowdloan Drop】;
 
@@ -112,7 +113,7 @@ The airdrop will be distributed in BSC, please enter the ARES page in Pankcake;
 https://pancakeswap.finance/swap?inputCurrency=0xf9752a6e8a5e5f5e6eb3ab4e7d8492460fb319f0
 
 **Step 6**
-![](assets/build/67.png)
+![](assets/build/113.png)
 Connect wallet, put in ARES amount then you could extract as related BNB, USDT assets, click 【SWAP】to complete your request.
 
 KSM contributed by contributors for Mars on the KUSAMA slot auction has been returned to the supporters. Looking forward to contributing to our next slot auction.
