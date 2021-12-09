@@ -43,7 +43,7 @@ class Footer extends React.Component {
         ]
       },
       developers: {
-        title: 'Developers',
+        title: 'Resources',
         items: [
           {
             title: "Documentation",
@@ -143,7 +143,7 @@ class Footer extends React.Component {
         ]
       },
       developers: {
-        title: '开发者',
+        title: '资料',
         items: [
           {
             title: "文档",

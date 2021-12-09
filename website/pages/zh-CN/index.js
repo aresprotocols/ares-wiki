@@ -18,7 +18,7 @@ class HomeNav extends React.Component {
         const NavContainer = (props) => (
             <section className="homeNavContainer">
                 <Container className="h-100">
-                    <p className="homeNavContainerTitle">Learn all about the Ares Protocol</p>
+                    <p className="homeNavContainerTitle">了解关于Ares Protocol</p>
                     <Row className="h-100 d-flex align-items-center justify-content-around">{props.children}</Row>
                 </Container>
             </section>

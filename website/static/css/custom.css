@@ -572,7 +572,7 @@ body {
 
   .social-media {
     column-gap: 25px !important;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 0 45px;
   }
 }
@@ -633,6 +633,10 @@ body {
 
   .sitemap {
     padding: 0 160px;
+  }
+
+  .sitemap div {
+    min-width: 150px;
   }
 }
 
@@ -942,8 +946,8 @@ body {
 .social-media {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 10px;
-  width: 200px;
+  column-gap: 30px;
+  width: 250px;
 }
 
 
