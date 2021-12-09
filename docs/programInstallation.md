@@ -72,7 +72,7 @@ https://docs.docker.com/desktop/mac/install/
 
 https://docs.docker.com/desktop/windows/install/
 
-1.  Open the command line tool, run the command to execute the node program
+2.  Open the command line tool, run the command to execute the node program
 
 ```
 docker run -d --name ares_gladios aresprotocollab/ares_gladios:beta gladios-node --name your-name --chain gladios --ws-external --rpc-external --rpc-cors=all --rpc-methods=Unsafe --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0'
@@ -84,7 +84,7 @@ aresprotocollab/ares_gladios:alpha；More versions please check：
 
 https://hub.docker.com/r/aresprotocollab/ares_gladios/tags
 
-1. View the program running log:
+3. View the program running log:
 
 
 ```
@@ -92,7 +92,7 @@ docker logs -f ares_gladio -n 1000
 
 ```
 
-1.  Stop and delete the node program:
+4.  Stop and delete the node program:
 
 
 

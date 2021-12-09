@@ -55,7 +55,7 @@ https://docs.docker.com/desktop/mac/install/
 
 https://docs.docker.com/desktop/windows/install/
 
-1.  打开命令行工具，运行命令执行节点程序
+2.  打开命令行工具，运行命令执行节点程序
 
 ```
 docker run -d --name ares_gladios aresprotocollab/ares_gladios:beta gladios-node --name your-name --chain gladios --ws-external --rpc-external --rpc-cors=all --rpc-methods=Unsafe --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0'
