@@ -21,7 +21,7 @@ const users = [
 ];
 
 const siteConfig = {
-  title: ' Ares Wiki', // Title for your website.
+  title: ' Ares Wikipedia', // Title for your website.
   tagline: 'Wiki for Ares Network',
   url: 'https://wiki.Ares.network', // Your website URL
   baseUrl: '/', // Base URL for your project */

@@ -21,6 +21,7 @@ Problems in Oracle:
 ### Ares features
 
 **Openness**
+
 You only need to pledge a small amount of ARES to become an aggregator node of the ARES network to ensure the wide range and distributed characteristics of data sources.
 
 **Fairness**
