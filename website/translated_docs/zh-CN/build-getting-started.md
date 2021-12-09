@@ -85,20 +85,6 @@ parasSudoWrapper->sudoEstablishHrmpChannel
 
 2001 2000 7 1000
 
-### 2001节点发送getprice消息
-
-https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9971#/sudo
-
-GetPrice->GetPrice 参数
-
-2000 比特币
 
 
 
-查看事件发送结果
-![](assets/build/59.png)
-
-https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9971#/explorer
-
-
-https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9951#/explorer 

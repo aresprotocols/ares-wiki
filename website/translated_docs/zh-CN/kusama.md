@@ -98,13 +98,13 @@ $AMAS 的初始发行总量为 10 亿。其中50%将用于卡槽拍卖，无私�
 **步骤4**
 ![](assets/build/64.png)
 出现「Thanks for your contribution for the KSM slot」将会显示您贡献的KSM数值及相对应的ARES空投。输入您的ETH地址，点击【Submit】即可提交，耐心等待 ARES 空投的发放吧。
-![](assets/build/65.png)
+
 
 
 **步骤5**
-![](assets/build/66.png)
+![](assets/build/65.png)
 空投将发放至BSC,进入Pancake的ARES页面：https://pancakeswap.finance/swap?inputCurrency=0xf9752a6e8a5e5f5e6eb3ab4e7d8492460fb319f0
 
 **步骤6**
-![](assets/build/67.png)
+![](assets/build/66.png)
 连接钱包，输入 ARES 数额即可提取为BNB、USDT等相应资产，点击【Swap】

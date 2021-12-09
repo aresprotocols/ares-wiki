@@ -65,27 +65,36 @@ http://iliad.aresprotocol.io/ 
 ![](assets/build/15.png)
 
 
-4.主页面 
-4.1 质押挖矿“open” 活期/定期质押页面，点击“Stake Tokens”按钮。
+***4.主页面***
+
+**4.1 质押挖矿**
+
+“open” 活期/定期质押页面，点击“Stake Tokens”按钮。
 ![](assets/build/16.png)
 
-4.2 批准流程如果您的地址是第一次连接iliad。您应该执行批准过程。
+**4.2 批准流程**
+
+如果您的地址是第一次连接iliad。您应该执行批准过程。
 ![](assets/build/17.png)
 您的地址的批准状态成功后，您可以按“Stake Tokens”按钮，然后输入代币数量进行Staking。
 ![](assets/build/18.png)
 
-4.3取消抵押代币(活期)
+**4.3取消抵押代币(活期)**
 
 您可以按“ Unstake Tokens ”来提取您的代币。输入您的代币数量，然后单击Unstake按钮。
 ![](assets/build/19.png)
 
-4.4领取奖励
+**4.4领取奖励**
 
 按“Claim Rewards”并查看Gas费用，然后按“确认”按钮领取奖励。
 ![](assets/build/20.png)
 
-4.5.1认领和取消质押（活期）点击“Claim and Unstake”您可以一键取消所有代币并领取所有奖励。
+**4.5.1认领和取消质押（活期）**
 
-4.5.2认领和取消质押（定期）若是购买的定期产品，按键为灰色，需要等到规定时间后，再提取奖励。
+点击“Claim and Unstake”您可以一键取消所有代币并领取所有奖励。
+
+**4.5.2认领和取消质押（定期）**
+
+若是购买的定期产品，按键为灰色，需要等到规定时间后，再提取奖励。
 
 ![](assets/build/21.png)

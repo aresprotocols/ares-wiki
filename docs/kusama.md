@@ -103,11 +103,11 @@ If the screen displays「Sorry, you are not on the list」that means you are not
 **Step 4**
 ![](assets/build/64.png)
 If the screen shows「Thanks for your contribution to the KSM slot」, then the KSM data you contributed will be manifested with relevant ARES airdrop reward. Put in your ETH address，click【Submit】，wait in patience ARES, you will get your ARES tokens;
-![](assets/build/65.png)
+
 
 
 **Step 5**
-![](assets/build/66.png)
+![](assets/build/65.png)
 The airdrop will be distributed in BSC, please enter the ARES page in Pankcake;
 
 https://pancakeswap.finance/swap?inputCurrency=0xf9752a6e8a5e5f5e6eb3ab4e7d8492460fb319f0

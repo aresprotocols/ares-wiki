@@ -1,7 +1,7 @@
 ---
 id: Iliadstaking
-title: Iliad staking
-sidebar_label: Iliad staking
+title: Iliad Stake Mining
+sidebar_label: Iliad Stake Mining
 ---
 
 ## Iliad Stake Mining 

@@ -21,8 +21,6 @@ https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io/#/explorer
 
 **创建Ares账户**
 
-**Accounts**
-
 **如何打开如下的界面，访问** 
 
 [<u>https://js.aresprotocol.io/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io#/explorer/</u>](https://js.aresprotocol.io/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io#/explorer)
@@ -53,7 +51,9 @@ https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io/#/explorer
 
 单击“保存”，该帐户将默认备份到您的设备上。请保管好您的备份文件。
 
-转账
+
+**转账**
+
 
 第一步
 
@@ -79,11 +79,11 @@ https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io/#/explorer
 
 输入您账户的密码，点击“交易签名”，本次转账就完成了。快通知您的交易用户，及时查收吧！
 
-###运行验证人节点
 
-**Staking**
+### 运行验证人节点
 
-1.  质押
+
+**质押**
 
 第一步：
 

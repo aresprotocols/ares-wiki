@@ -47,7 +47,8 @@ ARES 质押挖矿已进行了 2 期，质押量持续攀升，可以看到大家
 
 [https://etherscan.io/token/0x358aa737e033f34df7c54306960a38d09aabd523](https://etherscan.io/token/0x358aa737e033f34df7c54306960a38d09aabd523)
 ![](assets/build/11.png)
-![image.png](https://github.com/aresprotocols/documentation/blob/master/assets/img/image3.png?raw=true)
+
+![](assets/build/118.png)
 
 
 **3\. 连接你的钱包**

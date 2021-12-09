@@ -84,20 +84,3 @@ original produced，parameters：
 
 2001 2000 7 1000
 
-### send get price message in 2001 node
-
-https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9971#/sudo
-
-GetPrice->GetPrice parameters
-
-2000 bitcoin
-
-View the event sending result
-check out the 
-
-![](assets/build/59.png)
-
-https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9971#/explorer
-
-
-https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9951#/explorer 

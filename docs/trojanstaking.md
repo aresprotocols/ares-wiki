@@ -1,7 +1,7 @@
 ---
 id: trojanstaking
-title: Trojan staking
-sidebar_label: Trojan staking
+title: Trojan Stake Mining
+sidebar_label: Trojan Stake Mining
 ---
 
 ## General Outlook
