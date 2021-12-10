@@ -57,7 +57,7 @@
         "sidebar_label": "Plan"
       },
       "Iliadstaking": {
-        "title": "Iliad Stake Mining",
+        "title": "Iliad",
         "sidebar_label": "Iliad Stake Mining"
       },
       "introduction": {
@@ -97,7 +97,7 @@
         "sidebar_label": "Transfer"
       },
       "trojanstaking": {
-        "title": "Trojan Stake Mining",
+        "title": "Trojan",
         "sidebar_label": "Trojan Stake Mining"
       },
       "apis": {

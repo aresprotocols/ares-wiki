@@ -36,11 +36,11 @@ You only need to pledge a small amount of ARES to become an aggregator node of t
 
 **Real-time**
 
-ARES ensures the data requester can quickly receive feedback results in real time after initiating a request by verifying and sharing the security consensus of the Polkadot network on the data chain.
+ARES ensures the data requester can quickly receive feedback results in real-time after initiating a request by verifying and sharing the security consensus of the Polkadot network on the data chain.
 
 **About $Ares**
 
-Exchanges: Gate, MEXC Matcha, Hotbit, BKEX, BitMart, Uniswap
+Exchanges: Gate, MEXC, Matcha, Hotbit, BKEX, BitMart, Uniswap
 
 Total amount: 1 Billion
 
@@ -68,17 +68,17 @@ Currently, Ares has launched the first phase version of the gladios testnet. At 
 
 
 At the same time, we will also focus on brand promotion and operation, and reach strategic cooperation with more ecological projects.
-God of War's 2021 plan is mainly divided into several aspects：
+Ares Protocol 2021 plan is mainly divided into several aspects：
 
-The launch of the next version of Gladios Testnet is related to the advancement of product function research and development. The DeFi project can be provided with a safer and more reliable price service.
+The launch of the next version of Gladios Testnet is related to the advancement of product function research and development. The Defi project can be provided with a safer and more reliable price service.
 
-Community development, build the God of War community ambassador and technical ambassador, let more friends who want to know God of War join the family of God of War. If you have your own unique insights on publicity and technology, you are welcome to contact us at any time.
+Community development, build the Ares Protocol community ambassador and technical ambassador, let more friends who want to know Ares Protocol join the family of God of War. If you have your own unique insights on publicity and technology, you are welcome to contact us at any time.
 At present, we are also actively cooperating closely with ecological projects. Such as mxc polar domain, trustbase, bandot and other projects.
 
-Ares will set up the WASM Ecological Fund. Welcome to use Wasm contract to build DeFi application. You can get all kinds of data on the chain for free. If you are interested, you may apply for our funding.
+Ares will set up the WASM Ecological Fund. Welcome to use Wasm contract to build Defi application. You can get all kinds of data on the chain for free. If you are interested, you may apply for our funding.
 In Polkadot and Kusama parachain slot auctions, Ares paid close attention to this development and has already participated in the crowd loans of Dot and KSM.
 
-Ares Eco Marathon welcomes individuals or technical teams who use Ares Oracle services to participate in the ecological construction, and will provide generous financial rewards to participants.
+Ares Eco-Marathon welcomes individuals or technical teams who use Ares Oracle services to participate in the ecological construction and will provide generous financial rewards to participants.
 
 
 

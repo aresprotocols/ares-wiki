@@ -34,20 +34,20 @@ Through the Automated Market Maker mechanism, liquidity providers (LP) can gain 
 
 #### Reward
 Share 100% transaction fee to LP（liquidity provider）.
-Participants have the opportunity to earn additional income from time limited bonus pool. 
+Participants have the opportunity to earn additional income from the time-limited bonus pool. 
 
 
 ### Liquidity mining procedure
 ![](assets/build/97.png)
-1.Log in gate account. Click gate.io in first page, select “ Finance ”, and select “Liquidity Mining”.
+1.Log in gate account. Click gate.io on the first page, select “ Finance ”, and select “Liquidity Mining”.
 ![](assets/build/98.png)
 2.Search Ares, trading pairs of Ares, USDT, ETH will be immediately shown. Or directly search the URL link https://www.gate.tv/cn/liquidity/ares to access the address.
 ![](assets/build/99.png)
 3.Select an appropriate trade pair and click “Add Liquidity”.
 ![](assets/build/100.png)
-4.On the table of “Add Liquidity” , type the number of varieties of the coins and click the consent treaty to click “Add”. Saved liquidity assets will be stored into AMM account from current account.
+4.On the table of “Add Liquidity”, type the number of varieties of the coins and click the consent treaty to click “Add”. Saved liquidity assets will be stored into the AMM account from current account.
 ![](assets/build/100.png)
-5.How to do withdraw? Click the Unlock, on the table of “Rewards Yet To Withdraw” , drag the slide to moderate the percentage to withdraw. The withdrawn liquidity will be converted into related coins to be returned to original account.
+5.How do withdraw? Click the Unlock, on the table of “Rewards Yet To Withdraw” , drag the slide to moderate the percentage to withdraw. The withdrawn liquidity will be converted into related coins to be returned to original account.
 ![](assets/build/101.png)
 6.How to check the record of liquidity mining and profit? Click “My Liquidity”
 ![](assets/build/102.png)

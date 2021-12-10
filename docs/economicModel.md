@@ -31,7 +31,7 @@ Treasury funds can be used by initiating proposals. Any holder of the Ares netwo
 
 **Community Governance**
 
-Anyone holding the ARES token has the right to govern, and can vote for protocol upgrades and reputation committee elections. The Reputation Committee ensures the security of the Area network by incentivizing challengers and punishing malicious nodes.
+Anyone holding the ARES token has the right to govern and can vote for protocol upgrades and reputation committee elections. The Reputation Committee ensures the security of the Area network by incentivizing challengers and punishing malicious nodes.
 
 
 ## Recap

@@ -6,7 +6,7 @@ sidebar_label: Kusama
 
 
 ### Crowdloan
-Ares Protocol continues to participate in the Kusama Parachain Slot Auction, currently officially launched crowd-loan for Kusama.
+Ares Protocol continues to participate in the Kusama ****Parachain Slot Auction, currently officially launched crowd-loan for Kusama.
 
 Mars is a canary network built by Ares Protocol on Kusama. It will conduct some contract call tests for asset prices. If tested in a real environment, it will be deployed on the Ares Protocol mainnet.
 
@@ -16,7 +16,7 @@ After a successful auction of the Kusama slot, Ares Protocol will provide Kusama
 
 Mars token ($AMAS) will be used for contract call tests for some asset prices, in the meantime, it will be used for community governance and other functions.
 
-The initial issuance of $AMAS reaches 1 billion in total. 50% will be used for slot auction, no private round investment and team holding, committed to becoming a community governed token. Any community user who stakes a certain amount of $AMAS can become an aggregator node in the Mars network.
+The initial issuance of $AMAS reaches 1 billion in total. 50% will be used for slot auction, no private round investment and team holding, committed to becoming a community governed token. Any community user who takes a certain amount of $AMAS can become an aggregator node in the Mars network.
 
 **$AMAS token distribution**
 ![](assets/build/104.png)
@@ -79,7 +79,7 @@ The current rules are:
 
 2. When the total amount of KSM staking by Mars crowd-loan exceeds 50,000, users will receive 1200 AMAS for each $1 KSM they support, i.e., the fixed ratio is adjusted to KSM: AMAS = 1:1200.
 
-Up to 300,000,000 AMAS will be distributed to KSM contributors. After the successful auction, the rewards will be distributed linearly until the ending of crowd-loan. In the future, AMAS might be listed in the exchanges according to its popularity or converted into ARES in a certain proportion. Mars will become a canary network with economic value.
+Up to 300,000,000 AMAS will be distributed to KSM contributors. After the successful auction, the rewards will be distributed linearly until the ending of the crowd-loan. In the future, AMAS might be listed in the exchanges according to its popularity or converted into ARES in a certain proportion. Mars will become a canary network with economic value.
 
 
 

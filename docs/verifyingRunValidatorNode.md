@@ -82,31 +82,31 @@ Run validator node
 
 **Staking**
 
-1.  Staking
+1. Stake
 
-first step：
+Step 1
 
 ![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/23.png?raw=true) 
 
 ![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/24.png?raw=true) 
 
-As shown above: Enter the Staking page, click "Account actions" and then click the Stash button
+As shown above, enter the Staking page, click "Account Actions", then click the Stash button.
 
-Second step：
+Step 2
 
 ![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/25.png?raw=true) 
 
 Select the stash account to be pledged and the corresponding controller account. Stash and the controller can be the same account, but it is strongly not recommended in practice. Fill in the amount to be pledged (value bonded) according to the demand, and the pledge deposit amount is deducted from the stash account.
 
-* The stash account can be thought of as your cold wallet, and the operation of funds is controlled by the stash account.
-* Controller account, other non-funding operations are done by the controller (such as: setting sessionKeys, setting commissions, participating in voting, removing pledges, etc.)
-* Pledge deposit amount, don’t use all available balance to pledge, leave some for transaction fees
+* A stash account could be imaged as your cold wallet, and the operations of funds are controlled by the stash account.
+* controller account, all other non-financial operations are done by controller account (for example: set session keys, set commission, vote, release staking, etc)
+* staking amount, don't use all available balance to the stake, you need to reserve some for transaction fees.
 
-After filling in the above information, click the Bond button to complete the pledge operation.
+After filling in the above information, click the Bond button to complete the staking operation.
 
 1.  Block out (become a validator)
 
-first step：
+Step 1
 
 Run node：
 
@@ -114,9 +114,9 @@ Run node：
 ./target/release/gladios-node --base-path /tmp/aura/one --name ocw_one --port 30333 --ws-port 9945 --rpc-port 9933 --ws-external --rpc-external --rpc-cors=all --rpc-methods=Unsafe --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0' --warehouse https://api.aresprotocol.io/ --bootnodes /ip4/158.247.224.166/tcp/30333/p2p/12D3KooWEyoppNCUx8Yx66oV9fJnriXwCcXwDDUA2kj6vnc6iDEp --validator
 ```
 
-Parameters: (required) --warehouse is used to specify the IP address of the ares quotation server.
+Parameter: (required) --warehouse to specify the IP address of ares quotation server.
 
-Parameters: (optional) --ares-keys is used to load the corresponding key-strore through a private key file.
+Parameter: (optional) --ares-keys to load the corresponding key-strore via a private key file.
 
 --ares-keys file format internal format：
 
@@ -144,7 +144,7 @@ CLI[<u>​</u>](https://wiki.polkadot.network/docs/maintain-guides-how-to-valida
 
 curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method": "author_rotateKeys", "params":[]}' http://localhost:9933
 
-Second step：
+Step 2
 
 ![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/28.png?raw=true) 
 
@@ -152,20 +152,20 @@ Second step：
 
 Go to the Staking page and click the Account actions tab; select the account you need to operate, click Change session keys, paste the public key obtained in the first step in the input box of the pop-up page, and click the Set Session Key button to confirm the submission.
 
-third step
+Step 3
 
 ![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/30.png?raw=true) 
 
 ![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/31.png?raw=true) 
 
-Enter the Staking page and click the Account actions tab; select the account you need to operate, click Validate, and set the reward commission percentage and whether to allow new nominations on the pop-up page.
+Enter Staking page and click "Account actions" bookmark page; choose the account you need to operate, click "Validate",  set block out reward commission percentage and whether allow new nominations in the pop-up page.
 
-* Commission percentage (reward commission percentage)
+* reward commission percentage
 
-Set the block reward commission percentage; for example, 10%, then 10% of the block reward is your own income, and the remaining part is proportionally distributed to the nominator. It is recommended that the commission setting is not too high. Only with a suitable commission can more people be nominated and win the competition and become a validator (block producer)
+Set the block reward commission percentage; for example, 10%, then 10% of the block reward is your own income, and the remaining part is proportionally distributed to the nominator. It is recommended that the commission setting is not too high. Only with a suitable commission can more people be nominated and win the competition and become a validator (block producers)
 
-* Whether to allow nominations (allow new nominations)
+* whether allow new nominations
 
-The default is to allow nominations. If no nomination is not allowed, you can only compete with others on the amount you pledged.
+The default is to allow nominations. If the nomination is not allowed, you can only compete with others on the amount you pledged.
 
 After completing the above operations, if you win the election, you can participate in the block production.

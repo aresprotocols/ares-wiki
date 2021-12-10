@@ -1,16 +1,16 @@
 ---
 id: Iliadstaking
-title: Iliad Stake Mining
+title: Iliad
 sidebar_label: Iliad Stake Mining
 ---
 
-## Iliad Stake Mining 
+## General Outlook
 
 Welcome to the Ares Iliad stake mining on BSC main network. 
 
 http://iliad.aresprotocol.io/
 
-#### Stake Mining Scheme(Current Mode)
+#### Stake Mining Scheme(Current Model)
 
 1.The reward ratio declines linearly as the amount of Staking increases. For example: when the amount of staking reaches 10,000, APY is 7,604%; When the amount of staking reaches 100,000, APY is 760%; When the amount of staking reaches 1 million, the APY is 76%.
 
@@ -20,7 +20,7 @@ http://iliad.aresprotocol.io/
 
 4.Withdrawal includes Unstake Tokens, Claim Rewards, Claim and Unstake; they all need on-chain transactions.
 
-5.All processes above require BNB gas fee; while you are operating, you shall guarantee a certain amount of transaction fee.
+5.All processes above require a BNB gas fee; while you are operating, you shall guarantee a certain amount of transaction fee.
 
 #### Stake Mining Scheme(Regular Mode)
 1.It has three staking terms; they are 60days, 120days, 180days, APY is 35%, 40%, and 45%, respectively.
@@ -63,6 +63,8 @@ ARES BSC treaty address：：0xf9752A6E8A5E5f5e6EB3aB4e7d8492460fb319f03
 
 ![](assets/build/14.png)
 
+![](assets/build/14a.png)
+
 3. Connect your wallet
 Open the staking page:
 http://iliad.aresprotocol.io/ 
@@ -77,22 +79,22 @@ http://iliad.aresprotocol.io/ 
 4.2 If it’s your first time entering the Iliad, you should press “approve” to confirm your operation.
 ![](assets/build/17.png)
 
-After the approval status of your address is successful, you can press the "Stake Tokens" button and enter the number of tokens for staking.
+4.3 After the approval status of your address is successful, you can press the "Stake Tokens" button and enter the number of tokens for staking.
 ![](assets/build/18.png)
 
-4.3 Cancel mortgage tokens (current)
+4.4 Unstake Tokens (current mode)
 
-You can click "Unstake Tokens" to withdraw your tokens. Enter the amount of your tokens and click the Unstake button.
+You could click “Unstake Tokens” to withdraw your tokens. Input your token amounts and click the “Unstake” button.
 ![](assets/build/19.png)
 
-4.4 Receive award
+4.5 Claim Rewards
 
-Press "Claim Rewards" and check the Gas fee, then press the "Confirm" button to receive the reward.
+Click” Claim Rewards”, check the Gas fee, and click “ confirm” to claim rewards.
 ![](assets/build/20.png)
 
-4.5.1 Claim and cancel pledge (current) Click "Claim and Unstake", you can cancel all tokens and receive all rewards with one click.
+4.6.1 Claim and Unstake(current mode) Click "Claim and Unstake", you can cancel all tokens and receive all rewards with one click.
 
-4.5.2 Claim and cancel pledge (regular) If it is a regular product purchased, the button is gray, and you need to wait for the specified time before withdrawing the reward.
+4.6.2 Claim and Unstake(regular mode) If it is a regular product purchased, the button is gray, and you need to wait for the specified time before withdrawing the reward.
 
 ![](assets/build/21.png)
 
@@ -100,8 +102,8 @@ Press "Claim Rewards" and check the Gas fee, then press the "Confirm" button to 
 ### FAQ
 1. What’s the difference between Staking on Trojan or Iliad?
 
-Trojan is based on the Ethereum Mainnet, Iliad is based on the BSC Mainnet.
-Trojan gas fee needs ETH, Iliad gas fee needs BNB.
+The trojan is based on the Ethereum Mainnet, Iliad is based on the BSC Mainnet.
+The trojan gas fee needs ETH, Iliad gas fee needs BNB.
 Comparably, the gas fee for staking is lower in Iliad.
 
 2. Is it possible to refer this BSC address to Exchange to participate in staking?

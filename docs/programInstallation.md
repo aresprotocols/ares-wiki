@@ -28,7 +28,7 @@ As shown above, add executor permission
 chmod +777  gladios-node-linux-amd64-1.0.7-379058b
 ```
 
-**Third Step**
+**Third Step:**
 ![](assets/build/116.png)
 As shown above, execute node
 

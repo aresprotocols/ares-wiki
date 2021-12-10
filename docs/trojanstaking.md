@@ -1,6 +1,6 @@
 ---
 id: trojanstaking
-title: Trojan Stake Mining
+title: Trojan
 sidebar_label: Trojan Stake Mining
 ---
 
@@ -10,7 +10,7 @@ Since May 13th this year, Ares Trojan Staking mining was officially deployed in 
 
 Ares mining has been carried out for third periods, and the Staking volume continues to rise. We can see the enthusiasm of everyone involved. The current Staking amount plus the reward is 45,970,000. All along, we hope to give more rewards to our Aresians. Stake mining reward adjusted from the starting 625000 to a million of the third round. The annualized yield held steadily at 26 %.
 
-With the release of the 2nd Seed Wheel Institutional Token, Ares has launched Regular-term mining products in order to better give-back to the community, Ares enthusiasts can pledge their tokens to regular-term contracts for more mining rewards.
+With the release of the 2nd Seed Wheel Institutional Token, Ares has launched Regular-term mining products in order to better give back to the community, Ares enthusiasts can pledge their tokens to regular-term contracts for more mining rewards.
 
 
 ### Why Choose Regular Products?
@@ -87,7 +87,7 @@ While the approval was successfully made, you could click"Stake Tokens", and you
 ![](assets/build/14.png)
 
 
-Notice: due to the ethereum mainnet, please be aware of your Gas fee amount. If the approval process is too long then try to check your network connection, or consider adding a certain amount of Gas fee to speed up.
+Notice: due to the ethereum mainnet, please be aware of your Gas fee amount. If the approval process is too long then try to check your network connection or consider adding a certain amount of Gas fee to speed up.
 
 **4.2 Unstake**
 
