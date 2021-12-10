@@ -66,11 +66,11 @@ docker run -d --name ares_gladios aresprotocollab/ares_gladios:beta gladios-node
 aresprotocollab/ares_gladios:alpha；
 
 
-更加多版本请查看：
+3.更加多版本请查看：
 
 https://hub.docker.com/r/aresprotocollab/ares_gladios/tags
 
- 查看程序运行日志：
+ 4.查看程序运行日志：
 
 
 ```

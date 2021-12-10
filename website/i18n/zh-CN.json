@@ -120,6 +120,10 @@
         "title": "经济模型",
         "sidebar_label": "经济模型"
       },
+      "Slotauction": {
+        "title": "插槽拍卖",
+        "sidebar_label": "插槽拍卖"
+      },
       "datamarket": {
         "title": "数据市场",
         "sidebar_label": "数据市场"
