@@ -1,7 +1,7 @@
 ---
 id: aresBasic
-title: Ares Basic
-sidebar_label: Ares Basic
+title: Basic
+sidebar_label: Basic
 ---
 ## 致Ares社区萌新
 致Ares社区萌新Hello，你来啦！欢迎加入

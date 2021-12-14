@@ -1,7 +1,7 @@
 ---
 id: gettingStarted
-title: Ares Overview
-sidebar_label: Ares Overview
+title: 起航
+sidebar_label: 起航
 ---
 
 ## Ares 是什么
@@ -39,9 +39,8 @@ Ares Protocol将提供链上可验证随机数，赋能区块链游戏和NFTs更
 
 您可以参考以下链接来加入或者使用Ares网络。
 
-- 节点提供者 - 请参考[节点指南](node-overview.md)以安装配置和运行Ares节点。
-- 通证持有者 - 请参考[担保人指南](guarantor-guidance.md)进行Staking及担保等相关操作。
-- 存储用户 - **存储用户指南**即将发布，敬请关注。
+- 节点提供者 - 请参考[节点指南](build-node.md)以安装配置和运行Ares节点。
+- 通证持有者 - 请参考[质押挖矿](trojanstaking.md)进行Staking及担保等相关操作。
 - 开发人员 - 有关更多信息，请参见[构建](build-getting-started.md)页面。
 
 ## Ares 如何工作

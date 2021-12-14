@@ -1,7 +1,7 @@
 ---
 id: aresGlossary
-title: Ares术语
-sidebar_label: Ares术语
+title: 术语
+sidebar_label: 术语
 ---
 
 ### 网络和通证

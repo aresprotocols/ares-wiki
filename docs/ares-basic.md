@@ -1,7 +1,7 @@
 ---
 id: aresBasic
-title: Ares Basic
-sidebar_label: Ares Basic
+title: Basic
+sidebar_label: Basic
 ---
 
 
