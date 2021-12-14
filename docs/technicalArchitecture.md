@@ -5,6 +5,8 @@ sidebar_label: Technical Architecture
 ---
 ## How Ares Works
 
+![](assets/build/architec.jpg)
+
 #### Participants
 
 ![arch](https://github.com/aresprotocols/documentation/blob/master/assets/img/arch.png?raw=true)

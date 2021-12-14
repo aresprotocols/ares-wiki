@@ -3,6 +3,10 @@ id: technicalArchitecture
 title: Technical Architecture
 sidebar_label: Technical Architecture
 ---
+## Ares是如何工作的
+
+![](assets/build/architec.jpg)
+
 ## 参与者
 
 ![](assets/build/2.png)

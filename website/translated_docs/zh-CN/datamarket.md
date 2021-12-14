@@ -5,6 +5,9 @@ sidebar_label: Data market
 ---
 ### 数据市场
 
+![](assets/build/dataMarket.jpg)
+
+
 **去中心化金融**
 
 Ares为去中心化稳定币、交易所、借贷、保险、金融衍生品等去中心化金融提供高精度、实时、安全、可靠的链下资产数据，方便了DeFi项目的走出去发展盒子。稳定的基础设施。

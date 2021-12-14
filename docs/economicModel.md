@@ -7,6 +7,8 @@ sidebar_label: Economic Model
 
 ### Economic Model
 
+![](assets/build/economic.jpg)
+
 We will issue ARES tokens to incentivize all participants in the system and ensure the growth and development of the ecosystem through community governance. The original circulation is 1 billion pieces.
 ![](assets/build/7.png)
 

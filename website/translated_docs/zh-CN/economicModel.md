@@ -6,6 +6,8 @@ sidebar_label: Economic Model
 
 ### 经济模型
 
+![](assets/build/economic.jpg)
+
 我们将发行 ARES 代币以激励系统中的所有参与者，并通过社区治理确保生态系统的成长和发展。原始发行量为10亿枚。
 ![](assets/build/7.png)
 

@@ -5,6 +5,9 @@ sidebar_label: Data market
 ---
 ## Data Market
 
+![](assets/build/dataMarket.jpg)
+
+
 ### Decentralized Finance
 Ares provides high-precision, real-time, safe and reliable off-chain asset data for decentralized finance such as decentralized StableCoins, exchanges, lending, insurance, financial derivatives, etc., which is convenient for the development of Defi projects out of the box. Stable infrastructure.
 
