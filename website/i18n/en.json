@@ -6,16 +6,20 @@
     "tagline": "Wiki for Ares Network",
     "docs": {
       "aresBasic": {
-        "title": "Ares Basic",
-        "sidebar_label": "Ares Basic"
+        "title": "Basic",
+        "sidebar_label": "Basic"
       },
-      "aresOverview": {
-        "title": "Ares Overview",
-        "sidebar_label": "Ares Overview"
+      "gettingStarted": {
+        "title": "Getting Start",
+        "sidebar_label": "Getting Start"
       },
       "aresGlossary": {
-        "title": "Ares Glossary",
-        "sidebar_label": "Ares Glossary"
+        "title": "Glossary",
+        "sidebar_label": "Glossary"
+      },
+      "aresOverview": {
+        "title": "Overview",
+        "sidebar_label": "Overview"
       },
       "build-file-storing-demo": {
         "title": "build-file-storing-demo"
@@ -48,14 +52,6 @@
         "title": "Economic Model",
         "sidebar_label": "Economic Model"
       },
-      "gettingStarted": {
-        "title": "Ares Overview",
-        "sidebar_label": "Ares Overview"
-      },
-      "plan": {
-        "title": "Plan",
-        "sidebar_label": "Plan"
-      },
       "Iliadstaking": {
         "title": "Iliad",
         "sidebar_label": "Iliad Stake Mining"
@@ -71,6 +67,10 @@
       "liquidity": {
         "title": "Liquidity mining",
         "sidebar_label": "Liquidity mining"
+      },
+      "plan": {
+        "title": "Plan",
+        "sidebar_label": "Plan"
       },
       "programInstallation": {
         "title": "Program Installation",
@@ -99,10 +99,6 @@
       "trojanstaking": {
         "title": "Trojan",
         "sidebar_label": "Trojan Stake Mining"
-      },
-      "apis": {
-        "title": "JSON-RPC APIS",
-        "sidebar_label": "JSON-RPC APIS"
       },
       "verifyingRunValidatorNode": {
         "title": "Verify & Run Validator Nodes",

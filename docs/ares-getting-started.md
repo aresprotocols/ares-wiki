@@ -1,7 +1,7 @@
 ---
 id: gettingStarted
-title: Ares Overview
-sidebar_label: Ares Overview
+title: Getting Start
+sidebar_label: Getting Start
 ---
 ## What is Ares
 
@@ -43,8 +43,8 @@ We will issue ARES tokens to incentivize all participants in the system and ensu
 
 You can refer to following links to join the Ares Network.
 
-- Node Provider - Refer to the [Node Guidance](node-overview.md) to run setup and run Ares Nodes.  
-- Token Holder - Refer to the [Guarantor Guidance](guarantor-guidance.md) to perform staking operations.
+- Node Provider - Refer to the [Node Guidance](build-node.md) to run setup and run Ares Nodes.  
+- Token Holder - Refer to the [Trojan Staking](trojanstaking.md) to perform staking operations.
 - Storage User - Storage user guidance is coming soon.
 - Developers - Refer to the [Build](build-getting-started.md) pages for more information.
 

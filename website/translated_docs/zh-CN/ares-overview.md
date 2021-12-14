@@ -1,7 +1,7 @@
 ---
 id: aresOverview
-title: Ares Overview
-sidebar_label: Ares Overview
+title: Overview
+sidebar_label: Overview
 ---
 
 ## Ares 是什么

@@ -1,7 +1,7 @@
 ---
 id: aresGlossary
-title: Ares Glossary
-sidebar_label: Ares Glossary
+title: Glossary
+sidebar_label: Glossary
 ---
 ##  Network and Token
 

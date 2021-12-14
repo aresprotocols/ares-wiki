@@ -96,8 +96,8 @@
         "sidebar_label": "Editing How to submit bugs & feedbacks"
       },
       "gettingStarted": {
-        "title": "Ares概述",
-        "sidebar_label": "Ares概述"
+        "title": "起航",
+        "sidebar_label": "起航"
       },
       "glossary": {
         "title": "Ares 术语",
@@ -129,8 +129,8 @@
         "sidebar_label": "数据市场"
       },
       "aresGlossary": {
-        "title": "Ares术语",
-        "sidebar_label": "Ares术语"
+        "title": "术语",
+        "sidebar_label": "术语"
       },
       "guarantorGuidance": {
         "title": "担保人指南",
@@ -196,8 +196,8 @@
         "sidebar_label": "参数表"
       },
       "aresOverview": {
-        "title": "Ares 概述",
-        "sidebar_label": "Ares 概述"
+        "title": "概述",
+        "sidebar_label": "概述"
       },
       "Whitepaper": {
         "title": "白皮书",
@@ -243,10 +243,6 @@
       "validatorGuidance": {
         "title": "验证人指南",
         "sidebar_label": "验证人指南"
-      },
-      "apis": {
-        "title": "JSON-RPC 接口",
-        "sidebar_label": "JSON-RPC 接口"
       }
     },
     "links": {
