@@ -200,7 +200,7 @@ class Footer extends React.Component {
               {
                 navList.quickLinks.items.map(item => {
                   return (
-                    <a href={item.link} target="_blank">
+                    <a href={item.link} target="_blank" key={item.link}>
                       {item.title}
                     </a>
                   )
@@ -214,7 +214,7 @@ class Footer extends React.Component {
               {
                 navList.developers.items.map(item => {
                   return (
-                      <a href={item.link} target="_blank">
+                      <a href={item.link} target="_blank" key={item.link}>
                         {item.title}
                       </a>
                   )
@@ -234,6 +234,7 @@ class Footer extends React.Component {
                             target="_blank"
                             rel="noreferrer noopener"
                             className={item.className}
+                            key={item.href}
                         >
                           <img src={item.imgPath} alt="" width={24} height={22}/>
                         </a>
