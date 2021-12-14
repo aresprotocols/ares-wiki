@@ -1,7 +1,7 @@
 ---
 id: buildNode
-title: 硬件环境
-sidebar_label: 硬件环境
+title: Hardware environment
+sidebar_label: Hardware environment
 ---
 **硬件环境**
 |Ares 节点硬件环境参数|    |

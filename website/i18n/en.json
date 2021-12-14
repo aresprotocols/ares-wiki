@@ -21,9 +21,6 @@
         "title": "Overview",
         "sidebar_label": "Overview"
       },
-      "build-file-storing-demo": {
-        "title": "build-file-storing-demo"
-      },
       "buildGettingStarted": {
         "title": "Obtain Price Through Cross-Chain",
         "sidebar_label": "Obtain Price Through Cross-Chain"
@@ -36,7 +33,11 @@
         "title": "Contributing",
         "sidebar_label": "Contributing"
       },
-      "crosschainbridge": {
+      "account": {
+        "title": "Account",
+        "sidebar_label": "Account"
+      },
+      "crossChainBridge": {
         "title": "Asset cross-chain bridge",
         "sidebar_label": "Asset cross-chain bridge"
       },
@@ -52,7 +53,7 @@
         "title": "Economic Model",
         "sidebar_label": "Economic Model"
       },
-      "Iliadstaking": {
+      "IliadStaking": {
         "title": "Iliad",
         "sidebar_label": "Iliad Stake Mining"
       },
@@ -76,27 +77,23 @@
         "title": "Program Installation",
         "sidebar_label": "Program Installation"
       },
-      "setUptheVerifierNode": {
+      "setUpVerifierNode": {
         "title": "Set Up the Verifier Node",
         "sidebar_label": "Set Up the Verifier Node"
       },
-      "StarttheOracleService": {
+      "StarOracleService": {
         "title": "Start the Oracle Service",
         "sidebar_label": "Start the Oracle Service"
       },
-      "account": {
-        "title": "Account",
-        "sidebar_label": "Account"
+      "technicalArchitecture": {
+        "title": "Technical Architecture",
+        "sidebar_label": "Technical Architecture"
       },
-      "technicalFramework": {
-        "title": "Technical framework",
-        "sidebar_label": "Technical framework"
-      },
-      "transafer": {
+      "transfer": {
         "title": "Transfer",
         "sidebar_label": "Transfer"
       },
-      "trojanstaking": {
+      "trojanStaking": {
         "title": "Trojan",
         "sidebar_label": "Trojan Stake Mining"
       },
@@ -111,7 +108,7 @@
     },
     "categories": {
       "General": "General",
-      "Whitepaper": "Whitepaper",
+      "WhitePaper": "WhitePaper",
       "Learn": "Learn",
       "Build": "Build",
       "Node": "Node"

@@ -1,7 +1,7 @@
 ---
-id: setUptheVerifierNode
-title:  搭建验证人节点
-sidebar_label:  搭建验证人节点
+id: setUpVerifierNode
+title:  Set Up the Verifier Node
+sidebar_label:  Set Up the Verifier Node
 ---
 
 安装代码编译工具

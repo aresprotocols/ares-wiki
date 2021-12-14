@@ -1,7 +1,7 @@
 ---
 id: gettingStarted
-title: 起航
-sidebar_label: 起航
+title: Getting Start
+sidebar_label: Getting Start
 ---
 
 ## Ares 是什么

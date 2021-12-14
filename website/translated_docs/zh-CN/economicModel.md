@@ -1,7 +1,7 @@
 ---
 id: economicModel
-title: 经济模型
-sidebar_label: 经济模型
+title: Economic Model
+sidebar_label: Economic Model
 ---
 
 ### 经济模型

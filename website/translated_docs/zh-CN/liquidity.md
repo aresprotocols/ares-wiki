@@ -1,7 +1,7 @@
 ---
 id: liquidity
-title: 流动性挖矿
-sidebar_label: 流动性挖矿
+title: Liquidity mining
+sidebar_label: Liquidity mining
 ---
 ### 流动性挖矿
 Gate.io将ARES纳入新版流动性矿池，正式上线USDT、ETH交易池，并开启新版流动性矿池奖励（自动做市商AMM模式）。

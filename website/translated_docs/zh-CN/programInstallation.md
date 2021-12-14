@@ -1,7 +1,7 @@
 ---
 id: programInstallation
-title: 程序安装
-sidebar_label: 程序安装
+title: Program Installation
+sidebar_label: Program Installation
 ---
 
 **程序安装**

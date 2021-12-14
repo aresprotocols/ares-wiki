@@ -1,7 +1,7 @@
 ---
-id: transafer
-title: 转账
-sidebar_label: 转账
+id: transfer
+title: Transfer
+sidebar_label: Transfer
 ---
 
 ## 转账

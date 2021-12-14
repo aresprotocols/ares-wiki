@@ -60,7 +60,7 @@ class HomeNav extends React.Component {
                     styleName = "navItemIcon1"
                 />
                 <NavItem
-                    href={this.props.docUrl("faq.html")}
+                    href={this.props.docUrl("buildNode.html")}
                     title="Node"
                     content="Information and guides on how to deploy a node and run the network."
                     aosDelay="600"

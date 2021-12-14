@@ -1,7 +1,7 @@
 ---
-id: technicalFramework
-title: Technical framework
-sidebar_label: Technical framework
+id: technicalArchitecture
+title: Technical Architecture
+sidebar_label: Technical Architecture
 ---
 ## How Ares Works
 

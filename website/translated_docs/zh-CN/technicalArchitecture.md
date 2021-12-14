@@ -1,7 +1,7 @@
 ---
-id: technicalFramework
-title: 技术框架
-sidebar_label: 技术框架
+id: technicalArchitecture
+title: Technical Architecture
+sidebar_label: Technical Architecture
 ---
 ## 参与者
 

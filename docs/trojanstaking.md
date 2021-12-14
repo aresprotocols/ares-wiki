@@ -1,5 +1,5 @@
 ---
-id: trojanstaking
+id: trojanStaking
 title: Trojan
 sidebar_label: Trojan Stake Mining
 ---

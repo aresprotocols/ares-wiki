@@ -1,7 +1,7 @@
 ---
 id: datamarket
-title: 数据市场
-sidebar_label: 数据市场
+title: Data market
+sidebar_label: Data market
 ---
 ### 数据市场
 

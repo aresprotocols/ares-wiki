@@ -1,7 +1,7 @@
 ---
-id: trojanstaking
-title: trojan质押
-sidebar_label: trojan质押
+id: trojanStaking
+title: Trojan
+sidebar_label: Trojan Stake Mining
 ---
 
 ![](assets/build/9.png)
@@ -17,7 +17,7 @@ sidebar_label: trojan质押
 
 *   购买定期产品，在质押挖矿时间内，若要加购定期产品，则需要延长整体期限。赎回天数=加购前完成天数+定期天数（60/120/180）
 
-如：小明使用100 $ARES定期60天质押挖矿，30天后他决定再花100 $ARES，加购60天质押挖矿。这样操作的话，200 $ARES需要90天后才能赎回。此时收益约为：100*35%÷12+200*35%÷6
+如：小明使用100 ARES定期60天质押挖矿，30天后他决定再花100 ARES，加购60天质押挖矿。这样操作的话，200 ARES需要90天后才能赎回。此时收益约为：100*35%÷12+200*35%÷6
 
 *   定期产品到期后，即可赎回，若没有及时赎回，系统将按你选择的周期给到对应的收益。
 

@@ -1,5 +1,5 @@
 ---
-id: crosschainbridge
+id: crossChainBridge
 title: Asset cross-chain bridge
 sidebar_label: Asset cross-chain bridge
 ---

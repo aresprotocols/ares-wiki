@@ -1,7 +1,7 @@
 ---
 id: verifyingRunValidatorNode
-title: 验证&运行节点程序
-sidebar_label: 验证&运行节点程序
+title: Verify & Run Validator Nodes
+sidebar_label: Verify & Run Validator Nodes
 ---
 
 

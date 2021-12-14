@@ -1,7 +1,7 @@
 ---
 id: introduction
-title: 介绍
-sidebar_label: 介绍
+title: Introduction
+sidebar_label: Introduction
 ---
 
 ## 介绍

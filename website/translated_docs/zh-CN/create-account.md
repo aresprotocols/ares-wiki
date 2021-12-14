@@ -1,7 +1,7 @@
 ---
 id: account
-title: 账户
-sidebar_label: 账户
+title: Account
+sidebar_label: Account
 ---
 
 ### 账户

@@ -1,5 +1,5 @@
 ---
-id: StarttheOracleService
+id: StarOracleService
 title: Start the Oracle Service
 sidebar_label: Start the Oracle Service
 ---

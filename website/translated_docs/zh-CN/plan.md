@@ -1,7 +1,7 @@
 ---
 id: plan
-title: 计划
-sidebar_label: 计划
+title: Plan
+sidebar_label: Plan
 ---
 ### ares 到了哪个阶段？ 2021年有什么计划？
 

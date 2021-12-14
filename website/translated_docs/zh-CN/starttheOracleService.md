@@ -1,7 +1,7 @@
 ---
-id: StarttheOracleService
-title: 启动预言机服务
-sidebar_label: 启动预言机服务
+id: StarOracleService
+title: Start the Oracle Service
+sidebar_label: Start the Oracle Service
 ---
 
 1、启动价格获取节点。

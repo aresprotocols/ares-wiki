@@ -1,7 +1,7 @@
 ---
-id: Iliadstaking
-title: Iliad质押
-sidebar_label: Iliad质押
+id: IliadStaking
+title: Iliad
+sidebar_label: Iliad Stake Mining
 ---
 
 ## iliad质押

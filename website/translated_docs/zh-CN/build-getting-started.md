@@ -1,7 +1,7 @@
 ---
 id: buildGettingStarted
-title: 跨链获取价格
-sidebar_label: 跨链获取价格
+title: Obtain Price Through Cross-Chain
+sidebar_label: Obtain Price Through Cross-Chain
 ---
 
 使用cumulus进行跨链不同托盘测试

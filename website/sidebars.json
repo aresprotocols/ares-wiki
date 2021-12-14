@@ -6,38 +6,35 @@
       "aresBasic",
       "aresGlossary"
     ],
-    "Whitepaper": [
+    "WhitePaper": [
       "introduction",
-      "technicalFramework",
+      "technicalArchitecture",
       "datamarket",
       "economicModel"
     ],
 
     "Learn": [
-      "marketBenefits",
       {
         "type": "subcategory",
         "label": "Stake Mining",
         "ids": [
-          "trojanstaking",
-          "Iliadstaking",
-          "crosschainbridge"
+          "trojanStaking",
+          "IliadStaking",
+          "crossChainBridge"
         ]
       },
       "liquidity",
-      "aresWhitepaper",
       {
         "type": "subcategory",
         "label": "Gladios",
         "ids": [
-          "accountOverview",
-          "userTransaferGuide"
+          "account",
+          "transfer"
         ]
       },
-      "Slotauction",
       {
         "type": "subcategory",
-        "label": "Slot auction",
+        "label": "Slot Auction",
         "ids": [
           "Kusama",
           "Dot"
@@ -46,7 +43,6 @@
 
     ],
     "Build": [
-
       {
         "type": "subcategory",
         "label": "Basic",
@@ -54,12 +50,11 @@
           "buildGettingStarted"
         ]
       },
-      "aresGladios",
       {
         "type": "subcategory",
         "label": "Gladios Guide",
         "ids": [
-          "setUptheVerifierNode"
+          "setUpVerifierNode"
         ]
       }
     ],
@@ -67,7 +62,7 @@
       "buildNode",
       "programInstallation",
       "verifyingRunValidatorNode",
-      "StarttheOracleService"
+      "StarOracleService"
     ]
   }
 }

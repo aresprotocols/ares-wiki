@@ -14,7 +14,7 @@
         "sidebar_label": "资产跨链桥"
       },
 
-      "setUptheVerifierNode": {
+      "setUpVerifierNode": {
         "title": "搭建验证人节点",
         "sidebar_label": "搭建验证人节点"
       },
@@ -112,7 +112,7 @@
         "title": "介绍",
         "sidebar_label": "介绍"
       },
-      "technicalFramework": {
+      "technicalArchitecture": {
         "title": "技术框架",
         "sidebar_label": "技术框架"
       },
@@ -120,7 +120,7 @@
         "title": "经济模型",
         "sidebar_label": "经济模型"
       },
-      "Slotauction": {
+      "SlotAuction": {
         "title": "插槽拍卖",
         "sidebar_label": "插槽拍卖"
       },
@@ -148,15 +148,15 @@
         "title": "Isolation 节点",
         "sidebar_label": "Isolation 节点"
       },
-      "trojanstaking": {
+      "trojanStaking": {
         "title": "trojan质押",
         "sidebar_label": "trojan质押"
       },
-      "Iliadstaking": {
+      "IliadStaking": {
         "title": "iliad 质押",
         "sidebar_label": "iliad 质押"
       },
-      "StarttheOracleService": {
+      "StarOracleService": {
         "title": "启动预言机服务",
         "sidebar_label": "启动预言机服务"
       },
@@ -199,7 +199,7 @@
         "title": "概述",
         "sidebar_label": "概述"
       },
-      "Whitepaper": {
+      "WhitePaper": {
         "title": "白皮书",
         "sidebar_label": "白皮书"
       },
@@ -223,11 +223,11 @@
         "title": "Dot",
         "sidebar_label": "Dot"
       },
-      "crosschainbridge": {
+      "crossChainBridge": {
         "title": "资产跨链桥",
         "sidebar_label": "资产跨链桥"
       },
-      "transafer": {
+      "transfer": {
         "title": "转账",
         "sidebar_label": "转账"
       },
@@ -251,12 +251,12 @@
     },
     "categories": {
       "General": "概览",
-      "Whitepaper": "白皮书",
+      "WhitePaper": "白皮书",
       "Learn": "学习",
       "Build": "构建",
       "Node": "节点",
       "Stake Mining": "质押挖矿",
-      "Slot auction": "插槽竞拍",
+      "Slot Auction": "插槽竞拍",
       "Basic": "基础",
       "Gladios Guide": "Gladios指南"
     }
