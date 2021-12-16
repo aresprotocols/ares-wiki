@@ -40,7 +40,7 @@ http://iliad.aresprotocol.io/
 1.登录您的 Metamask,并将网络切换到BSC主网
 方法一：在Metamask上将网络切换为“BSC MAINNET”
 
-![](assets/build/10.png)
+![](assets/build/200.png)
 
 如果您在Metamask上找不到“BSC MAINNET”选项，可以使用方法二进行添加。
 
@@ -48,21 +48,21 @@ http://iliad.aresprotocol.io/
 
 ARES BscScan：https://bscscan.com/address/0xf9752A6E8A5E5f5e6EB3aBe7d8492460fb319f02. 
 
-![](assets/build/11.png)
+![](assets/build/201.png)
 
-![](assets/build/12.png)
+![](assets/build/202.png)
 
 2.打开BscScan,向 Metamask 添加 Ares 代币
 
 ARES BSC合约地址：0xf9752A6E8A5E5f5e6EB3aB4e7d8492460fb319f03
-![](assets/build/13.png)
+![](assets/build/203.png)
 
-![](assets/build/14.png)
+![](assets/build/204.png)
 
 3.连接你的钱包打开质押界面：
 http://iliad.aresprotocol.io/ 
 
-![](assets/build/15.png)
+![](assets/build/205.png)
 
 
 ***4.主页面***
@@ -70,7 +70,7 @@ http://iliad.aresprotocol.io/ 
 **4.1 质押挖矿**
 
 “open” 活期/定期质押页面，点击“Stake Tokens”按钮。
-![](assets/build/16.png)
+![](assets/build/206.png)
 
 **4.2 批准流程**
 
