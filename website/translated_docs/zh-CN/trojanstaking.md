@@ -4,6 +4,8 @@ title: Trojan
 sidebar_label: Trojan Stake Mining
 ---
 
+**定期产品**
+
 ![](assets/build/9.png)
 
 
@@ -27,7 +29,7 @@ sidebar_label: Trojan Stake Mining
 
 **活期产品**
 
-ARES 质押挖矿已进行了 2 期，质押量持续攀升，可以看到大家参与的热情。质押量稳定占到了流通量的 60%左右，质押率已达到了波卡质押率的水平。
+ARES 质押量稳定占到了流通量的60%左右，质押率已达到了波卡质押率的水平。
 
 质押挖矿唯一地址 : [https://trojan.aresprotocol.io](https://trojan.aresprotocol.io/)
 
@@ -46,8 +48,6 @@ ARES 质押挖矿已进行了 2 期，质押量持续攀升，可以看到大家
 输入如下链接登录 Etherscan，将 ARES 添加到 Metamask 里面
 
 [https://etherscan.io/token/0x358aa737e033f34df7c54306960a38d09aabd523](https://etherscan.io/token/0x358aa737e033f34df7c54306960a38d09aabd523)
-![](assets/build/11.png)
-
 ![](assets/build/118.png)
 
 
