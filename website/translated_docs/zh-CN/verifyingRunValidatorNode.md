@@ -19,13 +19,13 @@ https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io/#/explorer
 
 
 
-**创建Ares账户**
+### 创建Ares账户
 
-**如何打开如下的界面，访问** 
+打开如下的界面，访问
 
 [<u>https://js.aresprotocol.io/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io#/explorer/</u>](https://js.aresprotocol.io/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io#/explorer)
 
-### 创建账户
+**创建账户**
 
 第一步
 
@@ -50,7 +50,6 @@ https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io/#/explorer
 ![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/15.png?raw=true) 
 
 单击“保存”，该帐户将默认备份到您的设备上。请保管好您的备份文件。
-
 
 **转账**
 
@@ -80,8 +79,8 @@ https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io/#/explorer
 输入您账户的密码，点击“交易签名”，本次转账就完成了。快通知您的交易用户，及时查收吧！
 
 
-### 运行验证人节点
 
+### 运行验证人节点
 
 **质押**
 
@@ -105,7 +104,7 @@ https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io/#/explorer
 
 填写完以上信息后，点击Bond按钮完成质押操作。
 
-1.  出块(成为验证人)
+**出块(成为验证人)**
 
 第一步：
 
