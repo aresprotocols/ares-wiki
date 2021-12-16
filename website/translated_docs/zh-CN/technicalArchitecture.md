@@ -7,11 +7,11 @@ sidebar_label: Technical Architecture
 
 ![](assets/build/architec.jpg)
 
-## 参与者
+### 参与者
 
 ![](assets/build/2.png)
 
-## 聚合器
+### 聚合器
 
 聚合器通过Scanner获取外部请求数据，将请求发送给处理器处理所有Oracle请求。通过 VRF 算法随机选择一个聚合器。它调用处理器聚合来自多个数据源的数据并提交给区块，并通过区块传播协议广播到Ares网络。
 
