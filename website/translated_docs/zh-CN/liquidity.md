@@ -52,4 +52,3 @@ Ares Protocol希望给用户带来更大的流动性。我们在Uniswap进行流
 6.如何查找流动性挖矿的记录及收益？点击「我的流动性」。
 ![](assets/build/42.png)
 7.搜索「ARES」，您就可以实时看到自己的收益情况。
-![](assets/build/43.png)
