@@ -52,14 +52,14 @@ ARES BscScan：https://bscscan.com/address/0xf9752A6E8A5E5f5e6EB3aBe7d8492460fb3
 
 ![](assets/build/12.png)
 
-打开BscScan,向 Metamask 添加 Ares 代币
+2.打开BscScan,向 Metamask 添加 Ares 代币
 
 ARES BSC合约地址：0xf9752A6E8A5E5f5e6EB3aB4e7d8492460fb319f03
 ![](assets/build/13.png)
 
 ![](assets/build/14.png)
 
-连接你的钱包打开质押界面：
+3.连接你的钱包打开质押界面：
 http://iliad.aresprotocol.io/ 
 
 ![](assets/build/15.png)
@@ -76,24 +76,27 @@ http://iliad.aresprotocol.io/ 
 
 如果您的地址是第一次连接iliad。您应该执行批准过程。
 ![](assets/build/17.png)
+
+**4.3 批准流程**
+
 您的地址的批准状态成功后，您可以按“Stake Tokens”按钮，然后输入代币数量进行Staking。
 ![](assets/build/18.png)
 
-**4.3取消抵押代币(活期)**
+**4.4取消抵押代币(活期)**
 
 您可以按“ Unstake Tokens ”来提取您的代币。输入您的代币数量，然后单击Unstake按钮。
 ![](assets/build/19.png)
 
-**4.4领取奖励**
+**4.5领取奖励**
 
 按“Claim Rewards”并查看Gas费用，然后按“确认”按钮领取奖励。
 ![](assets/build/20.png)
 
-**4.5.1认领和取消质押（活期）**
+**4.6.1认领和取消质押（活期）**
 
 点击“Claim and Unstake”您可以一键取消所有代币并领取所有奖励。
 
-**4.5.2认领和取消质押（定期）**
+**4.6.2认领和取消质押（定期）**
 
 若是购买的定期产品，按键为灰色，需要等到规定时间后，再提取奖励。
 
