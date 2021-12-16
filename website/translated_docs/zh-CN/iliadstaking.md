@@ -38,6 +38,7 @@ http://iliad.aresprotocol.io/
 注意： 本界面要求您使用 Metamask 签署交易。如果您不知道如何设置 Metamask，您可以研究一些文章以获取更多信息。
 
 1.登录您的 Metamask,并将网络切换到BSC主网
+
 方法一：在Metamask上将网络切换为“BSC MAINNET”
 
 ![](assets/build/200.png)
@@ -46,7 +47,7 @@ http://iliad.aresprotocol.io/
 
 方法二：打开BscScan，在底部点击带有小狐狸头像的“Add BSC Network”，在跳转到的钱包页面点击“切换网络”。
 
-ARESBscScan：https://bscscan.com/address/0xf9752A6E8A5E5f5e6EB3aBe7d8492460fb319f02. 
+BscScan：https://bscscan.com/address/0xf9752A6E8A5E5f5e6EB3aBe7d8492460fb319f02. 
 
 ![](assets/build/201.png)
 
