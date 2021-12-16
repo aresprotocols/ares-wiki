@@ -34,7 +34,11 @@ cargo build --release
 git clone https://github.com/aresprotocols/mars.git
 
 git checkout bridge
+```
 
+### 编译
+
+```
 #编译
 
 cd mars
