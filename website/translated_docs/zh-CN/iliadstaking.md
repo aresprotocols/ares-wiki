@@ -10,6 +10,7 @@ sidebar_label: Iliad Stake Mining
 
 http://iliad.aresprotocol.io/
 
+
 质押方案（活期）
 
 1,奖励率会随着Staking量的增加而线性下降。例如：质押量达到1万时，APY为7604% ；质押量达到10万时，APY为760%；质押量达到100万时，APY为76%。
@@ -21,6 +22,7 @@ http://iliad.aresprotocol.io/
 4,提现分为提取本金、提取奖励、提取本金和奖励，需要发送链上交易。
 
 5,以上所有操作都需要支付BNB Gas，操作时注意预留足够的手续费。
+
 
 质押方案（定期）
 
@@ -56,6 +58,7 @@ BscScan：https://bscscan.com/address/0xf9752A6E8A5E5f5e6EB3aBe7d8492460fb319f02
 2.打开BscScan,向 Metamask 添加 Ares 代币
 
 ARES BSC合约地址：0xf9752A6E8A5E5f5e6EB3aB4e7d8492460fb319f03
+
 ![](assets/build/203.png)
 
 ![](assets/build/204.png)
