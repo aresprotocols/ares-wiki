@@ -30,7 +30,7 @@ chmod +777  gladios-node-linux-amd64-1.0.7-379058b
 
 **方法二：Docker运行节点程序**
 
-1.  安装docker
+1.安装docker
 
 *   Ubuntu：
 
@@ -52,7 +52,7 @@ https://docs.docker.com/desktop/mac/install/
 
 https://docs.docker.com/desktop/windows/install/
 
-2.  打开命令行工具，运行命令执行节点程序
+2.打开命令行工具，运行命令执行节点程序
 
 ```
 docker run -d --name ares_gladios aresprotocollab/ares_gladios:beta gladios-node --name your-name --chain gladios --ws-external --rpc-external --rpc-cors=all --rpc-methods=Unsafe --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0'
@@ -84,19 +84,21 @@ docker rm ares_gladios
 
 
 **方法三：源码编译**
-```
+
 1.安装Rust
-
+```
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-
+```
 
 2.安装依赖库
-
+```
 sudo apt install make clang pkg-config libssl-dev build-essential
+```
 
 3.下载Ares代码
-
+```
 git clone [https://github.com/aresprotocols/ares.git</u>](https://github.com/aresprotocols/ares.git)
+```
 
 4.编译源码
 
@@ -104,6 +106,7 @@ cargo build --release
 
 Note if you run into compile errors, you may have to switch to a less recent nightly. This can be done by running:
 
+```
 rustup install nightly-2021-06-09
 
 rustup target add wasm32-unknown-unknown --toolchain nightly-2021-06-09
