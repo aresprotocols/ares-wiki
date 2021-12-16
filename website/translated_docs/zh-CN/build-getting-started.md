@@ -6,7 +6,7 @@ sidebar_label: Obtain Price Through Cross-Chain
 
 使用cumulus进行跨链不同托盘测试
 
-编译启动中继链
+### 编译启动中继链
 
 ```
 ## 编译
