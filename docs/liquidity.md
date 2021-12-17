@@ -39,9 +39,9 @@ Participants have the opportunity to earn additional income from the time-limite
 
 ### Liquidity mining procedure
 1.Log in gate account. Click gate.io on the first page, select “ Finance ”, and select “Liquidity Mining”.  
-![](assets/build/97.png)
+![](assets/build/260.png)
 2.Search Ares, trading pairs of Ares, USDT, ETH will be immediately shown. Or directly search the URL link https://www.gate.tv/cn/liquidity/ares to access the address.  
-![](assets/build/98.png)
+![](assets/build/261.png)
 3.Select an appropriate trade pair and click “Add Liquidity”.    
 ![](assets/build/255.png)
 4.On the table of “Add Liquidity”, type the number of varieties of the coins and click the consent treaty to click “Add”. Saved liquidity assets will be stored into the AMM account from current account.  
