@@ -41,10 +41,10 @@ Stakers on Trojan might quickly get familiar with the Iliad stake mining. This t
 
 **Notification: this page requires Metamask authorized transaction. If you are unsure how to set the Metamask, you could research some articles to acquire relevant information.**
 
-1.Log into your Metamask, and change the network into BSC MAINNET.
+1.Log into your Metamask, and change the network into BSC MAINNET.  
 Method A: change the website into BSC MAINNET on Metamask.
 
-![](assets/build/10.png)
+![](assets/build/242.png)
 
 If you cannot find the MAINNET option, you may use Method B.
 
@@ -52,51 +52,51 @@ Method B: Open the BscScan, click the fox image “Add BSC Network”, after the
 
 ARES BscScan：https://bscscan.com/address/0xf9752A6E8A5E5f5e6EB3aBe7d8492460fb319f02. 
 
-![](assets/build/11.png)
+![](assets/build/243.png)
 
-![](assets/build/12.png)
+![](assets/build/244.png)
 
-Open the BscScan, add the Ares token into Metamask.
+2.Open the BscScan, add the Ares token into Metamask.
 
 ARES BSC treaty address：：0xf9752A6E8A5E5f5e6EB3aB4e7d8492460fb319f03
-![](assets/build/13.png)
+![](assets/build/245.png)
 
-![](assets/build/14.png)
+![](assets/build/246.png)
 
-![](assets/build/14a.png)
+![](assets/build/247.png)
 
 3. Connect your wallet
 Open the staking page:
 http://iliad.aresprotocol.io/ 
 
-![](assets/build/15.png)
+![](assets/build/248.png)
 
 
-4.Main Page
+4.Main Page  
 4.1 “Open” current/regular staking page, click the “Stake Tokens” button.
-![](assets/build/16.png)
+![](assets/build/249.png)
 
 4.2 If it’s your first time entering the Iliad, you should press “approve” to confirm your operation.
-![](assets/build/17.png)
+![](assets/build/250.png)
 
 4.3 After the approval status of your address is successful, you can press the "Stake Tokens" button and enter the number of tokens for staking.
-![](assets/build/18.png)
+![](assets/build/251.png)
 
 4.4 Unstake Tokens (current mode)
 
 You could click “Unstake Tokens” to withdraw your tokens. Input your token amounts and click the “Unstake” button.
-![](assets/build/19.png)
+![](assets/build/252.png)
 
 4.5 Claim Rewards
 
 Click” Claim Rewards”, check the Gas fee, and click “ confirm” to claim rewards.
-![](assets/build/20.png)
+![](assets/build/253.png)
 
 4.6.1 Claim and Unstake(current mode) Click "Claim and Unstake", you can cancel all tokens and receive all rewards with one click.
 
 4.6.2 Claim and Unstake(regular mode) If it is a regular product purchased, the button is gray, and you need to wait for the specified time before withdrawing the reward.
 
-![](assets/build/21.png)
+![](assets/build/254.png)
 
 
 ### FAQ
