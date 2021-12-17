@@ -81,7 +81,7 @@ Twitter : https://twitter.com/AresProtocolLab
 
 Medium : https://Aresprotocollab.medium.com
 
-Discord : https://discord.gg/EsaFRr7xmc
+Discord : https://discord.gg/cqduK4ZNaY
 
 Github : https://github.com/Aresprotocols
 
