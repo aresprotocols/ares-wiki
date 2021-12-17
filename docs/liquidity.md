@@ -38,18 +38,17 @@ Participants have the opportunity to earn additional income from the time-limite
 
 
 ### Liquidity mining procedure
+1.Log in gate account. Click gate.io on the first page, select “ Finance ”, and select “Liquidity Mining”.  
 ![](assets/build/97.png)
-1.Log in gate account. Click gate.io on the first page, select “ Finance ”, and select “Liquidity Mining”.
+2.Search Ares, trading pairs of Ares, USDT, ETH will be immediately shown. Or directly search the URL link https://www.gate.tv/cn/liquidity/ares to access the address.  
 ![](assets/build/98.png)
-2.Search Ares, trading pairs of Ares, USDT, ETH will be immediately shown. Or directly search the URL link https://www.gate.tv/cn/liquidity/ares to access the address.
-![](assets/build/99.png)
-3.Select an appropriate trade pair and click “Add Liquidity”.
-![](assets/build/100.png)
-4.On the table of “Add Liquidity”, type the number of varieties of the coins and click the consent treaty to click “Add”. Saved liquidity assets will be stored into the AMM account from current account.
-![](assets/build/100.png)
-5.How do withdraw? Click the Unlock, on the table of “Rewards Yet To Withdraw” , drag the slide to moderate the percentage to withdraw. The withdrawn liquidity will be converted into related coins to be returned to original account.
-![](assets/build/101.png)
-6.How to check the record of liquidity mining and profit? Click “My Liquidity”
-![](assets/build/102.png)
-7.Search ARES, you will be able to live check your current profit.
-![](assets/build/103.png)
+3.Select an appropriate trade pair and click “Add Liquidity”.    
+![](assets/build/255.png)
+4.On the table of “Add Liquidity”, type the number of varieties of the coins and click the consent treaty to click “Add”. Saved liquidity assets will be stored into the AMM account from current account.  
+![](assets/build/256.png)
+5.How do withdraw? Click the Unlock, on the table of “Rewards Yet To Withdraw” , drag the slide to moderate the percentage to withdraw. The withdrawn liquidity will be converted into related coins to be returned to original account.  
+![](assets/build/257.png)
+6.How to check the record of liquidity mining and profit? Click “My Liquidity”  
+![](assets/build/258.png)
+7.Search ARES, you will be able to live check your current profit.  
+![](assets/build/259.png)
