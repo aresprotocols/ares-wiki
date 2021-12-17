@@ -88,7 +88,7 @@ Up to 300,000,000 AMAS will be distributed to KSM contributors. After the succes
 #### Crowdloan Airdrop Receiving Procedure
 
 **Step1**
-![](assets/build/105.png)
+![](assets/build/231.png)
 
 Enter the Mars official page:：https://aresprotocol.io/mars，Click 【Crowdloan Drop】;
 
