@@ -40,24 +40,46 @@ cargo build --release
 编译后会获得可执行文件 ares-chain/target/release/gladios-node
 
 
-**启动数据节点**
+### 启动数据节点
 
-启动数据节点并连接到网络。
-在刚才编译的目录下执行以下命令。
+* 启动数据节点并连接到网络。
 ```
 ./target/release/gladios-node \
---base-path /tmp/gladios-data \
---name ARES_DATA_NODE \
---chain ./chain-data-ares-aura.json \
---port 30334 \
---ws-port 9946 \ 
---rpc-port 9934 \
---ws-external \
---rpc-external \
---rpc-cors=all \
---rpc-methods=Unsafe \
---telemetry-url 'wss://telemetry.polkadot.io/submit/ 0' \
---bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWEyoppNCUx8Yx66oV9fJnriXwCcXwDDUA2kj6vnc6iDEp
+  --base-path /tmp/gladios-data \
+  --name ARES_DATA_NODE \
+  --chain ./chain-data-ares-aura.json \
+  --port 30334 \
+  --ws-port 9946 \ 
+  --rpc-port 9934 \
+  --ws-external \
+  --rpc-external \
+  --rpc-cors=all \
+  --rpc-methods=Unsafe \
+  --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0' \
+  --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWEyoppNCUx8Yx66oV9fJnriXwCcXwDDUA2kj6vnc6iDEp
+```
+
+### 启动验证人节点
+
+* 启动验证人节点并连接到网络。（Aura共识）
+```
+./target/release/gladios-node purge-chain --base-path /tmp/aura/two --chain gladios -y
+./target/release/gladios-node \
+  --base-path /tmp/gladios-data \
+  --name ARES_VALIDATOR_NODE \
+  --chain ./chain-data-ares-aura.json \
+  --port 30335 \
+  --ws-port 9947 \
+  --rpc-port 9935 \
+  --ws-external \
+  --rpc-external \
+  --rpc-cors=all \
+  --rpc-methods=Unsafe \
+  --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0' \
+  --warehouse http://141.164.58.241:5566 \
+  --ares-keys ./your_ares_key_file.curl \
+  --validator \
+  --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWEyoppNCUx8Yx66oV9fJnriXwCcXwDDUA2kj6vnc6iDEp
 ```
 
 – 仓库参数，支持指定验证人的服务器请求地址及端口。
