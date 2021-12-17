@@ -3,7 +3,6 @@ id: crossChainBridge
 title: Asset cross-chain bridge
 sidebar_label: Asset cross-chain bridge
 ---
-### Assets Cross-Chain Bridge
 
 Trojan bridge was officially launched, which enables the transferring of Ares from ETH to BSC.
 
