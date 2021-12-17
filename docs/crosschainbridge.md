@@ -24,7 +24,7 @@ open staking page: http://trojan.aresprotocol.io/
 
 ![](assets/build/30.png)
 
-2.Click” Ares bridge ”
+2.Click” Ares bridge ”  
 Open the crosschain asset bridge from ETH to BSC
 ![](assets/build/31.png)
 
