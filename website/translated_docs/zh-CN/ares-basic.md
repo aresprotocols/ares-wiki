@@ -5,7 +5,7 @@ sidebar_label: Basic
 ---
 Ares 是一个去中心化的预言机解决方案，实现预言机数据上链和链上验证。为Web3.0时代的互联与数字经济提供安全可靠的数据服务。
 
-![image](https://github.com/aresprotocols/ares_docs/blob/master/docs/assets/build/1.png) 
+![](assets/build/1.png)
 
 ## Ares特点
 ### 开放性
