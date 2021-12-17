@@ -58,7 +58,7 @@ ARES BscScan：https://bscscan.com/address/0xf9752A6E8A5E5f5e6EB3aBe7d8492460fb3
 
 2.Open the BscScan, add the Ares token into Metamask.
 
-ARES BSC treaty address：：0xf9752A6E8A5E5f5e6EB3aB4e7d8492460fb319f03
+ARES BSC treaty address：0xf9752A6E8A5E5f5e6EB3aB4e7d8492460fb319f03
 ![](assets/build/245.png)
 
 ![](assets/build/246.png)
