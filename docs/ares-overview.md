@@ -66,19 +66,15 @@ Currently, Ares has launched the first phase version of the gladios testnet. At 
 
 **Wasm Contract ecology**
 
-
-At the same time, we will also focus on brand promotion and operation, and reach strategic cooperation with more ecological projects.
+At the same time, we will also focus on brand promotion and operation, and reach strategic cooperation with more ecological projects. 
+ 
 Ares Protocol 2021 plan is mainly divided into several aspects：
-
-The launch of the next version of Gladios Testnet is related to the advancement of product function research and development. The Defi project can be provided with a safer and more reliable price service.
-
-Community development, build the Ares Protocol community ambassador and technical ambassador, let more friends who want to know Ares Protocol join the family of God of War. If you have your own unique insights on publicity and technology, you are welcome to contact us at any time.
-At present, we are also actively cooperating closely with ecological projects. Such as mxc polar domain, trustbase, bandot and other projects.
-
-Ares will set up the WASM Ecological Fund. Welcome to use Wasm contract to build Defi application. You can get all kinds of data on the chain for free. If you are interested, you may apply for our funding.
-In Polkadot and Kusama parachain slot auctions, Ares paid close attention to this development and has already participated in the crowd loans of Dot and KSM.
-
-Ares Eco-Marathon welcomes individuals or technical teams who use Ares Oracle services to participate in the ecological construction and will provide generous financial rewards to participants.
+1.The launch of the next version of Gladios Testnet is related to the advancement of product function research and development. The Defi project can be provided with a safer and more reliable price service.  
+2.Community development, build the Ares Protocol community ambassador and technical ambassador, let more friends who want to know Ares Protocol join the family of God of War. If you have your own unique insights on publicity and technology, you are welcome to contact us at any time.
+3.At present, we are also actively cooperating closely with ecological projects. Such as mxc polar domain, trustbase, bandot and other projects.
+4.Ares will set up the WASM Ecological Fund. Welcome to use Wasm contract to build Defi application. You can get all kinds of data on the chain for free. If you are interested, you may apply for our funding.
+5.In Polkadot and Kusama parachain slot auctions, Ares paid close attention to this development and has already participated in the crowd loans of Dot and KSM.
+6.Ares Eco-Marathon welcomes individuals or technical teams who use Ares Oracle services to participate in the ecological construction and will provide generous financial rewards to participants.
 
 
 
