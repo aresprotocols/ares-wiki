@@ -52,7 +52,7 @@ This tutorial presents you with the staking conception and interface of the Ares
 
 **1\. Login in your Metamask and switch the network to Ethereum Mainnet**
 
-![](assets/build/10.png)
+![](assets/build/235.png)
 
 
 **2.Add Ares token into matamask**
@@ -61,14 +61,14 @@ Put in below address to log in Etherscan，add ARES into Metamask
 
 [https://etherscan.io/token/0x358aa737e033f34df7c54306960a38d09aabd523](https://etherscan.io/token/0x358aa737e033f34df7c54306960a38d09aabd523)
 
-![](assets/build/11.png)
+![](assets/build/236.png)
 
 
 **3\. Connect your wallet**
 
 Open stake mining page:[https://trojan.aresprotocol.io/](https://trojan.aresprotocol.io/)
 
-![](assets/build/12.png)
+![](assets/build/237.png)
 
 **4\.  Main steps**
 
@@ -78,14 +78,14 @@ Open stake mining page:[https://trojan.aresprotocol.io/](https://trojan.aresprot
 
 If this is the first time to connect in Trojan，you need to fulfil the below process
 
-![](assets/build/13.png)
+![](assets/build/238.png)
 
 
 **4.1.2 Stake Mining**
 
 While the approval was successfully made, you could click"Stake Tokens", and you could put in the amount to stake tokens. Once the trade was made, in a Currently Staked forum, it is shown your staked amount, and profit will be accumulated in each sec.
 
-![](assets/build/14.png)
+![](assets/build/239.png)
 
 
 Notice: due to the ethereum mainnet, please be aware of your Gas fee amount. If the approval process is too long then try to check your network connection or consider adding a certain amount of Gas fee to speed up.
@@ -94,13 +94,13 @@ Notice: due to the ethereum mainnet, please be aware of your Gas fee amount. If 
 
 Click "Unstake Tokens", to claim your Ares tokens。 Put in your unstake amount，and click "Unstake"。
 
-![](assets/build/15.png)
+![](assets/build/240.png)
 
 
 **4.3 Claiming Rewards**
 
 Click "Claim Rewards" and check Gas fee, after you confirmed, click“Confirm" to claim rewards.
-![](assets/build/16.png)
+![](assets/build/241.png)
 
 
 **4.4 Claim rewards and Unstake**
