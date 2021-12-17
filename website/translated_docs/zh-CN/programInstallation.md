@@ -12,16 +12,19 @@ sidebar_label: Program Installation
 
 下载地址：[<u>https://github.com/aresprotocols/ares/releases/tag/v1.0.7</u>](https://github.com/aresprotocols/ares/releases/tag/v1.0.7)
 
+![](assets/build/114.png)
 
 1.可执行的 gladios-node 二进制文件：
 ```
 wget -c https://github.com/aresprotocols/ares/releases/download/v1.0.7/gladios-node-linux-amd64-1.0.7-379058b
 ```
+![](assets/build/115.png)
 
 2.添加执行权限
 ```
 chmod +777  gladios-node-linux-amd64-1.0.7-379058b
 ```
+![](assets/build/116.png)
 
 3.执行节点
 ```
