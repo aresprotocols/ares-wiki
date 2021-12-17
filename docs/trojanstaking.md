@@ -9,6 +9,7 @@ Since May 13th this year, Ares Trojan Staking mining was officially deployed in 
 ![](assets/build/96.png)
 
 Ares mining has been carried out for third periods, and the Staking volume continues to rise. We can see the enthusiasm of everyone involved. The current Staking amount plus the reward is 45,970,000. All along, we hope to give more rewards to our Aresians. Stake mining reward adjusted from the starting 625000 to a million of the third round. The annualized yield held steadily at 26 %.
+![](assets/build/232.png)
 
 With the release of the 2nd Seed Wheel Institutional Token, Ares has launched Regular-term mining products in order to better give back to the community, Ares enthusiasts can pledge their tokens to regular-term contracts for more mining rewards.
 
@@ -25,10 +26,10 @@ From now on we will launch the following regular Staking mining products: regula
 120 days: 0x4C4f6d9FAe70236888C4D613199Ea4419ada23E8
 
 180 days: 0xb31d8EBa3f5e2D758b54544E4446b39F9cb769ea
-
+![](assets/build/233.png)
 ### What Should We Pay Attention to When Participating in Regular Stake Mining?
  After purchasing regular products, the principal cannot be redeemed within the specified time, but the reward can be received anytime.
-
+![](assets/build/234.png)
 For the purchase of regular products, if you want to purchase additional regular products during the Staking mining time, you need to extend the overall period. Redemption days= completion days before additional purchase + regular days (60/20/180).
 
 For example, David used 100 Ares to regular mine for 60 days. After 30 days, he decided to spend another 100 Ares and purchase an additional 60 days to mine. In this way, 200 Ares will take 90 days to redeem. At this point, the income is about 100*35%/12+200 * 35%/6
