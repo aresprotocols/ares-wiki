@@ -16,75 +16,70 @@ Log into polkadot.js to check more block updates
 
 https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io/#/explorer
 
-**Operation steps**
 
 **Create an Ares account**
 
-**Accounts**
-
-**How to open the following interface to access** 
+*How to open the following interface to access*
 
 [<u>https://js.aresprotocol.io/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io#/explorer/</u>](https://js.aresprotocol.io/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io#/explorer)
 
-### create Account
+**create Account**
 
-first step
+*First step*
 
 ![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/11.png?raw=true) 
 
 Enter Ares APPS, click "Account" in the navigation bar at the top of the window, and click "Add Account", as shown in the figure above.
 
-Second step
+*Second step*
 
 ![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/12.png?raw=true) 
 
 The **Mnemonic Seed** value of this account. Make sure you save the **mnemonic seed** in a safe place and check "I have safely saved my mnemonic seed"
 
-third step
+*Third step*
 
 ![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/14.png?raw=true) 
 
 Enter your account name and password, and click "Next"
 
-the fourth step
+*Fourth step*
 
 ![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/15.png?raw=true) 
 
 Click "Save" and the account will be backed up to your device by default. Please keep your backup files.
 
-transfer
+**Transfer**
 
-first step
+*First step*
 
 ![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/16.png?raw=true) 
 
 Generate an account and click "Send", as shown in the figure above.
 
-Second step
+*Second step*
 
 ![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/18.png?raw=true) 
 
 Enter the transfer address and quantity in the station, and click "Transaction", as shown in the figure above
 
-third step
+*Third step*
 
 ![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/19.png?raw=true) 
 
 Save the "call hash" of this transaction, click "sign and submit" to proceed to the next step
 
-the fourth step
+*Fourth step*
 
 ![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/21.png?raw=true) 
 
 Enter the password of your account, click "Transaction Signature", and the transfer is completed. Quickly notify your trading users and check it in time!
 
-Run validator node
+**Run validator node**
 
 **Staking**
 
-1. Stake
-
-Step 1
+*Step 1*
 
 ![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/23.png?raw=true) 
 
@@ -92,7 +87,7 @@ Step 1
 
 As shown above, enter the Staking page, click "Account Actions", then click the Stash button.
 
-Step 2
+*Step 2*
 
 ![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/25.png?raw=true) 
 
@@ -104,9 +99,9 @@ Select the stash account to be pledged and the corresponding controller account.
 
 After filling in the above information, click the Bond button to complete the staking operation.
 
-1.  Block out (become a validator)
+**Block out (become a validator)**
 
-Step 1
+*Step 1*
 
 Run node：
 
@@ -127,7 +122,7 @@ Parameters: (required) --validator is used to start a validator node.
 
 Parameters: (required) --bootnodes is used to connect to the startup node.
 
-ares-keys可用author.rotateKeys代替
+ares-keyscould be altered to author.rotateKeys
 
 1.  Generate Aura key: Need to specify sr25519 format.
 2.  Generate GRANDPA key: Need to develop ed25519 format.
@@ -144,7 +139,7 @@ CLI[<u>​</u>](https://wiki.polkadot.network/docs/maintain-guides-how-to-valida
 
 curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method": "author_rotateKeys", "params":[]}' http://localhost:9933
 
-Step 2
+*Step 2*
 
 ![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/28.png?raw=true) 
 
@@ -152,7 +147,7 @@ Step 2
 
 Go to the Staking page and click the Account actions tab; select the account you need to operate, click Change session keys, paste the public key obtained in the first step in the input box of the pop-up page, and click the Set Session Key button to confirm the submission.
 
-Step 3
+*Step 3*
 
 ![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/30.png?raw=true) 
 
