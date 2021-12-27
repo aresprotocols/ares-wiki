@@ -6,8 +6,8 @@
     "tagline": "Wiki for Ares Network",
     "docs": {
       "aresBasic": {
-        "title": "Basic",
-        "sidebar_label": "Basic"
+        "title": "Supplementary",
+        "sidebar_label": "Supplementary"
       },
       "aresGlossary": {
         "title": "Glossary",
