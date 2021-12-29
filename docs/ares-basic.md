@@ -32,7 +32,7 @@ ARES ensures the data requester can quickly receive feedback results in real-tim
 
 ### About $Ares
 
-Exchanges: Gate, MEXC, Matcha, Hotbit, BKEX, BitMart, Uniswap
+Exchanges: Gate, MEXC, Hotbit, BKEX, BitMart, Uniswap
 
 Total amount: 1 Billion
 
@@ -55,15 +55,15 @@ It will be rewarded by auctioning KSM/DOT slots.
 
 Currently, Ares has launched the first phase version of the gladios testnet. At the same time, Ares pledged mining on Ethereum and BSC has been fully launched. Next, we will have more Oracle functions online:
 
-**Distributed data source weight adjustment**
+1.Distributed data source weight adjustment
 
-**Random node selection based on VRF**
+2.Random node selection based on VRF
 
-**Aggregation of multi-node prices in the chain**
+3.Aggregation of multi-node prices in the chain
 
-**Challenger's chain verification**
+4.Challenger's chain verification
 
-**Wasm Contract ecology**
+5.Wasm Contract ecology
 
 At the same time, we will also focus on brand promotion and operation, and reach strategic cooperation with more ecological projects. 
  
@@ -97,3 +97,7 @@ Github: https://github.com/Aresprotocols
 Reddit: https://www.reddit.com/r/AresProtocolLabs/
 
 Facebook: https://www.facebook.com/groups/Aresprotocollabs
+
+Instagram: https://www.instagram.com/aresprotocollab/
+
+Youtube：https://www.youtube.com/channel/UCgwY4NwkoP8Hx1Fqmp_rJUw
