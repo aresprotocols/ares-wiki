@@ -78,11 +78,11 @@ body {
    ========================================================================== */
 
 .navigationSlider .slidingNav ul li > a {
-  color: var(--silverColor);
+  color: var(--snowColor);
 }
 
 .navigationSlider .slidingNav ul li > a:visited {
-  color: var(--silverColor);
+  color: var(--snowColor);
 }
 
 .navigationSlider .slidingNav ul li > a:hover,
@@ -112,7 +112,7 @@ body {
   }
 
   .navigationSlider .slidingNav ul li > a:visited {
-    color: var(--silverColor);
+    color: var(--snowColor);
   }
 
   .navigationSlider .slidingNav ul li > a:hover,
@@ -129,7 +129,7 @@ body {
   }
 
   .navigationSlider .slidingNav ul li.siteNavItemActive > a {
-    color: var(--secondaryColor);
+    color: #FFF;
   }
 }
 
@@ -1181,4 +1181,9 @@ footer .list-social-links a {
 .klaro .cookie-modal .cm-btn.cm-btn-info,
 .klaro .cookie-notice .cm-btn.cm-btn-info {
   background-color: var(--primaryColor);
+}
+
+
+#back-to-top {
+  background-color: #1195F0;
 }
