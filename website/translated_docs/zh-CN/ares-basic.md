@@ -25,7 +25,9 @@ ARES 通过数据链上验证和共享波卡网络的安全共识来保证数据
 
 交易所：Gate、MEXC抹茶、Hotbit、BKEX、BitMart、Uniswap
 
-总量：10亿流通量：153,700,575
+总量：10亿
+
+流通量：153,700,575
 
 初始价：0.006U
 
@@ -45,16 +47,22 @@ BSC合约地址：0xf9752A6E8A5E5f5e6EB3aB4e7d8492460fb319f0
 
 ## 路线图
 
-目前，Ares已推出gladios测试网的第一阶段版本。同时，以太坊上和BSC上的Ares质押挖矿已全面推出使用。接下来，我们将有更多的Oracle功能上线：
-分布式数据源权重调整
-基于VRF的节点随机选择
-链中多节点价格的聚合
-挑战者的链验证
-Wasm合约生态
+目前，Ares已推出gladios测试网的第一阶段版本。同时，以太坊上和BSC上的Ares质押挖矿已全面推出使用。接下来，我们将有更多的Oracle功能上线：  
+
+1.分布式数据源权重调整
+
+2.基于VRF的节点随机选择
+
+3.链中多节点价格的聚合
+
+4.挑战者的链验证
+
+5.Wasm合约生态
 
 同时，我们也将专注于品牌推广和运营，与更多生态项目达成战略合作。
 
-战神2021年的规划主要分为几个方面
+战神2021年的规划主要分为几个方面:
+
 1.下一版gladios测试网的上线，关系到产品功能研发的推进。可以让defi项目获得更加安全可靠的价格服务。
 
 2.社区发展，打造战神社区大使和技术大使，让更多想了解战神的小伙伴加入战神大家庭。如果您对宣传和技术有自己独特的见解，欢迎您随时与我们联系。
@@ -88,3 +96,7 @@ Github : https://github.com/Aresprotocols
 Reddit : https://www.reddit.com/r/AresProtocolLabs/
 
 Facebook : https://www.facebook.com/groups/Aresprotocollabs
+
+Instagram: https://www.instagram.com/aresprotocollab/
+
+Youtube：https://www.youtube.com/channel/UCgwY4NwkoP8Hx1Fqmp_rJUw
