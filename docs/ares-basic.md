@@ -32,7 +32,7 @@ ARES ensures the data requester can quickly receive feedback results in real-tim
 
 ### About $Ares
 
-Exchanges: Gate, MEXC, Hotbit, BKEX, BitMart, Uniswap
+Exchanges: [Gate](https://www.gateio.pro/trade/ARES_USDT)、[MEXC](https://www.mexc.com/exchange/ARES_USDT)、[Hotbit](https://www.hotbit.io/exchange?symbol=ARES_USDT)、[BKEX](https://www.bkex.com/trade/ARES_USDT)、[BitMart](https://www.bitmart.com/trade/en?symbol=ARES_USDT&layout=basic)、[Uniswap](https://app.uniswap.org/#/swap?outputCurrency=0x358AA737e033F34df7c54306960a38d09AaBd523&use=V2&lng=en-US)
 
 Total amount: 1 Billion
 
