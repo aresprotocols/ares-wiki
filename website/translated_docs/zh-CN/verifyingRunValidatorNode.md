@@ -18,68 +18,6 @@ https://telemetry.polkadot.io/#/0x1ff9888c17c1e30395e0abc7071f5e607d231528375dce
 https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io/#/explorer
 
 
-
-### 创建Ares账户
-
-打开如下的界面，访问
-
-[<u>https://js.aresprotocol.io/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io#/explorer/</u>](https://js.aresprotocol.io/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io#/explorer)
-
-**创建账户**
-
-第一步
-
-![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/11.png?raw=true) 
-
-进入 Ares APPS, 点击窗口顶部导航栏中的“账户”，点击“添加账户”，如上图。
-
-第二步
-
-![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/12.png?raw=true) 
-
-此帐户的**助记种子**值。确保您将**助记词种子保存**在安全的地方并勾选“我已安全保存我的助记词种子”
-
-第三步
-
-![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/14.png?raw=true) 
-
-输入您的帐户名和密码，然后单击“下一步”
-
-第四步
-
-![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/15.png?raw=true) 
-
-单击“保存”，该帐户将默认备份到您的设备上。请保管好您的备份文件。
-
-**转账**
-
-
-第一步
-
-![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/16.png?raw=true) 
-
-生成账户，点击“发送”，如上图。
-
-第二步
-
-![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/18.png?raw=true) 
-
-输入站内转账地址以及数量，点击“进行交易”，如上图
-
-第三步
-
-![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/19.png?raw=true) 
-
-保存本次交易的“调用哈希”，点击“签名及提交”，进行下一步
-
-第四步
-
-![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/21.png?raw=true) 
-
-输入您账户的密码，点击“交易签名”，本次转账就完成了。快通知您的交易用户，及时查收吧！
-
-
-
 ### 运行验证人节点
 
 **质押**
@@ -115,27 +53,13 @@ https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io/#/explorer
 ```
 
 参数：（必选） --warehouse 用来指定 ares 报价服务器的IP地址。
-
-参数：（可选）--ares-keys 用来通过一个私钥文件加载对应的 key-strore。
-
---ares-keys 文件格式内部格式：
-
-aura:(Mnemonic phrase)//1//aura
-
-gran:(Mnemonic phrase)//1//grandpa
-
 参数：（必选）--validator 用来表示启动一个验证人节点。
-
-参数：（必选）--bootnodes 用来连接启动节点。
-
-ares-keys可用author.rotateKeys代替
-
-1.  生成 Aura key： 需要指定 sr25519 格式。
-2.  生成 GRANDPA key：需要制定 ed25519 格式。
 
 ![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/26.png?raw=true) 
 
 ![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/27.png?raw=true) 
+
+第二步：设置 Session Keys
 
 进入RPC Calls页面，调用方法author.rotateKeys，点击按钮Submit RPC Call，然后服务端返回公钥(publicKey)；复制该公钥在第二步需要用到。
 

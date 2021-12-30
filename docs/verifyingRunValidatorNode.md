@@ -17,64 +17,6 @@ Log into polkadot.js to check more block updates
 https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io/#/explorer
 
 
-**Create an Ares account**
-
-*How to open the following interface to access*
-
-[<u>https://js.aresprotocol.io/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io#/explorer/</u>](https://js.aresprotocol.io/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io#/explorer)
-
-**create Account**
-
-*First step*
-
-![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/11.png?raw=true) 
-
-Enter Ares APPS, click "Account" in the navigation bar at the top of the window, and click "Add Account", as shown in the figure above.
-
-*Second step*
-
-![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/12.png?raw=true) 
-
-The **Mnemonic Seed** value of this account. Make sure you save the **mnemonic seed** in a safe place and check "I have safely saved my mnemonic seed"
-
-*Third step*
-
-![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/14.png?raw=true) 
-
-Enter your account name and password, and click "Next"
-
-*Fourth step*
-
-![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/15.png?raw=true) 
-
-Click "Save" and the account will be backed up to your device by default. Please keep your backup files.
-
-**Transfer**
-
-*First step*
-
-![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/16.png?raw=true) 
-
-Generate an account and click "Send", as shown in the figure above.
-
-*Second step*
-
-![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/18.png?raw=true) 
-
-Enter the transfer address and quantity in the station, and click "Transaction", as shown in the figure above
-
-*Third step*
-
-![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/19.png?raw=true) 
-
-Save the "call hash" of this transaction, click "sign and submit" to proceed to the next step
-
-*Fourth step*
-
-![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/21.png?raw=true) 
-
-Enter the password of your account, click "Transaction Signature", and the transfer is completed. Quickly notify your trading users and check it in time!
-
 **Run validator node**
 
 **Staking**
