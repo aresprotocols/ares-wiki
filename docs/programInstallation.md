@@ -4,35 +4,40 @@ title: Program Installation
 sidebar_label: Program Installation
 ---
 
-**Method A: download the executor**
+## How To Join Gladios Testnet
 
-1.  Download the binary executor of the node：
+### **Method A: Download the Node**
+
+#### 1. **Download Node**
 
 download link：[<u>https://github.com/aresprotocols/ares/releases/tag/v1.0.7</u>](https://github.com/aresprotocols/ares/releases/tag/v1.0.7)
-
-**First Step:**
 
 ![](assets/build/114.png)
 
 As the above photo showed, executable gladios-node binary coded files:
 ```
-wget -c https://github.com/aresprotocols/ares/releases/download/v1.0.7/gladios-node-linux-amd64-1.0.7-379058b
-)
+wget -c https://github.com/aresprotocols/ares/releases/download/v1.0.7/gladios-node-linux-amd64-1.0.7-379058b)
 ```
-**Second Step:**
+
+#### 2. **Check Execution Permission**
 ![](assets/build/115.png)
-
-As shown above, add executor permission
-
+```shell
+ls -al gladios-node-linux-amd64-1.0.7-379058b
 ```
+Output
+```asm
+-rwxrwxrwx  1 root  staff  89189840 11 23 21:44 gladios-node-linux-amd64-1.0.7-379058b
+```
+If not have **x**, Execute the following command
+```shell
 chmod +777  gladios-node-linux-amd64-1.0.7-379058b
 ```
 
-**Third Step:**
+#### 3. **Start Node**
 ![](assets/build/116.png)
 As shown above, execute node
 
-```
+```shell
 ./gladios-node-linux-amd64-1.0.7-379058b --base-path data   --name Ares_Emily0626_0xA86ed7899330DF48316E2A2842D5aD13F031Ab11   --chain gladios --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0'
 ```
 
@@ -46,9 +51,16 @@ Please ensure information are valid to enable evaluation and distribution of rew
 
 When the server displays in the above screen, the deployment is successful. Don’t forget to log into Polkadot Telemetry to check the node running status.
 
+**This command explain:**
+
+* --base-path flag specify data storage directory as the **data** folder under the current directory.
+* --name flag specify node name as **Ares_xxx**.
+* --chain flag specify the current chain as the **gladios** testnet.
+* telemetry-url flag specify the link to monitor node status as **wss://telemetry.polkadot.io/submit/ 0**,You can visit [telemetry](https://telemetry.polkadot.io/#list/0x1765d3a35ecdca975e3dc69472cc0a51780ed9ccb4481becfdddfb3c5c2be048) to view.
 
 
-**Method B：**
+
+### **Method B：**
 
 1.  Install docker
 
@@ -104,7 +116,7 @@ docker rm ares_gladios
 ```
 
 
-**Method C: source code compilation**
+### **Method C: source code compilation**
 ```
 Install Rust
 
