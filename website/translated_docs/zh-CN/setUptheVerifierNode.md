@@ -56,7 +56,6 @@ cargo build --release
   --rpc-cors=all \
   --rpc-methods=Unsafe \
   --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0' \
-  --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWEyoppNCUx8Yx66oV9fJnriXwCcXwDDUA2kj6vnc6iDEp
 ```
 
 ### 启动验证人节点
@@ -77,9 +76,7 @@ cargo build --release
   --rpc-methods=Unsafe \
   --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0' \
   --warehouse http://141.164.58.241:5566 \
-  --ares-keys ./your_ares_key_file.curl \
   --validator \
-  --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWEyoppNCUx8Yx66oV9fJnriXwCcXwDDUA2kj6vnc6iDEp
 ```
 
 – 仓库参数，支持指定验证人的服务器请求地址及端口。
