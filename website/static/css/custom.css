@@ -503,6 +503,10 @@ body {
   padding-top: -30px !important;
 }
 
+.homeNavContainerTitle {
+  padding: 16px 0;
+}
+
 
 .homeNavItem {
   -webkit-transition: all 0.15s ease-in-out;
@@ -645,6 +649,13 @@ body {
     font-size: 4.5rem;
     font-weight: 400;
     line-height: 1.2;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1500px) {
+  .sitemap {
+    flex-wrap: nowrap;
+    column-gap: 92px !important;
   }
 }
 
@@ -907,7 +918,6 @@ body {
 .nav-footer {
   background: #1D1F75;
   border: none;
-  /*color: #202020;*/
   color: #FFFFFF;
   font-size: 16px;
   line-height: 24px;
