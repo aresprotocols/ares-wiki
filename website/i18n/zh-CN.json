@@ -160,6 +160,15 @@
         "title": "启动预言机服务",
         "sidebar_label": "启动预言机服务"
       },
+      "StartTheWarehouseService": {
+        "title": "启动Warehouse服务",
+        "sidebar_label": "启动Warehouse服务"
+      },
+      "WarehouseApi": {
+        "title": "Warehouse接口文档",
+        "sidebar_label": "Warehouse接口文档"
+      },
+      
 
       "verifyingRunValidatorNode": {
         "title": "验证&运行节点程序",

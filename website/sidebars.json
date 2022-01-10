@@ -61,7 +61,9 @@
       "buildNode",
       "programInstallation",
       "verifyingRunValidatorNode",
-      "StarOracleService"
+      "StarOracleService",
+      "StartTheWarehouseService",
+      "WarehouseApi"
     ]
   }
 }

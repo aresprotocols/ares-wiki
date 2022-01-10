@@ -81,6 +81,10 @@
         "title": "Start the Oracle Service",
         "sidebar_label": "Start the Oracle Service"
       },
+      "StartTheWarehouseService": {
+        "title": "Start The Warehouse Service",
+        "sidebar_label": "Start The Warehouse Service"
+      },
       "technicalArchitecture": {
         "title": "Technical Architecture",
         "sidebar_label": "Technical Architecture"
@@ -96,6 +100,10 @@
       "verifyingRunValidatorNode": {
         "title": "Verify & Run Validator Nodes",
         "sidebar_label": "Verify & Run Validator Nodes"
+      },
+      "WarehouseApi": {
+        "title": "Warehouse Api",
+        "sidebar_label": "Warehouse Api"
       }
     },
     "links": {
