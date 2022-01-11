@@ -49,10 +49,11 @@ const siteConfig = {
   },
 
   algolia: {
-    // apiKey: "",
-    // indexName: "",
+    appId: 'J5ZQKKW50X',
+    apiKey: "bb5ee81f437d7d37f5bd909c9a428199",
+    indexName: "ares_docs",
     algoliaOptions: {
-      facetFilters: ["language:LANGUAGE"],
+      // facetFilters: ["language:LANGUAGE"],
     }, // Optional, if provided by Algolia
   },
 
