@@ -7,7 +7,7 @@ sidebar_label: Verify & Run Validator Nodes
 ### Verifying Deployment Status
 **Log in Polkadot Telemetry**
 
-https://telemetry.polkadot.io/#/0x1ff9888c17c1e30395e0abc7071f5e607d231528375dce789c95fe67850a3ef7
+https://telemetry.polkadot.io/#list/0xcc07acbee59e89a8bc99d87a24364b514d6ae657551338547b713444583eaac2
 
 ![](assets/build/95.png)
 
@@ -48,26 +48,12 @@ After filling in the above information, click the Bond button to complete the st
 Run node：
 
 ```
-./target/release/gladios-node --base-path /tmp/aura/one --name ocw_one --port 30333 --ws-port 9945 --rpc-port 9933 --ws-external --rpc-external --rpc-cors=all --rpc-methods=Unsafe --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0' --warehouse https://api.aresprotocol.io/ --bootnodes /ip4/158.247.224.166/tcp/30333/p2p/12D3KooWEyoppNCUx8Yx66oV9fJnriXwCcXwDDUA2kj6vnc6iDEp --validator
+./target/release/gladios-node --base-path data --name ocw_one --port 30333 --ws-port 9945 --rpc-port 9933 --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0' --warehouse http://api.aresprotocol.io/ --validator
 ```
 
 Parameter: (required) --warehouse to specify the IP address of ares quotation server.
 
-Parameter: (optional) --ares-keys to load the corresponding key-strore via a private key file.
-
---ares-keys file format internal format：
-
-aura:(Mnemonic phrase)//1//aura
-
-gran:(Mnemonic phrase)//1//grandpa
 Parameters: (required) --validator is used to start a validator node.
-
-Parameters: (required) --bootnodes is used to connect to the startup node.
-
-ares-keyscould be altered to author.rotateKeys
-
-1.  Generate Aura key: Need to specify sr25519 format.
-2.  Generate GRANDPA key: Need to develop ed25519 format.
 
 ![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/26.png?raw=true) 
 
@@ -77,9 +63,16 @@ Enter the RPC Calls page, call the method author.rotateKeys, click the button Su
 
 Note⚠️: The above operation (first step) should be performed on the node you deployed or trusted node. Because the private key (privateKey) corresponding to the generated public key will be stored in the keystore of the node.
 
-CLI[<u>​</u>](https://wiki.polkadot.network/docs/maintain-guides-how-to-validate-polkadot#option-2-cli)
+**CLI**[<u>​</u>](https://wiki.polkadot.network/docs/maintain-guides-how-to-validate-polkadot#option-2-cli)
 
+```shell
 curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method": "author_rotateKeys", "params":[]}' http://localhost:9933
+```
+
+**Output**
+```json
+{"jsonrpc":"2.0","result":"0x58ccb645829bad32a700595d74246c16bf0b981b23367d638c5cef7d31860b65e9bf2c72bc5d46e0d11c57e68b16ac087b487497495984e19a05a6a317da064edc818436afabf30dd0b523ee8440160bc97b25e264d1d054d7d6d342b9ecf353","id":1}
+```
 
 *Step 2*
 

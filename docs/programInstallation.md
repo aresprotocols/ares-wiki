@@ -10,27 +10,27 @@ sidebar_label: Program Installation
 
 #### 1. **Download Node**
 
-download link：[<u>https://github.com/aresprotocols/ares/releases/tag/v1.0.7</u>](https://github.com/aresprotocols/ares/releases/tag/v1.0.7)
+download link：[<u>https://github.com/aresprotocols/ares/releases/tag/v1.1.2</u>](https://github.com/aresprotocols/ares/releases/tag/v1.1.2)
 
 ![](assets/build/114.png)
 
 As the above photo showed, executable gladios-node binary coded files:
 ```
-wget -c https://github.com/aresprotocols/ares/releases/download/v1.0.7/gladios-node-linux-amd64-1.0.7-379058b)
+wget -c https://github.com/aresprotocols/ares/releases/download/v1.1.2/gladios-node-linux-amd64-1.1.2-39df776
 ```
 
 #### 2. **Check Execution Permission**
 ![](assets/build/115.png)
 ```shell
-ls -al gladios-node-linux-amd64-1.0.7-379058b
+ls -al gladios-node-linux-amd64-1.1.2-39df776
 ```
 Output
 ```asm
--rwxrwxrwx  1 root  staff  89189840 11 23 21:44 gladios-node-linux-amd64-1.0.7-379058b
+-rwxrwxrwx  1 root  staff  89189840 11 23 21:44 gladios-node-linux-amd64-1.1.2-39df776
 ```
 If not have **x**, Execute the following command
 ```shell
-chmod +777  gladios-node-linux-amd64-1.0.7-379058b
+chmod +777  gladios-node-linux-amd64-1.1.2-39df776
 ```
 
 #### 3. **Start Node**
@@ -38,7 +38,7 @@ chmod +777  gladios-node-linux-amd64-1.0.7-379058b
 As shown above, execute node
 
 ```shell
-./gladios-node-linux-amd64-1.0.7-379058b --base-path data   --name Ares_Emily0626_0xA86ed7899330DF48316E2A2842D5aD13F031Ab11   --chain gladios --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0'
+./gladios-node-linux-amd64-1.1.2-39df776 --base-path data   --name Ares_Emily0626_0xA86ed7899330DF48316E2A2842D5aD13F031Ab11   --chain gladios --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0'
 ```
 
 Please fill out in form of (Ares_username in telegram node miner group_bsc address).
@@ -100,7 +100,7 @@ https://hub.docker.com/r/aresprotocollab/ares_gladios/tags
 
 
 ```
-docker logs -f ares_gladio -n 1000
+docker logs -f ares_gladios -n 1000
 
 ```
 

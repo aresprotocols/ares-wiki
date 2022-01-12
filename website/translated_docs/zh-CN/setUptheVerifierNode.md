@@ -45,16 +45,9 @@ cargo build --release
 * 启动数据节点并连接到网络。
 ```
 ./target/release/gladios-node \
-  --base-path /tmp/gladios-data \
+  --base-path data \
   --name ARES_DATA_NODE \
-  --chain ./chain-data-ares-aura.json \
-  --port 30334 \
-  --ws-port 9946 \ 
-  --rpc-port 9934 \
-  --ws-external \
-  --rpc-external \
-  --rpc-cors=all \
-  --rpc-methods=Unsafe \
+  --chain .gladios \
   --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0' \
 ```
 
@@ -62,32 +55,16 @@ cargo build --release
 
 * 启动验证人节点并连接到网络。（Aura共识）
 ```
-./target/release/gladios-node purge-chain --base-path /tmp/aura/two --chain gladios -y
 ./target/release/gladios-node \
-  --base-path /tmp/gladios-data \
+  --base-path data \
   --name ARES_VALIDATOR_NODE \
-  --chain ./chain-data-ares-aura.json \
-  --port 30335 \
-  --ws-port 9947 \
-  --rpc-port 9935 \
-  --ws-external \
-  --rpc-external \
-  --rpc-cors=all \
-  --rpc-methods=Unsafe \
+  --chain gladios \
   --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0' \
-  --warehouse http://141.164.58.241:5566 \
+  --warehouse http://api.aresprotocol.io \
   --validator \
 ```
 
 – 仓库参数，支持指定验证人的服务器请求地址及端口。
 
-–ares-keys 参数，指定 ares 以及其他可能需要启动的能源信息，例如 aura gran。
-```
-#ares-keys Specifies an example of a file. Note that the file cannot include comments and is split by newline, in most cases ares the key correspondence is consistent with the block producer.**
-ares:finger treat seven sign army beauty album zebra fiction office planet tragic
-aura:finger treat seven sign army beauty album zebra fiction office planet tragic
-gran:ensure usage check coast suspect warrior extend young frequent track can cloud
-```
-
 **节点查看**
-https://telemetry.polkadot.io/#list/0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3
+https://telemetry.polkadot.io/#list/0xcc07acbee59e89a8bc99d87a24364b514d6ae657551338547b713444583eaac2

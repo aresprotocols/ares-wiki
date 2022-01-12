@@ -46,51 +46,26 @@ Start the data node and connect to the network.
 Execute the following command in the directory you just compiled.  
 ```
 ./target/release/gladios-node \
---base-path /tmp/gladios-data \
---name ARES_DATA_NODE \
---chain ./chain-data-ares-aura.json \
---port 30334 \
---ws-port 9946 \ 
---rpc-port 9934 \
---ws-external \
---rpc-external \
---rpc-cors=all \
---rpc-methods=Unsafe \
---telemetry-url 'wss://telemetry.polkadot.io/submit/ 0' \
---bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWEyoppNCUx8Yx66oV9fJnriXwCcXwDDUA2kj6vnc6iDEp
+  --base-path data \
+  --name ARES_DATA_NODE \
+  --chain .gladios \
+  --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0' \
 ```
 
 Start the verifier node
 Start the authenticator node and connect to the network.
 Execute the following command in the directory you just compiled.
 ```
-./target/release/gladios-node purge-chain --base-path /tmp/aura/two --chain gladios -y
 ./target/release/gladios-node \
---base-path /tmp/gladios-data \
---name ARES_VALIDATOR_NODE \
---chain ./chain-data-ares-aura.json \
---port 30335 \
---ws-port 9947 \
---rpc-port 9935 \
---ws-external \
---rpc-external \
---rpc-cors=all \
---rpc-methods=Unsafe \
---telemetry-url 'wss://telemetry.polkadot.io/submit/ 0' \
---warehouse http://141.164.58.241:5566 \
---ares-keys ./your_ares_key_file.curl \
---validator \
---bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWEyoppNCUx8Yx66oV9fJnriXwCcXwDDUA2kj6vnc6iDEp
+  --base-path data \
+  --name ARES_VALIDATOR_NODE \
+  --chain gladios \
+  --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0' \
+  --warehouse http://api.aresprotocol.io \
+  --validator \
 ```
 - Warehouse parameter: supports the server request address and port number of the authenticator.
 
-- The ares-keys parameter specifies ARES and other energy information that may need to be started, such as Aura Gran.
-```
-#ares-keys Specifies an example of a file. Note that the file cannot include comments and is split by newline, in most cases ares the key correspondence is consistent with the block producer.**
-ares:finger treat seven sign army beauty album zebra fiction office planet tragic
-aura:finger treat seven sign army beauty album zebra fiction office planet tragic
-gran:ensure usage check coast suspect warrior extend young frequent track can cloud
-```
 
 **View the node**
-https://telemetry.polkadot.io/#list/0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3
+https://telemetry.polkadot.io/#list/0xcc07acbee59e89a8bc99d87a24364b514d6ae657551338547b713444583eaac2

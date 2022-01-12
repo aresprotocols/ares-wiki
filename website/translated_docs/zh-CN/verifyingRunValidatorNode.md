@@ -8,7 +8,7 @@ sidebar_label: Verify & Run Validator Nodes
 ### 验证部署状态
 **登录Polkadot Telemetry**
 
-https://telemetry.polkadot.io/#/0x1ff9888c17c1e30395e0abc7071f5e607d231528375dce789c95fe67850a3ef7
+https://telemetry.polkadot.io/#list/0xcc07acbee59e89a8bc99d87a24364b514d6ae657551338547b713444583eaac2
 
 ![](assets/build/95.png)
 
@@ -49,7 +49,7 @@ https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io/#/explorer
 运行节点：
 
 ```shell
-./target/release/gladios-node --base-path /tmp/aura/one --name ocw_one --port 30333 --ws-port 9945 --rpc-port 9933 --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0' --warehouse http://api.aresprotocol.io/ --validator
+./target/release/gladios-node --base-path data --name ocw_one --port 30333 --ws-port 9945 --rpc-port 9933 --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0' --warehouse http://api.aresprotocol.io/ --validator
 ```
 
 参数：（必选） --warehouse 用来指定 ares 报价服务器的IP地址。

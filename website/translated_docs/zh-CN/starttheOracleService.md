@@ -6,24 +6,22 @@ sidebar_label: Start the Oracle Service
 
 1、启动价格获取节点。
 
-2、通过 --ares-keys 启动 gladios-node 节点（需要事先配置好 ares-keys 文件）。
+2、通过 --warehouse 启动 gladios-node 节点。
 
 ```javascript
 ./target/release/gladios-node \  
---base-path /tmp/aura/two \  
---name ocw_two \  
---chain ./chain-data-ares-aura.json \  
+--base-path data \  
+--name Ares_Emily0626_0xA86ed7899330DF48316E2A2842D5aD13F031Ab11 \  
+--chain gladios \  
 --port 30334 \  
 --ws-port 9946 \  
---rpc-port 9934 \  
---ws-external \  
---rpc-external \  
---rpc-cors=all \  
---rpc-methods=Unsafe \  
---telemetry-url 'wss://telemetry.polkadot.io/submit/ 0' \  --warehouse http://YOURIP:PORT \  
+--rpc-port 9934 \
+--telemetry-url 'wss://telemetry.polkadot.io/submit/ 0' \ 
+--warehouse http://api.aresprotocol.io \
 --validator \  
 ```
 
+* 请以Ares_TelegramUsername_bsc地址的方式填写。name Ares_Emily0626（节点Telegram群username)
 
-如果不使用 ares-keys 加载私钥，可以通过RPC author_insertKey 的方式插入私钥，参考：https://docs.substrate.io/tutorials/v3/private-network/#generate-your-own-keys
+通过RPC author_insertKey 的方式插入私钥，参考：https://docs.substrate.io/tutorials/v3/private-network/#generate-your-own-keys
 
