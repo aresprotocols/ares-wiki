@@ -49,7 +49,7 @@ https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io/#/explorer
 运行节点：
 
 ```shell
-./target/release/gladios-node --base-path data --name ocw_one --port 30333 --ws-port 9945 --rpc-port 9933 --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0' --warehouse http://api.aresprotocol.io/ --validator
+./target/release/gladios-node --base-path data --name ocw_one --port 30333 --ws-port 9945 --rpc-port 9933 --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0' --warehouse http://api.aresprotocol.io --validator
 ```
 
 参数：（必选） --warehouse 用来指定 ares 报价服务器的IP地址。

@@ -48,7 +48,7 @@ After filling in the above information, click the Bond button to complete the st
 Run node：
 
 ```
-./target/release/gladios-node --base-path data --name ocw_one --port 30333 --ws-port 9945 --rpc-port 9933 --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0' --warehouse http://api.aresprotocol.io/ --validator
+./target/release/gladios-node --base-path data --name ocw_one --port 30333 --ws-port 9945 --rpc-port 9933 --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0' --warehouse http://api.aresprotocol.io --validator
 ```
 
 Parameter: (required) --warehouse to specify the IP address of ares quotation server.
