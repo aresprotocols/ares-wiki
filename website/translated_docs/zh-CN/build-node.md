@@ -10,7 +10,7 @@ sidebar_label: Hardware environment
 |CPU|4~8核心|
 |内存|4~8G|
 |带宽|3M及以上，要求稳定|
-|操作系统|Ubuntu18.04（及以上）|
+|操作系统|Ubuntu20.04（及以上）|
 
 **云服务器**
 
@@ -26,7 +26,7 @@ sidebar_label: Hardware environment
 
 ![image](https://github.com/aresprotocols/documentation/blob/master/assets/img/2.png?raw=true) 
 
-选择“Ubuntu 18.04 x64”版本，选择满足上述硬件条件的云服务器。点击“Deploy Now”进行付款。
+选择“Ubuntu 20.04 x64”版本，选择满足上述硬件条件的云服务器。点击“Deploy Now”进行付款。
 
 第三步
 
