@@ -94,7 +94,7 @@ body {
 
 .navigationSlider .slidingNav ul li.siteNavGroupActive > a {
   background: none;
-  color: var(--silverColor);
+  color: white;
 }
 
 .navigationSlider .slidingNav ul li.siteNavGroupActive > a:hover {
@@ -121,7 +121,7 @@ body {
   }
 
   .navigationSlider .slidingNav ul li.siteNavGroupActive > a {
-    color: var(--silverColor);
+    color: white;
   }
 
   .navigationSlider .slidingNav ul li.siteNavGroupActive > a:hover {
@@ -489,6 +489,7 @@ body {
 
 .homeContainer {
   background: white;
+  padding-bottom: 40px;
 }
 
 /*
@@ -496,7 +497,7 @@ body {
    ========================================================================== */
 
 .homeNavContainer {
-  padding: 2rem 2rem 1rem;
+  padding: 3rem 2rem 1rem;
 }
 
 .homeNavContainerRow {
