@@ -168,17 +168,6 @@
         "title": "Warehouse接口文档",
         "sidebar_label": "Warehouse接口文档"
       },
-      
-
-      "verifyingRunValidatorNode": {
-        "title": "验证&运行节点程序",
-        "sidebar_label": "验证&运行节点程序"
-      },
-
-      "programInstallation": {
-        "title": "程序安装",
-        "sidebar_label": "程序安装"
-      },
       "nodeHardwareSpec": {
         "title": "节点硬件指南",
         "sidebar_label": "节点硬件指南"
@@ -264,6 +253,10 @@
       "runNode": {
         "title": "运行节点",
         "sidebar_label": "运行节点"
+      },
+      "runValidatorNode": {
+        "title": "运行验证节点",
+        "sidebar_label": "运行验证节点"
       }
     },
     "links": {
