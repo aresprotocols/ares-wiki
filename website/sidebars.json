@@ -29,7 +29,8 @@
         "ids": [
           "account",
           "claimTestCoins",
-          "transfer"
+          "transfer",
+          "setOnlineIdentity"
         ]
       },
       {

@@ -77,6 +77,10 @@
         "title": "Program Installation",
         "sidebar_label": "Program Installation"
       },
+      "setOnlineIdentity": {
+        "title": "Set Online Identity",
+        "sidebar_label": "Set Online Identity"
+      },
       "setUpVerifierNode": {
         "title": "Set Up the Verifier Node",
         "sidebar_label": "Set Up the Verifier Node"

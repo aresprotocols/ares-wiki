@@ -256,6 +256,10 @@
       "claimTestCoins": {
         "title": "领取测试币",
         "sidebar_label": "领取测试币"
+      },
+      "setOnlineIdentity": {
+        "title": "设置链上身份",
+        "sidebar_label": "设置链上身份"
       }
     },
     "links": {
