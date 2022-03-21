@@ -28,6 +28,7 @@
         "label": "Gladios",
         "ids": [
           "account",
+          "claimTestCoins",
           "transfer"
         ]
       },

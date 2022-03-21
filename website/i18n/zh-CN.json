@@ -252,6 +252,10 @@
       "validatorGuidance": {
         "title": "验证人指南",
         "sidebar_label": "验证人指南"
+      },
+      "claimTestCoins": {
+        "title": "领取测试币",
+        "sidebar_label": "领取测试币"
       }
     },
     "links": {

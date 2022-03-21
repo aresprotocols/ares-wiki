@@ -25,6 +25,10 @@
         "title": "Hardware environment",
         "sidebar_label": "Hardware environment"
       },
+      "claimTestCoins": {
+        "title": "Claim Test Coins",
+        "sidebar_label": "Claim Test Coins"
+      },
       "contributing": {
         "title": "Contributing",
         "sidebar_label": "Contributing"
