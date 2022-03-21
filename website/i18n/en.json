@@ -73,9 +73,9 @@
         "title": "Plan",
         "sidebar_label": "Plan"
       },
-      "programInstallation": {
-        "title": "Program Installation",
-        "sidebar_label": "Program Installation"
+      "runNode": {
+        "title": "Run Node",
+        "sidebar_label": "Run Node"
       },
       "setOnlineIdentity": {
         "title": "Set Online Identity",

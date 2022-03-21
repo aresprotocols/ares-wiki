@@ -260,6 +260,10 @@
       "setOnlineIdentity": {
         "title": "设置链上身份",
         "sidebar_label": "设置链上身份"
+      },
+      "runNode": {
+        "title": "运行节点",
+        "sidebar_label": "运行节点"
       }
     },
     "links": {
