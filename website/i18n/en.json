@@ -77,6 +77,10 @@
         "title": "Run Node",
         "sidebar_label": "Run Node"
       },
+      "runValidatorNodeQAndA": {
+        "title": "Run Validator Node Q&A",
+        "sidebar_label": "Run Validator Node Q&A"
+      },
       "runValidatorNode": {
         "title": "Run Validator Node",
         "sidebar_label": "Run Validator Node"

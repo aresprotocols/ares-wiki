@@ -257,6 +257,10 @@
       "runValidatorNode": {
         "title": "运行验证节点",
         "sidebar_label": "运行验证节点"
+      },
+      "runValidatorNodeQAndA": {
+        "title": "运行验证节点 Q&A",
+        "sidebar_label": "运行验证节点 Q&A"
       }
     },
     "links": {

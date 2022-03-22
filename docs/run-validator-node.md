@@ -91,7 +91,7 @@ Enter Staking page and click on the Account Actions tab; Select the account you 
 
 ![](assets/build/299.jpeg)
 
-![](assets/build/300.jpeg)
+![](assets/build/300.png)
 
 * Reward Commission Percentage
 

@@ -87,7 +87,7 @@ curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method":
 
 ![](assets/build/299.jpeg)
 
-![](assets/build/300.jpeg)
+![](assets/build/300.png)
 
 * 佣金比例(reward commission percentage)
 
