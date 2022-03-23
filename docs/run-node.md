@@ -48,7 +48,7 @@ Download address: gladios-node-linux-amd64–1.1.2–39df776
 
 1. executable gladios-node binary file
 ````
-wget -c https://github.com/aresprotocols/ares/releases/download/v1.1.2/gladios-node-linux-amd64-1.1.2-39df776
+wget -c https://github.com/aresprotocols/ares/releases/download/v1.2.1/gladios-node-linux-amd64-1.2.1-ba392b0
 ````
 
 ![](assets/build/288.png)
@@ -57,7 +57,7 @@ wget -c https://github.com/aresprotocols/ares/releases/download/v1.1.2/gladios-n
 2. Add execution permit
 
 ````
-chmod +777  gladios-node-linux-amd64-1.1.2-39df776
+chmod +777  gladios-node-linux-amd64-1.2.1-ba392b0
 ````
 
 ![](assets/build/289.png)
@@ -65,7 +65,7 @@ chmod +777  gladios-node-linux-amd64-1.1.2-39df776
 3. Execute Nodes
 
 ````
-./gladios-node-linux-amd64-1.1.2-39df776 --base-path data   --name your-name --chain gladios --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0'
+./gladios-node-linux-amd64-1.2.1-ba392b0 --base-path data   --name your-name --chain gladios --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0'
 ````
 
 Please type your name in (Ares_TelegramUsername_bsc) format. Please ensure the name validity for reward counting and distribution;
@@ -97,10 +97,10 @@ sudo apt install make clang pkg-config libssl-dev build-essential
 git clone https://github.com/aresprotocols/ares.git
 ````
 
-4. Switch to the Release1.0.1 branch
+4. Switch to the release1.2.1 branch
 
 ````
-git checkout release1.0.1
+git checkout release1.2.1
 ````
 
 5. Compile source code

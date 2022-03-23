@@ -92,18 +92,18 @@ docker exec -it ares_gladios bash -c "apt update && apt install -y curl && curl 
 1. 可执行的 gladios-node 二进制文件
 
 ````
-wget -c https://github.com/aresprotocols/ares/releases/download/v1.1.2/gladios-node-linux-amd64-1.1.2-39df776
+wget -c https://github.com/aresprotocols/ares/releases/download/v1.2.1/gladios-node-linux-amd64-1.2.1-ba392b0
 ````
 2. 添加执行权限
 
 ````
-chmod +777  gladios-node-linux-amd64-1.1.2-39df776
+chmod +777  gladios-node-linux-amd64-1.2.1-ba392b0
 ````
 
 3. 执行节点
 
 ````
-./gladios-node-linux-amd64-1.1.2-39df776 --base-path data --name Ares_amor_4UaAfJ7EX9UsCtnUkVsbAqshH3EDN4h6Co7t8P5jPRTvLjqh --chain gladios --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0' --warehouse http://api.aresprotocol.io  --validator
+./gladios-node-linux-amd64-1.2.1-ba392b0 --base-path data --name Ares_amor_4UaAfJ7EX9UsCtnUkVsbAqshH3EDN4h6Co7t8P5jPRTvLjqh --chain gladios --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0' --warehouse http://api.aresprotocol.io  --validator
 ````
 
 your-name请以Ares_TelegramUsername_bsc地址的方式填写。如：Ares_amor（节点tg群username）_4UaAfJ7EX9UsCtnUkVsbAqshH3EDN4h6Co7t8P5jPRTvLjqh（BSC地址）请如实填写，方便进行奖励计算与发放

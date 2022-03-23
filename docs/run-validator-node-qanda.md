@@ -92,18 +92,18 @@ The data sources for price quotation is blank, please verify the operation proce
 1. Executable gladios-node binary file
 
 ````
-wget -c https://github.com/aresprotocols/ares/releases/download/v1.1.2/gladios-node-linux-amd64-1.1.2-39df776
+wget -c https://github.com/aresprotocols/ares/releases/download/v1.2.1/gladios-node-linux-amd64-1.2.1-ba392b0
 ````
 2. Add execution permit
 
 ````
-chmod +777  gladios-node-linux-amd64-1.1.2-39df776
+chmod +777  gladios-node-linux-amd64-1.2.1-ba392b0
 ````
 
 3. Execute node
 
 ````
-./gladios-node-linux-amd64-1.1.2-39df776 --base-path data --name Ares_amor_4UaAfJ7EX9UsCtnUkVsbAqshH3EDN4h6Co7t8P5jPRTvLjqh --chain gladios --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0' --warehouse http://api.aresprotocol.io  --validator
+./gladios-node-linux-amd64-1.2.1-ba392b0 --base-path data --name Ares_amor_4UaAfJ7EX9UsCtnUkVsbAqshH3EDN4h6Co7t8P5jPRTvLjqh --chain gladios --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0' --warehouse http://api.aresprotocol.io  --validator
 ````
 
 Write your name in a format of (Ares_TelegramUsername_bsc). Please fill out with validity, to ensure the counting of rewards and distribution.

@@ -43,11 +43,11 @@ docker rm ares_gladios
 #### 方法二：下载节点执行程序
 下载节点的二进制执行程序：
 
-下载地址：gladios-node-linux-amd64-1.1.2-39df776
+下载地址：gladios-node-linux-amd64-1.2.1-ba392b0
 
 1. 可执行的 gladios-node 二进制文件
 ````
-wget -c https://github.com/aresprotocols/ares/releases/download/v1.1.2/gladios-node-linux-amd64-1.1.2-39df776
+wget -c https://github.com/aresprotocols/ares/releases/download/v1.2.1/gladios-node-linux-amd64-1.2.1-ba392b0
 ````
 
 ![](assets/build/288.png)
@@ -56,7 +56,7 @@ wget -c https://github.com/aresprotocols/ares/releases/download/v1.1.2/gladios-n
 2. 添加执行权限
 
 ````
-chmod +777  gladios-node-linux-amd64-1.1.2-39df776
+chmod +777  gladios-node-linux-amd64-1.2.1-ba392b0
 ````
 
 ![](assets/build/289.png)
@@ -64,7 +64,7 @@ chmod +777  gladios-node-linux-amd64-1.1.2-39df776
 3. 执行节点
 
 ````
-./gladios-node-linux-amd64-1.1.2-39df776 --base-path data   --name your-name --chain gladios --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0'
+./gladios-node-linux-amd64-1.2.1-ba392b0 --base-path data   --name your-name --chain gladios --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0'
 ````
 
 your-name请以Ares_TelegramUsername_bsc地址的方式填写。请如实填写，方便进行奖励计算与发放。
@@ -96,10 +96,10 @@ sudo apt install make clang pkg-config libssl-dev build-essential
 git clone https://github.com/aresprotocols/ares.git
 ````
 
-4. 切换到release1.0.1分支
+4. 切换到release1.2.1分支
 
 ````
-git checkout release1.0.1
+git checkout release1.2.1
 ````
 
 5. 编译源码
