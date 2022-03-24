@@ -51,7 +51,12 @@ parameters:(compulsory) — warehouse specifies IP address of ares price quotati
 
 parameters:(compulsory) — validator specifies running a validator node.
 
-#### Second step: Set Session Keys
+#### Second step: Wait for block synchronization to finish
+
+Please wait patiently for the block to finish, so that the runtime is at the latest version. Avoid getting session keys error
+
+
+#### Step 3: Set Session Keys
 
 If use docker:
 ````
@@ -83,7 +88,7 @@ Enter Staking page and click on the Account Actions tab; Select the account you 
 
 ![](assets/build/298.jpeg)
 
-#### Step 3: Become the validator
+#### Step 4: Become the validator
 
 Open https://js.aresprotocol.io/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io#/explorer
 

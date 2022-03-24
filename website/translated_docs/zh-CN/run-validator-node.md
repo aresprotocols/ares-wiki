@@ -47,7 +47,11 @@ docker run -d --name ares_gladios aresprotocollab/ares_gladios:latest gladios-no
 
 参数：（必选） --validator 用来表示启动一个验证人节点。
 
-#### 第二步：设置 Session Keys
+#### 第二步：等待区块同步完成
+
+请耐心等待区块完成，让runtime是在最新的版本。避免获取Session keys 出现错误
+
+#### 第三步：设置 Session Keys
 
 使用Docker:
 ````
@@ -79,7 +83,7 @@ curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method":
 
 ![](assets/build/298.jpeg)
 
-#### 第三步：成为验证人
+#### 第四步：成为验证人
 
 打开 https://js.aresprotocol.io/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io#/explorer
 
