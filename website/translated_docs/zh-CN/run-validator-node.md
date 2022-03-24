@@ -40,7 +40,7 @@ docker run -d --name ares_gladios aresprotocollab/ares_gladios:latest gladios-no
 
 使用CLI:
 ````
-./target/release/gladios-node --base-path data --name your-name  --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0' --warehouse http://api.aresprotocol.io  --validator
+./gladios-node-linux-amd64-1.2.1-ba392b0 --base-path data --name your-name --chain gladios --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0' --warehouse http://api.aresprotocol.io  --validator
 ````
 
 参数：（必选） --warehouse 用来指定 ares 报价服务器的IP地址。
