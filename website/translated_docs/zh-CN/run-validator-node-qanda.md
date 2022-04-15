@@ -179,6 +179,31 @@ curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method":
 则报价数据源为空，请检查操作步骤及时调整。
 
 
+## 查询 HostKey
+### 使用Docker
+
+````
+docker exec -it ares_gladios bash -c "apt update && apt install -y curl && curl -X POST http://localhost:9933 -H '{"id":1, "jsonrpc":"2.0", "method": "offchain_localStorageGet", "params": ["PERSISTENT", "0x6172652d6f63773a3a6c6f63616c5f686f73745f6b6579"]}'"
+````
+输出示例：
+
+````
+{"jsonrpc":"2.0","result":"0xf9c395a5","id":1}
+````
+
+### 使用CLI
+
+````
+curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method": "offchain_localStorageGet", "params": ["PERSISTENT", "0x6172652d6f63773a3a6c6f63616c5f686f73745f6b6579"]}' http://localhost:9933 
+````
+
+输出示例：
+
+````
+{"jsonrpc":"2.0","result":"0xf9c395a5","id":1}
+````
+
+
 
 ## Q&A
 

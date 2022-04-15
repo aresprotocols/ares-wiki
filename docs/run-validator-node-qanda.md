@@ -177,6 +177,30 @@ If the reslt is: null
 The data sources for price quotation is blank, please verify the operation process and make adjustment。
 
 
+## Query HostKey
+### Use Docker
+
+````
+docker exec -it ares_gladios bash -c "apt update && apt install -y curl && curl -X POST http://localhost:9933 -H '{"id":1, "jsonrpc":"2.0", "method": "offchain_localStorageGet", "params": ["PERSISTENT", "0x6172652d6f63773a3a6c6f63616c5f686f73745f6b6579"]}'"
+````
+Output Example
+
+````
+{"jsonrpc":"2.0","result":"0xf9c395a5","id":1}
+````
+
+### Use CLI
+
+````
+curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method": "offchain_localStorageGet", "params": ["PERSISTENT", "0x6172652d6f63773a3a6c6f63616c5f686f73745f6b6579"]}' http://localhost:9933 
+````
+
+Output Example
+
+````
+{"jsonrpc":"2.0","result":"0xf9c395a5","id":1}
+````
+
 ## Q&A
 
 Q: If I joined to be a candidate for validator nodes, how long I should be in the wait list?
