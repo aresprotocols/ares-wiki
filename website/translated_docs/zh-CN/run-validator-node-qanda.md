@@ -7,11 +7,8 @@ sidebar_label: Run Validator Node Q&A
 我们收到反馈在接入的过程中，节点也会碰到无法调取数据源、设置Session Key出现问题等情况。从而导致节点一直在等候区，无法通过审核。下面将系统地为你梳理使用Docker和CLI，分别如何运行节点、设置Session Key、以及自查本地的Session Key是否存在、数据源配置是否出现问题。
 
 
-## 重点步骤提醒
-
-### 方式一：使用Docker
-
-#### Docker运行节点程序
+## 运行节点程序
+### 使用Docker
 
 ````
 docker run -d --name ares_gladios aresprotocollab/ares_gladios:latest gladios-node --name Ares_amor_4UaAfJ7EX9UsCtnUkVsbAqshH3EDN4h6Co7t8P5jPRTvLjqh --chain gladios --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0'  --warehouse http://api.aresprotocol.io  --validator
@@ -24,70 +21,7 @@ your-name请以Ares_TelegramUsername_bsc地址的方式填写。如：Ares_amor�
 Ares_amor(username in telegram node miner group)_4UaAfJ7EX9UsCtnUkVsbAqshH3EDN4h6Co7t8P5jPRTvLjqh(BSC address)
 ````
 
-#### Docker设置 Session Key
-
-````
-docker exec -it ares_gladios bash -c "apt update && apt install -y curl && curl -X POST http://localhost:9933 -H 'Content-Type: application/json' -d '{\"id\":1, \"jsonrpc\":\"2.0\", \"method\": \"author_rotateKeys\"}'"
-````
-
-输出
-
-````
-{“jsonrpc”:”2.0",”result”:”0x74ed2791ab818797bc4a2caa78b01180cc52a5e95c8cd5286d2642b671c3986d00a93e91eaedd838f275f4c49f1c9a9c2525f7f34577c556f02bc357eddaa4dbf28ab5102be4fa22b6b8115765d290de0c6c91f37a265acecdf3782746bff32b”,”id”:1}
-````
-
-生成的结果用于在gladios上设置Session Key。
-
-#### Docker查询Session key本地是否存在
-
-在aresscan上找到设置session key的交易，例如：
-
-https://aresscan.aresprotocol.io/ares/transaction/0x95795ea49e908e0b8c8cf88a3e56f91ede63ac0795ed97b45eb345eeae833c24
-
-![](assets/build/301.png)
-
-session是由aura,grandpa,ares 3种key组成，如果搜索不到相应值，可以找官方技术人员帮助。
-
-如图：
-`0x88f2c7b89e7dd7fa6fe29569c320a4fefc0ccc7abf630b24b133be80ae37a31f+667c44c75e42497e9a61752d9ec1c4277fcce68fb4336da37d9bb88c44a06295+50032c6fc2fde02d4374822c9b01e99af7b7891aaddcbd2bc895fb223305b725`
-
-grandpa和ares需要把前面的0x去掉，既是：
-`0x88f2c7b89e7dd7fa6fe29569c320a4fefc0ccc7abf630b24b133be80ae37a31f667c44c75e42497e9a61752d9ec1c4277fcce68fb4336da37d9bb88c44a0629550032c6fc2fde02d4374822c9b01e99af7b7891aaddcbd2bc895fb223305b725`
-
-````
-docker exec -it ares_gladios bash -c "apt update && apt install -y curl && curl -X POST http://localhost:9933 -H 'Content-Type: application/json' -d '{\"id\":1, \"jsonrpc\":\"2.0\", \"method\": \"author_hasSessionKeys\", \"params\": [\"0x88f2c7b89e7dd7fa6fe29569c320a4fefc0ccc7abf630b24b133be80ae37a31f667c44c75e42497e9a61752d9ec1c4277fcce68fb4336da37d9bb88c44a0629550032c6fc2fde02d4374822c9b01e99af7b7891aaddcbd2bc895fb223305b725\"]}'"
-````
-
-查询结果如下，代表配置正确
-
-{“jsonrpc”:”2.0",”result”:true,”id”:1}
-
-#### 使用Docker检查数据源配置情况
-
-````
-docker exec -it ares_gladios bash -c "apt update && apt install -y curl && curl -X POST http://localhost:9933 -H 'Content-Type: application/json' -d '{\"id\":1, \"jsonrpc\":\"2.0\", \"method\": \"offchain_localStorageGet\", \"params\": [\"PERSISTENT\",\"0x6172652d6f63773a3a70726963655f726571756573745f646f6d61696e\"]}'"
-````
-
-输出
-
-````
-{“jsonrpc”:”2.0",”result”:”0x68687474703a2f2f6170692e6172657370726f746f636f6c2e696f”,”id”:1}
-````
-
-如果结果为：
-
-0x68687474703a2f2f6170692e6172657370726f746f636f6c2e696f
-
-则为官方数据源并且运行准确（若是自行搭建，也会出现相应字符串，不会报错。）
-
-如果结果为：null
-
-则报价数据源为空，请检查操作步骤及时调整。
-
-
-### 方式二：使用CLI
-
-#### CLI运行节点程序
+### 使用CLI
 
 1. 可执行的 gladios-node 二进制文件
 
@@ -113,7 +47,25 @@ your-name请以Ares_TelegramUsername_bsc地址的方式填写。如：Ares_amor�
 Ares_amor(username in telegram node miner group）_4UaAfJ7EX9UsCtnUkVsbAqshH3EDN4h6Co7t8P5jPRTvLjqh(BSC address)
 ````
 
-#### CLI设置 Session Key
+## 设置 Session Key
+
+### 使用Docker
+
+````
+docker exec -it ares_gladios bash -c "apt update && apt install -y curl && curl -X POST http://localhost:9933 -H 'Content-Type: application/json' -d '{\"id\":1, \"jsonrpc\":\"2.0\", \"method\": \"author_rotateKeys\"}'"
+````
+
+输出
+
+````
+{“jsonrpc”:”2.0",”result”:”0x74ed2791ab818797bc4a2caa78b01180cc52a5e95c8cd5286d2642b671c3986d00a93e91eaedd838f275f4c49f1c9a9c2525f7f34577c556f02bc357eddaa4dbf28ab5102be4fa22b6b8115765d290de0c6c91f37a265acecdf3782746bff32b”,”id”:1}
+````
+
+生成的结果用于在gladios上设置Session Key。
+
+
+### 使用CLI
+
 ````
 curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method": "author_rotateKeys", "params":[]}' http://localhost:9933
 ````
@@ -126,7 +78,35 @@ curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method":
 
 生成的结果用于在gladios上设置Session Key。
 
-#### CLI查询Session key本地是否存在
+
+## 查询Session key本地是否存在
+
+### 使用Docker
+
+在aresscan上找到设置session key的交易，例如：
+
+https://aresscan.aresprotocol.io/ares/transaction/0x95795ea49e908e0b8c8cf88a3e56f91ede63ac0795ed97b45eb345eeae833c24
+
+![](assets/build/301.png)
+
+session是由aura,grandpa,ares 3种key组成，如果搜索不到相应值，可以找官方技术人员帮助。
+
+如图：
+`0x88f2c7b89e7dd7fa6fe29569c320a4fefc0ccc7abf630b24b133be80ae37a31f+667c44c75e42497e9a61752d9ec1c4277fcce68fb4336da37d9bb88c44a06295+50032c6fc2fde02d4374822c9b01e99af7b7891aaddcbd2bc895fb223305b725`
+
+grandpa和ares需要把前面的0x去掉，既是：
+`0x88f2c7b89e7dd7fa6fe29569c320a4fefc0ccc7abf630b24b133be80ae37a31f667c44c75e42497e9a61752d9ec1c4277fcce68fb4336da37d9bb88c44a0629550032c6fc2fde02d4374822c9b01e99af7b7891aaddcbd2bc895fb223305b725`
+
+````
+docker exec -it ares_gladios bash -c "apt update && apt install -y curl && curl -X POST http://localhost:9933 -H 'Content-Type: application/json' -d '{\"id\":1, \"jsonrpc\":\"2.0\", \"method\": \"author_hasSessionKeys\", \"params\": [\"0x88f2c7b89e7dd7fa6fe29569c320a4fefc0ccc7abf630b24b133be80ae37a31f667c44c75e42497e9a61752d9ec1c4277fcce68fb4336da37d9bb88c44a0629550032c6fc2fde02d4374822c9b01e99af7b7891aaddcbd2bc895fb223305b725\"]}'"
+````
+
+查询结果如下，代表配置正确
+
+{“jsonrpc”:”2.0",”result”:true,”id”:1}
+
+
+### 使用CLI
 
 在aresscan上找到设置session key的交易，例如：
 
@@ -152,7 +132,33 @@ curl -H “Content-Type: application/json” -d ‘{“id”:1, “jsonrpc”:�
 {“jsonrpc”:”2.0",”result”:true,”id”:1}
 ````
 
-#### 使用CLI检查数据源配置情况
+
+## 检查数据源配置情况
+
+### 使用Docker
+
+````
+docker exec -it ares_gladios bash -c "apt update && apt install -y curl && curl -X POST http://localhost:9933 -H 'Content-Type: application/json' -d '{\"id\":1, \"jsonrpc\":\"2.0\", \"method\": \"offchain_localStorageGet\", \"params\": [\"PERSISTENT\",\"0x6172652d6f63773a3a70726963655f726571756573745f646f6d61696e\"]}'"
+````
+
+输出
+
+````
+{“jsonrpc”:”2.0",”result”:”0x68687474703a2f2f6170692e6172657370726f746f636f6c2e696f”,”id”:1}
+````
+
+如果结果为：
+
+0x68687474703a2f2f6170692e6172657370726f746f636f6c2e696f
+
+则为官方数据源并且运行准确（若是自行搭建，也会出现相应字符串，不会报错。）
+
+如果结果为：null
+
+则报价数据源为空，请检查操作步骤及时调整。
+
+
+### 使用CLI
 
 ````
 curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method": "offchain_localStorageGet", "params":["PERSISTENT","0x6172652d6f63773a3a70726963655f726571756573745f646f6d61696e"]}' http://localhost:9933
@@ -171,6 +177,7 @@ curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method":
 如果结果为：null
 
 则报价数据源为空，请检查操作步骤及时调整。
+
 
 
 ## Q&A
