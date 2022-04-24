@@ -49,7 +49,7 @@ http://iliad.aresprotocol.io/
 
 方法二：打开BscScan，在底部点击带有小狐狸头像的“Add BSC Network”，在跳转到的钱包页面点击“切换网络”。
 
-BscScan：https://bscscan.com/address/0xf9752A6E8A5E5f5e6EB3aBe7d8492460fb319f0.
+BscScan：https://bscscan.com/address/0xf9752A6E8A5E5f5e6EB3aB4e7d8492460fb319f0.
 
 ![](assets/build/201.png)
 
