@@ -50,7 +50,7 @@ If you cannot find the MAINNET option, you may use Method B.
 
 Method B: Open the BscScan, click the fox image “Add BSC Network”, after the page hopped, click the shown button “Switch network”.
 
-ARES BscScan：https://bscscan.com/address/0xf9752A6E8A5E5f5e6EB3aBe7d8492460fb319f02. 
+ARES BscScan：https://bscscan.com/address/0xf9752A6E8A5E5f5e6EB3aB4e7d8492460fb319f0 
 
 ![](assets/build/243.png)
 
