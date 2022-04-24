@@ -57,7 +57,7 @@ BscScan：https://bscscan.com/address/0xf9752A6E8A5E5f5e6EB3aBe7d8492460fb319f02
 
 2.打开BscScan,向 Metamask 添加 Ares 代币
 
-ARES BSC合约地址：0xf9752A6E8A5E5f5e6EB3aB4e7d8492460fb319f03
+ARES BSC合约地址：0xf9752A6E8A5E5f5e6EB3aB4e7d8492460fb319f0
 
 ![](assets/build/203.png)
 
