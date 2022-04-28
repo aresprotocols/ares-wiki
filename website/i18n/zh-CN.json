@@ -261,6 +261,10 @@
       "runValidatorNodeQAndA": {
         "title": "运行验证节点 Q&A",
         "sidebar_label": "运行验证节点 Q&A"
+      },
+      "getPrice": {
+        "title": "获取价格",
+        "sidebar_label": "获取价格"
       }
     },
     "links": {

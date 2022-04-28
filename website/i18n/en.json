@@ -53,6 +53,10 @@
         "title": "Economic Model",
         "sidebar_label": "Economic Model"
       },
+      "getPrice": {
+        "title": "Get Price",
+        "sidebar_label": "Get Price"
+      },
       "IliadStaking": {
         "title": "Iliad",
         "sidebar_label": "Iliad Stake Mining"
