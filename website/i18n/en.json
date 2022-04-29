@@ -57,6 +57,10 @@
         "title": "Get Price",
         "sidebar_label": "Get Price"
       },
+      "getSymbolFraction": {
+        "title": "Get Symbol Fraction",
+        "sidebar_label": "Get Symbol Fraction"
+      },
       "IliadStaking": {
         "title": "Iliad",
         "sidebar_label": "Iliad Stake Mining"

@@ -265,6 +265,10 @@
       "getPrice": {
         "title": "获取价格",
         "sidebar_label": "获取价格"
+      },
+      "getSymbolFraction": {
+        "title": "获取交易对",
+        "sidebar_label": "获取交易对"
       }
     },
     "links": {

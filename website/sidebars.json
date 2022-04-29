@@ -40,7 +40,8 @@
           "Dot"
         ]
       },
-      "getPrice"
+      "getPrice",
+      "getSymbolFraction"
     ],
     "Build": [
       {

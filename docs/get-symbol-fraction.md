@@ -4,11 +4,11 @@ title: Get Symbol Fraction
 sidebar_label: Get Symbol Fraction
 ---
 
-## 获取链上支持的交易对列表
-* 通过获取存储结构`aresOracle.symbolFraction`，来获取链上具体支持那些交易对，后期可以通过这些交易对进行[查询](getPrice)。
+## Get the list of supported symbol fraction on the chain
+* By getting the storage structure `aresOracle.symbolFraction`, we can get the specific symbol fraction supported in the chain, and later we can [query](getPrice) by these symbol fraction.
 
 ````javascript
-/// 代码参考
+/// Example
 
 import {ApiPromise, Keyring, WsProvider} from "@polkadot/api";
 import { cryptoWaitReady } from '@polkadot/util-crypto';
@@ -30,7 +30,7 @@ async function init() {
 }
 
 /**
- * 获取支持的交易对
+ * Get supported symbol fraction
  */
 async function getSymbolFraction(symbol) {
     if(polkaAPI) {
@@ -46,7 +46,7 @@ await init()
 getSymbolFraction();
 
 ````
-* 调用结果
+* Call Result
 ```shell
 Get symbol list:
 Symbol = stx-usdt
