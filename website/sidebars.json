@@ -55,7 +55,8 @@
         "type": "subcategory",
         "label": "Gladios Guide",
         "ids": [
-          "setUpVerifierNode"
+          "setUpVerifierNode",
+          "quotationNodeRpcTools"
         ]
       }
     ],

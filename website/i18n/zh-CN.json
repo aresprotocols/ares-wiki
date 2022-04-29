@@ -269,6 +269,10 @@
       "getSymbolFraction": {
         "title": "获取交易对",
         "sidebar_label": "获取交易对"
+      },
+      "quotationNodeRpcTools": {
+        "title": "报价节点RPC工具",
+        "sidebar_label": "报价节点RPC工具"
       }
     },
     "links": {

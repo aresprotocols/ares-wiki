@@ -81,6 +81,10 @@
         "title": "Plan",
         "sidebar_label": "Plan"
       },
+      "quotationNodeRpcTools": {
+        "title": "Quotation node rpc tools",
+        "sidebar_label": "Quotation node rpc tools"
+      },
       "runNode": {
         "title": "Run Node",
         "sidebar_label": "Run Node"
