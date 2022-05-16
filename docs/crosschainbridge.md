@@ -8,13 +8,11 @@ Trojan bridge was officially launched, which enables the transferring of Ares fr
 
 Notes:
 
-1.Currently only supports transferring Ares from ETH to BSC, do not support transferring Ares from BSC to ETH.
+1.The Ares bridge operation is featured on the Trojan page; after acquiring Ares on BSC, please don’t forget to change to the Iliad page to join stake mining.
 
-2.The Ares bridge operation is featured on the Trojan page; after acquiring Ares on BSC, please don’t forget to change to the Iliad page to join stake mining.
+2.The process demands 10 Ares (bridge fee) and certain ETH; please ensure you have adequate assets in your wallet.
 
-3.The process demands 10 Ares (bridge fee) and certain ETH; please ensure you have adequate assets in your wallet.
-
-4.Currently, the cross-chain asset bridge may occur slight delay, be patient, don’t worry. If there is a long time delay, feel free to contact admins, they will solve your problem.
+3.Currently, the cross-chain asset bridge may occur slight delay, be patient, don’t worry. If there is a long time delay, feel free to contact admins, they will solve your problem.
 
 ### Operating Process:
 
