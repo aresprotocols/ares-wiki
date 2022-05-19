@@ -13,6 +13,14 @@
         "title": "Glossary",
         "sidebar_label": "Glossary"
       },
+      "aresOracleProviderSupport": {
+        "title": "Ares Oracle Provider Support",
+        "sidebar_label": "Ares Oracle Provider Support"
+      },
+      "aresOracle": {
+        "title": "Ares Oracle",
+        "sidebar_label": "Ares Oracle"
+      },
       "aresOverview": {
         "title": "Overview",
         "sidebar_label": "Overview"
@@ -77,6 +85,10 @@
         "title": "Liquidity mining",
         "sidebar_label": "Liquidity mining"
       },
+      "oracleFinance": {
+        "title": "Oracle Finance",
+        "sidebar_label": "Oracle Finance"
+      },
       "plan": {
         "title": "Plan",
         "sidebar_label": "Plan"
@@ -104,6 +116,10 @@
       "setUpVerifierNode": {
         "title": "Set Up the Verifier Node",
         "sidebar_label": "Set Up the Verifier Node"
+      },
+      "stakingExtend": {
+        "title": "Staking Extend",
+        "sidebar_label": "Staking Extend"
       },
       "StarOracleService": {
         "title": "Start the Oracle Service",

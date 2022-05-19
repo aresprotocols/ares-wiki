@@ -273,6 +273,22 @@
       "quotationNodeRpcTools": {
         "title": "报价节点RPC工具",
         "sidebar_label": "报价节点RPC工具"
+      },
+      "aresOracle": {
+        "title": "Ares预言机",
+        "sidebar_label": "Ares预言机"
+      },
+      "aresOracleProviderSupport": {
+        "title": "预言机提供的支持",
+        "sidebar_label": "预言机提供的支持"
+      },
+      "oracleFinance": {
+        "title": "预言机经济",
+        "sidebar_label": "预言机经济"
+      },
+      "stakingExtend": {
+        "title": "抵押扩展",
+        "sidebar_label": "抵押扩展"
       }
     },
     "links": {

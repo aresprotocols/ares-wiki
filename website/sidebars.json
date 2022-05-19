@@ -34,6 +34,16 @@
       },
       {
         "type": "subcategory",
+        "label": "Oracle",
+        "ids": [
+          "aresOracle",
+          "aresOracleProviderSupport",
+          "oracleFinance",
+          "stakingExtend"
+        ]
+      },
+      {
+        "type": "subcategory",
         "label": "Slot Auction",
         "ids": [
           "Kusama",
