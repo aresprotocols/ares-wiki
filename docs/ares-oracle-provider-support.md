@@ -19,9 +19,8 @@ fn get_pre_task_by_authority_set(
     auth_list: Vec<AuthorityId>
 ) -> Option<(AccountId, AuthorityId, BlockNumber)>
 ```
-Get the pre-check information related to a certain ares-authority collection, the specific matching authority-id, account-id, and the block submitted by the task.
 
-Precheck tasks that only match the first ares-authority
+Get pre-check task information associated with a certain `ares-authority` collection.
 
 ### check_and_clean_obsolete_task
 ```rust
