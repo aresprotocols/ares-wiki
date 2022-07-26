@@ -159,7 +159,8 @@
       "WhitePaper": "WhitePaper",
       "Learn": "Learn",
       "Build": "Build",
-      "Node": "Node"
+      "Node": "Node",
+      "PreNode": "PreNode"
     }
   },
   "pages-strings": {
