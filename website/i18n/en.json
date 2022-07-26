@@ -85,6 +85,10 @@
         "title": "Liquidity mining",
         "sidebar_label": "Liquidity mining"
       },
+      "odysseyCrossChainBridge": {
+        "title": "Odyssey Cross-Chain Bridge",
+        "sidebar_label": "Odyssey Cross-Chain Bridge"
+      },
       "oracleFinance": {
         "title": "Oracle Finance",
         "sidebar_label": "Oracle Finance"

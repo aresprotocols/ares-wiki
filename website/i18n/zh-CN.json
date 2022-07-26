@@ -289,6 +289,10 @@
       "stakingExtend": {
         "title": "抵押扩展",
         "sidebar_label": "抵押扩展"
+      },
+      "odysseyCrossChainBridge": {
+        "title": "Odyssey 跨链桥",
+        "sidebar_label": "Odyssey 跨链桥"
       }
     },
     "links": {
