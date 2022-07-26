@@ -6,8 +6,6 @@ sidebar_label: Odyssey Cross-Chain Bridge
 
 Ares Odyssey是一个真实的经济系统，参与者可以1:1映射 ARES-ERC20或ARES-BEP20资产进入Odyssey进行质押、提名或体验链上数据请求功能。其中获得的收益将保留在Odyssey网络中，用户可以通过Odyssey - ETH或是Odyssey - BSC跨链桥，1:1映射为 ARES-ERC20或ARES-BEP20资产进行提取。
 
-Ares Odyssey主网预备网络的的代币桥接功能于7月22日启用。这使得ARES代币能够无缝跨链至ERC20、BEP20、Ares Odyssey主网预备网络及主网之间，可以一站式体验项目更多的功能。
-
 ## 操作步骤
 
 **ETH -Odyssey 网络跨链桥**

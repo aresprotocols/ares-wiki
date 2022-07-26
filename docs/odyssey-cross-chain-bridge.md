@@ -7,8 +7,6 @@ sidebar_label: Odyssey Cross-Chain Bridge
 
 Ares Odyssey is a real economic system where participants can map 1:1 ARES-ERC20 or ARES-BEP20 assets into Odyssey for staking, nominating or experiencing on-chain data request functionality. The proceeds earned therein will remain in the Odyssey network and can be withdrawn by users via the Odyssey — ETH or Odyssey — BSC cross-chain bridges, mapped 1:1 to ARES-ERC20 or ARES-BEP20 assets.
 
-The token bridging feature of the Ares Odyssey main net prep network was enabled on July 22nd. This allows ARES tokens to seamlessly cross-chain to and from ERC20, BEP20, the Ares Odyssey main net prep network and the main net, allowing for a one-stop experience to more features of the project.
-
 ## Operation steps
 
 **ETH — Odyssey Network Cross-Chain Bridge**
