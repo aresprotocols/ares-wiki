@@ -1,7 +1,7 @@
 ---
 id: odysseyCreateAccount
-title: Odyssey Create Account
-sidebar_label: Odyssey Create Account
+title: Account
+sidebar_label: Account
 ---
 
 ## 方法一：Polkadot{.Js}钱包登录账户

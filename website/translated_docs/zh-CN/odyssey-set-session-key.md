@@ -1,7 +1,7 @@
 ---
 id: odysseySetSessionKey
-title: Odyssey Set Session Key
-sidebar_label: Odyssey Set Session Key
+title: Set Session Keys
+sidebar_label: Set Session Keys
 ---
 
 ## 设置Session Keys （二进制启动模式）

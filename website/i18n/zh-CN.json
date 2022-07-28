@@ -282,16 +282,16 @@
         "sidebar_label": "抵押扩展"
       },
       "odysseyCrossChainBridge": {
-        "title": "Odyssey 跨链桥",
-        "sidebar_label": "Odyssey 跨链桥"
+        "title": "映射ERC20/BEP20 ARES代币",
+        "sidebar_label": "映射ERC20/BEP20 ARES代币"
       },
       "odysseyCreateAccount": {
-        "title": "创建Odyssey账户",
-        "sidebar_label": "创建Odyssey账户"
+        "title": "如何创建Odyssey账户",
+        "sidebar_label": "如何创建Odyssey账户"
       },
       "odysseyBindStashAndController": {
-        "title": "绑定 stash & controller账户",
-        "sidebar_label": "绑定 stash & controller账户"
+        "title": "如何绑定 stash & controller账户",
+        "sidebar_label": "如何绑定 stash & controller账户"
       },
       "odysseyUpgradeOrDeployNode": {
         "title": "验证人节点程序升级/部署",
@@ -325,7 +325,7 @@
       "Supplementary": "基础",
       "Gladios Guide": "Gladios指南",
       "PreNode": "预备节点",
-      "createOdysseyAccountAndStake": "创建Odyssey账户&质押"
+      "Create Odyssey Account & Staking": "创建Odyssey账户&质押"
     }
   },
   "pages-strings": {

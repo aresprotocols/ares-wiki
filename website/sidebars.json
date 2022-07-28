@@ -82,7 +82,7 @@
     "PreNode":[
       {
         "type": "subcategory",
-        "label": "createOdysseyAccountAndStake",
+        "label": "Create Odyssey Account & Staking",
         "ids": [
           "odysseyCreateAccount",
           "odysseyCrossChainBridge",

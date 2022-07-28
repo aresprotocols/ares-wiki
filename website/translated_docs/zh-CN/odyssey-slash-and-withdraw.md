@@ -1,7 +1,7 @@
 ---
 id: odysseySlashAndWithdraw
-title: Odyssey Slash And Withdraw
-sidebar_label: Odyssey Slash And Withdraw
+title: Punishment verification & Extraction of assets
+sidebar_label: Punishment verification & Extraction of assets
 ---
 
 ## 惩罚校验
@@ -33,9 +33,13 @@ sidebar_label: Odyssey Slash And Withdraw
 
 ### Odyssey -  BSC 网络跨链桥
 
-1. 连接你的钱包  打开质押界面：http://iliad.aresprotocol.io/
+1. 连接你的钱包  
+
+打开质押界面：http://iliad.aresprotocol.io/
    ![](assets/build/328.png)
-2. 点击“Ares桥”打开从Odyssey到BSC网络的ARES资产跨链桥。在资产跨链桥功能界面，系统将自动识别您的钱包的ARES余额。填写您想要迁移BSC网络上的金额。确认“BSC网络上将会收到的ARES金额”、“跨链桥费用”及您BSC账户是否准确。如果准确无误，请点击“确认”。
+2. 点击“Ares桥”
+
+打开从Odyssey到BSC网络的ARES资产跨链桥。在资产跨链桥功能界面，系统将自动识别您的钱包的ARES余额。填写您想要迁移BSC网络上的金额。确认“BSC网络上将会收到的ARES金额”、“跨链桥费用”及您BSC账户是否准确。如果准确无误，请点击“确认”。
    ![](assets/build/329.png)
 
 ⚠️跨链需要500 ARES桥费，请确保您提取的资产多余桥费，否则无法成功提取。

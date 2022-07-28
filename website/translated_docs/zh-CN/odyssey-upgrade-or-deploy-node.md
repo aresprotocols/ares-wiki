@@ -1,10 +1,15 @@
 ---
 id: odysseyUpgradeOrDeployNode
-title: Upgrade Or Deploy Odyssey Node
-sidebar_label: Upgrade Or Deploy Odyssey Node
+title: Validator node program upgrade/deployment
+sidebar_label: Validator node program upgrade/deployment
 ---
 
-## 方法一：下载节点执行程序
+当您完成质押后，需要进行验证人节点升级/部署。这里需要提醒参与过测试的验证人节点，目前节点程序版本已升级与旧版本不兼容，需要清除历史数据。
+
+
+## 节点程序更新/部署
+
+### 方法一：下载节点执行程序
 
 如果使用的节点程序，请使用如下命令更新
 
@@ -35,7 +40,7 @@ chmod 777 ares-node-linux-amd64-1.4.1-5d36ce5
 * --validator参数（必选）： 用来表示启动一个验证人节点。
 
 
-## 方法二：运行Docker节点程序
+### 方法二：运行Docker节点程序
 
 
 1. 停止Docker先前程序及数据

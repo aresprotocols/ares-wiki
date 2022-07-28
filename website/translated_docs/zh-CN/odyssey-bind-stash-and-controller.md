@@ -1,7 +1,7 @@
 ---
 id: odysseyBindStashAndController
-title: Odyssey Bind Stash And Controller
-sidebar_label: Odyssey Bind Stash And Controller
+title: How to bond stash & controller account
+sidebar_label: How to bond stash & controller account
 ---
 
 ## 质押

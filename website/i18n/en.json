@@ -86,32 +86,32 @@
         "sidebar_label": "Liquidity mining"
       },
       "odysseyBindStashAndController": {
-        "title": "Odyssey Bind Stash And Controller",
-        "sidebar_label": "Odyssey Bind Stash And Controller"
+        "title": "How to bond stash & controller account",
+        "sidebar_label": "How to bond stash & controller account"
       },
       "odysseyCreateAccount": {
-        "title": "Odyssey Create Account",
-        "sidebar_label": "Odyssey Create Account"
+        "title": "Account",
+        "sidebar_label": "Account"
       },
       "odysseyCrossChainBridge": {
-        "title": "Odyssey Cross-Chain Bridge",
-        "sidebar_label": "Odyssey Cross-Chain Bridge"
+        "title": "Map ERC20/BEP20 ARES",
+        "sidebar_label": "Map ERC20/BEP20 ARES"
       },
       "odysseySetSessionKey": {
-        "title": "Odyssey Set Session Key",
-        "sidebar_label": "Odyssey Set Session Key"
+        "title": "Set Session Keys",
+        "sidebar_label": "Set Session Keys"
       },
       "odysseySlashAndWithdraw": {
-        "title": "Odyssey Slash And Withdraw",
-        "sidebar_label": "Odyssey Slash And Withdraw"
+        "title": "Punishment verification & Extraction of assets",
+        "sidebar_label": "Punishment verification & Extraction of assets"
       },
       "odysseyUpgradeOrDeployNode": {
-        "title": "Upgrade Or Deploy Odyssey Node",
-        "sidebar_label": "Upgrade Or Deploy Odyssey Node"
+        "title": "Validator node program upgrade/deployment",
+        "sidebar_label": "Validator node program upgrade/deployment"
       },
       "odysseyValidateValidator": {
-        "title": "Odyssey Validate Validator",
-        "sidebar_label": "Odyssey Validate Validator"
+        "title": "Validator node verification",
+        "sidebar_label": "Validator node verification"
       },
       "oracleFinance": {
         "title": "Oracle Finance",

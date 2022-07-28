@@ -1,14 +1,9 @@
 ---
 id: odysseyCrossChainBridge
-title: Odyssey Cross-Chain Bridge
-sidebar_label: Odyssey Cross-Chain Bridge
+title: Map ERC20/BEP20 ARES
+sidebar_label: Map ERC20/BEP20 ARES
 ---
-
-Ares Odyssey是一个真实的经济系统，参与者可以1:1映射 ARES-ERC20或ARES-BEP20资产进入Odyssey进行质押、提名或体验链上数据请求功能。其中获得的收益将保留在Odyssey网络中，用户可以通过Odyssey - ETH或是Odyssey - BSC跨链桥，1:1映射为 ARES-ERC20或ARES-BEP20资产进行提取。
-
-## 操作步骤
-
-### ETH -Odyssey 网络跨链桥
+## ETH -Odyssey 网络跨链桥
 
 1. 连接你的钱包打开质押界面：http://trojan.aresprotocol.io/
 
@@ -32,14 +27,11 @@ Ares Odyssey是一个真实的经济系统，参与者可以1:1映射 ARES-ERC20
 
 AresScan：https://aresscan.aresprotocol.io/odyssey
 
-polkadot.js：https://js.aresprotocol.io/?
-
-rpc=wss%3A%2F%2Fodyssey.aresprotocol.io#/accounts
-
+polkadot.js: https://js.aresprotocol.io/?rpc=wss%3A%2F%2Fodyssey.aresprotocol.io#/accounts
 
 注：跨链交易需要一定时间进行审核，预计48小时内到账。如超过48小时仍为到账，请及时与Ares Protocol社群经理联系，或与官方邮箱info@aresprotocol.io取得联系，工作人员将及时为您处理。
 
-### BSC - Odyssey 网络跨链桥
+## BSC - Odyssey 网络跨链桥
 
 1. 连接你的钱包
 

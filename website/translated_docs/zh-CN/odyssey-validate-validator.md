@@ -1,7 +1,7 @@
 ---
 id: odysseyValidateValidator
-title: Odyssey Validate Validator
-sidebar_label: Odyssey Validate Validator
+title: Validator node verification
+sidebar_label: Validator node verification
 ---
 
 ## 运行验证人节点
@@ -91,6 +91,3 @@ curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method":
 ````
 docker exec -it ares_odyssey bash -c "apt update && apt install -y curl && curl http://localhost:9933 -H \"Content-Type: application/json\" -d '{\"id\":1, \"jsonrpc\":\"2.0\", \"method\": \"ares_getInfos\"}'"
 ````
-
-
-
