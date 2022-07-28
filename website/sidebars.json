@@ -79,7 +79,7 @@
       "StartTheWarehouseService",
       "WarehouseApi"
     ],
-    "PreNode":[
+    "Prep Network":[
       {
         "type": "subcategory",
         "label": "Create Odyssey Account & Staking",
