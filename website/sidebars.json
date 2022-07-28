@@ -80,7 +80,19 @@
       "WarehouseApi"
     ],
     "PreNode":[
-      "odysseyCrossChainBridge"
+      {
+        "type": "subcategory",
+        "label": "createOdysseyAccountAndStake",
+        "ids": [
+          "odysseyCreateAccount",
+          "odysseyCrossChainBridge",
+          "odysseyBindStashAndController"
+        ]
+      },
+      "odysseyUpgradeOrDeployNode",
+      "odysseySetSessionKey",
+      "odysseyValidateValidator",
+      "odysseySlashAndWithdraw"
     ]
   }
 }

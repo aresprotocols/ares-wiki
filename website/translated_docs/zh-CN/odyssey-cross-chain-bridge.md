@@ -8,7 +8,7 @@ Ares Odyssey是一个真实的经济系统，参与者可以1:1映射 ARES-ERC20
 
 ## 操作步骤
 
-**ETH -Odyssey 网络跨链桥**
+### ETH -Odyssey 网络跨链桥
 
 1. 连接你的钱包打开质押界面：http://trojan.aresprotocol.io/
 
@@ -39,7 +39,7 @@ rpc=wss%3A%2F%2Fodyssey.aresprotocol.io#/accounts
 
 注：跨链交易需要一定时间进行审核，预计48小时内到账。如超过48小时仍为到账，请及时与Ares Protocol社群经理联系，或与官方邮箱info@aresprotocol.io取得联系，工作人员将及时为您处理。
 
-**BSC -  Odyssey 网络跨链桥**
+### BSC - Odyssey 网络跨链桥
 
 1. 连接你的钱包
 

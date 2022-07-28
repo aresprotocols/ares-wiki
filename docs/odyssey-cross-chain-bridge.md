@@ -9,7 +9,7 @@ Ares Odyssey is a real economic system where participants can map 1:1 ARES-ERC20
 
 ## Operation steps
 
-**ETH — Odyssey Network Cross-Chain Bridge**
+### ETH — Odyssey Network Cross-Chain Bridge
 
 1. Connect your wallet and open the stake screen: [http://trojan.aresprotocol.io/](http://trojan.aresprotocol.io/)
 
@@ -37,7 +37,7 @@ polkadot.js: [https://js.aresprotocol.io/?rpc=wss%3A%2F%2Fodyssey.aresprotocol.i
 
 ⚠️ Cross-chain transactions require some review time and are expected to arrive within 48 hours. If it still hasn’t arrived after 48 hours, please contact Ares Protocol Community Manager or official email address at info@aresprotocol.io. Staff will handle it for you in time.
 
-**BSC — Odyssey Network Cross-Chain Bridge**
+### BSC — Odyssey Network Cross-Chain Bridge
 
 1. Connect your wallet
 

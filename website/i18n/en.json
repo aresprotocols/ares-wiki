@@ -85,9 +85,33 @@
         "title": "Liquidity mining",
         "sidebar_label": "Liquidity mining"
       },
+      "odysseyBindStashAndController": {
+        "title": "Odyssey Bind Stash And Controller",
+        "sidebar_label": "Odyssey Bind Stash And Controller"
+      },
+      "odysseyCreateAccount": {
+        "title": "Odyssey Create Account",
+        "sidebar_label": "Odyssey Create Account"
+      },
       "odysseyCrossChainBridge": {
         "title": "Odyssey Cross-Chain Bridge",
         "sidebar_label": "Odyssey Cross-Chain Bridge"
+      },
+      "odysseySetSessionKey": {
+        "title": "Odyssey Set Session Key",
+        "sidebar_label": "Odyssey Set Session Key"
+      },
+      "odysseySlashAndWithdraw": {
+        "title": "Odyssey Slash And Withdraw",
+        "sidebar_label": "Odyssey Slash And Withdraw"
+      },
+      "odysseyUpgradeOrDeployNode": {
+        "title": "Upgrade Or Deploy Odyssey Node",
+        "sidebar_label": "Upgrade Or Deploy Odyssey Node"
+      },
+      "odysseyValidateValidator": {
+        "title": "Odyssey Validate Validator",
+        "sidebar_label": "Odyssey Validate Validator"
       },
       "oracleFinance": {
         "title": "Oracle Finance",

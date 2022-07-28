@@ -13,7 +13,6 @@
         "title": "资产跨链桥",
         "sidebar_label": "资产跨链桥"
       },
-
       "setUpVerifierNode": {
         "title": "搭建验证人节点",
         "sidebar_label": "搭建验证人节点"
@@ -38,8 +37,6 @@
         "title": "IPFS SDKs",
         "sidebar_label": "IPFS SDKs"
       },
-
-
       "buildNode": {
         "title": "硬件环境",
         "sidebar_label": "硬件环境"
@@ -60,7 +57,6 @@
         "title": "CRU 认领",
         "sidebar_label": "CRU 认领"
       },
-
       "contributing": {
         "title": "贡献",
         "sidebar_label": "贡献"
@@ -81,8 +77,6 @@
         "title": "流动性挖矿",
         "sidebar_label": "流动性挖矿"
       },
-
-
       "DSM": {
         "title": "去中心化存储市场",
         "sidebar_label": "去中心化存储市场"
@@ -103,7 +97,6 @@
         "title": "Ares 术语",
         "sidebar_label": "Ares 术语"
       },
-
       "GPoS": {
         "title": "GPoS",
         "sidebar_label": "GPoS"
@@ -172,7 +165,6 @@
         "title": "节点硬件指南",
         "sidebar_label": "节点硬件指南"
       },
-
       "buildGettingStarted": {
         "title": "跨链获取价格",
         "sidebar_label": "跨链获取价格"
@@ -237,7 +229,6 @@
         "title": "存储订单清算指南",
         "sidebar_label": "存储订单清算指南"
       },
-
       "validatorGuidance": {
         "title": "验证人指南",
         "sidebar_label": "验证人指南"
@@ -293,6 +284,30 @@
       "odysseyCrossChainBridge": {
         "title": "Odyssey 跨链桥",
         "sidebar_label": "Odyssey 跨链桥"
+      },
+      "odysseyCreateAccount": {
+        "title": "创建Odyssey账户",
+        "sidebar_label": "创建Odyssey账户"
+      },
+      "odysseyBindStashAndController": {
+        "title": "绑定 stash & controller账户",
+        "sidebar_label": "绑定 stash & controller账户"
+      },
+      "odysseyUpgradeOrDeployNode": {
+        "title": "验证人节点程序升级/部署",
+        "sidebar_label": "验证人节点程序升级/部署"
+      },
+      "odysseySetSessionKey": {
+        "title": "设置 Session Keys",
+        "sidebar_label": "设置 Session Keys"
+      },
+      "odysseyValidateValidator": {
+        "title": "验证人节点校验",
+        "sidebar_label": "验证人节点校验"
+      },
+      "odysseySlashAndWithdraw": {
+        "title": "惩罚校验&提取资产",
+        "sidebar_label": "惩罚校验&提取资产"
       }
     },
     "links": {
@@ -309,7 +324,8 @@
       "Slot Auction": "插槽竞拍",
       "Supplementary": "基础",
       "Gladios Guide": "Gladios指南",
-      "PreNode": "预备节点"
+      "PreNode": "预备节点",
+      "createOdysseyAccountAndStake": "创建Odyssey账户&质押"
     }
   },
   "pages-strings": {
