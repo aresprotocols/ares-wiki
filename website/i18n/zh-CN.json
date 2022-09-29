@@ -308,6 +308,18 @@
       "odysseySlashAndWithdraw": {
         "title": "惩罚校验&提取资产",
         "sidebar_label": "惩罚校验&提取资产"
+      },
+      "odysseyNominatorCheckPenaltiesAndWithdrawAssets": {
+        "title": "查询惩罚情况&提取资产",
+        "sidebar_label": "查询惩罚情况&提取资产"
+      },
+      "odysseyNominatorCreateAccount": {
+        "title": "创建Odyssey账户&质押",
+        "sidebar_label": "创建Odyssey账户&质押"
+      },
+      "odysseyNominatorNodes": {
+        "title": "为任一或多个节点提名",
+        "sidebar_label": "为任一或多个节点提名"
       }
     },
     "links": {
@@ -325,7 +337,10 @@
       "Supplementary": "基础",
       "Gladios Guide": "Gladios指南",
       "Prep Network": "预备网络",
-      "Create Odyssey Account & Staking": "创建Odyssey账户&质押"
+      "Create Odyssey Account & Staking": "创建Odyssey账户&质押",
+      "Mainnet": "主网",
+      "Validator Tutorial": "验证人教程",
+      "Nominator Tutorial": "网络提名人教程"
     }
   },
   "pages-strings": {

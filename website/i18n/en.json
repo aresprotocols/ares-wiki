@@ -97,6 +97,18 @@
         "title": "Map ERC20/BEP20 ARES",
         "sidebar_label": "Map ERC20/BEP20 ARES"
       },
+      "odysseyNominatorCheckPenaltiesAndWithdrawAssets": {
+        "title": "Check penalties & withdraw assets",
+        "sidebar_label": "Check penalties & withdraw assets"
+      },
+      "odysseyNominatorCreateAccount": {
+        "title": "Create Odyssey Account & Stake",
+        "sidebar_label": "Create Odyssey Account & Stake"
+      },
+      "odysseyNominatorNodes": {
+        "title": "Nominate for any one or more nodes",
+        "sidebar_label": "Nominate for any one or more nodes"
+      },
       "odysseySetSessionKey": {
         "title": "Set Session Keys",
         "sidebar_label": "Set Session Keys"
@@ -184,7 +196,7 @@
       "Learn": "Learn",
       "Build": "Build",
       "Node": "Node",
-      "Prep Network": "Prep Network"
+      "Mainnet": "Mainnet"
     }
   },
   "pages-strings": {

@@ -79,20 +79,29 @@
       "StartTheWarehouseService",
       "WarehouseApi"
     ],
-    "Prep Network":[
+    "Mainnet": [
       {
         "type": "subcategory",
-        "label": "Create Odyssey Account & Staking",
+        "label": "Validator Tutorial",
         "ids": [
           "odysseyCreateAccount",
           "odysseyCrossChainBridge",
-          "odysseyBindStashAndController"
+          "odysseyBindStashAndController",
+          "odysseyUpgradeOrDeployNode",
+          "odysseySetSessionKey",
+          "odysseyValidateValidator",
+          "odysseySlashAndWithdraw"
         ]
       },
-      "odysseyUpgradeOrDeployNode",
-      "odysseySetSessionKey",
-      "odysseyValidateValidator",
-      "odysseySlashAndWithdraw"
+      {
+        "type": "subcategory",
+        "label": "Nominator Tutorial",
+        "ids": [
+          "odysseyNominatorCreateAccount",
+          "odysseyNominatorNodes",
+          "odysseyNominatorCheckPenaltiesAndWithdrawAssets"
+        ]
+      }
     ]
   }
 }
