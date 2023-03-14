@@ -23,7 +23,7 @@ ARES 通过数据链上验证和共享波卡网络的安全共识来保证数据
 
 ## 关于$Ares
 
-交易所：[Gate](http://www.gateio.pro/cn/trade/ARES_USDT)、[MEXC抹茶](https://www.mexc.com/zh-CN/exchange/ARES_USDT)、[Hotbit](https://www.hotbit.io/exchange?symbol=ARES_USDT)、[BKEX](https://www.bkex.com/trade/ARES_USDT)、[BitMart](https://www.bitmart.com/trade/cn?symbol=ARES_USDT&layout=basic)、[Uniswap](https://app.uniswap.org/#/swap?outputCurrency=0x358AA737e033F34df7c54306960a38d09AaBd523&use=V2)
+交易所：[Gate](http://www.gate.io/cn/trade/ARES_USDT)、[MEXC抹茶](https://www.mexc.com/zh-CN/exchange/ARES_USDT)、[Hotbit](https://www.hotbit.io/exchange?symbol=ARES_USDT)、[BKEX](https://www.bkex.com/trade/ARES_USDT)、[BitMart](https://www.bitmart.com/trade/cn?symbol=ARES_USDT&layout=basic)、[Uniswap](https://app.uniswap.org/#/swap?outputCurrency=0x358AA737e033F34df7c54306960a38d09AaBd523&use=V2)
 
 总量：10亿
 

@@ -62,8 +62,6 @@ const siteConfig = {
     myFont: ["Work Sans", "sans-serif"],
   },
 
-  onPageNav: "separate",
-
   // Add custom scripts here that would be placed in <script> tags.
   scripts: [
     "https://buttons.github.io/buttons.js",

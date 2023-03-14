@@ -34,7 +34,7 @@ class Footer extends React.Component {
           },
           {
             title: "Buy Token",
-            link: "https://www.gateio.pro/cn/trade/ARES_USDT"
+            link: "https://www.gate.io/cn/trade/ARES_USDT"
           },
           {
             title: "Farms",
@@ -134,7 +134,7 @@ class Footer extends React.Component {
           },
           {
             title: "购买代币",
-            link: "https://www.gateio.pro/cn/trade/ARES_USDT"
+            link: "https://www.gate.io/cn/trade/ARES_USDT"
           },
           {
             title: "挖矿",
